@@ -1,0 +1,17 @@
+[[main]]
+  identifier = "syllabus"
+  name = "Syllabus"
+  url = "docs"
+  weight = 1
+
+[[main]]
+  identifier = "updates"
+  name = "Weekly Work"
+  url = "week"
+  weight = 2
+
+[[main]]
+  identifier = "blog"
+  name = "News"
+  url = "blog"
+  weight = 3

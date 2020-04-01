@@ -1,0 +1,50 @@
+baseURL = "http://shawngraham.github.io/cdh2020"
+title = "HIST3814o Crafting Digital History Summer 2020 Edition"
+theme = "zdoc"
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+hasCJKLanguage = false
+
+copyright = "Original content by Shawn Graham and Rob Blades licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-nc/4.0/'>Creative Commons Attribution-NonCommercial 4.0 International License</a><br><a rel='license' href='http://creativecommons.org/licenses/by-nc/4.0/'><img alt='Creative Commons License logo' style='border-width:0' src='https://i.creativecommons.org/l/by-nc/4.0/88x31.png' /></a>"
+timeout = 10000
+enableEmoji = true
+paginate = 13
+rssLimit = 100
+
+googleAnalytics = ""
+
+disableKinds = ["taxonomyTerm"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      hardWraps = true
+      unsafe = true
+      xHTML = true
+  [markup.highlight]
+    codeFences = true
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = false
+  [markup.tableOfContents]
+    endLevel = 4
+    ordered = false
+    startLevel = 2
+
+[outputs]
+  page = ["HTML", "SearchIndex"]
+  home = ["HTML", "RSS", "SearchIndex"]
+  section = ["HTML", "RSS", "SearchIndex"]
+  taxonomyTerm = ["HTML", "RSS", "SearchIndex"]
+  taxonomy = ["HTML", "RSS", "SearchIndex"]
+
+[outputFormats]
+  [outputFormats.SearchIndex]
+    mediaType = "application/json"
+    baseName = "index"
+    isPlainText = true
+    notAlternative = true
+
+[taxonomies]
+  tag = "tags"
