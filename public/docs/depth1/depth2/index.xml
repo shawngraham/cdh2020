@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
     <title>Depth 2 on HIST3814o</title>
-    <link>http://shawngraham.github.io/cdh2020/docs/depth1/depth2/</link>
+    <link>/docs/depth1/depth2/</link>
     <description>Recent content in Depth 2 on HIST3814o</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -11,26 +11,26 @@
     <copyright>Original content by Shawn Graham and Rob Blades licensed under a &lt;a rel=&#39;license&#39; href=&#39;http://creativecommons.org/licenses/by-nc/4.0/&#39;&gt;Creative Commons Attribution-NonCommercial 4.0 International License&lt;/a&gt;&lt;br&gt;&lt;a rel=&#39;license&#39; href=&#39;http://creativecommons.org/licenses/by-nc/4.0/&#39;&gt;&lt;img alt=&#39;Creative Commons License logo&#39; style=&#39;border-width:0&#39; src=&#39;https://i.creativecommons.org/l/by-nc/4.0/88x31.png&#39; /&gt;&lt;/a&gt;</copyright>
     <lastBuildDate>Fri, 28 Feb 2020 10:08:56 +0900</lastBuildDate>
     
-        <atom:link href="http://shawngraham.github.io/cdh2020/docs/depth1/depth2/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/docs/depth1/depth2/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Depth 3</title>
-        <link>http://shawngraham.github.io/cdh2020/docs/depth1/depth2/depth3/</link>
+        <link>/docs/depth1/depth2/depth3/</link>
         <pubDate>Fri, 28 Feb 2020 10:08:56 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>http://shawngraham.github.io/cdh2020/docs/depth1/depth2/depth3/</guid>
+        <guid>/docs/depth1/depth2/depth3/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Test 2</title>
-        <link>http://shawngraham.github.io/cdh2020/docs/depth1/depth2/test2/</link>
+        <link>/docs/depth1/depth2/test2/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>http://shawngraham.github.io/cdh2020/docs/depth1/depth2/test2/</guid>
+        <guid>/docs/depth1/depth2/test2/</guid>
         <description></description>
       </item>
       

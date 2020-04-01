@@ -1,224 +1,224 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="https://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/week/2020-wk1/</loc>
+    <loc>/week/2020-wk1/</loc>
     <lastmod>2020-01-28T00:10:51+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/docs/gettingstarted/basicusage/</loc>
+    <loc>/docs/gettingstarted/basicusage/</loc>
     <lastmod>2020-01-28T00:34:51+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/week/2020-wk2/</loc>
+    <loc>/week/2020-wk2/</loc>
     <lastmod>2020-01-28T00:10:48+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/docs/gettingstarted/configuration/</loc>
+    <loc>/docs/gettingstarted/configuration/</loc>
     <lastmod>2020-01-28T00:34:56+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/week/2020-wk3/</loc>
+    <loc>/week/2020-wk3/</loc>
     <lastmod>2020-01-28T00:10:42+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/docs/gettingstarted/installation/</loc>
+    <loc>/docs/gettingstarted/installation/</loc>
     <lastmod>2020-01-28T00:34:13+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/week/2020-wk4/</loc>
+    <loc>/week/2020-wk4/</loc>
     <lastmod>2020-01-28T00:10:37+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/docs/gettingstarted/quickstart/</loc>
+    <loc>/docs/gettingstarted/quickstart/</loc>
     <lastmod>2020-01-28T00:34:41+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/week/2020-wk5/</loc>
+    <loc>/week/2020-wk5/</loc>
     <lastmod>2020-01-28T00:10:09+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/week/2020-wk6/</loc>
+    <loc>/week/2020-wk6/</loc>
     <lastmod>2020-01-28T00:10:09+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/docs/depth1/</loc>
+    <loc>/docs/depth1/</loc>
     <lastmod>2020-02-28T10:08:56+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/docs/depth1/depth2/</loc>
+    <loc>/docs/depth1/depth2/</loc>
     <lastmod>2020-02-28T10:08:56+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/docs/depth1/depth2/depth3/</loc>
+    <loc>/docs/depth1/depth2/depth3/</loc>
     <lastmod>2020-02-28T10:08:56+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/docs/depth1/test1/</loc>
+    <loc>/docs/depth1/test1/</loc>
     <lastmod>2020-01-30T00:38:25+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/docs/depth1/depth2/test2/</loc>
+    <loc>/docs/depth1/depth2/test2/</loc>
     <lastmod>2020-01-30T00:38:25+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/docs/depth1/depth2/depth3/test3/</loc>
+    <loc>/docs/depth1/depth2/depth3/test3/</loc>
     <lastmod>2020-01-30T00:38:25+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/docs/gettingstarted/</loc>
+    <loc>/docs/gettingstarted/</loc>
     <lastmod>2020-01-28T00:34:39+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/docs/depth1/ttttest/</loc>
+    <loc>/docs/depth1/ttttest/</loc>
     <lastmod>2020-01-30T00:38:25+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/docs/contentmanagement/</loc>
+    <loc>/docs/contentmanagement/</loc>
     <lastmod>2020-01-28T00:36:39+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/docs/relatedcontent/</loc>
+    <loc>/docs/relatedcontent/</loc>
     <lastmod>2020-01-28T00:39:09+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/docs/pageresources/</loc>
+    <loc>/docs/pageresources/</loc>
     <lastmod>2020-01-28T00:39:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/docs/pagebundles/</loc>
+    <loc>/docs/pagebundles/</loc>
     <lastmod>2020-01-28T00:38:59+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/docs/contentfortmats/</loc>
+    <loc>/docs/contentfortmats/</loc>
     <lastmod>2020-01-28T00:38:51+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/docs/imageprocessing/</loc>
+    <loc>/docs/imageprocessing/</loc>
     <lastmod>2020-01-28T00:38:48+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/docs/contentmanagement/shortcodes/</loc>
+    <loc>/docs/contentmanagement/shortcodes/</loc>
     <lastmod>2020-01-28T00:36:19+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/docs/contentmanagement/frontmatter/</loc>
+    <loc>/docs/contentmanagement/frontmatter/</loc>
     <lastmod>2020-01-28T00:36:14+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/week/2020-end/</loc>
+    <loc>/week/2020-end/</loc>
     <lastmod>2020-01-28T00:10:09+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/week/</loc>
+    <loc>/week/</loc>
     <lastmod>2020-01-28T00:08:29+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/</loc>
+    <loc>/</loc>
     <lastmod>2020-01-26T04:15:05+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/docs/</loc>
+    <loc>/docs/</loc>
     <lastmod>2020-01-11T14:09:21+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/blog/</loc>
+    <loc>/blog/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/tags/css/</loc>
+    <loc>/tags/css/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/tags/html/</loc>
+    <loc>/tags/html/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/tags/markdown/</loc>
+    <loc>/tags/markdown/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/blog/markdown-syntax/</loc>
+    <loc>/blog/markdown-syntax/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/docs/contentmanagement/sections/</loc>
+    <loc>/docs/contentmanagement/sections/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/tags/themes/</loc>
+    <loc>/tags/themes/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/tags/privacy/</loc>
+    <loc>/tags/privacy/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/blog/rich-content/</loc>
+    <loc>/blog/rich-content/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/tags/shortcodes/</loc>
+    <loc>/tags/shortcodes/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/blog/placeholder-text/</loc>
+    <loc>/blog/placeholder-text/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/tags/text/</loc>
+    <loc>/tags/text/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/tags/emoji/</loc>
+    <loc>/tags/emoji/</loc>
     <lastmod>2019-03-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://shawngraham.github.io/cdh2020/blog/emoji-support/</loc>
+    <loc>/blog/emoji-support/</loc>
     <lastmod>2019-03-05T00:00:00+00:00</lastmod>
   </url>
   

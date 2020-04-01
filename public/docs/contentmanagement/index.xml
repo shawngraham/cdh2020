@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
     <title>Content Management on HIST3814o</title>
-    <link>http://shawngraham.github.io/cdh2020/docs/contentmanagement/</link>
+    <link>/docs/contentmanagement/</link>
     <description>Recent content in Content Management on HIST3814o</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -11,35 +11,35 @@
     <copyright>Original content by Shawn Graham and Rob Blades licensed under a &lt;a rel=&#39;license&#39; href=&#39;http://creativecommons.org/licenses/by-nc/4.0/&#39;&gt;Creative Commons Attribution-NonCommercial 4.0 International License&lt;/a&gt;&lt;br&gt;&lt;a rel=&#39;license&#39; href=&#39;http://creativecommons.org/licenses/by-nc/4.0/&#39;&gt;&lt;img alt=&#39;Creative Commons License logo&#39; style=&#39;border-width:0&#39; src=&#39;https://i.creativecommons.org/l/by-nc/4.0/88x31.png&#39; /&gt;&lt;/a&gt;</copyright>
     <lastBuildDate>Tue, 28 Jan 2020 00:36:39 +0900</lastBuildDate>
     
-        <atom:link href="http://shawngraham.github.io/cdh2020/docs/contentmanagement/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/docs/contentmanagement/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Shortcodes</title>
-        <link>http://shawngraham.github.io/cdh2020/docs/contentmanagement/shortcodes/</link>
+        <link>/docs/contentmanagement/shortcodes/</link>
         <pubDate>Tue, 28 Jan 2020 00:36:19 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>http://shawngraham.github.io/cdh2020/docs/contentmanagement/shortcodes/</guid>
+        <guid>/docs/contentmanagement/shortcodes/</guid>
         <description>Markdown here</description>
       </item>
       
       <item>
         <title>Frontmatter</title>
-        <link>http://shawngraham.github.io/cdh2020/docs/contentmanagement/frontmatter/</link>
+        <link>/docs/contentmanagement/frontmatter/</link>
         <pubDate>Tue, 28 Jan 2020 00:36:14 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>http://shawngraham.github.io/cdh2020/docs/contentmanagement/frontmatter/</guid>
+        <guid>/docs/contentmanagement/frontmatter/</guid>
         <description>Markdown here</description>
       </item>
       
       <item>
         <title>Section</title>
-        <link>http://shawngraham.github.io/cdh2020/docs/contentmanagement/sections/</link>
+        <link>/docs/contentmanagement/sections/</link>
         <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>http://shawngraham.github.io/cdh2020/docs/contentmanagement/sections/</guid>
+        <guid>/docs/contentmanagement/sections/</guid>
         <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
       </item>
       

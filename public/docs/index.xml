@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
     <title>Syllabus on HIST3814o</title>
-    <link>http://shawngraham.github.io/cdh2020/docs/</link>
+    <link>/docs/</link>
     <description>Recent content in Syllabus on HIST3814o</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -11,80 +11,80 @@
     <copyright>Original content by Shawn Graham and Rob Blades licensed under a &lt;a rel=&#39;license&#39; href=&#39;http://creativecommons.org/licenses/by-nc/4.0/&#39;&gt;Creative Commons Attribution-NonCommercial 4.0 International License&lt;/a&gt;&lt;br&gt;&lt;a rel=&#39;license&#39; href=&#39;http://creativecommons.org/licenses/by-nc/4.0/&#39;&gt;&lt;img alt=&#39;Creative Commons License logo&#39; style=&#39;border-width:0&#39; src=&#39;https://i.creativecommons.org/l/by-nc/4.0/88x31.png&#39; /&gt;&lt;/a&gt;</copyright>
     <lastBuildDate>Sat, 11 Jan 2020 14:09:21 +0900</lastBuildDate>
     
-        <atom:link href="http://shawngraham.github.io/cdh2020/docs/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/docs/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Depth 1</title>
-        <link>http://shawngraham.github.io/cdh2020/docs/depth1/</link>
+        <link>/docs/depth1/</link>
         <pubDate>Fri, 28 Feb 2020 10:08:56 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>http://shawngraham.github.io/cdh2020/docs/depth1/</guid>
+        <guid>/docs/depth1/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Getting Started</title>
-        <link>http://shawngraham.github.io/cdh2020/docs/gettingstarted/</link>
+        <link>/docs/gettingstarted/</link>
         <pubDate>Tue, 28 Jan 2020 00:34:39 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>http://shawngraham.github.io/cdh2020/docs/gettingstarted/</guid>
+        <guid>/docs/gettingstarted/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Content Management</title>
-        <link>http://shawngraham.github.io/cdh2020/docs/contentmanagement/</link>
+        <link>/docs/contentmanagement/</link>
         <pubDate>Tue, 28 Jan 2020 00:36:39 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>http://shawngraham.github.io/cdh2020/docs/contentmanagement/</guid>
+        <guid>/docs/contentmanagement/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Related content</title>
-        <link>http://shawngraham.github.io/cdh2020/docs/relatedcontent/</link>
+        <link>/docs/relatedcontent/</link>
         <pubDate>Tue, 28 Jan 2020 00:39:09 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>http://shawngraham.github.io/cdh2020/docs/relatedcontent/</guid>
+        <guid>/docs/relatedcontent/</guid>
         <description>Markdown here</description>
       </item>
       
       <item>
         <title>Page Resources</title>
-        <link>http://shawngraham.github.io/cdh2020/docs/pageresources/</link>
+        <link>/docs/pageresources/</link>
         <pubDate>Tue, 28 Jan 2020 00:39:06 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>http://shawngraham.github.io/cdh2020/docs/pageresources/</guid>
+        <guid>/docs/pageresources/</guid>
         <description>Markdown here</description>
       </item>
       
       <item>
         <title>Page Bundles</title>
-        <link>http://shawngraham.github.io/cdh2020/docs/pagebundles/</link>
+        <link>/docs/pagebundles/</link>
         <pubDate>Tue, 28 Jan 2020 00:38:59 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>http://shawngraham.github.io/cdh2020/docs/pagebundles/</guid>
+        <guid>/docs/pagebundles/</guid>
         <description>Markdown here</description>
       </item>
       
       <item>
         <title>Content Formats</title>
-        <link>http://shawngraham.github.io/cdh2020/docs/contentfortmats/</link>
+        <link>/docs/contentfortmats/</link>
         <pubDate>Tue, 28 Jan 2020 00:38:51 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>http://shawngraham.github.io/cdh2020/docs/contentfortmats/</guid>
+        <guid>/docs/contentfortmats/</guid>
         <description>Markdown here</description>
       </item>
       
       <item>
         <title>Image Processing</title>
-        <link>http://shawngraham.github.io/cdh2020/docs/imageprocessing/</link>
+        <link>/docs/imageprocessing/</link>
         <pubDate>Tue, 28 Jan 2020 00:38:48 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>http://shawngraham.github.io/cdh2020/docs/imageprocessing/</guid>
+        <guid>/docs/imageprocessing/</guid>
         <description>Markdown here</description>
       </item>
       
