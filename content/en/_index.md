@@ -3,13 +3,13 @@ title: ZDoc
 description: Hugo ZDoc theme landing page
 date: 2020-01-26T04:15:05+09:00
 draft: false
-updatesBanner: "Banner - &nbsp; [Hugo ZDoc theme](https://github.com/zzossig/hugo-theme-zdoc) &nbsp; just arrived"
+updatesBanner: "![](favicon/android-icon-192x192.png) </p> <h1>Crafting Digital History <br> Summer 2020 <br> @Carleton_U <br> Dr. Shawn Graham </h1>"
 landingImage: favicon/android-icon-192x192.png
 landingTitle:
-  - Hugo ZDoc theme
+  - HIST3814o
 landingText:
-  - Make a documentation with hugo zdoc theme!
-titleColor:
+  - Crafting Digital History
+titleColor: black
 textColor:
 spaceBetweenTitleText: 25
 buttons:

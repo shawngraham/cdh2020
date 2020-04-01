@@ -8,10 +8,10 @@ themeOptions = ["light", "dark"]
 useFaviconGenerator = true # https://www.favicon-generator.org/
 
 enableTocSwitch = true
-enableLandingBackground = false
+enableLandingBackground = true
 enableSearch = true
 enableSearchHighlight = true
-enableLangChange = true
+enableLangChange = false
 enableDarkMode = true
 enableBreadcrumb = true
 enableBlogBreadcrumb = true
