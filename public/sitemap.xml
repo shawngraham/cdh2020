@@ -8,18 +8,8 @@
   </url>
   
   <url>
-    <loc>/docs/gettingstarted/basicusage/</loc>
-    <lastmod>2020-01-28T00:34:51+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/week/2020-wk2/</loc>
     <lastmod>2020-01-28T00:10:48+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/docs/gettingstarted/configuration/</loc>
-    <lastmod>2020-01-28T00:34:56+09:00</lastmod>
   </url>
   
   <url>
@@ -28,18 +18,8 @@
   </url>
   
   <url>
-    <loc>/docs/gettingstarted/installation/</loc>
-    <lastmod>2020-01-28T00:34:13+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/week/2020-wk4/</loc>
     <lastmod>2020-01-28T00:10:37+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/docs/gettingstarted/quickstart/</loc>
-    <lastmod>2020-01-28T00:34:41+09:00</lastmod>
   </url>
   
   <url>
@@ -53,83 +33,33 @@
   </url>
   
   <url>
-    <loc>/docs/depth1/</loc>
-    <lastmod>2020-02-28T10:08:56+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/docs/depth1/depth2/</loc>
-    <lastmod>2020-02-28T10:08:56+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/docs/depth1/depth2/depth3/</loc>
-    <lastmod>2020-02-28T10:08:56+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/docs/depth1/test1/</loc>
-    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/docs/depth1/depth2/test2/</loc>
-    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/docs/depth1/depth2/depth3/test3/</loc>
-    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/docs/gettingstarted/</loc>
-    <lastmod>2020-01-28T00:34:39+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/docs/depth1/ttttest/</loc>
-    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/docs/contentmanagement/</loc>
-    <lastmod>2020-01-28T00:36:39+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/docs/relatedcontent/</loc>
+    <loc>/docs/1-coursedescription/</loc>
     <lastmod>2020-01-28T00:39:09+09:00</lastmod>
   </url>
   
   <url>
-    <loc>/docs/pageresources/</loc>
-    <lastmod>2020-01-28T00:39:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/docs/pagebundles/</loc>
-    <lastmod>2020-01-28T00:38:59+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/docs/contentfortmats/</loc>
+    <loc>/docs/2-learning-outcomes/</loc>
     <lastmod>2020-01-28T00:38:51+09:00</lastmod>
   </url>
   
   <url>
-    <loc>/docs/imageprocessing/</loc>
+    <loc>/docs/3-schedule/</loc>
     <lastmod>2020-01-28T00:38:48+09:00</lastmod>
   </url>
   
   <url>
-    <loc>/docs/contentmanagement/shortcodes/</loc>
-    <lastmod>2020-01-28T00:36:19+09:00</lastmod>
+    <loc>/docs/4-assessment/</loc>
+    <lastmod>2020-01-28T00:38:59+09:00</lastmod>
   </url>
   
   <url>
-    <loc>/docs/contentmanagement/frontmatter/</loc>
-    <lastmod>2020-01-28T00:36:14+09:00</lastmod>
+    <loc>/docs/5-commonregs/</loc>
+    <lastmod>2020-01-28T00:39:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/6-contact/</loc>
+    <lastmod>2020-01-28T00:39:06+09:00</lastmod>
   </url>
   
   <url>
@@ -174,11 +104,6 @@
   
   <url>
     <loc>/blog/markdown-syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/docs/contentmanagement/sections/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url>
   

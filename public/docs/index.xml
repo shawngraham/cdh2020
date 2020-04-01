@@ -17,75 +17,65 @@
     
       
       <item>
-        <title>Depth 1</title>
-        <link>/docs/depth1/</link>
-        <pubDate>Fri, 28 Feb 2020 10:08:56 +0900</pubDate>
-        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>/docs/depth1/</guid>
-        <description></description>
-      </item>
-      
-      <item>
-        <title>Getting Started</title>
-        <link>/docs/gettingstarted/</link>
-        <pubDate>Tue, 28 Jan 2020 00:34:39 +0900</pubDate>
-        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>/docs/gettingstarted/</guid>
-        <description></description>
-      </item>
-      
-      <item>
-        <title>Content Management</title>
-        <link>/docs/contentmanagement/</link>
-        <pubDate>Tue, 28 Jan 2020 00:36:39 +0900</pubDate>
-        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>/docs/contentmanagement/</guid>
-        <description></description>
-      </item>
-      
-      <item>
-        <title>Related content</title>
-        <link>/docs/relatedcontent/</link>
+        <title>1. Course Description</title>
+        <link>/docs/1-coursedescription/</link>
         <pubDate>Tue, 28 Jan 2020 00:39:09 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>/docs/relatedcontent/</guid>
-        <description>Markdown here</description>
+        <guid>/docs/1-coursedescription/</guid>
+        <description>This is a methods course about learning to use the huge variety of digitized historical resources available in the world, including some perhaps unconventional sources such as social media. You will learn some of the habits of doing born-digital work, including the doing of digital history as an outward facing public history.
+You will read, watch, listen to, and discuss the class materials via various online tools including Hypothes.is and Github (Speaking of Hypothes.</description>
       </item>
       
       <item>
-        <title>Page Resources</title>
-        <link>/docs/pageresources/</link>
-        <pubDate>Tue, 28 Jan 2020 00:39:06 +0900</pubDate>
-        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>/docs/pageresources/</guid>
-        <description>Markdown here</description>
-      </item>
-      
-      <item>
-        <title>Page Bundles</title>
-        <link>/docs/pagebundles/</link>
-        <pubDate>Tue, 28 Jan 2020 00:38:59 +0900</pubDate>
-        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>/docs/pagebundles/</guid>
-        <description>Markdown here</description>
-      </item>
-      
-      <item>
-        <title>Content Formats</title>
-        <link>/docs/contentfortmats/</link>
+        <title>2. Learning Outcomes</title>
+        <link>/docs/2-learning-outcomes/</link>
         <pubDate>Tue, 28 Jan 2020 00:38:51 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>/docs/contentfortmats/</guid>
+        <guid>/docs/2-learning-outcomes/</guid>
+        <description>Outcomes  This course will enable you to analyze and assess historical documents, artifacts, and other primary sources through the lens of digital history methods, critically applied, and you will develop awareness of the ways digital tools change what it is possible to know about the past. At the same time, this ability will enable you to analyze and assess critically digital tools and methods from a historical perspective. Given that this is an online course, another outcome will be your ability to conduct such research independently.</description>
+      </item>
+      
+      <item>
+        <title>3. Course Calendar</title>
+        <link>/docs/3-schedule/</link>
+        <pubDate>Tue, 28 Jan 2020 00:38:48 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>/docs/3-schedule/</guid>
+        <description>Each week involves completing to the best of your ability a series of exercises; you will document your progress in a weekly log that you will keep online. Log entries are required to be completed by the Sunday evening at the end of the relevant work. A final reflection piece is due at the end of the course. See the assessment page for further details
+Week 1, May 4 An overview of digital history</description>
+      </item>
+      
+      <item>
+        <title>4. Assessment</title>
+        <link>/docs/4-assessment/</link>
+        <pubDate>Tue, 28 Jan 2020 00:38:59 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>/docs/4-assessment/</guid>
         <description>Markdown here</description>
       </item>
       
       <item>
-        <title>Image Processing</title>
-        <link>/docs/imageprocessing/</link>
-        <pubDate>Tue, 28 Jan 2020 00:38:48 +0900</pubDate>
+        <title>5. Common Regulations</title>
+        <link>/docs/5-commonregs/</link>
+        <pubDate>Tue, 28 Jan 2020 00:39:06 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>/docs/imageprocessing/</guid>
-        <description>Markdown here</description>
+        <guid>/docs/5-commonregs/</guid>
+        <description>The following are the University regulations common to all History courses. COPIES OF WRITTEN WORK SUBMITTED Always retain for yourself a copy of all essays, term papers, written assignments or take-home tests submitted in your courses.
+PLAGIARISM The University Senate defines plagiarism as “presenting, whether intentionally or not, the ideas, expression of ideas or work of others as one’s own.” This can include:
+ reproducing or paraphrasing portions of someone else’s published or unpublished material, regardless of the source, and presenting these as one’s own without proper citation or reference to the original source; submitting a take home examination, essay, laboratory report or other assignment written, in whole or in part, by someone else; using ideas or direct, verbatim quotations, or paraphrased material, concepts, or ideas without appropriate acknowledgment in any academic assignment; using another’s data or research findings; failing to acknowledge sources through the use of proper citations when using another’s works and/or failing to use quotation marks; handing in &amp;ldquo;substantially the same piece of work for academic credit more than once without prior written permission of the course instructor in which the submission occurs.</description>
+      </item>
+      
+      <item>
+        <title>6. Contacting Dr. Graham</title>
+        <link>/docs/6-contact/</link>
+        <pubDate>Tue, 28 Jan 2020 00:39:06 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>/docs/6-contact/</guid>
+        <description>Dr. Graham can be found online at
+shawn dot graham at carleton dot ca
+or on Twitter at @electricarchae.
+He will be present in our Crafting Digital History discord server every day.
+If we ever get out of quarantine, and you&amp;rsquo;re in Ottawa, he often haunts the Library coffeeshop.</description>
       </item>
       
     

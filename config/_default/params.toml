@@ -1,6 +1,6 @@
 logo = true
 logoText = "HIST3814o"
-logoType = "short" # long, short
+logoType = "long" # long, short
 description = "Summer 2020 Edition @Carleton U."
 
 themeOptions = ["light", "dark"]
@@ -13,7 +13,7 @@ enableSearch = true
 enableSearchHighlight = true
 enableLangChange = false
 enableDarkMode = true
-enableBreadcrumb = true
+enableBreadcrumb = false
 enableBlogBreadcrumb = true
 enableEditBtn = false
 enableToc = true
