@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
+  <channel>
+    <title>Week 1: May 4 on HIST3814o</title>
+    <link>/week/2020-wk1/</link>
+    <description>Recent content in Week 1: May 4 on HIST3814o</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>shawn.graham@carleton.ca (Dr. Shawn Graham)</managingEditor>
+    <webMaster>shawn.graham@carleton.ca (Dr. Shawn Graham)</webMaster>
+    <copyright>Original content by Shawn Graham and Rob Blades licensed under a &lt;a rel=&#39;license&#39; href=&#39;http://creativecommons.org/licenses/by-nc/4.0/&#39;&gt;Creative Commons Attribution-NonCommercial 4.0 International License&lt;/a&gt;&lt;br&gt;&lt;a rel=&#39;license&#39; href=&#39;http://creativecommons.org/licenses/by-nc/4.0/&#39;&gt;&lt;img alt=&#39;Creative Commons License logo&#39; style=&#39;border-width:0&#39; src=&#39;https://i.creativecommons.org/l/by-nc/4.0/88x31.png&#39; /&gt;&lt;/a&gt;</copyright>
+    <lastBuildDate>Tue, 28 Jan 2020 00:10:51 +0900</lastBuildDate>
+    
+        <atom:link href="/week/2020-wk1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>Instructions: May 4</title>
+        <link>/week/2020-wk1/instructions/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>/week/2020-wk1/instructions/</guid>
+        <description>Goals for this week  set up Github, Hypothes.is accounts, Zotero join the Hypothes.is course group explore our ignorance: what is dighist?  Listen  intro podcast  Do  Follow the instructions for Setting Up Github, Setting up Hypothesis, and Setting up Zotero.  Read These readings have two aims. One, to ground the fact of the digital in the physicality of the world; Two, to give you a sense of the potentials.</description>
+      </item>
+      
+      <item>
+        <title>Setting up your Github</title>
+        <link>/week/2020-wk1/github/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>/week/2020-wk1/github/</guid>
+        <description>Blah blah</description>
+      </item>
+      
+      <item>
+        <title>Setting up your Hypothesis</title>
+        <link>/week/2020-wk1/hypothesis/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>/week/2020-wk1/hypothesis/</guid>
+        <description>Turn on the closed captions.</description>
+      </item>
+      
+      <item>
+        <title>Setting up your Zotero</title>
+        <link>/week/2020-wk1/zotero/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>/week/2020-wk1/zotero/</guid>
+        <description> [A tutorial on how to get, how to install, and how to use Zotero to keep track of what you read. Right-click and open in a new window.](https://uclalibrary.github.io/slides/tutorial-zotero-intro.html) </description>
+      </item>
+      
+    
+  </channel>
+</rss>
