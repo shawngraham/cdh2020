@@ -1,6 +1,6 @@
 ---
-title: Blog
-description: Blog list page
+title: News
+description: Updates from Dr. Graham
 blogHeaderType: text
 headerHeight: 112
 header:
@@ -9,11 +9,11 @@ header:
     paddingY: 0
     align: center
     title:
-      - Blog
-    subtitle:
-      - 
+      - News
+    subtitle: 
+      -
     spaceBetweenTitleSubtitle: 0
-  
+
   - type: img
     imageSrc: images/header/background.png
     imageSize: initial
@@ -24,9 +24,9 @@ header:
     paddingY: 0
     align: center
     title:
-      - 
+      -
     subtitle:
-      - 
+      -
     titleShadow: true
     subtitleCursive: true
     spaceBetweenTitleSubtitle: 20

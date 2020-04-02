@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on HIST3814o</title>
+    <title>News on HIST3814o</title>
     <link>/blog/</link>
-    <description>Recent content in Blog on HIST3814o</description>
+    <description>Recent content in News on HIST3814o</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>shawn.graham@carleton.ca (Dr. Shawn Graham)</managingEditor>
     <webMaster>shawn.graham@carleton.ca (Dr. Shawn Graham)</webMaster>
     <copyright>Original content by Shawn Graham and Rob Blades licensed under a &lt;a rel=&#39;license&#39; href=&#39;http://creativecommons.org/licenses/by-nc/4.0/&#39;&gt;Creative Commons Attribution-NonCommercial 4.0 International License&lt;/a&gt;&lt;br&gt;&lt;a rel=&#39;license&#39; href=&#39;http://creativecommons.org/licenses/by-nc/4.0/&#39;&gt;&lt;img alt=&#39;Creative Commons License logo&#39; style=&#39;border-width:0&#39; src=&#39;https://i.creativecommons.org/l/by-nc/4.0/88x31.png&#39; /&gt;&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 Mar 2019 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,48 +17,13 @@
     
       
       <item>
-        <title>Markdown Syntax Guide</title>
-        <link>/blog/markdown-syntax/</link>
-        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>/blog/markdown-syntax/</guid>
-        <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de&lt;br /&gt;
-pectora summo. Redit teque digerit hominumque toris verebor lumina non cervice&lt;br /&gt;
-subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc&lt;br /&gt;
-caluere tempus&lt;/p&gt;</description>
-      </item>
-      
-      <item>
-        <title>Rich Content</title>
-        <link>/blog/rich-content/</link>
-        <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>/blog/rich-content/</guid>
-        <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de&lt;br /&gt;
-pectora summo. Redit teque digerit hominumque toris verebor lumina non cervice&lt;br /&gt;
-subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc&lt;br /&gt;
-caluere tempus&lt;/p&gt;</description>
-      </item>
-      
-      <item>
         <title>Placeholder Text</title>
-        <link>/blog/placeholder-text/</link>
+        <link>/blog/placeholder/</link>
         <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>/blog/placeholder-text/</guid>
-        <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de&lt;br /&gt;
-pectora summo. Redit teque digerit hominumque toris verebor lumina non cervice&lt;br /&gt;
-subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc&lt;br /&gt;
-caluere tempus&lt;/p&gt;</description>
-      </item>
-      
-      <item>
-        <title>Emoji Support</title>
-        <link>/blog/emoji-support/</link>
-        <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>/blog/emoji-support/</guid>
-        <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de&lt;br /&gt;
+        <guid>/blog/placeholder/</guid>
+        <description>&lt;p&gt;Click title to see the full Post&lt;/p&gt;
+&lt;p&gt;Lorem est tota propiore conpellat pectoribus de&lt;br /&gt;
 pectora summo. Redit teque digerit hominumque toris verebor lumina non cervice&lt;br /&gt;
 subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc&lt;br /&gt;
 caluere tempus&lt;/p&gt;</description>

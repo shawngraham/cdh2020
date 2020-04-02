@@ -106,7 +106,9 @@ Week 1, May 4 An overview of digital history</description>
         <pubDate>Tue, 28 Jan 2020 00:38:59 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>/docs/4-assessment/</guid>
-        <description>Markdown here</description>
+        <description>There is no midterm. There is no final exam. Weekly Exercises Each week, there are set exercises for you to attempt.
+I am not looking for &amp;lsquo;correct&amp;rsquo; completion, or that you powered through x amount of them. I am, rather, looking for your evidence of thinking through the meaning of the process: what worked, what didn&amp;rsquo;t, why, and what that might mean for you as a historian.
+Evidence Therefore, I am looking for the following kinds of evidence (each week will specify what needs to be done):</description>
       </item>
       
       <item>
@@ -134,6 +136,15 @@ If we ever get out of quarantine, and you&amp;rsquo;re in Ottawa, he often haunt
       </item>
       
       <item>
+        <title>7. Colophon</title>
+        <link>/docs/7-colophon/</link>
+        <pubDate>Tue, 28 Jan 2020 00:39:06 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>/docs/7-colophon/</guid>
+        <description>This course originally was a face-to-face class, over 13 weeks. That let us get into the nitty-gritty of different approaches and platforms; it gave us the opportunity to have guest speakers; and most importantly, it gave us the time to really grapple with different kinds of historical &amp;lsquo;capta&amp;rsquo; (see Drucker on &amp;lsquo;capta versus data&amp;rsquo;). But, needs evolved and eventually the course moved fully online. Now only 6 weeks long, a lot of things have been cut, compressed, or rethought entirely.</description>
+      </item>
+      
+      <item>
         <title>The End: June 16</title>
         <link>/week/2020-end/</link>
         <pubDate>Tue, 28 Jan 2020 00:10:09 +0900</pubDate>
@@ -143,48 +154,13 @@ If we ever get out of quarantine, and you&amp;rsquo;re in Ottawa, he often haunt
       </item>
       
       <item>
-        <title>Markdown Syntax Guide</title>
-        <link>/blog/markdown-syntax/</link>
-        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>/blog/markdown-syntax/</guid>
-        <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de&lt;br /&gt;
-pectora summo. Redit teque digerit hominumque toris verebor lumina non cervice&lt;br /&gt;
-subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc&lt;br /&gt;
-caluere tempus&lt;/p&gt;</description>
-      </item>
-      
-      <item>
-        <title>Rich Content</title>
-        <link>/blog/rich-content/</link>
-        <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>/blog/rich-content/</guid>
-        <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de&lt;br /&gt;
-pectora summo. Redit teque digerit hominumque toris verebor lumina non cervice&lt;br /&gt;
-subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc&lt;br /&gt;
-caluere tempus&lt;/p&gt;</description>
-      </item>
-      
-      <item>
         <title>Placeholder Text</title>
-        <link>/blog/placeholder-text/</link>
+        <link>/blog/placeholder/</link>
         <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>/blog/placeholder-text/</guid>
-        <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de&lt;br /&gt;
-pectora summo. Redit teque digerit hominumque toris verebor lumina non cervice&lt;br /&gt;
-subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc&lt;br /&gt;
-caluere tempus&lt;/p&gt;</description>
-      </item>
-      
-      <item>
-        <title>Emoji Support</title>
-        <link>/blog/emoji-support/</link>
-        <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>/blog/emoji-support/</guid>
-        <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de&lt;br /&gt;
+        <guid>/blog/placeholder/</guid>
+        <description>&lt;p&gt;Click title to see the full Post&lt;/p&gt;
+&lt;p&gt;Lorem est tota propiore conpellat pectoribus de&lt;br /&gt;
 pectora summo. Redit teque digerit hominumque toris verebor lumina non cervice&lt;br /&gt;
 subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc&lt;br /&gt;
 caluere tempus&lt;/p&gt;</description>

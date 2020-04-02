@@ -17,3 +17,20 @@ weight: 2
 ### Texts
 
 See the [weekly work](/week) section. All readings are open access.
+
+### Real Names Policy
+
+You do not need to use your real name or identity on any public-facing work that you do in this course. Nor do you need to explain to me that you wish to use a pseudonym. It is sufficient that you send an email to me with the following message:
+
+‘I would like to use the following username in all public-facing work: xxxxxxxx’
+
+…where xxxxx is the name you have selected. For safety’s sake, if you decide to use a pseudonym, do not use one that you have used on any other website or social media platform.
+
+### When Life Intervenes
+
+There's nothing we can't roll with, in this class. That said, it is a compressed time frame: so if something comes up, just let me know:
+
+{{< notice success "Important" >}} You don't have to share the details with me. It is enough for me to know that something has intervened. I trust you.
+{{< /notice >}}
+
+When something comes up and this course has to move to the backburner, contact me and we can **figure out something else to do, or something else that will help you be successful here**. It's our course - we can change things up as we need to.
