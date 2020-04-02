@@ -10,6 +10,10 @@ weight: 1
 
 This is a methods course about learning to use the huge variety of digitized historical resources available in the world, including some perhaps unconventional sources such as social media. You will learn some of the habits of doing born-digital work, including the doing of digital history as an outward facing public history.
 
+{{< alert theme="info" >}}
+**You do not need to be 'techy' to be successful in this course! You just need to be diligent, honest, and open.**
+{{< /alert >}}
+
 You will read, watch, listen to, and discuss the class materials via various online tools including [Hypothes.is](http://hypothes.is) and [Github](http://github.com) (Speaking of Hypothes.is, highlight a word on this page and see what happens). We do not use cuLearn in the course. We work on the open web instead. Successful completion of this class involves doing a series of exercises each week designed to push you out of your comfort zone, AND to be a collegial and generous scholar engaging with, and helping your peers to achieve success. What is challenging for one student will not necessarily be challenging for another, and I expect you to push yourself and pull others along as you go. Thus open and honest reporting of what works and what hasn’t worked, is a meaningful aspect of this course. **You don’t need to be techy to succeed, but you do need to be willing to embrace when things go ‘wrong’.**
 
 {{< alert theme="warning" >}}

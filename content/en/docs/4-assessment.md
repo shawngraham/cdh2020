@@ -11,7 +11,7 @@ There is no midterm. There is no final exam.
 ### Weekly Exercises
 Each week, there are set exercises for you to attempt.
 
-I am **not** looking for 'correct' completion, or that you powered through x amount of them. I am, rather, looking for your evidence of thinking through the meaning of the **process**: what worked, what didn't, why, and what that might mean for you as a historian.
+I am **not** looking for 'correct' completion, or that you powered through x amount of them. I am, rather, looking for your evidence of thinking through the meaning of the **process**: what worked, what didn't, why, and what that might mean for you as a historian. I am looking for you to tie your process explicitly to the readings. I am looking to see if the conversations you have with me or your peers (or indeed elsewhere on the web or in other courses) are causing you to reflect on the what/why/how/ of what you do.
 
 ### Evidence
 
