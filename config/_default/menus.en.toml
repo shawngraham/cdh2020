@@ -15,3 +15,9 @@
   name = "News"
   url = "blog"
   weight = 3
+
+  [[main]]
+    identifier = "oa"
+    name = "Open Access Participants"
+    url = "oa"
+    weight = 3
