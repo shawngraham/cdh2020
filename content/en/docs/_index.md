@@ -7,7 +7,9 @@ draft: false
 
 HIST3814o,
 Dr. Shawn Graham
-[on twitter](https://twitter.com/electricarchaeo)
+
+<a href="https://twitter.com/electricarchaeo">on twitter as 'electricarchaeo'</a>
+shawn dot graham at carleton dot ca
 
 Our social space, for conversation, audio/video calls, chat, help, screenshares, and general human contact is at XXXX. You will receive an invitation email.
 
