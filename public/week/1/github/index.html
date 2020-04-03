@@ -1983,7 +1983,115 @@
   
 
   <article class="single__contents" data-dir="ltr">
-    <p>Blah blah</p>
+    <div class="alert alert-info" role="alert" data-dir="ltr">If any of the instructions below are unclear, annotate this page with hypothesis while being logged into our course reading group. If you spot someone asking for help and you can offer advice, respond to the annotation.</div>
+<h3 id="introduction">Introduction</h3>
+<p>Github is a code sharing website often used by digital historians. &lsquo;Git&rsquo; is a program that takes snapshots of the current state of a folder, and stores them in sequence, allowing you to revert your changes to an earlier state. It also allows you to create <strong>branches</strong>, or duplicates of your folder, so you can experiment. If you like the results of your work, you can <strong>merge</strong> that branch back into your original.</p>
+<p><strong>Github therefore is a hub for sharing these git snapshots.</strong></p>
+<p>A branch (a copy, a duplicate) of your work uploaded to Github could therefore be copied to say my account (a <strong>fork</strong>); then I might download to my machine to work on it (I&rsquo;ve <strong>pulled</strong> it). Once I&rsquo;m happy with my changes, I <strong>commit</strong> them (save them to the sequence of changes that Git tracks), and then I could <strong>push</strong> them to the <strong>fork</strong> in my account. I would then send you a <strong>pull</strong> notice, asking you to pull my changes back to your account; you could then decide whether or not to merge.</p>
+<div class="alert alert-info" role="alert" data-dir="ltr">For our purposes, you will use Github mostly as a place to put your reflections or other pieces of work.</div>
+<p>I might sometimes fork your work, pull it down onto my machine, make changes that I commit, push it back online, and ask you to pull the changes back. But that won&rsquo;t happen very often. It takes a while to get comfortable with this.</p>
+<h3 id="get-your-account">Get your account</h3>
+<ol>
+<li>Got to <a href="http://github.com" target="_blank">github.com</a> and sign up for an account. You don&rsquo;t have to use your real name. (Protip: You might want to set up an email just for signing up for things.)</li>
+</ol>
+<p><p class="md__image">
+  <img src="/images/github/github-signup1.png" alt="github login screen"  />
+</p></p>
+<hr />
+<ol start="2">
+<li>Verify your account.</li>
+</ol>
+<p><p class="md__image">
+  <img src="/images/github/github-signup2.png" alt="github account verification"  />
+</p></p>
+<hr />
+<ol start="3">
+<li>Select the free tier (nb: I will never require you to pay for any reading, or any software. If something wants you to pay, <strong>stop</strong> and ask for help).</li>
+</ol>
+<p><p class="md__image">
+  <img src="/images/github/github-signup3.png" alt="github tier selection"  />
+</p></p>
+<hr />
+<ol start="4">
+<li>Skip telling Github anything about yourself.</li>
+</ol>
+<p><p class="md__image">
+  <img src="/images/github/github-signup4.png" alt="github survey"  />
+</p></p>
+<hr />
+<ol start="5">
+<li>Do the verification email thing. Once you hit the verification link in your email, you&rsquo;ll be brought back to Github to make a new repository:</li>
+</ol>
+<p><p class="md__image">
+  <img src="/images/github/github-new-repo.png" alt="new repo"  />
+</p></p>
+<hr />
+<ol start="6">
+<li>Give it a reasonable name; tick the &lsquo;initialize with a readme&rsquo; box, and hit the green commit button:</li>
+</ol>
+<p><p class="md__image">
+  <img src="/images/github/github-new-repo-settings.png" alt="new repo settings"  />
+</p></p>
+<hr />
+<ol start="7">
+<li>And on the final page, hit the &lsquo;dismiss&rsquo; button in the &lsquo;Github Actions box&rsquo;</li>
+</ol>
+<p><p class="md__image">
+  <img src="/images/github/github-dismiss-actions.png" alt="dismiss actions"  />
+</p></p>
+<p>Ta Da! You now have a github account, and you&rsquo;ve created your first repository. <strong>Going Forward</strong> create a new repository for each week&rsquo;s work/reflection. You can create a new repository from the plus sign in the top right corner:</p>
+<p><p class="md__image">
+  <img src="/images/github/new-repo.png" alt="another new repo"  />
+</p></p>
+<p><strong>nb</strong> Remember to tick off the &lsquo;initialize with a readme.md&rsquo; file.</p>
+<hr />
+<p>Once you&rsquo;ve done that, you&rsquo;ll be at your Github user page:</p>
+<p><p class="md__image">
+  <img src="/images/github/github-signup5.png" alt="github user page"  />
+</p></p>
+<hr />
+<h3 id="setting-up-a-repository-for-your-work">Setting up a &lsquo;repository&rsquo; for your work</h3>
+<p>A &lsquo;repository&rsquo; is just a folder that you&rsquo;ve shared on Github. There are two ways to do this; the easy way and the more complex way. Luck you, you have <em>already</em> done the easy way - you selected the initialize with a readme, and it&rsquo;s already present in your browser.</p>
+<p>But if you didn&rsquo;t tick that box off, you&rsquo;ve embarked on the more complex way. In the screenshot below, I created a new repository but did not initialize it.</p>
+<p><p class="md__image">
+  <img src="/images/github/github-complex.png" alt="non-initialized git"  />
+</p></p>
+<p>If this is you, do not despair.</p>
+<ol>
+<li>If you have a PC, <a href="https://git-scm.com/download/win" target="_blank">click on this link to download and install git</a>.</li>
+<li>make a new directory on your computer <strong>with the same name as the repo you created above</strong>. In my example, that would be <code>week-two</code>.</li>
+<li>On a PC, right-click on the folder and select &lsquo;open a command prompt here&rsquo;. On a Mac, go to System Preferences, select Keyboard &gt; Shortcuts &gt; Services. Look for &lsquo;New Terminal at Folder&rsquo; and tick the box. Open your finder; find the folder you created, right-click and select &lsquo;open Terminal here&rsquo;.</li>
+<li>Do you see where, in your browser at github, it says &lsquo;&hellip;or create a new repository on the command line&rsquo;? Type in each line exactly as it is there, in order.</li>
+</ol>
+<p>Ta da! You can now go to <code>github.com\&lt;your-user-name&gt;\your-repo</code> and you&rsquo;ll see it all there tickety boo.</p>
+<h3 id="making-a-new-text-file-on-github">Making a new text file on Github</h3>
+<p>You can make a new text file by clicking on the &lsquo;create new file&rsquo; button; <strong>remember to always use .md as the file extension</strong>. You can specify headers, links, images, bullets, blockquotes and so on by using <a href="https://guides.github.com/features/mastering-markdown/." target="_blank">markdown conventions</a></p>
+<p>The two videos below might be a bit clearer on youtube itself.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/2SeeKYWXbrE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="uploading-a-file-into-github">Uploading a file into Github</h3>
+<p>You can add new files from your computer by dragging and dropping them into the main repository. At the end of this video, I show you how to display the image in the text of the reflection.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/muKAh_j3Ogs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="going-further">Going further</h3>
+<p>Github can also be used to run an entire website, generated from your text files. In fact, that&rsquo;s how I built this course website! The following three links are from my HIST4806a 2020 seminar on digital history and museums; they will walk you through how to use your Github account to serve up a professional scholarly website; you can use this scholarly website to host your reflections and course work, if you want.</p>
+<ol>
+<li>
+<p><a href="https://shawngraham.github.io/dhmuse/building-your-online-presence/" target="_blank">Building Your Own Scholarly Website</a></p>
+</li>
+<li>
+<p><a href="https://shawngraham.github.io/dhmuse/customizing-your-site/" target="_blank">Customizing Your Scholarly Website</a></p>
+</li>
+<li>
+<p><a href="https://shawngraham.github.io/dhmuse/updating-your-devlogs/" target="_blank">Updating Your Scholarly Website</a></p>
+</li>
+</ol>
 
   </article>
 </div>
@@ -2020,7 +2128,20 @@
         <div class="toc">
   <h6 class="toc__label">What&#39;s on this Page</h6>
   <div class="toc__body">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#get-your-account">Get your account</a></li>
+        <li><a href="#setting-up-a-repository-for-your-work">Setting up a &lsquo;repository&rsquo; for your work</a></li>
+        <li><a href="#making-a-new-text-file-on-github">Making a new text file on Github</a></li>
+        <li><a href="#uploading-a-file-into-github">Uploading a file into Github</a></li>
+        <li><a href="#going-further">Going further</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
   </div>
 </div>
       
