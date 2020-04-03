@@ -11,6 +11,8 @@ There is no midterm. There is no final exam.
 ### Weekly Exercises
 Each week, there are set exercises for you to attempt.
 
+Weekly work should be completed by the end of the relevant week.
+
 I am **not** looking for 'correct' completion, or that you powered through x amount of them. I am, rather, looking for your evidence of thinking through the meaning of the **process**: what worked, what didn't, why, and what that might mean for you as a historian. I am looking for you to tie your process explicitly to the readings. I am looking to see if the conversations you have with me or your peers (or indeed elsewhere on the web or in other courses) are causing you to reflect on the what/why/how/ of what you do.
 
 ### Evidence
@@ -39,9 +41,11 @@ You will produce an '[exit ticket](week/2020-end)' for me at the end of the cour
 
  If I agree with your assessment, then that is the grade you will receive. **When I have disagreed in previous courses** this has been, 9.5 times out of 10, to _raise_ the grade: y'all are too hard on yourselves. If I have disagreed and felt that you've overstated things - if you were the 0.5 out of 10 - we would talk and come to an agreement.
 
+ The Exit Ticket should be submitted by the last day of the early summer term. If you should require more time, you need merely to let me know; no questions asked.
+
 ### Grading
 
-Mapped against the [learning outcomes](2-docs/learning-outcomes),
+Remembering the [learning outcomes](2-docs/learning-outcomes),
 
 |Learning Outcome|A|B|C|D|eg. Joe Q Student|
 |----------------|-|-|-|-|-|
@@ -56,3 +60,12 @@ Mapped against the [learning outcomes](2-docs/learning-outcomes),
 {{< alert theme="info" >}}
 In this example, based on my consideration of Joe Q Student's evidence and the feedback I'd written him over the six weeks, it seemed to me that he did what he needed to do (satisfactorily) for 3 out of the 5 outcomes and so earned a C. However, his exit ticket might bring him up.
 {{< /alert >}}
+
+### Percentage Breakdown
+
+I am required by the University to provide a percentage breakdown.
+
+Weekly work = 80%
+Final Exit ticket = 20%
+
+I reserve the right to adjust those percentages to take into account the particular circumstances of the student.

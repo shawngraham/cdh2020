@@ -27,9 +27,9 @@ These readings have two aims. One, to ground the fact of the digital in the phys
 
 + Kate Crawford and Vladan Joler, 2018. ['Anatomy of an AI System'](https://anatomyof.ai) anatomyof.ai
 
-+ Brian Croxall, Quinn Warnick, 2020. ['Failure'](https://digitalpedagogy.hcommons.org/keyword/Failure) _MLA Digital Pedagogy in the Humanities_ Just read the curatorial statement.
++ Brian Croxall, Quinn Warnick, 2020. ['Failure'](https://digitalpedagogy.hcommons.org/keyword/Failure) _MLA Digital Pedagogy in the Humanities_. Just read the curatorial statement.
 
-+ My entry in the same volume on ['History'](https://digitalpedagogy.hcommons.org/keyword/History/) _MLA Digital Pedagogy in the Humanities_ Just read the curatorial statement.
++ My entry in the same volume on ['History'](https://digitalpedagogy.hcommons.org/keyword/History/) _MLA Digital Pedagogy in the Humanities_. Just read the curatorial statement.
 
 + Sharon Leon, 2016.['Returning Women to the History of Digital History'](http://www.6floors.org/bracket/2016/03/07/returning-women-to-the-history-of-digital-history/) _[bracket]_
 
