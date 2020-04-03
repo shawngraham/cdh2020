@@ -24,7 +24,9 @@ Therefore, I am looking for the following kinds of evidence (each [week](/week) 
 
 At the end of each week, you will provide to me through a form that can be found on each weekly page the links to your evidence for me to consider, by Sunday evening.
 
-I will return feedback to you within two or three days. I will write you a note giving you my perspective on what you've done (using the lens of the learning outcomes), and offering advice.
+I will return feedback to you within two or three days. I will write you a note giving you my perspective on what you've done (using the lens of the learning outcomes), and offering advice. Your weekly work will be assessed as 'satisfactory' or 'unsatisfactory'.
+
+This feedback will also be mapped against the learning outcomes, so that you know how you are progressing throughout the course.
 
 ### The Exit Ticket
 
@@ -52,5 +54,5 @@ Mapped against the [learning outcomes](2-docs/learning-outcomes),
 ...5/5 would be an A, 4/5 would be a B, 3/5 would be a C, 2/5 a D.
 
 {{< alert theme="info" >}}
-In this example, based on my consideration of Joe Q Student's evidence and the feedback I'd written him over the six weeks, it seemed to me that he did what he needed to do for 3 out of the 5 outcomes and so earned a C. However, his exit ticket might bring him up.
+In this example, based on my consideration of Joe Q Student's evidence and the feedback I'd written him over the six weeks, it seemed to me that he did what he needed to do (satisfactorily) for 3 out of the 5 outcomes and so earned a C. However, his exit ticket might bring him up.
 {{< /alert >}}

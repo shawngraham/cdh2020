@@ -3,53 +3,48 @@
   xmlns:xhtml="https://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/week/2020-wk1/</loc>
+    <loc>/week/1/instructions/</loc>
     <lastmod>2020-01-28T00:10:51+09:00</lastmod>
   </url>
   
   <url>
-    <loc>/week/2020-wk2/</loc>
+    <loc>/week/2/instructions/</loc>
     <lastmod>2020-01-28T00:10:48+09:00</lastmod>
   </url>
   
   <url>
-    <loc>/week/2020-wk1/instructions/</loc>
-    <lastmod>2020-01-28T00:10:51+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/week/2020-wk3/</loc>
+    <loc>/week/3/instructions/</loc>
     <lastmod>2020-01-28T00:10:42+09:00</lastmod>
   </url>
   
   <url>
-    <loc>/week/2020-wk1/github/</loc>
-    <lastmod>2020-01-28T00:10:51+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/week/2020-wk4/</loc>
+    <loc>/week/4/instructions/</loc>
     <lastmod>2020-01-28T00:10:37+09:00</lastmod>
   </url>
   
   <url>
-    <loc>/week/2020-wk1/hypothesis/</loc>
-    <lastmod>2020-01-28T00:10:51+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/week/2020-wk1/zotero/</loc>
-    <lastmod>2020-01-28T00:10:51+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/week/2020-wk5/</loc>
+    <loc>/week/5/instructions/</loc>
     <lastmod>2020-01-28T00:10:09+09:00</lastmod>
   </url>
   
   <url>
-    <loc>/week/2020-wk6/</loc>
+    <loc>/week/6/instructions/</loc>
     <lastmod>2020-01-28T00:10:09+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/week/1/github/</loc>
+    <lastmod>2020-01-28T00:10:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/week/1/hypothesis/</loc>
+    <lastmod>2020-01-28T00:10:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/week/1/zotero/</loc>
+    <lastmod>2020-01-28T00:10:51+09:00</lastmod>
   </url>
   
   <url>
@@ -88,7 +83,42 @@
   </url>
   
   <url>
-    <loc>/week/2020-end/</loc>
+    <loc>/week/1/</loc>
+    <lastmod>2020-01-28T00:10:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/week/2/</loc>
+    <lastmod>2020-01-28T00:10:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/week/3/</loc>
+    <lastmod>2020-01-28T00:10:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/week/4/</loc>
+    <lastmod>2020-01-28T00:10:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/week/5/</loc>
+    <lastmod>2020-01-28T00:10:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/week/6/</loc>
+    <lastmod>2020-01-28T00:10:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/week/6-5/</loc>
+    <lastmod>2020-01-28T00:10:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/week/6-5/instructions/</loc>
     <lastmod>2020-01-28T00:10:09+09:00</lastmod>
   </url>
   
