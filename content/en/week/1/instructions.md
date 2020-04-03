@@ -11,7 +11,7 @@ author: "Shawn Graham"
 
 - getting our Github accounts set up and making our first log entries
 - getting Hypothes.is set up
-- getting  Zotero installed.
+- getting Zotero installed.
 - explore our ignorance: what _is_ dighist?
 
 ### Listen
