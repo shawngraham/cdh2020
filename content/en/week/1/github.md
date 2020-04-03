@@ -16,7 +16,7 @@ Github is a code sharing website often used by digital historians. 'Git' is a pr
 
 **Github therefore is a hub for sharing these git snapshots.**
 
-A branch (a copy, a duplicate) of your work uploaded to Github could therefore be copied to say my account (a **fork**); then I might download to my machine to work on it (I've **pulled** it). Once I'm happy with my changes, I **commit** them (save them to the sequence of changes that Git tracks), and then I could **push** them to the **fork** in my account. I would then send you a **pull** notice, asking you to pull my changes back to your account; you could then decide whether or not to merge.
+A branch (a copy, a duplicate) of your work uploaded to Github could therefore be copied to say my account (a **fork**); then I might download to my machine to work on it (I've **pulled** it). Once I'm happy with my changes, I **commit** them (save them to the sequence of changes that Git tracks), and then I could **push** those changes to the **fork** in my account. I would then send you a **pull** notice, asking you to pull my changes back to your account; you could then decide whether or not to **merge**.
 
 {{< alert theme="info" >}}
 For our purposes, you will use Github mostly as a place to put your reflections or other pieces of work.
