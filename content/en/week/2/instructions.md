@@ -18,3 +18,7 @@ weight: -3
 {{< /notice >}}
 
 ### Reflect
+
+### Submit work 
+
+https://diaryindex.com/digitized-diaries/

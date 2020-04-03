@@ -55,4 +55,6 @@ Using Github, make your first reflection. Detail any issues you had with getting
 
 Drawing on your annotations of what you've read (and/or your notes from what you've listened to), discuss your idea of what 'digital history' might be _prior_ to starting this course, and think through whether any of the materials we've seen this week confirm or upset those notions. What kinds of 'digital silences' did you encounter? What has excited you? Finally, where do you want to go, with digital history?
 
-https://diaryindex.com/digitized-diaries/
+### Submit Work
+
+You can submit your work on [this form](https://docs.google.com/forms/d/e/1FAIpQLSc3iURU-J6usI6994Hm9MkBsIViOEbnoIyqtxhmhXbFW8raAw/viewform?usp=sf_link)

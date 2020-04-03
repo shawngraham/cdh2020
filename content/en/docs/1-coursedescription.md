@@ -8,6 +8,8 @@ weight: 1
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-sAuoRQgBh0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+### HIST3814O|DIGH3814O Summer 2020 Department of History, Carleton University
+
 This is a methods course about learning to use the huge variety of digitized historical resources available in the world, including some perhaps unconventional sources such as social media. You will learn some of the habits of doing born-digital work, including the doing of digital history as an outward facing public history.
 
 {{< alert theme="info" >}}
