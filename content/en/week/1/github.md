@@ -82,18 +82,24 @@ Once you've done that, you'll be at your Github user page:
 
 ### Setting up a 'repository' for your work
 
-A 'repository' is just a folder that you've shared on Github. There are two ways to do this; the easy way and the more complex way. Luck you, you have _already_ done the easy way - you selected the initialize with a readme, and it's already present in your browser.
+A 'repository' is just a folder that you've shared on Github. There are two ways to do this; the easy way and the more complex way. Luck you, you have _already_ done the easy way - you selected the `initialize with a readme`, and it's already present in your browser!
 
-But if you didn't tick that box off, you've embarked on the more complex way. In the screenshot below, I created a new repository but did not initialize it.
+{{< alert theme="info" >}}
+To create new repositories, just click on the `+` button on the top right of your Github page when you're logged in. You might want to go ahead now and create repositories for week 2 through to week 6. Remember to tick off the `initialize with a readme` box.
+{{< /alert >}}
+
+But if you didn't tick the initialize box, you've embarked on the more complex way. In the screenshot below, I created a new repository but I forgot to initialize it, and now I'm looking at this page:
 
 ![non-initialized git](/images/github/github-complex.png)
 
 If this is you, do not despair.
 
+#### When you've forgotten to initialize a new repo:
+
 1. If you have a PC, [click on this link to download and install git](https://git-scm.com/download/win).
-2. make a new directory on your computer **with the same name as the repo you created above**. In my example, that would be `week-two`.
+2. Make a new directory on your computer **with the same name as the repo you created above**. In my example, that would be `week-two`.
 3. On a PC, right-click on the folder and select 'open a command prompt here'. On a Mac, go to System Preferences, select Keyboard > Shortcuts > Services. Look for 'New Terminal at Folder' and tick the box. Open your finder; find the folder you created, right-click and select 'open Terminal here'.
-4. Do you see where, in your browser at github, it says '...or create a new repository on the command line'? Type in each line exactly as it is there, in order.
+4. Do you see where, in your browser at github, it says `...or create a new repository on the command line`? Type in each line exactly as it is there (beginning with `echo`), hitting enter at the end of each line, in order. **If the command works, you'll just be presented with the next prompt.** The computer only ever responds when there is output to print - which often means only when there is an error message to report.
 
 Ta da! You can now go to `github.com\<your-user-name>\your-repo` and you'll see it all there tickety boo.
 
@@ -113,7 +119,7 @@ You can add new files from your computer by dragging and dropping them into the 
 
 ### Going further
 
-Github can also be used to run an entire website, generated from your text files. In fact, that's how I built this course website! The following three links are from my HIST4806a 2020 seminar on digital history and museums; they will walk you through how to use your Github account to serve up a professional scholarly website; you can use this scholarly website to host your reflections and course work, if you want.
+Github can also be used to run an entire website, generated from your text files. In fact, that's how I built this course website! The following three links are from my HIST4806a 2020 seminar on digital history and museums; they will walk you through how to use your Github account to serve up a professional scholarly website; you can use this scholarly website to host your reflections and course work, if you want. Follow these three pages in order:
 
 1. [Building Your Own Scholarly Website](https://shawngraham.github.io/dhmuse/building-your-online-presence/)
 

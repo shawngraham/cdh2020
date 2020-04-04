@@ -57,6 +57,15 @@ Then join our HIST3814o reading group. If you happen to be reading something, an
         <description>Zotero is a piece of software for managing your research. When it is installed, it can extract metadata from websites or pdfs (when these have metadata) and store the information in your very own library. Zotero can be connected to Word or Google Docs so that when it is time to insert a reference, you can select the reference from your library - and then get the machine to automatically format/update your bibliography against whatever citation style you use.</description>
       </item>
       
+      <item>
+        <title>Getting started with Discord</title>
+        <link>https://craftingdh.netlify.com/week/1/discord/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/1/discord/</guid>
+        <description>What is Discord? </description>
+      </item>
+      
     
   </channel>
 </rss>
