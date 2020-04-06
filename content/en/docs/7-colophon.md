@@ -41,3 +41,11 @@ Some of the work we do requires working with the command line or the terminal of
 All of this is now under the ['weekly work'](https://craftingdh.netlify.com/week/) part of this site. Take your time, annotate the parts that are confusing or troublesome with [hypothes.is](https://hypothes.is) and you'll do well.
 
 ![how to open hypothesis](/images/open-hypothesis.png)
+
+### One last thing  
+
+I asked Twitter for its thoughts, as you do:
+
+{{< twitter_simple 1244018171234979840 >}}
+
+...follow the thread!

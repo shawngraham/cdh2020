@@ -3,7 +3,7 @@ title: "Instructions: May 4"
 description: "An overview of DigHist"
 date: 2020-01-28T00:10:51+09:00
 draft: false
-weight: -3
+weight: -5
 author: "Shawn Graham"
 ---
 
@@ -11,7 +11,8 @@ author: "Shawn Graham"
 
 - getting our Github accounts set up and making our first log entries
 - getting Hypothes.is set up
-- getting Zotero installed.
+- getting Zotero installed
++ learn how to describe what's gone wrong, and to figure out how to fix it
 - explore our ignorance: what _is_ dighist?
 
 ### Listen

@@ -25,6 +25,42 @@
         <description>Goals for this week Listen Read Do With tech work, if it doesn&amp;rsquo;t come together in about 30 minutes, it won&amp;rsquo;t come in an hour. So take a break. Close the laptop. Call somebody up for help. Find another pair of eyes to look at the problem. I don&amp;rsquo;t want to hear that you labored heroically for 2 hours to do something. Jump into our social space and ask for advice.</description>
       </item>
       
+      <item>
+        <title>Voyant</title>
+        <link>https://craftingdh.netlify.com/week/4/voyant/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:37 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/4/voyant/</guid>
+        <description>voyant</description>
+      </item>
+      
+      <item>
+        <title>AntConc</title>
+        <link>https://craftingdh.netlify.com/week/4/antconc/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:37 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/4/antconc/</guid>
+        <description>antconc</description>
+      </item>
+      
+      <item>
+        <title>Topic Models</title>
+        <link>https://craftingdh.netlify.com/week/4/topic-models/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:37 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/4/topic-models/</guid>
+        <description>use the new stuff? throw some tf-idf in here</description>
+      </item>
+      
+      <item>
+        <title>This Week&#39;s Bonus</title>
+        <link>https://craftingdh.netlify.com/week/4/bonus/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:37 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/4/bonus/</guid>
+        <description>Publish data with datasette to heroku</description>
+      </item>
+      
     
   </channel>
 </rss>

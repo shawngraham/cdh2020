@@ -25,6 +25,51 @@
         <description>Goals for this week Listen Read Do With tech work, if it doesn&amp;rsquo;t come together in about 30 minutes, it won&amp;rsquo;t come in an hour. So take a break. Close the laptop. Call somebody up for help. Find another pair of eyes to look at the problem. I don&amp;rsquo;t want to hear that you labored heroically for 2 hours to do something. Jump into our social space and ask for advice.</description>
       </item>
       
+      <item>
+        <title>Sound</title>
+        <link>https://craftingdh.netlify.com/week/5/sound/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:09 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/5/sound/</guid>
+        <description> audacity sonification  </description>
+      </item>
+      
+      <item>
+        <title>Mapping</title>
+        <link>https://craftingdh.netlify.com/week/5/mapping/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:09 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/5/mapping/</guid>
+        <description> storymap leaflet webmapping != GIS, pointers to QGIS  </description>
+      </item>
+      
+      <item>
+        <title>Infographics</title>
+        <link>https://craftingdh.netlify.com/week/5/infographics/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:09 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/5/infographics/</guid>
+        <description>academic posters infographics  colour theory, layout, stuff from macroscope re scott chapter</description>
+      </item>
+      
+      <item>
+        <title>Static Websites</title>
+        <link>https://craftingdh.netlify.com/week/5/static-websites/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:09 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/5/static-websites/</guid>
+        <description> static website with gh-pages static website with jekyll-now static website with expose link back to academic-kickstarter thing  </description>
+      </item>
+      
+      <item>
+        <title>This Week&#39;s Bonus</title>
+        <link>https://craftingdh.netlify.com/week/5/bonus/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:09 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/5/bonus/</guid>
+        <description> exhibit with Wax Omeka - reclaimhosting, links to tutorials Neatline - links to tutorials  </description>
+      </item>
+      
     
   </channel>
 </rss>

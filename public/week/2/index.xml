@@ -22,7 +22,56 @@
         <pubDate>Tue, 28 Jan 2020 00:10:48 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/2/instructions/</guid>
-        <description>Goals for this week Listen Read Do With tech work, if it doesn&amp;rsquo;t come together in about 30 minutes, it won&amp;rsquo;t come in an hour. So take a break. Close the laptop. Call somebody up for help. Find another pair of eyes to look at the problem. I don&amp;rsquo;t want to hear that you labored heroically for 2 hours to do something. Jump into our social space and ask for advice.</description>
+        <description>Goals for this week  how to describe what&amp;rsquo;s gone wrong, and to figure out how to fix it  Listen Read Do Try to work through as many of these exercises as you can. Don&amp;rsquo;t worry too much if you get stuck: the point is to push yourself beyond your current level of ability.
+ Download and install the Sublime Text Editor Install Conda Download web materials with wget Use OCR (Object Character Recognition) to turn images of text into text Learn how to transform a text file using Regular Expressions  Bonus:</description>
+      </item>
+      
+      <item>
+        <title>Setting up Anaconda</title>
+        <link>https://craftingdh.netlify.com/week/2/installing-anaconda/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/2/installing-anaconda/</guid>
+        <description>Anaconda!</description>
+      </item>
+      
+      <item>
+        <title>Wget</title>
+        <link>https://craftingdh.netlify.com/week/2/wget/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/2/wget/</guid>
+        <description>Downloading web materials with wget
+Wget - can include jpgs</description>
+      </item>
+      
+      <item>
+        <title>APIs</title>
+        <link>https://craftingdh.netlify.com/week/2/apis/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/2/apis/</guid>
+        <description>use notebook?
+Using APIs to search and download</description>
+      </item>
+      
+      <item>
+        <title>OCR</title>
+        <link>https://craftingdh.netlify.com/week/2/ocr/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/2/ocr/</guid>
+        <description>OCR with Tesseract and R</description>
+      </item>
+      
+      <item>
+        <title>This week&#39;s bonus</title>
+        <link>https://craftingdh.netlify.com/week/2/bonus/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/2/bonus/</guid>
+        <description>Historian&amp;rsquo;s don&amp;rsquo;t deal with video very well. That is to say, we don&amp;rsquo;t have many tools for dealing with video as video, as a moving image, and analyzing with an eye towards the specific affordances of the medium (but see Arnold and Tilton&amp;rsquo;s &amp;lsquo;Distant Viewing&amp;rsquo; project, and their position paper.)
+But we&amp;rsquo;re good with text. In this bonus exercise, you&amp;rsquo;ll download a video from youtube of Dr. Martin Luther King&amp;rsquo;s &amp;lsquo;I have a dream&amp;rsquo; speech (wikipedia), and use Google&amp;rsquo;s speech-to-text engine to generate a time-stamped transcript of the speech.</description>
       </item>
       
     

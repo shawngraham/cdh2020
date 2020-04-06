@@ -3,11 +3,6 @@
   xmlns:xhtml="https://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://craftingdh.netlify.com/week/1/instructions/</loc>
-    <lastmod>2020-01-28T00:10:51+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://craftingdh.netlify.com/week/2/instructions/</loc>
     <lastmod>2020-01-28T00:10:48+09:00</lastmod>
   </url>
@@ -28,12 +23,82 @@
   </url>
   
   <url>
+    <loc>https://craftingdh.netlify.com/week/5/sound/</loc>
+    <lastmod>2020-01-28T00:10:09+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://craftingdh.netlify.com/week/2/installing-anaconda/</loc>
+    <lastmod>2020-01-28T00:10:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://craftingdh.netlify.com/week/3/regex/</loc>
+    <lastmod>2020-01-28T00:10:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://craftingdh.netlify.com/week/4/voyant/</loc>
+    <lastmod>2020-01-28T00:10:37+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://craftingdh.netlify.com/week/5/mapping/</loc>
+    <lastmod>2020-01-28T00:10:09+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://craftingdh.netlify.com/week/1/instructions/</loc>
+    <lastmod>2020-01-28T00:10:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://craftingdh.netlify.com/week/2/wget/</loc>
+    <lastmod>2020-01-28T00:10:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://craftingdh.netlify.com/week/3/open-refine/</loc>
+    <lastmod>2020-01-28T00:10:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://craftingdh.netlify.com/week/4/antconc/</loc>
+    <lastmod>2020-01-28T00:10:37+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://craftingdh.netlify.com/week/6/instructions/</loc>
     <lastmod>2020-01-28T00:10:09+09:00</lastmod>
   </url>
   
   <url>
+    <loc>https://craftingdh.netlify.com/week/2/apis/</loc>
+    <lastmod>2020-01-28T00:10:51+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://craftingdh.netlify.com/week/1/github/</loc>
+    <lastmod>2020-01-28T00:10:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://craftingdh.netlify.com/week/3/networks/</loc>
+    <lastmod>2020-01-28T00:10:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://craftingdh.netlify.com/week/4/topic-models/</loc>
+    <lastmod>2020-01-28T00:10:37+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://craftingdh.netlify.com/week/5/infographics/</loc>
+    <lastmod>2020-01-28T00:10:09+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://craftingdh.netlify.com/week/2/ocr/</loc>
     <lastmod>2020-01-28T00:10:51+09:00</lastmod>
   </url>
   
@@ -45,6 +110,21 @@
   <url>
     <loc>https://craftingdh.netlify.com/week/1/zotero/</loc>
     <lastmod>2020-01-28T00:10:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://craftingdh.netlify.com/week/3/bonus/</loc>
+    <lastmod>2020-01-28T00:10:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://craftingdh.netlify.com/week/4/bonus/</loc>
+    <lastmod>2020-01-28T00:10:37+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://craftingdh.netlify.com/week/5/static-websites/</loc>
+    <lastmod>2020-01-28T00:10:09+09:00</lastmod>
   </url>
   
   <url>
@@ -88,6 +168,11 @@
   </url>
   
   <url>
+    <loc>https://craftingdh.netlify.com/week/2/bonus/</loc>
+    <lastmod>2020-01-28T00:10:51+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://craftingdh.netlify.com/week/1/</loc>
     <lastmod>2020-01-28T00:10:51+09:00</lastmod>
   </url>
@@ -124,6 +209,11 @@
   
   <url>
     <loc>https://craftingdh.netlify.com/week/6-5/instructions/</loc>
+    <lastmod>2020-01-28T00:10:09+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://craftingdh.netlify.com/week/5/bonus/</loc>
     <lastmod>2020-01-28T00:10:09+09:00</lastmod>
   </url>
   

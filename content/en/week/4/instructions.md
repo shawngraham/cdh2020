@@ -3,7 +3,7 @@ title: "Instructions: May 25"
 description: "Of Macroscopes and Microscopes"
 date: 2020-01-28T00:10:37+09:00
 draft: false
-weight: -3
+weight: -5
 ---
 
 ### Goals for this week
@@ -14,7 +14,7 @@ weight: -3
 
 ### Do
 
-{{< notice success "Important" >}} With tech work, if it doesn't come together in about 30 minutes, it won't come in an hour. So take a break. Close the laptop. Call somebody up for help. Find another pair of eyes to look at the problem. I don't want to hear that you labored heroically for 2 hours to do something. Jump into our social space and ask for advice.
+{{< notice success "Important" >}} With tech work, if it doesn't come together in about 30 minutes, it won't come in an hour. So take a break. Close the laptop. Call somebody up for help. Find another pair of eyes to look at the problem. I don't want to hear that you labored heroically for 2 hours to do something. Jump into our social space and ask for advice. Remember: it's not **how many** you do, it's **that you pushed yourself** that matters.
 {{< /notice >}}
 
 ### Reflect

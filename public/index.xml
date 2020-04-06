@@ -17,22 +17,13 @@
     
       
       <item>
-        <title>Instructions: May 4</title>
-        <link>https://craftingdh.netlify.com/week/1/instructions/</link>
-        <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
-        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>https://craftingdh.netlify.com/week/1/instructions/</guid>
-        <description>Goals for this week  getting our Github accounts set up and making our first log entries getting Hypothes.is set up getting Zotero installed. explore our ignorance: what is dighist?  Listen  intro podcast  Read These readings have two aims. One, to ground the fact of the digital in the physicality of the world; Two, to give you a sense of the potentials. Most are fairly short.
-  Lorna Richardson, 2020 &amp;lsquo;Digital tech &amp;amp; the environment&amp;rsquo; #DHGoesVIRAL.</description>
-      </item>
-      
-      <item>
         <title>Instructions: May 11</title>
         <link>https://craftingdh.netlify.com/week/2/instructions/</link>
         <pubDate>Tue, 28 Jan 2020 00:10:48 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/2/instructions/</guid>
-        <description>Goals for this week Listen Read Do With tech work, if it doesn&amp;rsquo;t come together in about 30 minutes, it won&amp;rsquo;t come in an hour. So take a break. Close the laptop. Call somebody up for help. Find another pair of eyes to look at the problem. I don&amp;rsquo;t want to hear that you labored heroically for 2 hours to do something. Jump into our social space and ask for advice.</description>
+        <description>Goals for this week  how to describe what&amp;rsquo;s gone wrong, and to figure out how to fix it  Listen Read Do Try to work through as many of these exercises as you can. Don&amp;rsquo;t worry too much if you get stuck: the point is to push yourself beyond your current level of ability.
+ Download and install the Sublime Text Editor Install Conda Download web materials with wget Use OCR (Object Character Recognition) to turn images of text into text Learn how to transform a text file using Regular Expressions  Bonus:</description>
       </item>
       
       <item>
@@ -63,6 +54,89 @@
       </item>
       
       <item>
+        <title>Sound</title>
+        <link>https://craftingdh.netlify.com/week/5/sound/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:09 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/5/sound/</guid>
+        <description> audacity sonification  </description>
+      </item>
+      
+      <item>
+        <title>Setting up Anaconda</title>
+        <link>https://craftingdh.netlify.com/week/2/installing-anaconda/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/2/installing-anaconda/</guid>
+        <description>Anaconda!</description>
+      </item>
+      
+      <item>
+        <title>REGEX</title>
+        <link>https://craftingdh.netlify.com/week/3/regex/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:48 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/3/regex/</guid>
+        <description>Regex!</description>
+      </item>
+      
+      <item>
+        <title>Voyant</title>
+        <link>https://craftingdh.netlify.com/week/4/voyant/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:37 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/4/voyant/</guid>
+        <description>voyant</description>
+      </item>
+      
+      <item>
+        <title>Mapping</title>
+        <link>https://craftingdh.netlify.com/week/5/mapping/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:09 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/5/mapping/</guid>
+        <description> storymap leaflet webmapping != GIS, pointers to QGIS  </description>
+      </item>
+      
+      <item>
+        <title>Instructions: May 4</title>
+        <link>https://craftingdh.netlify.com/week/1/instructions/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/1/instructions/</guid>
+        <description>Goals for this week  getting our Github accounts set up and making our first log entries getting Hypothes.is set up getting Zotero installed. explore our ignorance: what is dighist?  Listen  intro podcast  Read These readings have two aims. One, to ground the fact of the digital in the physicality of the world; Two, to give you a sense of the potentials. Most are fairly short.
+  Lorna Richardson, 2020 &amp;lsquo;Digital tech &amp;amp; the environment&amp;rsquo; #DHGoesVIRAL.</description>
+      </item>
+      
+      <item>
+        <title>Wget</title>
+        <link>https://craftingdh.netlify.com/week/2/wget/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/2/wget/</guid>
+        <description>Downloading web materials with wget
+Wget - can include jpgs</description>
+      </item>
+      
+      <item>
+        <title>Open Refine</title>
+        <link>https://craftingdh.netlify.com/week/3/open-refine/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:48 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/3/open-refine/</guid>
+        <description>Open refine</description>
+      </item>
+      
+      <item>
+        <title>AntConc</title>
+        <link>https://craftingdh.netlify.com/week/4/antconc/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:37 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/4/antconc/</guid>
+        <description>antconc</description>
+      </item>
+      
+      <item>
         <title>Instructions: June 8</title>
         <link>https://craftingdh.netlify.com/week/6/instructions/</link>
         <pubDate>Tue, 28 Jan 2020 00:10:09 +0900</pubDate>
@@ -72,12 +146,58 @@
       </item>
       
       <item>
+        <title>APIs</title>
+        <link>https://craftingdh.netlify.com/week/2/apis/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/2/apis/</guid>
+        <description>use notebook?
+Using APIs to search and download</description>
+      </item>
+      
+      <item>
         <title>Setting up your Github</title>
         <link>https://craftingdh.netlify.com/week/1/github/</link>
         <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/1/github/</guid>
         <description>If any of the instructions below are unclear, annotate this page with hypothesis while being logged into our course reading group. If you spot someone asking for help and you can offer advice, respond to the annotation. Introduction Github is a code sharing website often used by digital historians. &amp;lsquo;Git&amp;rsquo; is a program that takes snapshots of the current state of a folder, and stores them in sequence, allowing you to revert your changes to an earlier state.</description>
+      </item>
+      
+      <item>
+        <title>Networks</title>
+        <link>https://craftingdh.netlify.com/week/3/networks/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:48 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/3/networks/</guid>
+        <description>Network stuff</description>
+      </item>
+      
+      <item>
+        <title>Topic Models</title>
+        <link>https://craftingdh.netlify.com/week/4/topic-models/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:37 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/4/topic-models/</guid>
+        <description>use the new stuff? throw some tf-idf in here</description>
+      </item>
+      
+      <item>
+        <title>Infographics</title>
+        <link>https://craftingdh.netlify.com/week/5/infographics/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:09 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/5/infographics/</guid>
+        <description>academic posters infographics  colour theory, layout, stuff from macroscope re scott chapter</description>
+      </item>
+      
+      <item>
+        <title>OCR</title>
+        <link>https://craftingdh.netlify.com/week/2/ocr/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/2/ocr/</guid>
+        <description>OCR with Tesseract and R</description>
       </item>
       
       <item>
@@ -100,6 +220,33 @@ Then join our HIST3814o reading group. If you happen to be reading something, an
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/1/zotero/</guid>
         <description>Zotero is a piece of software for managing your research. When it is installed, it can extract metadata from websites or pdfs (when these have metadata) and store the information in your very own library. Zotero can be connected to Word or Google Docs so that when it is time to insert a reference, you can select the reference from your library - and then get the machine to automatically format/update your bibliography against whatever citation style you use.</description>
+      </item>
+      
+      <item>
+        <title>This week&#39;s bonus</title>
+        <link>https://craftingdh.netlify.com/week/3/bonus/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:48 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/3/bonus/</guid>
+        <description>This week&amp;rsquo;s bonus, gazetteers for keywords thing?</description>
+      </item>
+      
+      <item>
+        <title>This Week&#39;s Bonus</title>
+        <link>https://craftingdh.netlify.com/week/4/bonus/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:37 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/4/bonus/</guid>
+        <description>Publish data with datasette to heroku</description>
+      </item>
+      
+      <item>
+        <title>Static Websites</title>
+        <link>https://craftingdh.netlify.com/week/5/static-websites/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:09 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/5/static-websites/</guid>
+        <description> static website with gh-pages static website with jekyll-now static website with expose link back to academic-kickstarter thing  </description>
       </item>
       
       <item>
@@ -181,7 +328,19 @@ If we ever get out of quarantine, and you&amp;rsquo;re in Ottawa, he often haunt
         <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/1/discord/</guid>
-        <description>What is Discord? </description>
+        <description>What is Discord? You can download Discord here or you can use it in a broswer.
+You will receive an invitation email in your Carleton account. It expires after one day, so do join once you get it.
+Once you&amp;rsquo;re in, there&amp;rsquo;s a welcome message with a reaction emoji at the end - click on the thumbs up to confirm that you&amp;rsquo;ve read the message. This will unlock the various channels in the server, including voice and screensharing.</description>
+      </item>
+      
+      <item>
+        <title>This week&#39;s bonus</title>
+        <link>https://craftingdh.netlify.com/week/2/bonus/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/2/bonus/</guid>
+        <description>Historian&amp;rsquo;s don&amp;rsquo;t deal with video very well. That is to say, we don&amp;rsquo;t have many tools for dealing with video as video, as a moving image, and analyzing with an eye towards the specific affordances of the medium (but see Arnold and Tilton&amp;rsquo;s &amp;lsquo;Distant Viewing&amp;rsquo; project, and their position paper.)
+But we&amp;rsquo;re good with text. In this bonus exercise, you&amp;rsquo;ll download a video from youtube of Dr. Martin Luther King&amp;rsquo;s &amp;lsquo;I have a dream&amp;rsquo; speech (wikipedia), and use Google&amp;rsquo;s speech-to-text engine to generate a time-stamped transcript of the speech.</description>
       </item>
       
       <item>
@@ -191,6 +350,15 @@ If we ever get out of quarantine, and you&amp;rsquo;re in Ottawa, he often haunt
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/6-5/instructions/</guid>
         <description>Do Reflect </description>
+      </item>
+      
+      <item>
+        <title>This Week&#39;s Bonus</title>
+        <link>https://craftingdh.netlify.com/week/5/bonus/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:09 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/5/bonus/</guid>
+        <description> exhibit with Wax Omeka - reclaimhosting, links to tutorials Neatline - links to tutorials  </description>
       </item>
       
       <item>

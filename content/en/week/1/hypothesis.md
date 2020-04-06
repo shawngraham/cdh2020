@@ -3,7 +3,7 @@ title: "Setting up your Hypothesis"
 description: "instructions"
 date: 2020-01-28T00:10:51+09:00
 draft: false
-weight: -1
+weight: -3
 author: "Shawn Graham"
 ---
 
