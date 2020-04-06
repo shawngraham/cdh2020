@@ -44,7 +44,7 @@ These readings have two aims. One, to ground the fact of the digital in the phys
 
 ### Do
 
-- Follow the instructions for [Setting Up Github](/week/2020-wk1/github), [Setting up Hypothesis](/week/2020-wk1/hypothesis), and [Setting up Zotero](/week/2020-wk1/zotero).
+- Follow the instructions for [Setting Up Github](/week/1/github), [Setting up Hypothesis](/week/1/hypothesis), [Setting up Zotero](/week/1/zotero), and [asking for help](/week/1/help). You should read the [discord page](/week/1/discord) if you're new to that platform.
 - Log your reflection in your appropriate github repository
 
 {{< notice success "Important" >}} With tech work, if it doesn't come together in about 30 minutes, it won't come in an hour. So take a break. Close the laptop. Call somebody up for help. Find another pair of eyes to look at the problem. I don't want to hear that you labored heroically for 2 hours to do something. Jump into our social space and ask for advice.

@@ -9,6 +9,10 @@ author: "Shawn Graham"
 
 ### Help! Things have gone wrong!
 
+![train-wreck](/images/400px-Train_wreck_at_Montparnasse_1895.jpg)
+
+[_Montparnasse Derailment, 1895_](https://en.wikipedia.org/wiki/Montparnasse_derailment)
+
 Things are going to go wrong. Things are going to break. Instructions will seem vague or incomplete - or worse, I will have indeed forgotten to tell you something crucial.
 
 Or worse, I've made an assumption about your understanding, and left things unsaid that needed to be made explicit. There's a lot of this, in the digital world, in fact.
@@ -23,13 +27,15 @@ But there are a couple of things we can do to make life easier.
 
 ### Asking good questions
 
-StackOverflow [does have good advice on asking good questions](https://stackoverflow.com/help/how-to-ask) and that's key. I will excerpt some of their advice:
+StackOverflow [does have good advice on asking good questions](https://stackoverflow.com/help/how-to-ask). I will excerpt some of their advice:
 
 > Write a title that summarizes the specific problem... If you're having trouble summarizing the problem, write the title last - sometimes writing the rest of the question first can make it easier to describe the problem.
 
 > Introduce the problem before you post any code [or a screenshot or a video clip]...start by expanding on the summary you put in the title. Explain how you encountered the problem you're trying to solve, and any difficulties that have prevented you from solving it yourself.
 
 > Help others reproduce the problem [SG: post the code, post a screenshot, post a video clip walk through]
+
+Please do this.
 
 Every term, I receive dozens of emails with the subject line 'help' and the message body 'i tried it and it doesn't work'. Sometimes, the message will also say 'i worked on it for 3 hrs and it doesn't work'.
 
@@ -39,7 +45,7 @@ We're going to make a git mistake. Right-click on any folder on your computer **
 
 Do that.
 
-What happened? Write a 'help request', and send it to me.
+What happened? Write a 'help request', using the guidelines above, and send it to me.
 
 ### Answering questions
 
