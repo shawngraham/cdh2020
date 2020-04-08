@@ -7,7 +7,7 @@ weight: -5
 ---
 
 ### Goals for this week
-+ learn some of the ways historical information is made available digitally
++ learn some of the ways historical information is made available digitally, paying attention to disparities of labour, and of tech
 
 ### Listen  
 
@@ -26,7 +26,7 @@ This week, we're thinking about some of the ways historical materials find their
 
 ### Do
 
-Try to work through as many of these exercises as you can. Don't worry too much if you get stuck: the point is to push yourself beyond your _current_ level of ability.
+Try to work through as many of these exercises as you can. Don't worry too much if you get stuck: the point is to push yourself beyond your _current_ level of ability. You are not grade on _how many_ of these you do, but rather on how you push your development as a digital historian: and that journey looks different for each of you.
 
 + Download and install the [Sublime Text Editor](https://www.sublimetext.com/)
 + Install Conda
@@ -38,14 +38,17 @@ Bonus:
 + Download videos with youtube-dl
 + Transcribe audio from videos and other sources automatically
 
+- When/if you run into trouble, take screenshots (google how to do that for your particular machine) and these can be uploaded into your repository as well. Indeed, you should also keep track of any files you create as part of your weekly work in your repo: these are evidence!
+
 {{< notice success "Important" >}} With tech work, if it doesn't come together in about 30 minutes, it won't come in an hour. So take a break. Close the laptop. Call somebody up for help. Find another pair of eyes to look at the problem. I don't want to hear that you labored heroically for 2 hours to do something. Jump into our social space and ask for advice. Remember: it's not **how many** you do, it's **that you pushed yourself** that matters.
 {{< /notice >}}
 
-### Reflect
+### Record and Reflect
 
-Who _pays_ for work to end up online? Who does the work? What are some of the ethical dimensions of doing this work? Does Carleton give you any resources for getting those materials onto your own machine in formats you can read? What are some of the barriers to accessing the resources that Carleton _does_ make available to you? Where do you fit into this digital history machine?
+1. As you did for week one, make another notes.md entry and put it in your repo for week 2.
 
+2. In your journal.md for this week, think about, who _pays_ for work to end up online? Who does the work? What are some of the ethical dimensions of doing this work? Does Carleton give you any resources for getting those materials onto your own machine in formats you can read? What are some of the barriers to accessing the resources that Carleton _does_ make available to you? Where do you fit into this digital history machine? Put your journal.md into your github repo for week 2.
 
 ### Submit work
 
-You can submit your work on [this form](https://docs.google.com/forms/d/e/1FAIpQLSc3iURU-J6usI6994Hm9MkBsIViOEbnoIyqtxhmhXbFW8raAw/viewform?usp=sf_link)
+You can submit the link to your work on [this form](https://docs.google.com/forms/d/e/1FAIpQLSc3iURU-J6usI6994Hm9MkBsIViOEbnoIyqtxhmhXbFW8raAw/viewform?usp=sf_link)

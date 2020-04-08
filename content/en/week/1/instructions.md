@@ -47,15 +47,19 @@ These readings have two aims. One, to ground the fact of the digital in the phys
 - Follow the instructions for [Setting Up Github](/week/1/github), [Setting up Hypothesis](/week/1/hypothesis), [Setting up Zotero](/week/1/zotero), and [asking for help](/week/1/help). You should read the [discord page](/week/1/discord) if you're new to that platform.
 - Log your reflection in your appropriate github repository
 
+- When/if you run into trouble, take screenshots (google how to do that for your particular machine) and these can be uploaded into your repository as well. Indeed, you should also keep track of any files you create as part of your weekly work in your repo: these are evidence!
+
 {{< notice success "Important" >}} With tech work, if it doesn't come together in about 30 minutes, it won't come in an hour. So take a break. Close the laptop. Call somebody up for help. Find another pair of eyes to look at the problem. I don't want to hear that you labored heroically for 2 hours to do something. Jump into our social space and ask for advice.
 {{< /notice >}}
 
-### Reflect
+### Record and Reflect
 
-Using Github, make your first reflection. Detail any issues you had with getting started, any parts that caused you difficulty. If you got any error messages while trying to get set up, copy those into your reflection; google them. Do you find any websites that help you? What kind of 'failures' might you have encountered this week?
+1. Being a digital historian means keeping track of what you've done, as a gift to your future self (ie, so that when you come back to something, you can pick up where you left off). Make a new text document, and put into it any new terms you've encountered, commands you used, error messages you encountered, websites that helped, and so on: this document is a scrap book, as it were. Bullet points and memos-to-self are fine. Put this text document into your week one repo on github, along with any other files or digital things you happen to make. Call it your 'notes.md'.
+
+2. In a new text document, jot down some reflections -narrative, or bullet points, both are fine. Call it 'journal.md' This document also goes into your week one repo on github. Detail any issues you had with getting started, any parts that caused you difficulty. If you got any error messages while trying to get set up, copy those into your reflection; google them. Do you find any websites that help you? What kind of 'failures' might you have encountered this week?
 
 Drawing on your annotations of what you've read (and/or your notes from what you've listened to), discuss your idea of what 'digital history' might be _prior_ to starting this course, and think through whether any of the materials we've seen this week confirm or upset those notions. What kinds of 'digital silences' did you encounter? What has excited you? Finally, where do you want to go, with digital history?
 
 ### Submit Work
 
-You can submit your work on [this form](https://docs.google.com/forms/d/e/1FAIpQLSc3iURU-J6usI6994Hm9MkBsIViOEbnoIyqtxhmhXbFW8raAw/viewform?usp=sf_link)
+You can submit the link to your work on [this form](https://docs.google.com/forms/d/e/1FAIpQLSc3iURU-J6usI6994Hm9MkBsIViOEbnoIyqtxhmhXbFW8raAw/viewform?usp=sf_link)

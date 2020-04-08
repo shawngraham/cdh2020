@@ -53,7 +53,7 @@ Download and install [youtube-dl](https://youtube-dl.org/) or install it from th
 Download and install ffmpeg.
 On a mac:
 
-  + get homebrew first (a package manager for downloading and installing things like this) [here](https://brew.sh/)
+  + if you haven't already, get homebrew first (a package manager for downloading and installing things like this) [here](https://brew.sh/)
   + that website gives you a command to run in your terminal to download and install homebrew. Do that.
   + then, when homebrew is installed: `brew install ffmpeg`
 

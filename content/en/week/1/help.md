@@ -41,11 +41,17 @@ Every term, I receive dozens of emails with the subject line 'help' and the mess
 
 None of that is helpful. Telling me that you worked on it for 3 hours just shows me that you ignored my messages about 'if it doesn't come after 30 minutes, take a break, ask for help'. So - let's practice right now.
 
-We're going to make a git mistake. Right-click on any folder on your computer **except the one(s) you created in the github exercise**, and open a command prompt or a terminal there. Imagine I told you to commit your changes, like so: `git commit -m "this is just a test"`.
+We're going to make a git mistake.
+
+Here's the situation:
+
+> Imagine that you were working on your repo, wanting to update it from the command line - but you had to go away for a bit. When you come back, you discover your computer has run out of juice and shut down. Plugging it back in, none of your folders are open. You click on what you think is the right one and start to carry on....  
+
+Right-click on any folder on your computer **except the one(s) you created in the github exercise**, and open a command prompt or a terminal there. Imagine I told you to commit your changes, like so: `git commit -m "this is just a test"`.
 
 Do that.
 
-What happened? Write a 'help request', using the guidelines above, and send it to me.
+What happened? Write a 'help request', using the guidelines above, and post it in the appropriate channel in our Discord, introducing it with an appropriate title (eg, 'Demo Help Request'). Feel free to respond to a request with eg 'Demo Help Response'.
 
 ### Answering questions
 
