@@ -40,7 +40,7 @@
         <pubDate>Tue, 28 Jan 2020 00:10:48 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/3/open-refine/</guid>
-        <description>Open refine</description>
+        <description>When you look at the correspondence.csv you created, you&amp;rsquo;ll see that some names appear multiple times. You may also have noticed that many of the names suffered from errors in the text scan (OCR or Optical Character Recognition errors), rendering some identical names in the original document as similar, but not the same, in the file. For example the recipient &amp;ldquo;Juan de Dios Cafiedo&amp;rdquo; is occasionally listed as &amp;ldquo;Juan de Dios CaAedo&amp;rdquo;.</description>
       </item>
       
       <item>
@@ -49,7 +49,7 @@
         <pubDate>Tue, 28 Jan 2020 00:10:48 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/3/networks/</guid>
-        <description>Network stuff</description>
+        <description>Recall that the index of the collected letters of the Republic of Texas was just a list of letters from so-and-so to so-and-so. We haven&amp;rsquo;t looked at the content of those letters, but the shape of network — the meta data of that correspondence — can be revealing (remember Paul Revere!) When we stitch that together into a network of people connected because they exchanged letters, we end up with a shard of their social network.</description>
       </item>
       
       <item>
@@ -58,7 +58,10 @@
         <pubDate>Tue, 28 Jan 2020 00:10:48 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/3/bonus/</guid>
-        <description>This week&amp;rsquo;s bonus, gazetteers for keywords thing?</description>
+        <description>If you&amp;rsquo;re interested in other network tools or data cleaning tools, drop me a line. Many folks use R and R Studio and its various network analysis packages, which have the edge over Gephi in that we can write the script and share that, rather than long, tortured step-by-step &amp;lsquo;click this&amp;rsquo; and &amp;lsquo;click that&amp;rsquo; type instructions.
+Ah, what the hang, here we go.
+Grab this data:
+List of links (this downloads a CSV file)</description>
       </item>
       
     

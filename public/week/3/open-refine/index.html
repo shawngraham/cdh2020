@@ -2299,7 +2299,42 @@
   
 
   <article class="single__contents" data-dir="ltr">
-    <p>Open refine</p>
+    <p>When you look at the <code>correspondence.csv</code> you created, you&rsquo;ll see that some names appear multiple times. You may also have noticed that many of the names suffered from errors in the text scan (OCR or Optical Character Recognition errors), rendering some identical names in the original document as similar, but not the same, in the file. For example the recipient &ldquo;Juan de Dios Cafiedo&rdquo; is occasionally listed as &ldquo;Juan de Dios CaAedo&rdquo;. Any subsequent analysis will need these errors to be cleared up, and OpenRefine is a tool that will help us fix them.</p>
+<div class="notices success" data-title="Important">
+  If you had trouble with the regex and didn&rsquo;t quite get to a finished correspondence.csv, that&rsquo;s ok. I will share a copy with anyone who needs it to give this exercise a try.
+</div>
+<p>In this exercise, we are going to use the Open Refine tool that originated with Google. Since 2012, it has been open source and freely available online. Using it takes a bit of getting used to, however.</p>
+<h3 id="installation">Installation</h3>
+<p>Start by doing the following:</p>
+<ol>
+<li>Visit the <a href="http://openrefine.org/" target="_blank">Open Refine home page</a> and watch the three videos.</li>
+<li>Download <a href="http://openrefine.org/download.html" target="_blank">Open Refine 3.3</a> to your machine.</li>
+<li>Follow the installation instructions.</li>
+<li>Start Open Refine by double clicking on its icon. This will open a new browser window, pointing to <a href="http://127.0.0.1:3333" target="_blank">http://127.0.0.1:3333</a>. This location is your own computer, so even though it looks like it’s running on the internet, it isn’t. The 3333 is a ‘port’, meaning that Open Refine is running much like a server, serving up a webpage via that port to the browser. (If the browser window doesn&rsquo;t open automatically, open one and put <a href="http://127.0.0.1:3333" target="_blank">http://127.0.0.1:3333</a> in the address bar.)</li>
+</ol>
+<h3 id="cleaning-and-reconciling-names">Cleaning and reconciling names</h3>
+<ol>
+<li>Make sure Open Refine is running in your browser.</li>
+<li>Start a new project by clicking on the ‘Create project’ tab on the left side of the screen.</li>
+<li>Click on ‘Choose files’ and select the Texan correspondence CSV file. Open Refine will load this data and it will give you a preview of your data.</li>
+<li>Name your project in the box on the top right side (eg. &lsquo;texasnames&rsquo; or similar) and then click ‘Create project’. It may take a few minutes.</li>
+<li>Once your project has started, one of the columns that should be visible in your data is &ldquo;Sender&rdquo;. Click on the arrow to the left of &ldquo;Sender&rdquo; in OpenRefine and select Facet -&gt; Text Facet. Do the same with the arrow next to &ldquo;Recipient&rdquo;.</li>
+<li>A box will appear on the left side of the browser showing all 189 names listed as senders in the spreadsheet.  Within the &ldquo;Sender&rdquo; facet box on the left side, click on the button labeled &ldquo;Cluster&rdquo;. This feature presents various automatic ways of merging values that appear to be the same.</li>
+<li>Play with the values in the drop-down boxes and notice how the number of clusters found change depending on which method is used. Because the methods are slightly different, each will present different matches that may or may not be useful.</li>
+<li>If you see two values which look like they should be merged, e.g. <code>Ashbel Smith</code> and <code>. Ashbel Smith</code>, check the box to the right in the &lsquo;Merge&rsquo; column and click the &lsquo;Merge Selected &amp; Re-Cluster&rsquo; button below.</li>
+<li>Go through the various cluster methods one-at-a-time, including changing number values, and merge the values which appear to be the same. <code>Juan de Dios CaAedo</code> clearly should be merged with <code>Juan de Dios Cafiedo</code>, however <code>Correspondent in Tampico</code> probably should not be merged with <code>Correspondent at Vera Cruz</code>. Since we are not experts, we will have to use our best judgement in these cases — or get cracking on some more research to help us make the call. By the end, you should have reduced the number of unique Senders from 189 to around 150.</li>
+<li>Repeat these steps with Recipients, reducing unique Recipients from 192 to about 160.</li>
+<li>To finish the automatic cleaning of the data, click the arrow next to &ldquo;Sender&rdquo; and select &lsquo;Edit Cells -&gt; Common transforms -&gt; Trim leading and trailing whitespace&rsquo;.<br />
+Repeat step 12 for &ldquo;Recipient&rdquo;. The resulting spreadsheet will not be perfect, but it will be much easier to clean by hand than it would have been before taking this step.<br />
+Click on ‘Export’ at the top right of the window to get your data back out as a .csv file.</li>
+</ol>
+<p>Ta da! A file ready for some network analysis.</p>
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/HWZbydm4iCc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+<br />
+<em>Turn on the closed captions; the video is from an earlier iteration of this course, but takes you through those steps.</em></p>
 
   </article>
 </div>
@@ -2336,7 +2371,16 @@
         <div class="toc">
   <h6 class="toc__label">What&#39;s on this Page</h6>
   <div class="toc__body">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#cleaning-and-reconciling-names">Cleaning and reconciling names</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
   </div>
 </div>
       

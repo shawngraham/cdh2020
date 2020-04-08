@@ -2299,7 +2299,222 @@
   
 
   <article class="single__contents" data-dir="ltr">
-    <p>This week&rsquo;s bonus, gazetteers for keywords thing?</p>
+    <p>If you&rsquo;re interested in other network tools or data cleaning tools, drop me a line. Many folks use R and R Studio and its various network analysis packages, which have the edge over Gephi in that we can write the script and share that, rather than long, tortured step-by-step &lsquo;click this&rsquo; and &lsquo;click that&rsquo; type instructions.</p>
+<p>Ah, what the hang, here we go.</p>
+<p>Grab this data:</p>
+<p><a href="http://workbook.craftingdigitalhistory.ca/supporting%20materials/texaslinks.csv" target="_blank">List of links (this downloads a CSV file)</a><br />
+<a href="http://workbook.craftingdigitalhistory.ca/supporting%20materials/texasnodes.csv" target="_blank">List of nodes(this downloads a CSV file)</a></p>
+<p>Fire up R Studio, make a new script, run each line one at a time:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-R" data-lang="R"><span class="c1"># install igraph; this might take a long time</span>
+<span class="c1"># you only run this line the first time you install igraph:</span>
+<span class="nf">install.packages</span><span class="p">(</span><span class="s">&#39;igraph&#39;</span><span class="p">)</span>
+
+<span class="c1"># a lot of stuff gets downloaded and installed.</span>
+
+<span class="c1"># now tell RStudio you want to use the igraph pacakge and its functions:</span>
+<span class="nf">library</span><span class="p">(</span><span class="s">&#39;igraph&#39;</span><span class="p">)</span>
+
+<span class="c1"># now let&#39;s load up the data by putting the csv files into nodes and links.</span>
+<span class="n">nodes</span> <span class="o">&lt;-</span> <span class="nf">read.csv</span><span class="p">(</span><span class="s">&#34;texasnodes.csv&#34;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="bp">T</span><span class="p">,</span> <span class="n">as.is</span><span class="o">=</span><span class="bp">T</span><span class="p">)</span>
+<span class="n">links</span> <span class="o">&lt;-</span> <span class="nf">read.csv</span><span class="p">(</span><span class="s">&#34;texaslinks.csv&#34;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="bp">T</span><span class="p">,</span> <span class="n">as.is</span><span class="o">=</span><span class="bp">T</span><span class="p">)</span>
+
+<span class="c1">#examine data</span>
+<span class="nf">head</span><span class="p">(</span><span class="n">nodes</span><span class="p">)</span>
+<span class="nf">head</span><span class="p">(</span><span class="n">links</span><span class="p">)</span>
+
+<span class="nf">nrow</span><span class="p">(</span><span class="n">nodes</span><span class="p">);</span> <span class="nf">length</span><span class="p">(</span><span class="nf">unique</span><span class="p">(</span><span class="n">nodes</span><span class="o">$</span><span class="n">id</span><span class="p">))</span>
+<span class="c1"># which gives the number of nodes in our data</span>
+
+<span class="nf">nrow</span><span class="p">(</span><span class="n">links</span><span class="p">);</span> <span class="nf">nrow</span><span class="p">(</span><span class="nf">unique</span><span class="p">(</span><span class="n">links[</span><span class="p">,</span><span class="nf">c</span><span class="p">(</span><span class="s">&#34;source&#34;</span><span class="p">,</span> <span class="s">&#34;target&#34;</span><span class="p">)</span><span class="n">]</span><span class="p">))</span>
+<span class="c1"># which gives the number of sources, and number of targets</span>
+<span class="c1"># which means some people sent more than one letter, and some people received more than one letter</span>
+
+<span class="n">links</span> <span class="o">&lt;-</span> <span class="nf">aggregate</span><span class="p">(</span><span class="n">links[</span><span class="p">,</span><span class="m">3</span><span class="n">]</span><span class="p">,</span> <span class="n">links[</span><span class="p">,</span><span class="m">-3</span><span class="n">]</span><span class="p">,</span> <span class="n">sum</span><span class="p">)</span>
+
+<span class="n">links</span> <span class="o">&lt;-</span> <span class="n">links</span><span class="nf">[order</span><span class="p">(</span><span class="n">links</span><span class="o">$</span><span class="n">target</span><span class="p">,</span> <span class="n">links</span><span class="o">$</span><span class="n">source</span><span class="p">),</span><span class="n">]</span>
+
+<span class="nf">colnames</span><span class="p">(</span><span class="n">links</span><span class="p">)</span><span class="n">[3]</span> <span class="o">&lt;-</span> <span class="s">&#34;weight&#34;</span>
+
+<span class="nf">rownames</span><span class="p">(</span><span class="n">links</span><span class="p">)</span> <span class="o">&lt;-</span> <span class="kc">NULL</span>
+
+<span class="nf">head</span><span class="p">(</span><span class="n">links</span><span class="p">)</span>
+
+<span class="c1"># let&#39;s make a net</span>
+<span class="c1"># notice that we are telling igraph that the network is directed, that the relationship Alice to Bob is different than Bob&#39;s to Alice (Alice is the _sender_, and Bob is the _receiver_)</span>
+
+<span class="c1"># In older DH Box version of igraph in RStudio:</span>
+<span class="n">net</span> <span class="o">&lt;-</span> <span class="nf">graph.data.frame</span><span class="p">(</span><span class="n">d</span><span class="o">=</span><span class="n">links</span><span class="p">,</span> <span class="n">vertices</span><span class="o">=</span><span class="n">nodes</span><span class="p">,</span> <span class="n">directed</span><span class="o">=</span><span class="bp">T</span><span class="p">)</span>
+
+<span class="c1"># OR Newer version of igraph in desktop RStudio:</span>
+<span class="n">net</span> <span class="o">&lt;-</span> <span class="nf">graph_from_data_frame</span><span class="p">(</span><span class="n">d</span><span class="o">=</span><span class="n">links</span><span class="p">,</span> <span class="n">vertices</span><span class="o">=</span><span class="n">nodes</span><span class="p">,</span> <span class="n">directed</span><span class="o">=</span><span class="bp">T</span><span class="p">)</span>
+
+<span class="c1"># type &#39;net&#39; again and run the line to see how the network is represented.</span>
+<span class="n">net</span>
+
+<span class="c1"># let&#39;s visualizae it</span>
+<span class="nf">plot</span><span class="p">(</span><span class="n">net</span><span class="p">,</span> <span class="n">edge.arrow.size</span><span class="o">=</span><span class="m">.4</span><span class="p">,</span><span class="n">vertex.label</span><span class="o">=</span><span class="kc">NA</span><span class="p">)</span>
+
+<span class="c1"># two quite distinct groupings, it would appear.</span>
+<span class="o">---</span>
+
+<span class="n">Before</span> <span class="n">we</span> <span class="n">jump</span> <span class="n">down</span> <span class="n">the</span> <span class="n">rabbit</span> <span class="n">hole</span> <span class="n">of</span> <span class="n">visualization</span><span class="p">,</span> <span class="n">let</span><span class="s">&#39;s recognize right now that visualizing a network is only rarely of analytical value. The value of network analysis comes from the various questions we can now start posing of our data when it is represented as a network. In this correspondence network, who is in the centre of the web? To whom would information flow? To whom would information leak? Are there cliques or ingroups? When we identify such individuals, how does that confirm or confound our expectations of the period and place?
+</span><span class="s">
+</span><span class="s">Many different kinds of metrics can be calculated (and the [Kateto R igraph tutorial](https://kateto.net/networks-r-igraph) will show you how) but it&#39;</span><span class="n">s</span> <span class="n">always</span> <span class="n">worth</span> <span class="n">remembering</span> <span class="n">that</span> <span class="n">a</span> <span class="n">metric</span> <span class="n">is</span> <span class="n">only</span> <span class="n">meaningful</span> <span class="n">for</span> <span class="n">a</span> <span class="n">given</span> <span class="n">network</span> <span class="n">when</span> <span class="n">we</span><span class="s">&#39;re dealing with similar things — a network of people who write letters to one another; a network of banks that swap mortgages with one another. These are called &#39;</span><span class="n">one</span> <span class="n">mode</span> <span class="n">networks</span><span class="s">&#39;. A network of people connected to the banks they use — a two mode network, because it connects two different kinds of things — might be useful to visualize but the metrics calculated might not be valid if the metric was designed to work on a one-mode network .
+</span><span class="s">
+</span><span class="s">Given our correspondence network, let&#39;</span><span class="n">s</span> <span class="n">imagine</span> <span class="n">that</span> <span class="s">&#39;closeness&#39;</span> <span class="p">(</span><span class="n">a</span> <span class="n">measure</span> <span class="n">of</span> <span class="n">how</span> <span class="n">central</span> <span class="n">a</span> <span class="n">person</span> <span class="n">is</span><span class="p">)</span> <span class="n">and</span> <span class="s">&#39;betweenness&#39;</span> <span class="p">(</span><span class="n">a</span> <span class="n">measure</span> <span class="n">of</span> <span class="n">how</span> <span class="n">many</span> <span class="n">different</span> <span class="n">strands</span> <span class="n">of</span> <span class="n">the</span> <span class="n">network</span> <span class="n">pass</span> <span class="n">through</span> <span class="n">this</span> <span class="n">person</span><span class="p">)</span> <span class="n">are</span> <span class="n">the</span> <span class="n">most</span> <span class="n">historically</span> <span class="n">interesting.</span> <span class="n">Further</span><span class="p">,</span> <span class="n">we</span><span class="s">&#39;re going to try to determine if there are subgroups in our network, cliques.
+</span><span class="s">
+</span><span class="s">```R
+</span><span class="s">## the &#39;</span><span class="n">degree</span><span class="s">&#39; of a node is the count of its connections. In this code chunk, we calculate degree, then make both a histogram of the counts and a plot of the network where we size the nodes proportionately to their degree. What do we learn from these two visualizations?
+</span><span class="s">deg &lt;- degree(net, mode=&#34;all&#34;)
+</span><span class="s">hist(deg, breaks=1:vcount(net)-1, main=&#34;Histogram of node degree&#34;)
+</span><span class="s">plot(net, vertex.size=deg*2, vertex.label = NA)
+</span><span class="s">## write this info to file for safekeeping
+</span><span class="s">write.csv(deg, &#39;</span><span class="n">degree.csv</span><span class="s">&#39;</span><span class="err">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Now we&rsquo;ll look at closeness. If you know the width or diameter of your network (the maximum number of steps to get across it), then the node that is on average the shortest number of steps from all the others is the one that is closest. We calculate it like the following:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-R" data-lang="R"><span class="n">closepeople</span> <span class="o">&lt;-</span> <span class="nf">closeness</span><span class="p">(</span><span class="n">net</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s">&#34;all&#34;</span><span class="p">,</span> <span class="n">weights</span><span class="o">=</span><span class="kc">NA</span><span class="p">)</span>
+<span class="nf">sort</span><span class="p">(</span><span class="n">closepeople</span><span class="p">,</span> <span class="n">decreasing</span> <span class="o">=</span> <span class="bp">T</span><span class="p">)</span> <span class="c1"># so that we see who is most close first</span>
+<span class="nf">write.csv</span><span class="p">(</span><span class="n">closepeople</span><span class="p">,</span> <span class="s">&#39;closeness.csv&#39;</span><span class="p">)</span> <span class="c1"># so we have it on file.</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>We can ask which individuals are hubs, and which are authorities. In the lingo, &lsquo;hubs&rsquo; are individuals with many outgoing links (they sent lots of letters) while &lsquo;authorities&rsquo; are individuals who received lots of letters. In the code below, can you work out what command to give to write the hub score or the authority scores to a file?</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-R" data-lang="R"><span class="n">hs</span> <span class="o">&lt;-</span> <span class="nf">hub_score</span><span class="p">(</span><span class="n">net</span><span class="p">,</span> <span class="n">weights</span><span class="o">=</span><span class="kc">NA</span><span class="p">)</span><span class="o">$</span><span class="n">vector</span>
+<span class="n">as</span> <span class="o">&lt;-</span> <span class="nf">authority_score</span><span class="p">(</span><span class="n">net</span><span class="p">,</span> <span class="n">weights</span><span class="o">=</span><span class="kc">NA</span><span class="p">)</span><span class="o">$</span><span class="n">vector</span>
+
+<span class="nf">par</span><span class="p">(</span><span class="n">mfrow</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">))</span>
+
+<span class="c1"># vertex.label.cex sets the size of the label; play with the sizes until you see something appealing.</span>
+<span class="nf">plot</span><span class="p">(</span><span class="n">net</span><span class="p">,</span> <span class="n">vertex.size</span><span class="o">=</span><span class="n">hs</span><span class="o">*</span><span class="m">40</span><span class="p">,</span> <span class="n">vertex.label.cex</span> <span class="o">=</span><span class="m">.2</span><span class="p">,</span> <span class="n">edge.arrow.size</span><span class="o">=</span><span class="m">.1</span><span class="p">,</span> <span class="n">main</span><span class="o">=</span><span class="s">&#34;Hubs&#34;</span><span class="p">)</span>
+<span class="nf">plot</span><span class="p">(</span><span class="n">net</span><span class="p">,</span> <span class="n">vertex.size</span><span class="o">=</span><span class="n">as</span><span class="o">*</span><span class="m">20</span><span class="p">,</span> <span class="n">vertex.label</span> <span class="o">=</span> <span class="kc">NA</span><span class="p">,</span> <span class="n">edge.arrow.size</span><span class="o">=</span><span class="m">.1</span><span class="p">,</span> <span class="n">main</span><span class="o">=</span><span class="s">&#34;Authorities&#34;</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Let&rsquo;s look for &lsquo;modules&rsquo; within this network. Broadly speaking, these are clumps of nodes that have more or less the same pattern of ties between them, within the group, than without.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-R" data-lang="R"><span class="n">cfg</span> <span class="o">&lt;-</span> <span class="nf">cluster_fast_greedy</span><span class="p">(</span><span class="nf">as.undirected</span><span class="p">(</span><span class="n">net</span><span class="p">))</span>
+
+<span class="nf">lapply</span><span class="p">(</span><span class="n">cfg</span><span class="p">,</span> <span class="nf">function</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="nf">write.table</span><span class="p">(</span> <span class="nf">data.frame</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="s">&#39;cfg.csv&#39;</span>  <span class="p">,</span> <span class="n">append</span><span class="o">=</span> <span class="bp">T</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s">&#39;,&#39;</span> <span class="p">))</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>We create a new variable called <code>cfg</code> and get the <code>cluster_fast_greedy</code> algorithm to perform its calculations. The next line writes the groups to a file, separating each group with an <code>x</code>. (If you tried <code>write.csv</code> as before, you&rsquo;ll get an error message because the output of the algorithm gives a different kind of data type. R is fussy like this.) Examine that file — what groups do you spot? What might these mean, if you went back to the content of the original letters?</p>
+<p>The line below will plot out our network, colouring it by the communities discerned above, like the following:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-R" data-lang="R"><span class="nf">plot</span><span class="p">(</span><span class="n">cfg</span><span class="p">,</span> <span class="n">net</span><span class="p">,</span> <span class="n">vertex.size</span> <span class="o">=</span> <span class="m">1</span><span class="p">,</span> <span class="n">vertex.label.cex</span> <span class="o">=</span><span class="m">.2</span><span class="p">,</span> <span class="n">edge.arrow.size</span><span class="o">=</span><span class="m">.1</span><span class="p">,</span> <span class="n">main</span><span class="o">=</span><span class="s">&#34;Communities&#34;</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>You can export the plot by clicking on the &lsquo;Export&rsquo; button in the plot panel, to PDF or to PNG. But this is a pretty ugly network. We need to apply a layout to try to make it more visually understandable. There are many different layout options in igraph. We&rsquo;ll assign the layout we want to a variable, and then we&rsquo;ll give that variable to the <code>plot</code> command like the following:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-R" data-lang="R"><span class="n">l1</span> <span class="o">&lt;-</span> <span class="nf">layout_with_fr</span><span class="p">(</span><span class="n">net</span><span class="p">)</span>
+
+<span class="nf">plot</span><span class="p">(</span><span class="n">cfg</span><span class="p">,</span> <span class="n">net</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">l1</span><span class="p">,</span> <span class="n">vertex.size</span> <span class="o">=</span> <span class="m">1</span><span class="p">,</span> <span class="n">vertex.label.cex</span> <span class="o">=</span><span class="m">.2</span><span class="p">,</span> <span class="n">edge.arrow.size</span><span class="o">=</span><span class="m">.1</span><span class="p">,</span> <span class="n">main</span><span class="o">=</span><span class="s">&#34;Communities&#34;</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>The <code>layout_with_fr</code> is calling the &lsquo;Fruchterman-Reingold&rsquo; algorithm, a kind of layout that imagines each node as a repulsive power, pushing against all the other nodes (it&rsquo;s part of a family of layouts called &lsquo;Forced Atlas&rsquo;). That also means that if you ran the plot command a couple of times, the nodes might end up in different places each time — they are jostling for relative position, and this positioning itself carries no meaning in and of itself (so if a node is at the top of the screen, or the centre of the screen, don&rsquo;t read that to mean anything about importance).</p>
+<p>Good luck! Remember to save your script, and upload the entire project folder to your GitHub repository.</p>
 
   </article>
 </div>

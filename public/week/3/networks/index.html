@@ -2299,7 +2299,124 @@
   
 
   <article class="single__contents" data-dir="ltr">
-    <p>Network stuff</p>
+    <p>Recall that the index of the collected letters of the Republic of Texas was just a list of letters from so-and-so to so-and-so. We haven&rsquo;t looked at the content of those letters, but the shape of network — the meta data of that correspondence — can be revealing (remember <a href="https://kieranhealy.org/blog/archives/2013/06/09/using-metadata-to-find-paul-revere/" target="_blank">Paul Revere</a>!) When we stitch that together into a network of people connected because they exchanged letters, we end up with a shard of their social network. Networks can be queried for things like power, position, and role, and so used judiciously, we can begin to suss something of the social structures in which their history took place. I would recommend that you also take a long look at <a href="http://scottbot.net/networks-demystified-9-modality/" target="_blank">Scott Weingart&rsquo;s series, Networks Demystified</a>.</p>
+<div class="notices success" data-title="Important">
+  If you had trouble with the regex and didn&rsquo;t quite get Open Refine to work, that&rsquo;s ok. You can use <a href="http://themacroscope.org/2.0/datafiles/texas-correspondence-OpenRefine.csv">this file</a> for this gentle introduction to networks. Right-click and save-as that link.
+</div>
+<h3 id="when-not-to-use-networks">When Not To Use Networks</h3>
+<p>Networks analysis can be a powerful method for engaging with a historical dataset but it is often not the most appropriate. Any historical database may be represented as a network with enough contriving but few should be. One could take the Atlantic trade network, including cities, ships, relevant governments and corporations, and connect them all together in a giant multipartite network. It would be extremely difficult to derive any meaning from this network, especially using traditional network analysis methodologies. Clustering coefficients (a useful network metric), for example, would be meaningless in this situation, as it would be impossible for the neighbors of any one node to be neighbors with one another. Network scientists have developed algorithms for <a href="http://www.scottbot.net/HIAL/?p=41158" target="_blank">multimodal networks</a>, but they are often created for fairly specific purposes, and one should be very careful before applying them to a different dataset and using that analysis to explore a historiographical question.</p>
+<p>Networks, as they are commonly encoded, also suffer from a profound lack of nuance. It is all well to say that, because Henry Oldenburg corresponded with both Gottfried Leibniz and John Milton, he was the short connection between the two men. However, the encoded network holds no information of whether Oldenburg actually transferred information between the two or whether that connection was at all meaningful. In a flight network, Las Vegas and Atlanta might both have very high betweenness centrality because people from many other cities fly to or from those airports, and yet one is much more of a hub than the other. This is because, largely, people tend to fly directly back and forth from Las Vegas, rather than through it, whereas people tend to fly through Atlanta from one city to another. This is the type of information that network analysis, as it is currently used, is not well equipped to handle. Whether this shortcoming affects a historical inquiry depends primarily on the inquiry itself.</p>
+<p>When deciding whether to use networks to explore a historiographical question, the first question should be: to what extent is connectivity specifically important to this research project? The next should be: can any of the network analyses my collaborators or I know how to employ be specifically useful in the research project? If either answer is negative, another approach is probably warranted.</p>
+<h3 id="databasicio">Databasic.io</h3>
+<p>At <a href="http://databasic.io" target="_blank">Databasic.io</a> there are simple web-tools to help you see some large-scale patterns in your information. Let&rsquo;s use <a href="https://databasic.io/en/connectthedots/#upload" target="_blank">Connect the Dots</a> which is a simple network visualizer and analyzer - it will find communities of <em>nodes</em> (dots; people, in our data) and it will give us two network metrics for each node - the degree (number of connections it has) and the centrality (here, imagined as being a person who is on lots of paths connecting all other pairs).</p>
+<ol>
+<li>Go to [Connect the Dots](<a href="https://databasic.io/en/connectthedots/#upload">https://databasic.io/en/connectthedots/#upload</a> and upload your Texas Correspondence file. Make sure it has a first row with <code>source,target</code> and that there are no spaces on either side of that comma, eg:</li>
+</ol>
+<p><code>source,target Sam Houston,J. Pinckney Henderson James Webb,Alc6e La Branche</code></p>
+<ol start="2">
+<li>Boom! A network visualization! What do you observe? (Scroll down to the &lsquo;<a href="/week/3/networks/#so-what">so what?</a>').</li>
+</ol>
+<p><p class="md__image">
+  <img src="/images/databasic.png" alt=""  />
+</p></p>
+<h3 id="more-complex-visualizatons-and-analysis">More complex visualizatons and analysis</h3>
+<p>Connect the dots is pretty basic. If you want to do more complex network visualizations and analysis, you can try <a href="http://gephi.org" target="_blank">Gephi</a>:</p>
+<ol>
+<li>Download and install <a href="http://gephi.org" target="_blank">Gephi</a>.</li>
+<li>Open Gephi by double-clicking its icon.</li>
+<li>Click &ldquo;New project&rdquo;. The middle pane of the interface window is the “Data Laboratory,” where you can interact with your network data in spreadsheet format. This is where we can import the data cleaned up in Open Refine.</li>
+<li>In the Data Laboratory, select “Import Spreadsheet.”</li>
+<li>Press the ellipsis <code>...</code> and locate the CSV you created. Make sure that the Separator is listed as <code>Comma</code> and the <code>As table</code> is listed as <code>Edges table</code>.</li>
+<li>Press <code>Next</code> then <code>Finish</code>. Your data should load up.</li>
+<li>Click on the &ldquo;Overview” tab and you will be presented with a tangled network graph.</li>
+</ol>
+<h3 id="navigating-gephi">Navigating Gephi</h3>
+<p>Gephi is broken up into three panes: Overview, Data Laboratory, and Preview.</p>
+<ul>
+<li>The <strong>Overview</strong> pane is used to manipulate the visual properties of the network: change colors of nodes or edges, lay them out in different ways, and so forth. The Overview pane is also where you can apply algorithms to the network, like those you learned about in the previous chapter.</li>
+<li>The <strong>Data Laboratory</strong> is for adding, manipulating, and removing data.</li>
+<li>Use the <strong>Preview</strong> pane to do some final tweaks on the look and feel of the network and to export an image for publication.</li>
+</ul>
+<p>There is one tweak that needs to done in the Data Table before the dataset is fully ready to be explored in Gephi.</p>
+<ol>
+<li>Click on the Data Laboratory tab.</li>
+<li>Click on the “Nodes” tab in the Data Table (this should be open already) and notice that, of the three columns, “Label” (the furthermost field on the right) is blank in every row. This will be a problem when viewing the network visualization, as those labels are essential for the network to be meaningful.</li>
+<li>In the “Nodes” tab, click “Copy data to other column” at the bottom, select “ID”, and press “Ok”. Upon doing so, the “Label” column will be filled with the appropriate labels for each correspondent.</li>
+<li>While you’re still in the Data Laboratory, look in the “Edges” tab and notice there is a “Weight” column. Gephi automatically counted every time a letter was sent from correspondent A to correspondent B and summed up all the occurrences, resulting in the “Weight.” This means that J. Pinckney Henderson sent three letters to James Webb, because Henderson is in the “Source” column, Webb in the “Target”, and the “Weight” is three.</li>
+<li>Clicking on the Overview pane will take you to a visual representation of the network you just imported. In the middle of the screen, you will see your network in the “Graph” tab. The “Context” tab, at the top right, will show that you imported 234 nodes and 394 edges. At first, all the nodes will be randomly strewn across the screen and make little visual sense.</li>
+</ol>
+<p><em>There is a video from an earlier iteration of the course <a href="https://www.youtube.com/watch?v=1yj3o56SniE" target="_blank">here</a> walking through these steps. Make sure to turn on the closed captions)</em>.</p>
+<ol start="6">
+<li>
+<p>Fix the nodes by selecting a layout in the “Layout” tab – the best one for beginners is “Force Atlas 2.”</p>
+</li>
+<li>
+<p>Press the “Run” button and watch the nodes and edges reorganize on the screen into something slightly more manageable. After the layout runs for a few minutes, re-press the button (now labeled “Stop”) to settle the nodes in their place.</p>
+</li>
+</ol>
+<p>You just ran a force-directed layout. Each dot is a correspondent in the network, and lines between dots represent letters sent between individuals. Thicker lines represent more letters, and arrows represent the direction the letters were sent, such that there may be up to two lines connecting any two correspondents (one for each direction).</p>
+<p>About two-dozen smaller components of the network will appear to shoot off into the distance, unconnected from the large, connected component in the middle. For the purpose of this exercise, we are not interested in those disconnected components, so the next step will be to filter them out of the network.</p>
+<ol start="8">
+<li>
+<p>The first step is to calculate which components of the network are connected to which others; do this by clicking “Run” next to the text that says “Connected Components” in the “Statistics” tab on the right side.</p>
+</li>
+<li>
+<p>Once there, select “UnDirected” and press “OK.”</p>
+</li>
+<li>
+<p>Press “Close” when the report pops up indicating that the algorithm has finished running. Now that this is done, Gephi knows which is the giant connected component and has labeled that component “0”.</p>
+</li>
+<li>
+<p>To filter out everything but the giant component, click on the “Filters” tab on the right side and browse to &ldquo;Component ID Integer (Node)&rdquo; in the folder directory (you’ll find it under &ldquo;Attributes,&rdquo; then &ldquo;Equal&rdquo;).</p>
+</li>
+<li>
+<p>Double-click &ldquo;Component ID Integer (Node)&rdquo; and click the &ldquo;Filter&rdquo; button at the bottom. Doing this removes the disconnected bundles of nodes.</p>
+</li>
+</ol>
+<p>There are many possible algorithms you could use for the analysis step, but in this case you will use the PageRank of each node in the network. This measurement calculates the prestige of a correspondent according to how often others write to him or her. The process is circular, such that correspondents with high prestige will confer their prestige on those they write to, who in turn pass their prestige along to their own correspondents. For the moment let us take its results to equate with a correspondent’s importance in the Republic of Texas letter network.</p>
+<ol start="13">
+<li>
+<p>Calculate the PageRank by clicking on the &ldquo;Run&rdquo; button next to &ldquo;PageRank&rdquo; in the &ldquo;Statistics&rdquo; tab. You will be presented with a prompt asking for a few parameters; make sure &ldquo;Directed&rdquo; network is selected and that the algorithm is taking edge weight into account (by selecting &ldquo;Use edge weight&rdquo;). Leave all other parameters at their default.</p>
+</li>
+<li>
+<p>Press &ldquo;OK&rdquo;.</p>
+</li>
+<li>
+<p>Once PageRank is calculated, if you click back into the &ldquo;Data Laboratory&rdquo; and select the &ldquo;Nodes&rdquo; list in the Data Table, you can see that a new &ldquo;PageRank&rdquo; column has been added, with values for every node. The higher the PageRank, the more central a correspondent is in the network.</p>
+</li>
+</ol>
+<p><em>There is a video from an earlier iteration of the course <a href="https://youtu.be/XAdMxOb8KX0" target="_blank">here</a> walking through these steps. Make sure to turn on the closed captions. You probably are sick of the music, so mute that.</em></p>
+<ol start="16">
+<li>
+<p>Going back to the Overview pane, you can visualize this centrality by changing the size of each correspondent’s node based on its PageRank. Do this in the &ldquo;Ranking&rdquo; tab on the left side of the Overview pane.</p>
+</li>
+<li>
+<p>Make sure &ldquo;Nodes&rdquo; is selected, press the icon of a little red diamond, and select PageRank from the drop-down menu.</p>
+</li>
+<li>
+<p>In the parameter options just below, enter the &ldquo;Min size&rdquo; as 1 and the &ldquo;Max size&rdquo; as 10.</p>
+</li>
+<li>
+<p>Press &ldquo;Apply,&rdquo; and watch the nodes resize based on their PageRank.</p>
+</li>
+<li>
+<p>To be on the safe side and decrease clutter, re-run the &ldquo;Force Atlas 2&rdquo; layout as described above, making sure to keep the &ldquo;Prevent Overlap&rdquo; box checked.</p>
+</li>
+</ol>
+<p><em>Another video <a href="https://www.youtube.com/watch?v=IJn2F4Aqslw" target="_blank">here</a> covering these last few steps. I&rsquo;m really sorry about the music.</em></p>
+<p>At this point, the network is processed enough to visualize in the Preview pane, to finally begin making sense of the data.</p>
+<ol start="21">
+<li>
+<p>In Preview, on the left side, select &ldquo;Show Labels,&rdquo; &ldquo;Proportional Size,&rdquo; &ldquo;Rescale Weight,&rdquo; and deselect &ldquo;Curved&rdquo; edges.</p>
+</li>
+<li>
+<p>Press &ldquo;Refresh.&rdquo;</p>
+</li>
+</ol>
+<p>Phew. Save your work. Gephi saves as <code>.gephi</code> file, but you can also export to other common formats like <code>.gexf</code></p>
+<h3 id="so-what">So what?</h3>
+<p>So what have we got?</p>
+<p>The visualization immediately reveals apparent structure: central figures on the top (Ashbel Smith and Anson Jones) and bottom (Mirabeau B. Lamar, James Webb, and James Treat), and two central figures who connect the two split communities (James Hamilton and James S. Mayfield). A quick search online shows the top network to be associated with the last president of the Republic of Texas, Anson Jones; whereas the bottom network largely revolves around the second president, Mirabeau Lamar. Experts on this period in history could use this analysis to understand the structure of communities building to the annexation of Texas or they could ask meta-questions about the nature of the data themselves. For example, why is Sam Houston, the first and third president of the Republic of Texas, barely visible in this network?</p>
 
   </article>
 </div>
@@ -2336,7 +2453,19 @@
         <div class="toc">
   <h6 class="toc__label">What&#39;s on this Page</h6>
   <div class="toc__body">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#when-not-to-use-networks">When Not To Use Networks</a></li>
+        <li><a href="#databasicio">Databasic.io</a></li>
+        <li><a href="#more-complex-visualizatons-and-analysis">More complex visualizatons and analysis</a></li>
+        <li><a href="#navigating-gephi">Navigating Gephi</a></li>
+        <li><a href="#so-what">So what?</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
   </div>
 </div>
       
