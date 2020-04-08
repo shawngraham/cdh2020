@@ -13,7 +13,7 @@ weight: -5
 
 ### Read
 
-![datum](http://i.imgur.com/xvNbwKt.png)
+![datum](https://i.imgur.com/xvNbwKt.png)
 
 Something given. That's a nice way of thinking about it. Of course, much of the data that we are 'given' wasn't really given willingly. When we [topic model Martha Ballard's diary](http://www.cameronblevins.org/posts/topic-modeling-martha-ballards-diary/), did she give this to us? Of course, she couldn't have imagined what we might try to do to it. Other kinds of data - census data, for instance - were compelled: folks had to answer the questions, on pain of punishment. This is all to suggest that there is a moral dimension to what we do with big data in history. Johanna Drucker famously framed it as [data versus capta](http://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html), or 'things captured.'
 

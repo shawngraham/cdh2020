@@ -48,18 +48,16 @@ The file `api-key.json` needs to be saved inside your copy of the speech-to-text
 
 ### Some video utilities
 
-Download and install [youtube-dl](https://youtube-dl.org/) or install it from the command line: `pip install --upgrade youtube_dl`. If you try the command line and get an error about not having permission to do this, try `sudo pip install --upgrade youtube_dl`. This will require you to enter your computer username and password. Note that when you enter the password, the cursor **won't** move. This is old-school security in action...
+1. Download and install [youtube-dl](https://youtube-dl.org/) or install it from the command line:
+`pip install --upgrade youtube_dl`.
+If you try the command line and get an error about not having permission to do this, try
+`sudo pip install --upgrade youtube_dl`
+This will require you to enter your computer username and password. Note that when you enter the password, the cursor **won't** move. This is old-school security in action...
 
-Download and install ffmpeg.
-On a mac:
+2. Download and install ffmpeg.
+On a mac - if you haven't already, get homebrew first (a package manager for downloading and installing things like this) [here](https://brew.sh/). **That website gives you a command to run in your terminal to download and install homebrew**. (But if you successfully installed Brew when you did the wget work, then you just need to do the brew install command). Then, when homebrew is installed: `brew install ffmpeg`
 
-  + if you haven't already, get homebrew first (a package manager for downloading and installing things like this) [here](https://brew.sh/)
-  + that website gives you a command to run in your terminal to download and install homebrew. Do that.
-  + then, when homebrew is installed: `brew install ffmpeg`
-
-On a pc:
-
-  + download and install from [here](https://ffmpeg.zeranoe.com/builds/)
+On a pc: download and install from [here](https://ffmpeg.zeranoe.com/builds/)
 
 ### Now let's do this!
 
