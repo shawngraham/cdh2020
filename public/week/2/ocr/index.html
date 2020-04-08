@@ -2431,6 +2431,84 @@ You know it ran, because it passed the commands to the console, and you got the 
 </p></p>
 <p>Save your R script as &ldquo;one-image-ocr.R&rdquo;.</p>
 <h3 id="looping-over-many-files-at-once">Looping over many files at once</h3>
+<ol>
+<li>Grab a handful of images from the war diary and save them inside the folder you are working in, in a new subfolder (three or four are fine; I just right-clicked and save image on the urls at <a href="http://data2.archives.ca/e/e061/e001518034.jpg">http://data2.archives.ca/e/e061/e001518034.jpg</a> <a href="http://data2.archives.ca/e/e061/e001518035.jpg">http://data2.archives.ca/e/e061/e001518035.jpg</a> etc for the purposes of this recipe).</li>
+</ol>
+<p><p class="md__image">
+  <img src="/images/ocr/for-illustration.png" alt="for illustration"  />
+</p></p>
+<ol start="2">
+<li>Now, we&rsquo;re going to modify the first recipe to include a loop, and to apply the image modifications and to do the ocr to each image in turn. Make a new script, and then put into it which libraries you&rsquo;re going to use. Run those lines.</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-R" data-lang="R"><span class="c1"># tell R which packages you need</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">magick</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">magrittr</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">tesseract</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="3">
+<li>I put the files I wanted to work on into a subfolder called &lsquo;many-pics&rsquo;. Now we create a variable called &lsquo;myfiles&rsquo; into which we&rsquo;re going to put the list of files held in our directory of files.</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-R" data-lang="R"><span class="n">imgsource</span> <span class="o">&lt;-</span> <span class="s">&#34;many-pics&#34;</span>
+<span class="n">myfiles</span> <span class="o">&lt;-</span> <span class="nf">list.files</span><span class="p">(</span><span class="n">path</span> <span class="o">=</span> <span class="n">imgsource</span><span class="p">,</span> <span class="n">pattern</span> <span class="o">=</span> <span class="s">&#34;jpg&#34;</span><span class="p">,</span> <span class="n">full.names</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Put these lines into your script, then run them. Over in the environment pane, you&rsquo;ll see them get created, and you&rsquo;ll see what&rsquo;s inside them.</p>
+<p><p class="md__image">
+  <img src="/images/ocr/panels.png" alt="ocr panels"  />
+</p></p>
+<ol start="4">
+<li>Now the loop. Copy this into your script:</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-R" data-lang="R"><span class="nf">lapply</span><span class="p">(</span><span class="n">myfiles</span><span class="p">,</span> <span class="nf">function</span><span class="p">(</span><span class="n">i</span><span class="p">){</span>
+  <span class="n">text</span> <span class="o">&lt;-</span> <span class="nf">image_read</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">%&gt;%</span>
+    <span class="nf">image_resize</span><span class="p">(</span><span class="s">&#34;3000x&#34;</span><span class="p">)</span> <span class="o">%&gt;%</span>
+    <span class="nf">image_convert</span><span class="p">(</span><span class="n">type</span> <span class="o">=</span> <span class="s">&#39;Grayscale&#39;</span><span class="p">)</span> <span class="o">%&gt;%</span>
+    <span class="nf">image_trim</span><span class="p">(</span><span class="n">fuzz</span> <span class="o">=</span> <span class="m">40</span><span class="p">)</span> <span class="o">%&gt;%</span>
+    <span class="nf">image_write</span><span class="p">(</span><span class="n">format</span> <span class="o">=</span> <span class="s">&#39;png&#39;</span><span class="p">,</span> <span class="n">density</span> <span class="o">=</span> <span class="s">&#39;300x300&#39;</span><span class="p">)</span> <span class="o">%&gt;%</span>
+    <span class="n">tesseract</span><span class="o">::</span><span class="nf">ocr</span><span class="p">()</span>
+
+  <span class="n">outfile</span> <span class="o">&lt;-</span> <span class="nf">paste</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="s">&#34;-ocr.txt&#34;</span><span class="p">,</span><span class="n">sep</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p">)</span>
+  <span class="nf">cat</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">outfile</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s">&#34;\n&#34;</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Techically, this isn&rsquo;t actually a loop. We&rsquo;re just applying all of this image fixing and text extraction to each file in our myfiles variable, and then creating a unique text file appending -ocr.txt to the original filename. Put the cursor at the l in lapply, and then hit run; the machine will take some time to do its thing, but then&hellip;</p>
+<p><p class="md__image">
+  <img src="/images/ocr/success.png" alt="success"  />
+</p></p>
+<p>Now imagine how much you&rsquo;re missing when you do keyword searches of OCR&rsquo;d documents&hellip;</p>
+<p>Save your work.</p>
+<h3 id="what-about-handwriting">What about handwriting?</h3>
+<p>Handwriting is a much more complicated problem, but in recent years machine learning has made enormous strides in this regard. I will point you to some documents I prepared for another class of mine if you want to explore this problem.</p>
+<p><a href="https://shawngraham.github.io/dhmuse/detecting-handwriting/" target="_blank">&lsquo;Detecting and Transcribing Handwriting with Microsoft Azure&rsquo;</a></p>
 
   </article>
 </div>
@@ -2473,6 +2551,7 @@ You know it ran, because it passed the commands to the console, and you got the 
       <ul>
         <li><a href="#one-file-at-a-time">One file at a time</a></li>
         <li><a href="#looping-over-many-files-at-once">Looping over many files at once</a></li>
+        <li><a href="#what-about-handwriting">What about handwriting?</a></li>
       </ul>
     </li>
   </ul>
