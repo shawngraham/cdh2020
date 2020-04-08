@@ -31,7 +31,7 @@
         <pubDate>Tue, 28 Jan 2020 00:10:48 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/3/regex/</guid>
-        <description>Regex!</description>
+        <description>Introduction A regular expression (also called regex) is a powerful tool for finding and manipulating text. At its simplest, a regular expression is just a way of looking through texts to locate patterns. When you search a website for instance (use ctrl+f in most applications to search, by the way), the search box finds exact matches; there&amp;rsquo;s no room for fuzziness. A regular expression on the other hand can help you find every line that begins with a number, or every instance of an email address, or whenever a word is used even if there are slight variations in how it&amp;rsquo;s spelled.</description>
       </item>
       
       <item>

@@ -2299,7 +2299,163 @@
   
 
   <article class="single__contents" data-dir="ltr">
-    <p>Regex!</p>
+    <h3 id="introduction">Introduction</h3>
+<p>A regular expression (also called regex) is a powerful tool for finding and manipulating text. At its simplest, a regular expression is just a way of looking through texts to locate <em>patterns</em>. When you search a website for instance (use ctrl+f in most applications to search, by the way), the search box finds exact matches; there&rsquo;s no room for fuzziness. A regular expression on the other hand can help you find every line that begins with a number, or every instance of an email address, or whenever a word is used even if there are slight variations in how it&rsquo;s spelled. As long as you can describe the pattern you&rsquo;re looking for, regular expressions can help you find it. Once you&rsquo;ve found your patterns, they can then help you manipulate your text so that it fits just what you need.</p>
+<p>Regular expressions can look pretty complex, but once you know the basic syntax and vocabulary, simple ‘regexes’ will be easy. Regular expressions can often be used right inside the &lsquo;Find and Replace&rsquo; box in many text and document editors, such as Sublime Text, Atom, or Notepad++. You cannot use Microsoft Word, however!</p>
+<p>NB In text editors, you have to indicate that you wish to do a regex search. In Sublime Text, you open the search panel from the &lsquo;Find&rsquo; menu (or use the shortcut) and then you need to tick the box that has <code>.*</code> in the search panel to enable regular expression searches.</p>
+<h3 id="some-basic-principles">Some basic principles</h3>
+<p><strong>Protip</strong>: there are libraries of regular expressions, online. For example, if you want to find all postal codes, you can search “regular expression Canadian postal code” and learn what ‘formula’ to search for to find them.</p>
+<p>Also, here is a cheatsheet for <a href="https://jdhao.github.io/2019/02/28/sublime_text_regex_cheat_sheet/" target="_blank">regular expressions in Sublime Text</a>.</p>
+<p>Let&rsquo;s say you&rsquo;re looking for all the instances of &ldquo;cat&rdquo; or &ldquo;dog&rdquo; in your document. When you type the vertical bar on your keyboard (it looks like <code>|</code>, shift+backslash on windows keyboards), that means &lsquo;or&rsquo; in regular expressions. So, if your query is <code>dog|cat</code> and you press &lsquo;find&rsquo;, it will show you the first time either dog or cat appears in your text.</p>
+<p>If you want to replace every instance of either &ldquo;cat&rdquo; or &ldquo;dog&rdquo; in your document with the world &ldquo;animal&rdquo;, you would open your find-and-replace box, put dog|cat in the search query, put animal in the &lsquo;replace&rsquo; box, hit &lsquo;replace all&rsquo;, and watch your entire document fill up with references to animals instead of dogs and cats.</p>
+<p>The astute reader will have noticed a problem with the instructions above; simply replacing every instance of &ldquo;dog&rdquo; or &ldquo;cat&rdquo; with &ldquo;animal&rdquo; is bound to create problems. Simple searches don&rsquo;t differentiate between letters and spaces, so every time &ldquo;cat&rdquo; or &ldquo;dog&rdquo; appear within words, they&rsquo;ll also be replaced with &ldquo;animal&rdquo;. &ldquo;catch&rdquo; will become &ldquo;animalch&rdquo;; &ldquo;dogma&rdquo; will become &ldquo;animalma&rdquo;; &ldquo;certificate&rdquo; will become &ldquo;certifianimale&rdquo;. In this case, the solution appears simple; put a space before and after your search query, so now it reads:</p>
+<p><code>dog | cat</code></p>
+<p>With the spaces, &ldquo;animal&rdquo; replace &ldquo;dog&rdquo; or &ldquo;cat&rdquo; only in those instances where they&rsquo;re definitely complete words; that is, when they&rsquo;re separated by spaces.</p>
+<p>The even more astute reader will notice that this still does not solve our problem of replacing every instance of &ldquo;dog&rdquo; or &ldquo;cat&rdquo;. What if the word comes at the beginning of a line, so it is not in front of a space? What if the word is at the end of a sentence or a clause, and thus followed by a punctuation? Luckily, in the language of regex, you can represent the beginning or end of a word using special characters.</p>
+<p><code>\&lt;</code></p>
+<p>means the beginning of a word. In some programs, you might use this alternative:</p>
+<p><code>\b</code></p>
+<p>so if you search for <code>\&lt;cat</code> , (or, as it may be, <code>\bcat</code> )it will find &ldquo;cat&rdquo;, &ldquo;catch&rdquo;, and &ldquo;catsup&rdquo;, but not &ldquo;copycat&rdquo;, because your query searched for words beginning with &ldquo;cat&rdquo;. For patterns at the end of the line, you would use:</p>
+<p><code>\&gt;</code> or <code>\b</code></p>
+<p>again. If you therefore searched:</p>
+<p><code>cat\&gt;</code></p>
+<p>it will find &ldquo;cat&rdquo; and &ldquo;copycat&rdquo;, but not &ldquo;catch,&rdquo; because your query searched for words ending with -&ldquo;cat&rdquo;.</p>
+<p>Regular expressions can be mixed, so if you wanted to find words only matching &ldquo;cat&rdquo;, no matter where in the sentence, you&rsquo;d search for</p>
+<p><code>\&lt;cat\&gt;</code></p>
+<p>which would find every instance. And, because all regular expressions can be mixed, if you searched for</p>
+<p><code>\&lt;cat|dog\&gt;</code></p>
+<p>and replaced all with &ldquo;animal&rdquo;, you would have a document that replaced all instances of &ldquo;dog&rdquo; or &ldquo;cat&rdquo; with &ldquo;animal&rdquo;, no matter where in the sentence they appear. You can also search for variations within a single word using parentheses. For example if you were looking for instances of &ldquo;gray&rdquo; or &ldquo;grey&rdquo;, instead of the search query</p>
+<p><code>gray|grey</code></p>
+<p>you could type</p>
+<p><code>gr(a|e)y</code></p>
+<p>instead. The parentheses signify a group, and like the order of operations in arithmetic, regular expressions read the parentheses before anything else. Similarly, if you wanted to find instances of either &ldquo;that dog&rdquo; or &ldquo;that cat&rdquo;, you would search for:</p>
+<p><code>(that dog)|(that cat)</code></p>
+<p>Notice that the vertical bar <code>|</code> can appear either inside or outside the parentheses, depending on what you want to search for.</p>
+<p>The period character <code>.</code> in regular expressions directs the search to just find any character at all. For example, if we searched for:</p>
+<p><code>d.g</code></p>
+<p>the search would return &ldquo;dig&rdquo;, &ldquo;dog&rdquo;, &ldquo;dug&rdquo;, and so forth.</p>
+<p>Another special character from our cheat sheet, the plus symbol <code>+</code> instructs the program to find any number of the previous character. If we search for</p>
+<p><code>do+g</code></p>
+<p>it would return any words that looked like &ldquo;dog&rdquo;, &ldquo;doog&rdquo;, &ldquo;dooog&rdquo;, and so forth. Adding parentheses before the plus would make a search for repetitions of whatever is in the parentheses, for example querying</p>
+<p><code>(do)+g</code></p>
+<p>would return &ldquo;dog&rdquo;, &ldquo;dodog&rdquo;, &ldquo;dododog&rdquo;, and so forth.</p>
+<p>Combining the plus <code>+</code> and period <code>.</code> characters can be particularly powerful in regular expressions, instructing the program to find any amount of any characters within your search. A search for</p>
+<p><code>d.+g</code></p>
+<p>for example, might return &ldquo;dried fruits are g&rdquo;, because the string begins with &ldquo;d&rdquo; and ends with &ldquo;g&rdquo;, and has various characters in the middle. Searching for simply <code>.+</code> will yield query results that are entire lines of text, because you are searching for any character, and any amount of them.</p>
+<p>Parentheses in regular expressions are also very useful when replacing text. The text within a regular expression forms what&rsquo;s called a group, and the software you use to search remembers which groups you queried in order of their appearance. For example, if you search for</p>
+<p><code>(dogs)( and )(cats)</code></p>
+<p>which would find all instances of &ldquo;dogs and cats&rdquo; in your document, your program would remember &ldquo;dogs&rdquo; is group 1, &ldquo;and&rdquo; is group 2, and &ldquo;cats&rdquo; is group 3. Sublime Text remembers them as <code>\1</code>, <code>\2</code>, and <code>\3</code> for each group respectively.</p>
+<p>If you wanted to switch the order of &ldquo;dogs&rdquo; and &ldquo;cats&rdquo; every time the phrase &ldquo;dogs and cats&rdquo; appeared in your document, you would type</p>
+<p><code>(dogs)( and )(cats)</code></p>
+<p>in the &lsquo;find&rsquo; box, and</p>
+<p><code>\3\2\1</code></p>
+<p>in the &lsquo;replace&rsquo; box. That would replace the entire string with group 3 (&ldquo;cats&rdquo;) in the first spot, group 2 (&rdquo; and &ldquo;) in the second spot, and group 1 (&ldquo;dogs&rdquo;) in the last spot, thus changing the result to &ldquo;cats and dogs&rdquo;.</p>
+<p>The vocabulary of regular expressions is pretty large, but there are many cheat sheets for regex online.</p>
+<h3 id="letters-of-the-republic-of-texas">Letters of the Republic of Texas</h3>
+<p>The correspondence of the <a href="https://en.wikipedia.org/wiki/Republic_of_Texas" target="_blank">Republic of Texas</a>, and independent state from 1835 to 1846 was collated into a single volume and published with a helpful index in 1911. It was scanned and OCR&rsquo;d by Google, and is now available as a text file from the Internet Archive. You can see the OCR&rsquo;d text at <a href="http://archive.org/stream/diplomaticcorre33statgoog/diplomaticcorre33statgoog_djvu.txt" target="_blank">archive.org</a>. We are going to use it to practice our regex skills because it is an example of a historical network we might want to analyze later with network analysis. We are going to grab the index from that file, and transform it using regex.</p>
+<p>Entries in the index look like this:</p>
+<pre><code>Sam Houston to A. B. Roman, September 12, 1842 101
+Sam Houston to A. B. Roman, October 29, 1842 101
+Correspondence for 1843-1846 —
+Isaac Van Zandt to Anson Jones, January 11, 1843 103
+</code></pre><p>We are going to use regex to tidy this up, delete some parts, and end up with data that looks like this:</p>
+<pre><code>Sam Houston, A. B. Roman, September 12 1842
+Sam Houston, A. B. Roman, October 29 1842
+Isaac Van Zandt, Anson Jones, January 11 1843
+</code></pre><p>The change doesn&rsquo;t look like much, and you might think to yourself, &lsquo;hey, I could just do that by hand&rsquo;. You could but it&rsquo;d take you ages, and if you made a mistake somewhere, are you sure you could do this consistently, for a couple of hours at a time? Probably not. Your time is better spent figuring out the search and replace patterns, and then setting your machine loose to implement it.</p>
+<ol>
+<li>
+<p>We will use the <code>curl</code> command at the command prompt to grab the file; this is a related command to wget whom you&rsquo;ve already met. Mac users should already have this installed; Windows users can open up Anaconda PowerShell and type <code>conda install -c anaconda curl</code> to get it.</p>
+</li>
+<li>
+<p>At the command line, type the following curl command:</p>
+</li>
+</ol>
+<p><code>$ curl http://archive.org/stream/diplomaticcorre33statgoog/diplomaticcorre33statgoog_djvu.txt &gt; texas.txt</code></p>
+<p>The <code>curl</code> command downloads the txt file and the the <code>&gt;</code> pushes the result of the command to a file called <code>texas.txt</code>.</p>
+<ol start="3">
+<li>
+<p>Open <code>texas.txt</code> in Sublime Text, and open the Find menu and hit the Replace option; this opens the find and replace panel at the bottom of your window. Make sure to press the <code>.*</code> button in that panel to turn on regular expression search.</p>
+</li>
+<li>
+<p>Delete everything in this file that <strong>isn&rsquo;t</strong> the table of letters. The table starts with ‘Sam Houston to J. Pinckney Henderson, December 31, 1836 51’ and ends with ‘Wm. Henry Daingerfield to Ebenezer Allen, February 2, 1846 1582’. Your file will now have approximately 2000 lines in it.</p>
+</li>
+<li>
+<p>First thing we&rsquo;re going to do is identify any lines that indicate correspondence. We&rsquo;re going to look for the word &lsquo;to&rsquo;. In fact, we don&rsquo;t just want to find &ldquo;to&rdquo;, but the entire line that contains it. We assume that every line that contains the word &ldquo;to&rdquo; in full is a line that has relevant letter information, and every line that does not is one we do not need.</p>
+</li>
+</ol>
+<p>You learned earlier that the pattern <code>.+</code> returns any amount of text, no matter what it says, and that <code>\b</code> indicates a word boundary. Thus, the pattern we want looks like this <code>.+\bto\b.+</code>. <strong>Don&rsquo;t search yet</strong>.</p>
+<p>We want to mark these lines off as special, so let&rsquo;s add a tilde ~ before each of the lines that look like letters. This involves the find-and-replace function, and a query identical to the one before, but with parentheses around it, so it looks like the following</p>
+<p>(.+&lt;to&gt;)</p>
+<p>and the entire line is placed within a parenthetical group. Since this the first group in our search expression, we can replace that group with <code>\1</code> and put the tilde in front of it like so: <code>~\1</code>.</p>
+<p><strong>Do this</strong><br />
+search for: <code>(.+\&lt;to\&gt;)</code></p>
+<p>replace with: <code>~\1</code></p>
+<ol start="6">
+<li>After running the find-and-replace, you should note your document now has most of the lines with tildes in front of it, and a few which do not. The next step is to remove all the lines that do not include a tilde. The search string to find all lines which don&rsquo;t begin with tildes is <code>\n[^~].+</code></li>
+</ol>
+<p>Within a set of square brackets <code>[]</code> the carrot <code>^</code> means search for anything that <strong>isn&rsquo;t</strong> within these brackets (in this case, the tilde ~). The <code>.+</code> as before means search for every remaining character in the line as well. All together, the query returns any full line which does not begin with a tilde; that is, the lines we did not mark as looking like letters. We search for the pattern, and leave the replace blank; this will delete the lines that do not begin with a tilde.</p>
+<p><strong>Do this</strong></p>
+<p>search for: <code>\n[^~].+</code></p>
+<p>replace with:</p>
+<ol start="7">
+<li>To turn this text file into a csv suitable for network analysis, we&rsquo;ll want to separate it out into one column for Sender, one for Recipient, and one for Date, each separated by a single comma. Notice that most lines have extraneous page numbers attached to them; we can get rid of those with regular expressions. There&rsquo;s also usually a comma separating the month-date and the year, which we&rsquo;ll get rid of as well. In the end, the first line should go from looking like the following:</li>
+</ol>
+<p><code>~Sam Houston to J. Pinckney Henderson, December 31, 1836 51</code></p>
+<p>to looking like the following:</p>
+<p><code>Sam Houston, J. Pinckney Henderson, December 31 1836</code></p>
+<p><strong>Read through before you do anything.</strong> You will start by removing the page number after the year and the comma between the year and the month-date. To do this, first locate the year on each line by using the regex:</p>
+<p><code>[0-9]{4}</code></p>
+<p>We can find any digit between 0 and 9 by searching for <code>[0-9]</code>, and <code>{4}</code> will find four of them together. Now extend that search out by appending <code>.+</code> to the end of the query; as seen before, it will capture the entire rest of the line. The following query:</p>
+<pre><code>`[0-9]{4}.+`
+</code></pre>
+<p>will return, for example, &ldquo;1836 51&rdquo;, &ldquo;1839 52&rdquo;, and &ldquo;1839 53&rdquo; from the first three lines of the text. We also want to capture the comma preceding the year, so add a comma and a space before the query, resulting in the following:</p>
+<pre><code> `, [0-9]{4}.+`
+</code></pre>
+<p>which will return &ldquo;, 1836 51&rdquo;, &ldquo;, 1839 52&rdquo;, etc.</p>
+<p>The next step is making the parenthetical groups which will be used to remove parts of the text with find-and-replace. In this case, we want to remove the comma and everything after &lsquo;year&rsquo;, but not the year or the space before it. Thus our query will look like the following:</p>
+<pre><code>`(,)( [0-9]{4})(.+)`
+</code></pre>
+<p>with the comma as the first group <code>\1</code>, the space and the year as the second <code>\2</code>, and the rest of the line as the third <code>\3</code>. Given that all we care about retaining is the second group (we want to keep the year, but not the comma or the page number), what will the replace look like? You only want to keep the <strong>second</strong> group.</p>
+<div class="expand">
+  <button type="button" class="expand__button" aria-label="Expand Button">
+    <span class="expand-icon expand-icon__right">
+        <svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M9.29 15.88L13.17 12 9.29 8.12c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z"/></svg>
+    </span>
+    It&#39;ll look like this
+  </button>
+  <div class="expand__content">
+    <p>search: <code>(,)( [0-9]{4})(.+)</code><br />
+replace: <code>\2</code></p>
+<p>Now go ahead and do that.</p>
+
+  </div>
+</div>
+<ol start="8">
+<li>
+<p>Find the tildes that we used to mark off our text of interest, and replace them with nothing to delete them.</p>
+</li>
+<li>
+<p>Finally, to separate the Sender and Receiver by a comma, we find all instances of the word &ldquo;to&rdquo; and replace it with a comma. Although we used <code>\b</code> and <code>\b</code> to denote the beginning and end of a word earlier in the lesson, we don&rsquo;t exactly do that here. We include the space preceding &ldquo;to&rdquo; in the regular expression, as well as the <code> \b</code> to denote the word ending. Once we find instances of the word and the space preceding it,<code> to\b</code> we replace it with a comma <code>,</code>.</p>
+</li>
+</ol>
+<p><strong>Do this</strong><br />
+search: <code>(\b to \b)</code><br />
+replace: <code>,</code></p>
+<ol start="10">
+<li>
+<p>You now have a document that contains senders, recipients, and the date in three columns separated by commas. Well done! You&rsquo;ll need to insert a line right at line 1 though to make this clear: at the top of the file, add a new line that simply reads &ldquo;Sender, Recipient, Date&rdquo;.</p>
+</li>
+<li>
+<p>You may notice that some lines still do not fit our criteria. Line 22, for example, reads &ldquo;Abner S. Lipscomb, James Hamilton and A. T. Bumley, AugUHt 15, &ldquo;. It has an incomplete date; we don&rsquo;t need to worry about these for our purposes.</p>
+</li>
+</ol>
+<p>More worrisome are lines, like 61 &ldquo;Copy and summary of instructions United States Department of State, &quot; which include none of the information we want. We can get rid of these lines later in a spreadsheet.</p>
+<p>The only non-standard lines we need to worry about with regular expressions are the ones with more than 2 commas, like line 178, &ldquo;A. J. Donelson, Secretary of State [Allen,. arf interim], December 10 1844&rdquo;. Notice that our second column, the name of the Recipient, has a comma inside of it. If you were to import this directly into a spreadsheet, you would get four columns, one for Sender, two for Recipient, and one for date, which would break any analysis you would then like to run. Unfortunately these lines need to be fixed by hand, but happily regular expressions make finding them easy. The following query:</p>
+<p><code>.+,.+,.+,</code></p>
+<p>will show you every line with more than 2 commas, because it finds any line that has any set of characters, then a comma, then any other set, then another comma, and so forth. You can just &lsquo;find all&rsquo; and then Sublime will show you the lines to fix manually.</p>
+<h3 id="phew">Phew</h3>
+<p>That was a lot of work. Save your file with a new name: <code>correspondence.csv</code>. You now have a document that can be visualized as a network and analyzed as such.</p>
 
   </article>
 </div>
@@ -2336,7 +2492,18 @@
         <div class="toc">
   <h6 class="toc__label">What&#39;s on this Page</h6>
   <div class="toc__body">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#some-basic-principles">Some basic principles</a></li>
+        <li><a href="#letters-of-the-republic-of-texas">Letters of the Republic of Texas</a></li>
+        <li><a href="#phew">Phew</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
   </div>
 </div>
       
