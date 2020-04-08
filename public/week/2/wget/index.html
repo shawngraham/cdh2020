@@ -1127,6 +1127,14 @@
         </li>
       
     
+      
+        
+        
+        <li>
+          <a href="https://craftingdh.netlify.com/week/1/help/" class="menu__title " data-depth="0">Asking for help</a>
+        </li>
+      
+    
   </ul>
   
 
@@ -1898,6 +1906,14 @@
         </li>
       
     
+      
+        
+        
+        <li>
+          <a href="https://craftingdh.netlify.com/week/1/help/" class="menu__title " data-depth="0">Asking for help</a>
+        </li>
+      
+    
   </ul>
   
 
@@ -2287,8 +2303,106 @@
   
 
   <article class="single__contents" data-dir="ltr">
-    <p>Downloading web materials with wget<br />
-Wget - can include jpgs</p>
+    <p><em>The following combines elements of <a href="https://programminghistorian.org/en/lessons/automated-downloading-with-wget" target="_blank">Ian Milligan&rsquo;s tutorial at The Programming Historian</a>, as well as <a href="https://programminghistorian.org/en/lessons/applied-archival-downloading-with-wget" target="_blank">Kellen Kurschinski&rsquo;s</a>.</em></p>
+<h3 id="introduction">Introduction</h3>
+<p>Wget is a program for downloading materials from the web. It is extremely powerful: if we do it <em>wrong</em> we can look like an attacker, or worse, download the entire internet! We use this program on the command line. We will cover some of the basics, and then we will create a little program that uses wget to download materials from Library and Archives Canada.</p>
+<div class="notices success" data-title="Important">
+  In what follows, <strong>push</strong> yourself until you get stuck. I&rsquo;m not interested in how far you get, but rather in how you document what you are able to do, how you look for help, how you reach out to others - or how you help others over the bumps. I know also that you all have lots of other claims on your time. Reading through all of this and making notes on what you do/don&rsquo;t understand is fine too.
+</div>
+<h3 id="installation">Installation</h3>
+<p><strong>Mac Users</strong><br />
+You will need a tool called &lsquo;homebrew&rsquo; to obtain wget. Homebrew is a &lsquo;package manager&rsquo;, or a utility that retrieves software from a single, &lsquo;official&rsquo; (as it were) source. To install home brew, copy the command below and enter it at your terminal:</p>
+<pre><code>$ /usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+</code></pre><p>Then, make sure everything is set up correctly with brew, enter: <code>$ brew doctor</code></p>
+<p>Assuming all has gone well, get wget: <code>$ brew install wget</code></p>
+<p>Then test that it installed: <code>$ wget</code> If it has installed, you&rsquo;ll get the message <code>-&gt; missing URL.</code>. If it hasn&rsquo;t you&rsquo;ll see <code>-&gt; command not found.</code></p>
+<p><strong>Windows</strong><br />
+Go to <a href="https://eternallybored.org/misc/wget/" target="_blank">this website</a> and right-click, &lsquo;save target as&rsquo; the file for the 32-bit version 1.20.3 EXE file.</p>
+<p><p class="md__image">
+  <img src="/images/wget/wget-exe.png" alt="this file"  />
+</p></p>
+<p>Move this file out of your Downloads folder into your <code>C:\Windows</code> directory. That way, when you type wget at the command prompt, Windows will find it.</p>
+<h3 id="basic-usage">Basic Usage</h3>
+<p>Wget expects you to enter the URL to a webpage or some other online file. How do websites organize things? Milligan writes:</p>
+<blockquote>
+<p>Let’s take an example dataset. Say you wanted to download all of the papers hosted on the website ActiveHistory.ca. They are all located at: <a href="http://activehistory.ca/papers/;">http://activehistory.ca/papers/;</a> in the sense that they are all contained within the /papers/ directory: for example, the 9th paper published on the website is <a href="http://activehistory.ca/papers/historypaper-9/">http://activehistory.ca/papers/historypaper-9/</a>. Think of this structure in the same way as directories on your own computer: if you have a folder labeled /History/, it likely contains several files within it. The same structure holds true for websites, and we are using this logic to tell our computer what files we want to download.</p>
+</blockquote>
+<p>So let&rsquo;s try to do that. At the command prompt or terminal, let&rsquo;s make a new directory to do our work in:</p>
+<pre><code>$ mkdir wget-activehistory
+$ cd wget-activehistory
+</code></pre><p>and let&rsquo;s grab the index page from the papers directory:</p>
+<p><code>$ wget http://activehistory.ca/papers/</code></p>
+<p>ta da! Look around in that directory, see what got downloaded.</p>
+<p>But that was only one file. We&rsquo;re going to add some more <em>flags</em> to the command to tell wget to recursively follow links (using the <code>-r</code> flag) in that folder <strong>but</strong> to only follow the links that lead to destinations <em>within</em> the folder (using the <code>-np</code> meaning &lsquo;no parent&rsquo;). Otherwise we could end up grabbing materials five steps away from this site! (If we <em>did</em> want materials outside of where we started, we&rsquo;d use the <code>-l</code> flag, &lsquo;links&rsquo;). Finally, we don&rsquo;t want to be attacking the site demanding gimme gimme gimme materials. We use the <code>-w</code> flag to wait between requests, and to <code>--limit-rate=20k</code> to narrow the bandwidth our request requires.</p>
+<ul>
+<li><code>-r</code> recursive</li>
+<li><code>-np</code> no-parent</li>
+<li><code>-l</code> links beyond domain we started in</li>
+<li><code>-w</code> wait time between requests to the server</li>
+<li><code>--limit-rate=</code> limit the bandwidth for our request (which necessarily slows down how long it&rsquo;ll take to perform the request)</li>
+</ul>
+<p>Altogether, our command now looks like this:</p>
+<p><code>$ wget -r -np -w 2 --limit-rate=20k http://activehistory.ca/papers/</code></p>
+<p>Give that a try!</p>
+<h3 id="using-wget-with-a-list-of-urls">Using wget with a list of urls</h3>
+<p>Let us assume that you were very interested in the history of health care in this country. Through the Library and Archives Canada search interface, you&rsquo;ve found <a href="http://collectionscanada.gc.ca/pam_archives/index.php?fuseaction=genitem.displayItem&amp;lang=eng&amp;rec_nbr=2005110&amp;rec_nbr_list=3366167,3203123,2005097,2005100,2005101,2005099,2005096,2005110,2005108,2005106" target="_blank">the Laura A. Gamble fonds</a>, a nurse originally from Wakefield Quebec (just north of Ottawa).</p>
+<p>You click through, and find the <a href="http://collectionscanada.gc.ca/pam_archives/index.php?fuseaction=genitem.displayEcopies&amp;lang=eng&amp;rec_nbr=98246&amp;rec_nbr_list=1883093,5030348,212367,122166,98246&amp;title=Laura&#43;A.&#43;Gamble&#43;fonds&#43;%5Btextual&#43;record%2C&#43;graphic&#43;material%5D.&#43;&amp;ecopy=e000000422" target="_blank">first image of her diary</a>; if you right-click on that image and select view image you find that the file path to the image: <code>http://data2.archives.ca/e/e001/e000000422.jpg</code>.</p>
+<p>Now, if Library and Archives Canada had an API for their collection (an &lsquo;application programming interface&rsquo;, or a set of commands that we could use on our end to deduce the locations of the information we want), we could just figure out the urls for each image of the diary in that fonds. But they don&rsquo;t. Turns out, the urls we want run from &hellip;422 to &hellip;425 (but try entering other numbers at the end of that URL: you will retrieve who-knows-what!):</p>
+<ol>
+<li>In sublime text, create a new file and paste these urls into it; save the file as <code>urls.txt</code></li>
+</ol>
+<pre><code>http://data2.archives.ca/e/e001/e000000422.jpg
+http://data2.archives.ca/e/e001/e000000423.jpg
+http://data2.archives.ca/e/e001/e000000424.jpg
+http://data2.archives.ca/e/e001/e000000425.jpg
+</code></pre><p>Now, we know that we can pass an indivual url to wget and wget will retrieve it; we can also pass <code>urls.txt</code> to wget, and wget will grab every file in turn!</p>
+<ol start="2">
+<li>Try this at the terminal/command prompt:</li>
+</ol>
+<p><code>$ wget -i urls.txt -r --no-parent -nd -w 2 --limit-rate=100k</code></p>
+<p>(google for <code>wget options</code>)</p>
+<h3 id="using-python-to-generate-a-list-of-urls">Using python to generate a list of urls</h3>
+<p>Now, let&rsquo;s try something a bit more complex. It&rsquo;s one thing to manually copy and paste urls into a file, but what if we want a <em>lot</em> of files? You could just set wget to crawl directories, but that can make you look like an attacker, it can clutter your own machine with files you don&rsquo;t want, and it can mess with your bandwidth and data caps. Sometimes though we can suss out the naming pattern for files, and so write a small program that will automatically write out all of the urls for us.</p>
+<p>Consider the <a href="http://collectionscanada.gc.ca/pam_archives/index.php?fuseaction=genitem.displayItem&amp;lang=eng&amp;rec_nbr=2005110&amp;rec_nbr_list=3366167,3203123,2005097,2005100,2005101,2005099,2005096,2005110,2005108,2005106" target="_blank">14th Canadian General Hospital war diaries</a>. The URLs of this diary go from <code>http://data2.archives.ca/e/e061/e001518029.jpg</code> to <code>http://data2.archives.ca/e/e061/e001518109.jpg</code>. That&rsquo;s 80 pages.</p>
+<ol>
+<li>make a new directory for our work - at the command prompt or terminal, <code>$ mkdir war-diaries</code></li>
+<li>Create a new file in Sublime Text. I&rsquo;ll give you the script to paste in there, and then I&rsquo;ll explain what it&rsquo;s doing.</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">urls</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+<span class="n">f</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;urls.txt&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8029</span><span class="p">,</span> <span class="mi">8110</span><span class="p">):</span>
+    <span class="n">urls</span> <span class="o">=</span> <span class="s1">&#39;http://data2.collectionscanada.ca/e/e061/e00151</span><span class="si">%d</span><span class="s1">.jpg</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">urls</span><span class="p">)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">close</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>First, we&rsquo;re creating an empty &lsquo;bin&rsquo; or varialbe called &lsquo;urls&rsquo;. Then, we create a variable called <code>f</code> for file, and tell it to open a new text file called &lsquo;urls&rsquo;. Then we set up a <em>loop</em> with the <code>for</code> command that will iterate over the 80 values from 8029 to 8110. The next line contains our pattern, the full url right up until <code>e0151</code>. The last little bit, the <code>%d</code> takes the number of the current iteration and pastes that in. The <code>\n</code> means &lsquo;new line&rsquo; so that when we iterate through this again, we&rsquo;ve moved the cursor down one line. Then with <code>f.write(urls)</code> we put the pattern into the file. Once we&rsquo;ve finished - we&rsquo;ve gotten all the way to 8110 - the loop is done, we close the file, and the script stops.</p>
+<ol start="3">
+<li>
+<p>Save this file as <code>urls.py</code> in your directory <code>war-diaries</code>. The <code>.py</code> reminds us that to run this file we&rsquo;ll need to invoke it with python.</p>
+</li>
+<li>
+<p>At the command prompt / terminal (windows: ananconda powershell remember!) make sure you are in your <code>war-diaries</code> directory with <code>pwd</code> to see where you are, and <code>cd</code> as appropriate to get to where you need to be.</p>
+</li>
+<li>
+<p>Make sure the file is there: type <code>ls</code> or <code>dir</code> as appropriate and make sure you see the file. Let&rsquo;s run this file: <code>$ python urls.py</code>. After a brief pause, you should just be presented with a new prompt, as if nothing has happened: but check your directory (<code>ls</code> or <code>dir</code>) and you&rsquo;ll see a new file: <code>urls.txt</code>. You can open this with Sublime Text to see what&rsquo;s inside.</p>
+</li>
+<li>
+<p>Now that you&rsquo;ve got the urls, use wget as you did for Laura Gamble&rsquo;s diary (it&rsquo;s the exact same command). It might go rather slowly, but keep an eye on your file explorer or finder. What have you got in your directory now?</p>
+</li>
+</ol>
+<h3 id="be-a-good-digital-citizen">Be a good digital citizen</h3>
+<p>Always use the wait and limit-rate flags so that you do not overwhelm the server (the computer at the address of your url) with your requests. You can get yourself into trouble if you don&rsquo;t. Make sure you understand the ideas around recursively following links, link depth, and &lsquo;no-parents.&rsquo; Read the original tutorials by <a href="https://programminghistorian.org/en/lessons/automated-downloading-with-wget" target="_blank">Ian Milligan at The Programming Historian</a>, and <a href="https://programminghistorian.org/en/lessons/applied-archival-downloading-with-wget" target="_blank">Kellen Kurschinski</a> for more details.</p>
 
   </article>
 </div>
@@ -2325,7 +2439,20 @@ Wget - can include jpgs</p>
         <div class="toc">
   <h6 class="toc__label">What&#39;s on this Page</h6>
   <div class="toc__body">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#basic-usage">Basic Usage</a></li>
+        <li><a href="#using-wget-with-a-list-of-urls">Using wget with a list of urls</a></li>
+        <li><a href="#using-python-to-generate-a-list-of-urls">Using python to generate a list of urls</a></li>
+        <li><a href="#be-a-good-digital-citizen">Be a good digital citizen</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
   </div>
 </div>
       

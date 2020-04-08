@@ -1127,6 +1127,14 @@
         </li>
       
     
+      
+        
+        
+        <li>
+          <a href="https://craftingdh.netlify.com/week/1/help/" class="menu__title " data-depth="0">Asking for help</a>
+        </li>
+      
+    
   </ul>
   
 
@@ -1898,6 +1906,14 @@
         </li>
       
     
+      
+        
+        
+        <li>
+          <a href="https://craftingdh.netlify.com/week/1/help/" class="menu__title " data-depth="0">Asking for help</a>
+        </li>
+      
+    
   </ul>
   
 
@@ -2287,8 +2303,295 @@
   
 
   <article class="single__contents" data-dir="ltr">
-    <p>use notebook?<br />
-Using APIs to search and download</p>
+    <p>Sometimes, a website will have what is called an Application Programming Interface or API. In essence, this lets a program on your computer talk to the computer serving the website you&rsquo;re interested in, such that the website gives you the data that you&rsquo;re looking for.</p>
+<p>An API is just a way of opening up a program so that another program can interact with it. That is, instead of an interface meant for a human to interact with the machine, there’s an API to allow some other machine to interact with this one. If you’ve ever downloaded an app on your phone that allowed you to interact with Instagram (but wasn’t Instagram itself), that interaction was through Instagram’s API, for instance.</p>
+<p>A good API will also have documentation explaining what or how to make calls to it to get the information you want. That is, instead of you punching in the search terms on a search page, and copying and pasting the results, you frame a request as a URL. More or less. The results often come back to you in a text format where data is organized according to keys and values (JSON). Sometimes it&rsquo;s just a table of data using commas to separate each field for each row (.csv file). JSON looks like the following:</p>
+<p><p class="md__image">
+  <img src="https://i.imgur.com/LtZWyle.png" alt="apis"  />
+</p></p>
+<div class="notices success" data-title="Important">
+  In what follows, <strong>push</strong> yourself until you get stuck. I&rsquo;m not interested in how far you get, but rather in how you document what you are able to do, how you look for help, how you reach out to others - or how you help others over the bumps. I know also that you all have lots of other claims on your time. Reading through all of this and making notes on what you do/don&rsquo;t understand is fine too.
+</div>
+<h3 id="getting-material-out-of-an-api">Getting material out of an API</h3>
+<p>Each API has its own idiosyncracies, but we can always look at the documentation and figure out how to form our requests so that our programs grab the data we&rsquo;re after. The <a href="https://chroniclingamerica.loc.gov/" target="_blank">Chronicling America website</a> from the Library of Congress has digitized American newspapers from 1789 to 1963. While the site has a fine search interface, we&rsquo;ll use the API to grab <em>every</em> article that mentions the word &lsquo;archeology&rsquo; (sic).</p>
+<p>First of all, go to the Cronicling America site and <a href="https://chroniclingamerica.loc.gov/search/pages/results/?state=&amp;date1=1789&amp;date2=1963&amp;proxtext=archeology&amp;x=0&amp;y=0&amp;dateFilterType=yearRange&amp;rows=20&amp;searchType=basic" target="_blank">search in the text box for <code>archeology</code></a>. Notice how the url changes when it brings back the results:</p>
+<p><code>https://chroniclingamerica.loc.gov/search/pages/results/?state=&amp;date1=1789&amp;date2=1963&amp;proxtext=archeology&amp;x=0&amp;y=0&amp;dateFilterType=yearRange&amp;rows=20&amp;searchType=basic</code></p>
+<p>There&rsquo;s a lot of stuff in there - amongst other things, we can see a setting for <code>state</code>, for <code>date1</code> and <code>date2</code>, our search term appears as the value for a setting called <code>proxtext</code>. This is the API in action.</p>
+<p>Let&rsquo;s build.</p>
+<ol>
+<li>Open a new file in Sublime Text. We&rsquo;ll first put a bit of metadata in our file, for the programme we&rsquo;re going to write:</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="ch">#!/usr/bin/env python</span>
+<span class="s2">&#34;&#34;&#34;
+</span><span class="s2">a script for getting materials from the Chronicling America website
+</span><span class="s2">&#34;&#34;&#34;</span>
+
+<span class="c1"># Make these modules available</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">json</span>
+
+<span class="n">__author__</span> <span class="o">=</span> <span class="s2">&#34;your-name&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>The first bit tells us this is a python file. The next bit tells us what the file is for. The <code>import</code> tells python that we&rsquo;ll need a module called <code>requests</code> which lets us grab materials from the web, and <code>json</code> which helps us deal with json formatted data. The final bit says who wrote the script.</p>
+<ol start="2">
+<li>Now we&rsquo;re going to define some variables to hold the bit of the search url up to where the <code>?</code> occurs - everything after the question mark are the parameters we want the API to search. We create the api_searh_url, define the parameter we want to search for, and define how we want the results returned to us. Add the following to your script:</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Create a variable called &#39;api_search_url&#39; and give it a value</span>
+<span class="n">api_search_url</span> <span class="o">=</span> <span class="s1">&#39;https://chroniclingamerica.loc.gov/search/pages/results/&#39;</span>
+
+<span class="c1"># This creates a dictionary called &#39;params&#39; and sets values for the API&#39;s mandatory parameters</span>
+<span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;proxtext&#39;</span><span class="p">:</span> <span class="s1">&#39;archeology&#39;</span> <span class="c1"># Search for this keyword     </span>
+<span class="p">}</span>
+
+<span class="c1"># This adds a value for &#39;encoding&#39; to our dictionary</span>
+<span class="n">params</span><span class="p">[</span><span class="s1">&#39;format&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;json&#39;</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="3">
+<li>Now we&rsquo;ll send the request to the server, and we&rsquo;ll add a bit of error checking so that if something is wrong, we&rsquo;ll get some indication of why that is. Add this to your script:</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># This sends our request to the API and stores the result in a variable called &#39;response&#39;</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">api_search_url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
+
+<span class="c1"># This shows us the url that&#39;s sent to the API</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Here</span><span class="se">\&#39;</span><span class="s1">s the formatted url that gets sent to the ChronAmerca API:</span><span class="se">\n</span><span class="s1">{}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">url</span><span class="p">))</span>
+
+<span class="c1"># This checks the status code of the response to make sure there were no errors</span>
+<span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="n">requests</span><span class="o">.</span><span class="n">codes</span><span class="o">.</span><span class="n">ok</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;All ok&#39;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">403</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;There was an authentication error. Did you paste your API above?&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;There was a problem. Error code: {}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="p">))</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="4">
+<li>Now let&rsquo;s get the results, and put them into a variable called &lsquo;data&rsquo;. Then we&rsquo;ll print the results to the terminal, and finish by also writing the results to a file.</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Get the API&#39;s JSON results and make them available as a Python variable called &#39;data&#39;</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+
+<span class="c1"># Let&#39;s prettify the raw JSON data and then display it.</span>
+
+<span class="c1"># We&#39;re using the Pygments library to add some colour to the output, so we need to import it</span>
+
+<span class="kn">from</span> <span class="nn">pygments</span> <span class="kn">import</span> <span class="n">highlight</span><span class="p">,</span> <span class="n">lexers</span><span class="p">,</span> <span class="n">formatters</span>
+
+<span class="c1"># This uses Python&#39;s JSON module to output the results as nicely indented text</span>
+<span class="n">formatted_data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># This colours the text</span>
+<span class="n">highlighted_data</span> <span class="o">=</span> <span class="n">highlight</span><span class="p">(</span><span class="n">formatted_data</span><span class="p">,</span> <span class="n">lexers</span><span class="o">.</span><span class="n">JsonLexer</span><span class="p">(),</span> <span class="n">formatters</span><span class="o">.</span><span class="n">TerminalFormatter</span><span class="p">())</span>
+
+<span class="c1"># And now display the results</span>
+<span class="k">print</span><span class="p">(</span><span class="n">highlighted_data</span><span class="p">)</span>
+
+<span class="c1"># dump json to file</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;data.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">outfile</span><span class="p">:</span>
+    <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">outfile</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Save your file as <code>ca.py</code>. Open a terminal/command prompt (remember Windows folks: anaconda powershell!) in the folder where you saved this file, and run it with:</p>
+<p><code>$ python ca.py</code></p>
+<p>Your terminal will look like it&rsquo;s frozen for a few moments; that&rsquo;s because your computer is reaching out to the Chronicling America website, making its request, and pulling down the results. But in seconds, you&rsquo;ll have a <code>data.json</code> file with loads of data - 9021 articles in fact!</p>
+<p>Congratulations, you now have a program that you wrote that you can use to obtain all sorts of historical information.</p>
+<p>Your complete file will look like this:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="ch">#!/usr/bin/env python</span>
+<span class="s2">&#34;&#34;&#34;
+</span><span class="s2">a script for getting materials from the Chronicling America website
+</span><span class="s2">&#34;&#34;&#34;</span>
+
+<span class="c1"># Make these modules available</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">json</span>
+
+<span class="n">__author__</span> <span class="o">=</span> <span class="s2">&#34;your-name&#34;</span>
+
+<span class="c1"># Create a variable called &#39;api_search_url&#39; and give it a value</span>
+<span class="n">api_search_url</span> <span class="o">=</span> <span class="s1">&#39;https://chroniclingamerica.loc.gov/search/pages/results/&#39;</span>
+
+<span class="c1"># This creates a dictionary called &#39;params&#39; and sets values for the API&#39;s mandatory parameters</span>
+<span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;proxtext&#39;</span><span class="p">:</span> <span class="s1">&#39;archeology&#39;</span> <span class="c1"># Search for this keyword</span>
+<span class="p">}</span>
+
+<span class="c1"># This adds a value for &#39;encoding&#39; to our dictionary</span>
+<span class="n">params</span><span class="p">[</span><span class="s1">&#39;format&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;json&#39;</span>
+
+<span class="c1"># This sends our request to the API and stores the result in a variable called &#39;response&#39;</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">api_search_url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
+
+<span class="c1"># This shows us the url that&#39;s sent to the API</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Here</span><span class="se">\&#39;</span><span class="s1">s the formatted url that gets sent to the ChronAmerca API:</span><span class="se">\n</span><span class="s1">{}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">url</span><span class="p">))</span>
+
+<span class="c1"># This checks the status code of the response to make sure there were no errors</span>
+<span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="n">requests</span><span class="o">.</span><span class="n">codes</span><span class="o">.</span><span class="n">ok</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;All ok&#39;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">403</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;There was an authentication error. Did you paste your API above?&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;There was a problem. Error code: {}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="p">))</span>
+
+<span class="c1"># Get the API&#39;s JSON results and make them available as a Python variable called &#39;data&#39;</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+
+<span class="c1"># Let&#39;s prettify the raw JSON data and then display it.</span>
+<span class="c1"># We&#39;re using the Pygments library to add some colour to the output, so we need to import it</span>
+
+<span class="kn">from</span> <span class="nn">pygments</span> <span class="kn">import</span> <span class="n">highlight</span><span class="p">,</span> <span class="n">lexers</span><span class="p">,</span> <span class="n">formatters</span>
+
+<span class="c1"># This uses Python&#39;s JSON module to output the results as nicely indented text</span>
+<span class="n">formatted_data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># This colours the text</span>
+<span class="n">highlighted_data</span> <span class="o">=</span> <span class="n">highlight</span><span class="p">(</span><span class="n">formatted_data</span><span class="p">,</span> <span class="n">lexers</span><span class="o">.</span><span class="n">JsonLexer</span><span class="p">(),</span> <span class="n">formatters</span><span class="o">.</span><span class="n">TerminalFormatter</span><span class="p">())</span>
+
+<span class="c1"># And now display the results</span>
+<span class="k">print</span><span class="p">(</span><span class="n">highlighted_data</span><span class="p">)</span>
+
+<span class="c1"># dump json to file</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;data.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">outfile</span><span class="p">:</span>
+    <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">outfile</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="some-other-apis">Some other APIs</h3>
+<p>You can modify this code to extract information from other APIs, but it takes a bit of tinkering. In essence, you need to study the website to see how they form the API, and then change up lines 13, 17 and 21 accordingly. You can see this in action for instance <a href="https://github.com/o-date/working-with-apis/blob/master/notebooks/metropolitan%20museum%20of%20art%20API.ipynb" target="_blank">here, with regard to the Metropolitan Museum of Art</a> or <a href="https://github.com/o-date/working-with-apis/blob/master/notebooks/retrieving%20data%20from%20the%20Smithsonian%20OA%20api.ipynb" target="_blank">here, with regard to the Smithsonian</a>.</p>
+<h3 id="but-its-in-json-format">But&hellip; it&rsquo;s in json format?</h3>
+<p>JSON is handy for lots of computational tasks, but for you as a beginning digital historian, you might want to have the data as a table. There are a couple of options here. The easiest right now - and there&rsquo;s no shame in doing this - is to use an online converter. This site: <a href="http://json-csv.com" target="_blank">json-csv.com</a> lets you convert your json file to csv or Excel spreadsheet, and even transfer it over to a google doc. Give that a shot right now; the text of the articles by the way is in the field &lsquo;ocr_eng&rsquo; which tells us that the text was originally transcribed from the images using object character recognition - so there will be errors and weird glitches in the text. Fortunately, there&rsquo;s also a URL with the direct link to the original document, so you can check things for yourself.</p>
+<h3 id="glam-workbench">GLAM Workbench</h3>
+<p>&lsquo;GLAM&rsquo; stands for &lsquo;galleries, libraries, archives, and museums&rsquo;. The GLAM Workbench is by <a href="http://timsherratt.org/" target="_blank">Tim Sherratt</a>, a digital historian in Australia. I would strongly recommend that you explore and give <a href="https://glam-workbench.github.io/" target="_blank">the Workbench</a> a whirl if you are at all interested in the kinds of work that you might be able to do when you are computationally able to treat collections as data. For a glimpse as to what that might mean, check out <a href="https://slides.com/wragge/liber-glamworkbench-2020#/" target="_blank">this presentation</a>.</p>
 
   </article>
 </div>
@@ -2325,7 +2628,18 @@ Using APIs to search and download</p>
         <div class="toc">
   <h6 class="toc__label">What&#39;s on this Page</h6>
   <div class="toc__body">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#getting-material-out-of-an-api">Getting material out of an API</a></li>
+        <li><a href="#some-other-apis">Some other APIs</a></li>
+        <li><a href="#but-its-in-json-format">But&hellip; it&rsquo;s in json format?</a></li>
+        <li><a href="#glam-workbench">GLAM Workbench</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
   </div>
 </div>
       

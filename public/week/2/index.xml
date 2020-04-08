@@ -22,8 +22,7 @@
         <pubDate>Tue, 28 Jan 2020 00:10:48 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/2/instructions/</guid>
-        <description>Goals for this week  how to describe what&amp;rsquo;s gone wrong, and to figure out how to fix it  Listen Read Do Try to work through as many of these exercises as you can. Don&amp;rsquo;t worry too much if you get stuck: the point is to push yourself beyond your current level of ability.
- Download and install the Sublime Text Editor Install Conda Download web materials with wget Use OCR (Object Character Recognition) to turn images of text into text Learn how to transform a text file using Regular Expressions  Bonus:</description>
+        <description>Goals for this week  learn some of the ways historical information is made available digitally, paying attention to disparities of labour, and of tech  Listen Read Something given. That&amp;rsquo;s a nice way of thinking about it. Of course, much of the data that we are &amp;lsquo;given&amp;rsquo; wasn&amp;rsquo;t really given willingly. When we topic model Martha Ballard&amp;rsquo;s diary, did she give this to us? Of course, she couldn&amp;rsquo;t have imagined what we might try to do to it.</description>
       </item>
       
       <item>
@@ -32,7 +31,9 @@
         <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/2/installing-anaconda/</guid>
-        <description>Anaconda!</description>
+        <description>Introduction Cost = $0.
+Anaconda is a platform for data science work. By installing Anaconda, you get access to a series of tools for working in both the Python and R programming languages, plus excellent visual interfaces that reduce (some of) the pain of programming.
+When we do work in python, we sometimes need to add more lego-pieces to what we&amp;rsquo;re doing, to accomplish specific tasks. Anaconda comes with very nearly - but not all - of the pieces you might need.</description>
       </item>
       
       <item>
@@ -41,8 +42,8 @@
         <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/2/wget/</guid>
-        <description>Downloading web materials with wget
-Wget - can include jpgs</description>
+        <description>The following combines elements of Ian Milligan&amp;rsquo;s tutorial at The Programming Historian, as well as Kellen Kurschinski&amp;rsquo;s.
+Introduction Wget is a program for downloading materials from the web. It is extremely powerful: if we do it wrong we can look like an attacker, or worse, download the entire internet! We use this program on the command line. We will cover some of the basics, and then we will create a little program that uses wget to download materials from Library and Archives Canada.</description>
       </item>
       
       <item>
@@ -51,8 +52,8 @@ Wget - can include jpgs</description>
         <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/2/apis/</guid>
-        <description>use notebook?
-Using APIs to search and download</description>
+        <description>Sometimes, a website will have what is called an Application Programming Interface or API. In essence, this lets a program on your computer talk to the computer serving the website you&amp;rsquo;re interested in, such that the website gives you the data that you&amp;rsquo;re looking for.
+An API is just a way of opening up a program so that another program can interact with it. That is, instead of an interface meant for a human to interact with the machine, there’s an API to allow some other machine to interact with this one.</description>
       </item>
       
       <item>
@@ -61,7 +62,7 @@ Using APIs to search and download</description>
         <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/2/ocr/</guid>
-        <description>OCR with Tesseract and R</description>
+        <description>Object Character Recognition is a technique that looks at the pattern of light and dark pixels in an image and matches them against the alphabet. The technique was developed against clean type-written pages where the letters were crisply made. On historical documents, things can get pretty hit-and-miss. When we searched the Chronicling America website, we were actually searching the OCR&amp;rsquo;d text that was embedded in each of those pdfs (if you can select text in a pdf, it has a hidden text layer on top of the image.</description>
       </item>
       
       <item>

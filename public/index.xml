@@ -17,13 +17,21 @@
     
       
       <item>
+        <title>Instructions: May 4</title>
+        <link>https://craftingdh.netlify.com/week/1/instructions/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/1/instructions/</guid>
+        <description>Goals for this week  getting our Github accounts set up and making our first log entries getting Hypothes.is set up getting Zotero installed   learn how to describe what&amp;rsquo;s gone wrong, and to figure out how to fix it   explore our ignorance: what is dighist?  Listen  intro podcast  Read These readings have two aims. One, to ground the fact of the digital in the physicality of the world; Two, to give you a sense of the potentials.</description>
+      </item>
+      
+      <item>
         <title>Instructions: May 11</title>
         <link>https://craftingdh.netlify.com/week/2/instructions/</link>
         <pubDate>Tue, 28 Jan 2020 00:10:48 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/2/instructions/</guid>
-        <description>Goals for this week  how to describe what&amp;rsquo;s gone wrong, and to figure out how to fix it  Listen Read Do Try to work through as many of these exercises as you can. Don&amp;rsquo;t worry too much if you get stuck: the point is to push yourself beyond your current level of ability.
- Download and install the Sublime Text Editor Install Conda Download web materials with wget Use OCR (Object Character Recognition) to turn images of text into text Learn how to transform a text file using Regular Expressions  Bonus:</description>
+        <description>Goals for this week  learn some of the ways historical information is made available digitally, paying attention to disparities of labour, and of tech  Listen Read Something given. That&amp;rsquo;s a nice way of thinking about it. Of course, much of the data that we are &amp;lsquo;given&amp;rsquo; wasn&amp;rsquo;t really given willingly. When we topic model Martha Ballard&amp;rsquo;s diary, did she give this to us? Of course, she couldn&amp;rsquo;t have imagined what we might try to do to it.</description>
       </item>
       
       <item>
@@ -32,7 +40,7 @@
         <pubDate>Tue, 28 Jan 2020 00:10:42 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/3/instructions/</guid>
-        <description>The 18th is the Long Weekend. Take a break from your school work, if you can. Goals for this week Listen Read Do With tech work, if it doesn&amp;rsquo;t come together in about 30 minutes, it won&amp;rsquo;t come in an hour. So take a break. Close the laptop. Call somebody up for help. Find another pair of eyes to look at the problem. I don&amp;rsquo;t want to hear that you labored heroically for 2 hours to do something.</description>
+        <description>The 18th is the Long Weekend. Take a break from your school work, if you can. Goals for this week Listen Read Do  Learn how to transform a text file using Regular Expressions   When/if you run into trouble, take screenshots (google how to do that for your particular machine) and these can be uploaded into your repository as well. Indeed, you should also keep track of any files you create as part of your weekly work in your repo: these are evidence!</description>
       </item>
       
       <item>
@@ -41,7 +49,7 @@
         <pubDate>Tue, 28 Jan 2020 00:10:37 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/4/instructions/</guid>
-        <description>Goals for this week Listen Read Do With tech work, if it doesn&amp;rsquo;t come together in about 30 minutes, it won&amp;rsquo;t come in an hour. So take a break. Close the laptop. Call somebody up for help. Find another pair of eyes to look at the problem. I don&amp;rsquo;t want to hear that you labored heroically for 2 hours to do something. Jump into our social space and ask for advice.</description>
+        <description>Goals for this week Listen Read Do  When/if you run into trouble, take screenshots (google how to do that for your particular machine) and these can be uploaded into your repository as well. Indeed, you should also keep track of any files you create as part of your weekly work in your repo: these are evidence!  With tech work, if it doesn&amp;rsquo;t come together in about 30 minutes, it won&amp;rsquo;t come in an hour.</description>
       </item>
       
       <item>
@@ -50,16 +58,7 @@
         <pubDate>Tue, 28 Jan 2020 00:10:09 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/5/instructions/</guid>
-        <description>Goals for this week Listen Read Do With tech work, if it doesn&amp;rsquo;t come together in about 30 minutes, it won&amp;rsquo;t come in an hour. So take a break. Close the laptop. Call somebody up for help. Find another pair of eyes to look at the problem. I don&amp;rsquo;t want to hear that you labored heroically for 2 hours to do something. Jump into our social space and ask for advice.</description>
-      </item>
-      
-      <item>
-        <title>Sound</title>
-        <link>https://craftingdh.netlify.com/week/5/sound/</link>
-        <pubDate>Tue, 28 Jan 2020 00:10:09 +0900</pubDate>
-        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>https://craftingdh.netlify.com/week/5/sound/</guid>
-        <description> audacity sonification  </description>
+        <description>Goals for this week Listen Read Do  When/if you run into trouble, take screenshots (google how to do that for your particular machine) and these can be uploaded into your repository as well. Indeed, you should also keep track of any files you create as part of your weekly work in your repo: these are evidence!  With tech work, if it doesn&amp;rsquo;t come together in about 30 minutes, it won&amp;rsquo;t come in an hour.</description>
       </item>
       
       <item>
@@ -68,7 +67,18 @@
         <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/2/installing-anaconda/</guid>
-        <description>Anaconda!</description>
+        <description>Introduction Cost = $0.
+Anaconda is a platform for data science work. By installing Anaconda, you get access to a series of tools for working in both the Python and R programming languages, plus excellent visual interfaces that reduce (some of) the pain of programming.
+When we do work in python, we sometimes need to add more lego-pieces to what we&amp;rsquo;re doing, to accomplish specific tasks. Anaconda comes with very nearly - but not all - of the pieces you might need.</description>
+      </item>
+      
+      <item>
+        <title>Setting up your Github</title>
+        <link>https://craftingdh.netlify.com/week/1/github/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/1/github/</guid>
+        <description>If any of the instructions below are unclear, annotate this page with hypothesis while being logged into our course reading group. If you spot someone asking for help and you can offer advice, respond to the annotation. Introduction Github is a code sharing website often used by digital historians. &amp;lsquo;Git&amp;rsquo; is a program that takes snapshots of the current state of a folder, and stores them in sequence, allowing you to revert your changes to an earlier state.</description>
       </item>
       
       <item>
@@ -90,22 +100,25 @@
       </item>
       
       <item>
-        <title>Mapping</title>
-        <link>https://craftingdh.netlify.com/week/5/mapping/</link>
+        <title>Sound</title>
+        <link>https://craftingdh.netlify.com/week/5/sound/</link>
         <pubDate>Tue, 28 Jan 2020 00:10:09 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>https://craftingdh.netlify.com/week/5/mapping/</guid>
-        <description> storymap leaflet webmapping != GIS, pointers to QGIS  </description>
+        <guid>https://craftingdh.netlify.com/week/5/sound/</guid>
+        <description> audacity sonification  </description>
       </item>
       
       <item>
-        <title>Instructions: May 4</title>
-        <link>https://craftingdh.netlify.com/week/1/instructions/</link>
+        <title>Setting up your Hypothesis</title>
+        <link>https://craftingdh.netlify.com/week/1/hypothesis/</link>
         <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>https://craftingdh.netlify.com/week/1/instructions/</guid>
-        <description>Goals for this week  getting our Github accounts set up and making our first log entries getting Hypothes.is set up getting Zotero installed. explore our ignorance: what is dighist?  Listen  intro podcast  Read These readings have two aims. One, to ground the fact of the digital in the physicality of the world; Two, to give you a sense of the potentials. Most are fairly short.
-  Lorna Richardson, 2020 &amp;lsquo;Digital tech &amp;amp; the environment&amp;rsquo; #DHGoesVIRAL.</description>
+        <guid>https://craftingdh.netlify.com/week/1/hypothesis/</guid>
+        <description>While watching this video, turn on the closed captions.
+Create an account at hypothes.is:
+Get the Chrome app or the Firefox bookmarklet:
+Make sure you&amp;rsquo;re logged in:
+Then join our HIST3814o reading group. If you happen to be reading something, and see an existing annotation that interests you, hit the &amp;lsquo;reply&amp;rsquo; button on the annotation to start a conversation! Sometimes, the person to whom you&amp;rsquo;re replying might be a previous year&amp;rsquo;s student, but that&amp;rsquo;s ok; they might enter into conversation with you.</description>
       </item>
       
       <item>
@@ -114,8 +127,8 @@
         <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/2/wget/</guid>
-        <description>Downloading web materials with wget
-Wget - can include jpgs</description>
+        <description>The following combines elements of Ian Milligan&amp;rsquo;s tutorial at The Programming Historian, as well as Kellen Kurschinski&amp;rsquo;s.
+Introduction Wget is a program for downloading materials from the web. It is extremely powerful: if we do it wrong we can look like an attacker, or worse, download the entire internet! We use this program on the command line. We will cover some of the basics, and then we will create a little program that uses wget to download materials from Library and Archives Canada.</description>
       </item>
       
       <item>
@@ -142,7 +155,16 @@ Wget - can include jpgs</description>
         <pubDate>Tue, 28 Jan 2020 00:10:09 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/6/instructions/</guid>
-        <description>Goals for this week Listen Read Do With tech work, if it doesn&amp;rsquo;t come together in about 30 minutes, it won&amp;rsquo;t come in an hour. So take a break. Close the laptop. Call somebody up for help. Find another pair of eyes to look at the problem. I don&amp;rsquo;t want to hear that you labored heroically for 2 hours to do something. Jump into our social space and ask for advice.</description>
+        <description>Goals for this week  experience something of the cycle of digital history by trying some exploratory analysis with the tools/approaches you&amp;rsquo;ve learned  Listen Read Do Remember back in week one, how I had you explore that twitter thread by Amalia Skarlatou Levi? This week, you&amp;rsquo;ll be selecting one of those resources she shared (or, if none strike your fancy, something from the resources gathered here) to do some exploratory digital history.</description>
+      </item>
+      
+      <item>
+        <title>Mapping</title>
+        <link>https://craftingdh.netlify.com/week/5/mapping/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:09 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/5/mapping/</guid>
+        <description> storymap leaflet webmapping != GIS, pointers to QGIS  </description>
       </item>
       
       <item>
@@ -151,17 +173,17 @@ Wget - can include jpgs</description>
         <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/2/apis/</guid>
-        <description>use notebook?
-Using APIs to search and download</description>
+        <description>Sometimes, a website will have what is called an Application Programming Interface or API. In essence, this lets a program on your computer talk to the computer serving the website you&amp;rsquo;re interested in, such that the website gives you the data that you&amp;rsquo;re looking for.
+An API is just a way of opening up a program so that another program can interact with it. That is, instead of an interface meant for a human to interact with the machine, there’s an API to allow some other machine to interact with this one.</description>
       </item>
       
       <item>
-        <title>Setting up your Github</title>
-        <link>https://craftingdh.netlify.com/week/1/github/</link>
+        <title>Setting up your Zotero</title>
+        <link>https://craftingdh.netlify.com/week/1/zotero/</link>
         <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>https://craftingdh.netlify.com/week/1/github/</guid>
-        <description>If any of the instructions below are unclear, annotate this page with hypothesis while being logged into our course reading group. If you spot someone asking for help and you can offer advice, respond to the annotation. Introduction Github is a code sharing website often used by digital historians. &amp;lsquo;Git&amp;rsquo; is a program that takes snapshots of the current state of a folder, and stores them in sequence, allowing you to revert your changes to an earlier state.</description>
+        <guid>https://craftingdh.netlify.com/week/1/zotero/</guid>
+        <description>Zotero is a piece of software for managing your research. When it is installed, it can extract metadata from websites or pdfs (when these have metadata) and store the information in your very own library. Zotero can be connected to Word or Google Docs so that when it is time to insert a reference, you can select the reference from your library - and then get the machine to automatically format/update your bibliography against whatever citation style you use.</description>
       </item>
       
       <item>
@@ -192,34 +214,23 @@ Using APIs to search and download</description>
       </item>
       
       <item>
+        <title>Getting started with Discord</title>
+        <link>https://craftingdh.netlify.com/week/1/discord/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/1/discord/</guid>
+        <description>What is Discord? You can download Discord here or you can use it in a broswer.
+You will receive an invitation email in your Carleton account. It expires after one day, so do join once you get it. It will ask to verify your email; check your spam folder.
+Once you&amp;rsquo;re in, there&amp;rsquo;s a welcome message with a reaction emoji at the end - click on the thumbs up to confirm that you&amp;rsquo;ve read the message.</description>
+      </item>
+      
+      <item>
         <title>OCR</title>
         <link>https://craftingdh.netlify.com/week/2/ocr/</link>
         <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/2/ocr/</guid>
-        <description>OCR with Tesseract and R</description>
-      </item>
-      
-      <item>
-        <title>Setting up your Hypothesis</title>
-        <link>https://craftingdh.netlify.com/week/1/hypothesis/</link>
-        <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
-        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>https://craftingdh.netlify.com/week/1/hypothesis/</guid>
-        <description>While watching this video, turn on the closed captions.
-Create an account at hypothes.is:
-Get the Chrome app or the Firefox bookmarklet:
-Make sure you&amp;rsquo;re logged in:
-Then join our HIST3814o reading group. If you happen to be reading something, and see an existing annotation that interests you, hit the &amp;lsquo;reply&amp;rsquo; button on the annotation to start a conversation! Sometimes, the person to whom you&amp;rsquo;re replying might be a previous year&amp;rsquo;s student, but that&amp;rsquo;s ok; they might enter into conversation with you.</description>
-      </item>
-      
-      <item>
-        <title>Setting up your Zotero</title>
-        <link>https://craftingdh.netlify.com/week/1/zotero/</link>
-        <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
-        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>https://craftingdh.netlify.com/week/1/zotero/</guid>
-        <description>Zotero is a piece of software for managing your research. When it is installed, it can extract metadata from websites or pdfs (when these have metadata) and store the information in your very own library. Zotero can be connected to Word or Google Docs so that when it is time to insert a reference, you can select the reference from your library - and then get the machine to automatically format/update your bibliography against whatever citation style you use.</description>
+        <description>Object Character Recognition is a technique that looks at the pattern of light and dark pixels in an image and matches them against the alphabet. The technique was developed against clean type-written pages where the letters were crisply made. On historical documents, things can get pretty hit-and-miss. When we searched the Chronicling America website, we were actually searching the OCR&amp;rsquo;d text that was embedded in each of those pdfs (if you can select text in a pdf, it has a hidden text layer on top of the image.</description>
       </item>
       
       <item>
@@ -323,14 +334,15 @@ If we ever get out of quarantine, and you&amp;rsquo;re in Ottawa, he often haunt
       </item>
       
       <item>
-        <title>Getting started with Discord</title>
-        <link>https://craftingdh.netlify.com/week/1/discord/</link>
+        <title>Asking for help</title>
+        <link>https://craftingdh.netlify.com/week/1/help/</link>
         <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>https://craftingdh.netlify.com/week/1/discord/</guid>
-        <description>What is Discord? You can download Discord here or you can use it in a broswer.
-You will receive an invitation email in your Carleton account. It expires after one day, so do join once you get it.
-Once you&amp;rsquo;re in, there&amp;rsquo;s a welcome message with a reaction emoji at the end - click on the thumbs up to confirm that you&amp;rsquo;ve read the message. This will unlock the various channels in the server, including voice and screensharing.</description>
+        <guid>https://craftingdh.netlify.com/week/1/help/</guid>
+        <description>Help! Things have gone wrong! Montparnasse Derailment, 1895
+Things are going to go wrong. Things are going to break. Instructions will seem vague or incomplete - or worse, I will have indeed forgotten to tell you something crucial.
+Or worse, I&amp;rsquo;ve made an assumption about your understanding, and left things unsaid that needed to be made explicit. There&amp;rsquo;s a lot of this, in the digital world, in fact.
+This week, you learned a bit about Git and Github.</description>
       </item>
       
       <item>
@@ -349,7 +361,7 @@ But we&amp;rsquo;re good with text. In this bonus exercise, you&amp;rsquo;ll dow
         <pubDate>Tue, 28 Jan 2020 00:10:09 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/6-5/instructions/</guid>
-        <description>Do Reflect </description>
+        <description>The Last Bit Do Reflect Submit work You can submit the link to your work on this form</description>
       </item>
       
       <item>

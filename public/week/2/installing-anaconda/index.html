@@ -1127,6 +1127,14 @@
         </li>
       
     
+      
+        
+        
+        <li>
+          <a href="https://craftingdh.netlify.com/week/1/help/" class="menu__title " data-depth="0">Asking for help</a>
+        </li>
+      
+    
   </ul>
   
 
@@ -1898,6 +1906,14 @@
         </li>
       
     
+      
+        
+        
+        <li>
+          <a href="https://craftingdh.netlify.com/week/1/help/" class="menu__title " data-depth="0">Asking for help</a>
+        </li>
+      
+    
   </ul>
   
 
@@ -2287,7 +2303,56 @@
   
 
   <article class="single__contents" data-dir="ltr">
-    <p>Anaconda!</p>
+    <h3 id="introduction">Introduction</h3>
+<p>Cost = $0.</p>
+<p>Anaconda is a platform for data science work. By installing Anaconda, you get access to a series of tools for working in both the Python and R programming languages, plus excellent visual interfaces that reduce (some of) the pain of programming.</p>
+<p>When we do work in python, we sometimes need to add more lego-pieces to what we&rsquo;re doing, to accomplish specific tasks. Anaconda comes with very nearly - but not all - of the pieces you might need. The thing is, different tasks might require the same pieces, and if you&rsquo;ve ever fought with a sibling over who gets the good lego piece, well, that&rsquo;s what can happen inside your machine. Anaconda keeps everything playing nice by allowing us to create environments with copies of the pieces we need, separate from other copies, so that there are no conflicts.</p>
+<p>Anaconda also gives us some excellent user interfaces for doing our work - juypter notebooks and R Studio - for instance. In this course, we&rsquo;ll use R Studio a bit, and we&rsquo;ll take a look at some jupyter notebooks, but we&rsquo;ll mostly use python at the command line.</p>
+<h3 id="download">Download</h3>
+<p><a href="https://www.anaconda.com/distribution/#download-section" target="_blank">Download Anaconda From Here</a><br />
+<p class="md__image">
+  <img src="/images/anaconda/conda-download.png" alt="select"  />
+</p></p>
+<p>Double-click the downloaded file to install.</p>
+<p>Accept all of the defaults during the installation. (More info on the installation process is <a href="https://docs.anaconda.com/anaconda/install/" target="_blank">here</a>).</p>
+<p>Anaconda comes with something called &lsquo;Anaconda Navigator&rsquo;, which looks like this:</p>
+<p><p class="md__image">
+  <img src="https://docs.anaconda.com/_images/nav-defaults.png" alt="navigator"  />
+</p></p>
+<h3 id="powershell-and-terminal">Powershell and Terminal</h3>
+<p>We may occasionally launch some of these apps (eg, Jupyter Notebooks, R Studio). For now, we&rsquo;ll be using the command line. <strong>Windows users in particular:</strong> we&rsquo;ll be using the &lsquo;powershell&rsquo;. You can click on the &lsquo;Powershell Prompt&rsquo; in Anaconda Navigator. You can also find it by searching your pc for &lsquo;Anaconda Powershell&rsquo;.</p>
+<ul>
+<li>
+<p><strong>When I ask you to use the command prompt, Windows users: I mean anaconda powershell</strong>.</p>
+</li>
+<li>
+<p><strong>Mac users</strong> can use the terminal (which you can find under applications -&gt; other -&gt; terminal).</p>
+</li>
+</ul>
+<p>Going forward, when I want you to enter code at the <strong>command prompt</strong> or <strong>terminal prompt</strong>, I will signal this by starting the line with a <code>$</code>, like this:</p>
+<p><code>$ echo &quot;this is what it looks like&quot;</code></p>
+<p><strong>You do not type the $.</strong></p>
+<p>Open a command prompt or terminal now and confirm that anaconda is installed:</p>
+<p><code>$ conda --version</code></p>
+<p>and that python is installed:</p>
+<p><code>$ python --version</code></p>
+<p><strong>if you get an error message, then anaconda did not install correctly <em>or</em> Windows users you might not be in anaconda powershell.</strong></p>
+<p>When we type &lsquo;conda&rsquo; or &lsquo;python&rsquo; or indeed &lsquo;echo&rsquo; or anything else at the prompt, we are telling the computer that <em>this</em> is a command. If we want the machine to run a particular python program we&rsquo;ve written, we would invoke <code>python</code> followed by the program name, eg <code>example.py</code> so that the machine knows to open example.py with python.</p>
+<h3 id="navigating-the-commandline">Navigating the Commandline</h3>
+<p>When you click on a file in your windows explorer or in mac&rsquo;s finder, you click through nested folders, right? The path you take through those folders will look something like this: <code>username\example-folder\a-subfolder\file.txt</code>, although finder or explorer by default don&rsquo;t show you that.</p>
+<p>When you open anaconda powershell or the terminal, how do you know where you are at? You print the working directory:</p>
+<p><code>$ pwd</code></p>
+<p>and that will give you the path to where you are working. To see what&rsquo;s inside the folder, you can:</p>
+<p><code>$ ls</code> list files, on a Mac or<br />
+<code>$ dir</code> directory, on a PC</p>
+<p>Files will have an extension (eg, .txt, .doc) while directories won&rsquo;t. To go into a directory, we change directories:</p>
+<p><code>$ cd subfolder</code></p>
+<p>and we can go back up a level:</p>
+<p><code>$ cd ..</code></p>
+<p><p class="md__image">
+  <img src="/images/anaconda/my-terminal.png" alt="my terminal"  />
+</p></p>
+<p><em>My terminal, demonstrating a bit of moving around. Also some of the contents of my machine.</em></p>
 
   </article>
 </div>
@@ -2324,7 +2389,18 @@
         <div class="toc">
   <h6 class="toc__label">What&#39;s on this Page</h6>
   <div class="toc__body">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#download">Download</a></li>
+        <li><a href="#powershell-and-terminal">Powershell and Terminal</a></li>
+        <li><a href="#navigating-the-commandline">Navigating the Commandline</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
   </div>
 </div>
       

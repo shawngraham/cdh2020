@@ -1127,6 +1127,14 @@
         </li>
       
     
+      
+        
+        
+        <li>
+          <a href="https://craftingdh.netlify.com/week/1/help/" class="menu__title " data-depth="0">Asking for help</a>
+        </li>
+      
+    
   </ul>
   
 
@@ -1898,6 +1906,14 @@
         </li>
       
     
+      
+        
+        
+        <li>
+          <a href="https://craftingdh.netlify.com/week/1/help/" class="menu__title " data-depth="0">Asking for help</a>
+        </li>
+      
+    
   </ul>
   
 
@@ -2287,7 +2303,134 @@
   
 
   <article class="single__contents" data-dir="ltr">
-    <p>OCR with Tesseract and R</p>
+    <p>Object Character Recognition is a technique that looks at the pattern of light and dark pixels in an image and matches them against the alphabet. The technique was developed against clean type-written pages where the letters were crisply made. On historical documents, things can get pretty hit-and-miss. When we searched the Chronicling America website, we were actually searching the OCR&rsquo;d text that was embedded in each of those pdfs (if you can select text in a pdf, it has a hidden text layer on top of the image. If you can&rsquo;t, it&rsquo;s just an image). We probably missed a lot of information because we searched for &lsquo;archeology&rsquo; but it&rsquo;s entirely possible the word got transcribed as &lsquo;arc50log&rsquo; or other similar mismashes. <strong>Just because you searched, didn&rsquo;t mean you found what was there!</strong></p>
+<p>In this walk through, we&rsquo;re going to use the R language to run some images through the OCR process. I am not teaching you R, but rather, giving you two recipes that you can use.</p>
+<div class="notices success" data-title="Important">
+  In what follows, <strong>push</strong> yourself until you get stuck. I&rsquo;m not interested in how far you get, but rather in how you document what you are able to do, how you look for help, how you reach out to others - or how you help others over the bumps. I know also that you all have lots of other claims on your time. Reading through all of this and making notes on what you do/don&rsquo;t understand is fine too.
+</div>
+<h3 id="one-file-at-a-time">One file at a time</h3>
+<ol>
+<li>Open Anaconda Navigator, and hit the &lsquo;Install R Studio&rsquo; button.<br />
+<p class="md__image">
+  <img src="/images/ocr/navigator.png" alt="navigator"  />
+</p></li>
+<li>Launch R Studio<br />
+<p class="md__image">
+  <img src="/images/ocr/launch.png" alt="rstudio"  />
+</p></li>
+<li>RStudio has within it a console, a script editor, a file explorer, and lots of other features. Click on the new button to make a new R Script.<br />
+<p class="md__image">
+  <img src="/images/ocr/rstudio.png" alt="rstudio"  />
+</p></li>
+</ol>
+<p>We are going to OCR this image, from the 14th Canadian General Hospital war diaries:<br />
+<p class="md__image">
+  <img src="/images/ocr/e001518030.jpg" alt="war diary"  />
+</p></p>
+<ol start="4">
+<li>
+<p>Right-click on that image, &lsquo;save-as&rsquo;, and save it somewhere sensible on your computer.</p>
+</li>
+<li>
+<p>Using the file explorer in R Studio, navigate to where you saved that file.<br />
+<p class="md__image">
+  <img src="/images/ocr/files.png" alt="navigate"  />
+</p></p>
+</li>
+<li>
+<p>Make that folder your &lsquo;working directory&rsquo;; you can do this by clicking on the &lsquo;More&rsquo; button beside the cogwheel. When you do this, the actual R command that achieves this will also copy into the console. R Studio now knows where to look for files, and where to save them.</p>
+</li>
+</ol>
+<p><p class="md__image">
+  <img src="/images/ocr/set-wd.png" alt="set wd"  />
+</p></p>
+<ol start="7">
+<li>In the script window, paste the following lines:</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-R" data-lang="R"><span class="c1"># install only the first time</span>
+<span class="nf">install.packages</span><span class="p">(</span><span class="s">&#39;magick&#39;</span><span class="p">)</span>
+<span class="nf">install.packages</span><span class="p">(</span><span class="s">&#39;tesseract&#39;</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>We&rsquo;ll only run these lines once, because once we&rsquo;ve installed these bits of lego, we won&rsquo;t have to install them again; they&rsquo;ll always be available for use. Highlight all  of them with your cursor, and hit the &lsquo;run&rsquo; button at the top of the window. Running the lines passes them to the console where they are executed; you&rsquo;ll see a bunch of information scroll by as they install. Then, when it&rsquo;s finished, you&rsquo;ll see the <code>&gt;</code> prompt again.</p>
+<ol start="8">
+<li>Add to your script these lines:</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-R" data-lang="R"><span class="c1"># tell R which packages you need</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">magick</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">magrittr</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">tesseract</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>And run them. Down in the console, nothing much should happen, but you should get the <code>&gt;</code> again.</p>
+<ol start="9">
+<li>And now let&rsquo;s ocr some text. Add these lines to your script:</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-R" data-lang="R"><span class="c1"># now let&#39;s create a variable called &#39;text&#39;</span>
+<span class="c1"># and read the image into it</span>
+<span class="c1"># and we&#39;ll modify the image to give us</span>
+<span class="c1"># the best chance of reading the text</span>
+<span class="c1"># the final line, image_ocr() does the text extraction</span>
+
+<span class="c1"># remember to set your working directory to whatever folder</span>
+<span class="c1"># contains the stuff you want to work on.</span>
+<span class="n">text</span> <span class="o">&lt;-</span> <span class="nf">image_read</span><span class="p">(</span><span class="s">&#34;e001518030.jpg&#34;</span><span class="p">)</span> <span class="o">%&gt;%</span>
+  <span class="nf">image_resize</span><span class="p">(</span><span class="s">&#34;2000&#34;</span><span class="p">)</span> <span class="o">%&gt;%</span>
+  <span class="nf">image_convert</span><span class="p">(</span><span class="n">colorspace</span> <span class="o">=</span> <span class="s">&#39;gray&#39;</span><span class="p">)</span> <span class="o">%&gt;%</span>
+  <span class="nf">image_trim</span><span class="p">()</span> <span class="o">%&gt;%</span>
+  <span class="nf">image_ocr</span><span class="p">()</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>If you put your cursor at the &lsquo;t&rsquo; in &lsquo;text&rsquo;, and hit &lsquo;run&rsquo;, R Studio knows that all of these lines are joined by the <code>%&gt;%</code> function, or pipe, and so will run everything in order to the final command, <code>image_ocr()</code>.</p>
+<p><p class="md__image">
+  <img src="/images/ocr/text-to-console.png" alt=""  />
+</p><br />
+You know it ran, because it passed the commands to the console, and you got the command prompt back.</p>
+<ol start="10">
+<li>Finally, let&rsquo;s see what we&rsquo;ve got! Add the following line:</li>
+</ol>
+<p><code>write.table(text, &quot;output.txt&quot;)</code></p>
+<p>and run it.<br />
+<p class="md__image">
+  <img src="/images/ocr/folder-view.png" alt="folder view"  />
+</p></p>
+<p><p class="md__image">
+  <img src="/images/ocr/result.png" alt="result"  />
+</p></p>
+<p>Save your R script as &ldquo;one-image-ocr.R&rdquo;.</p>
+<h3 id="looping-over-many-files-at-once">Looping over many files at once</h3>
 
   </article>
 </div>
@@ -2324,7 +2467,16 @@
         <div class="toc">
   <h6 class="toc__label">What&#39;s on this Page</h6>
   <div class="toc__body">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#one-file-at-a-time">One file at a time</a></li>
+        <li><a href="#looping-over-many-files-at-once">Looping over many files at once</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
   </div>
 </div>
       

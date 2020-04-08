@@ -15,6 +15,8 @@ A good API will also have documentation explaining what or how to make calls to 
 
 ![apis](https://i.imgur.com/LtZWyle.png)
 
+{{< notice success "Important" >}} In what follows, **push** yourself until you get stuck. I'm not interested in how far you get, but rather in how you document what you are able to do, how you look for help, how you reach out to others - or how you help others over the bumps. I know also that you all have lots of other claims on your time. Reading through all of this and making notes on what you do/don't understand is fine too.{{< /notice >}}
+
 ### Getting material out of an API
 
 Each API has its own idiosyncracies, but we can always look at the documentation and figure out how to form our requests so that our programs grab the data we're after. The [Chronicling America website](https://chroniclingamerica.loc.gov/) from the Library of Congress has digitized American newspapers from 1789 to 1963. While the site has a fine search interface, we'll use the API to grab *every* article that mentions the word 'archeology' (sic).
@@ -177,3 +179,7 @@ You can modify this code to extract information from other APIs, but it takes a 
 ### But... it's in json format?
 
 JSON is handy for lots of computational tasks, but for you as a beginning digital historian, you might want to have the data as a table. There are a couple of options here. The easiest right now - and there's no shame in doing this - is to use an online converter. This site: [json-csv.com](http://json-csv.com) lets you convert your json file to csv or Excel spreadsheet, and even transfer it over to a google doc. Give that a shot right now; the text of the articles by the way is in the field 'ocr_eng' which tells us that the text was originally transcribed from the images using object character recognition - so there will be errors and weird glitches in the text. Fortunately, there's also a URL with the direct link to the original document, so you can check things for yourself.
+
+### GLAM Workbench
+
+'GLAM' stands for 'galleries, libraries, archives, and museums'. The GLAM Workbench is by [Tim Sherratt](http://timsherratt.org/), a digital historian in Australia. I would strongly recommend that you explore and give [the Workbench](https://glam-workbench.github.io/) a whirl if you are at all interested in the kinds of work that you might be able to do when you are computationally able to treat collections as data. For a glimpse as to what that might mean, check out [this presentation](https://slides.com/wragge/liber-glamworkbench-2020#/).

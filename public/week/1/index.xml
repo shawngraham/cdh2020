@@ -22,8 +22,7 @@
         <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/1/instructions/</guid>
-        <description>Goals for this week  getting our Github accounts set up and making our first log entries getting Hypothes.is set up getting Zotero installed. explore our ignorance: what is dighist?  Listen  intro podcast  Read These readings have two aims. One, to ground the fact of the digital in the physicality of the world; Two, to give you a sense of the potentials. Most are fairly short.
-  Lorna Richardson, 2020 &amp;lsquo;Digital tech &amp;amp; the environment&amp;rsquo; #DHGoesVIRAL.</description>
+        <description>Goals for this week  getting our Github accounts set up and making our first log entries getting Hypothes.is set up getting Zotero installed   learn how to describe what&amp;rsquo;s gone wrong, and to figure out how to fix it   explore our ignorance: what is dighist?  Listen  intro podcast  Read These readings have two aims. One, to ground the fact of the digital in the physicality of the world; Two, to give you a sense of the potentials.</description>
       </item>
       
       <item>
@@ -64,8 +63,20 @@ Then join our HIST3814o reading group. If you happen to be reading something, an
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/1/discord/</guid>
         <description>What is Discord? You can download Discord here or you can use it in a broswer.
-You will receive an invitation email in your Carleton account. It expires after one day, so do join once you get it.
-Once you&amp;rsquo;re in, there&amp;rsquo;s a welcome message with a reaction emoji at the end - click on the thumbs up to confirm that you&amp;rsquo;ve read the message. This will unlock the various channels in the server, including voice and screensharing.</description>
+You will receive an invitation email in your Carleton account. It expires after one day, so do join once you get it. It will ask to verify your email; check your spam folder.
+Once you&amp;rsquo;re in, there&amp;rsquo;s a welcome message with a reaction emoji at the end - click on the thumbs up to confirm that you&amp;rsquo;ve read the message.</description>
+      </item>
+      
+      <item>
+        <title>Asking for help</title>
+        <link>https://craftingdh.netlify.com/week/1/help/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/1/help/</guid>
+        <description>Help! Things have gone wrong! Montparnasse Derailment, 1895
+Things are going to go wrong. Things are going to break. Instructions will seem vague or incomplete - or worse, I will have indeed forgotten to tell you something crucial.
+Or worse, I&amp;rsquo;ve made an assumption about your understanding, and left things unsaid that needed to be made explicit. There&amp;rsquo;s a lot of this, in the digital world, in fact.
+This week, you learned a bit about Git and Github.</description>
       </item>
       
     

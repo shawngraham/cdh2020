@@ -13,6 +13,8 @@ _The following combines elements of [Ian Milligan's tutorial at The Programming 
 
 Wget is a program for downloading materials from the web. It is extremely powerful: if we do it _wrong_ we can look like an attacker, or worse, download the entire internet! We use this program on the command line. We will cover some of the basics, and then we will create a little program that uses wget to download materials from Library and Archives Canada.  
 
+{{< notice success "Important" >}} In what follows, **push** yourself until you get stuck. I'm not interested in how far you get, but rather in how you document what you are able to do, how you look for help, how you reach out to others - or how you help others over the bumps. I know also that you all have lots of other claims on your time. Reading through all of this and making notes on what you do/don't understand is fine too.{{< /notice >}}
+
 ### Installation
 
 **Mac Users**
