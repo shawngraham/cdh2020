@@ -174,7 +174,7 @@ with open('data.json', 'w') as outfile:
 ```
 ### Some other APIs
 
-You can modify this code to extract information from other APIs, but it takes a bit of tinkering. In essence, you need to study the website to see how they form the API, and then change up lines 13, 17 and 21 accordingly. You can see this in action for instance [here, with regard to the Metropolitan Museum of Art](https://github.com/o-date/working-with-apis/blob/master/notebooks/metropolitan%20museum%20of%20art%20API.ipynb) or [here, with regard to the Smithsonian](https://github.com/o-date/working-with-apis/blob/master/notebooks/retrieving%20data%20from%20the%20Smithsonian%20OA%20api.ipynb).  
+You can modify this code to extract information from other APIs, but it takes a bit of tinkering. In essence, you need to study the website to see how they form the API, and then change up lines 13, 17 and 21 accordingly. You can see this in action for instance [here, with regard to the Metropolitan Museum of Art](https://github.com/o-date/working-with-apis/blob/master/notebooks/metropolitan%20museum%20of%20art%20API.ipynb) or [here, with regard to the Smithsonian](https://github.com/o-date/working-with-apis/blob/master/notebooks/retrieving%20data%20from%20the%20Smithsonian%20OA%20api.ipynb). My [Winter 2020 digital museums' class made APIs from collections at some of our national museums](https://shawngraham.github.io/dhmuse/the-end/); you can see a modified version of the code to access some of their work [here](https://github.com/o-date/working-with-apis/blob/master/notebooks/retrieving%20data%20from%20a%20datasette%20api.ipynb)  
 
 ### But... it's in json format?
 

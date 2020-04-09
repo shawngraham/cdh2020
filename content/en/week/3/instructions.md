@@ -10,13 +10,24 @@ weight: -5
 
 ### Goals for this week
 
+80% of digital work is transforming and cleaning materials so that they can become amenable to digital investigation. Your goals this week are to learn
++ the utility of regular expressions for cleaning and organizing an OCR'd document
++ ways of further tidying text with Open Refine
++ exploratory visualization with network analysis
+
 ### Listen  
 
 ### Read
 
++ James Baker, 2017. 'The Soft Digital History That Underpins My Book' https://cradledincaricature.com/2017/05/24/the-soft-digital-history-that-underpins-my-book/
+
++ James Baker, 2017. 'https://cradledincaricature.com/2017/06/06/the-hard-digital-history-that-underpins-my-book/'
+
 ### Do
 
-+ Learn how to transform a text file using Regular Expressions
++ Transform a text file using Regular Expressions
++ Clean it further with Open Refine
++ Visualize the results through networks
 
 - When/if you run into trouble, take screenshots (google how to do that for your particular machine) and these can be uploaded into your repository as well. Indeed, you should also keep track of any files you create as part of your weekly work in your repo: these are evidence!
 
@@ -27,7 +38,7 @@ weight: -5
 
 1. As you did for week one, make another notes.md entry and put it in your repo for week 3.
 
-2. In your journal.md for this week, think about
+2. In your journal.md for this week, think about all of the little decisions you have to make about the material as you clean and transform it. What is the value of/for historians (regular historians) showing their work, as opposed to, or in contrast to, what digital historians have to do? Where is the scholarly value in showing your work - and contrast this with how you've written history to date.
 
 
 ### Submit work

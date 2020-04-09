@@ -17,7 +17,11 @@ author: "Shawn Graham"
 
 ### Listen
 
-- intro podcast
+[Feed for the podcast here.](https://anchor.fm/s/1c3d3bfc/podcast/rss)
+
+<iframe src="https://anchor.fm/hist3814o/embed/episodes/Welcome-Aboard-ecjdnd" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+
+<iframe src="https://anchor.fm/hist3814o/embed/episodes/Week-One-ecje9d" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
 
 ### Read
 

@@ -22,7 +22,8 @@
         <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/1/instructions/</guid>
-        <description>Goals for this week  getting our Github accounts set up and making our first log entries getting Hypothes.is set up getting Zotero installed   learn how to describe what&amp;rsquo;s gone wrong, and to figure out how to fix it   explore our ignorance: what is dighist?  Listen  intro podcast  Read These readings have two aims. One, to ground the fact of the digital in the physicality of the world; Two, to give you a sense of the potentials.</description>
+        <description>Goals for this week  getting our Github accounts set up and making our first log entries getting Hypothes.is set up getting Zotero installed   learn how to describe what&amp;rsquo;s gone wrong, and to figure out how to fix it   explore our ignorance: what is dighist?  Listen Feed for the podcast here.
+  Read These readings have two aims. One, to ground the fact of the digital in the physicality of the world; Two, to give you a sense of the potentials.</description>
       </item>
       
       <item>
@@ -40,7 +41,8 @@
         <pubDate>Tue, 28 Jan 2020 00:10:42 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/3/instructions/</guid>
-        <description>The 18th is the Long Weekend. Take a break from your school work, if you can. Goals for this week Listen Read Do  Learn how to transform a text file using Regular Expressions   When/if you run into trouble, take screenshots (google how to do that for your particular machine) and these can be uploaded into your repository as well. Indeed, you should also keep track of any files you create as part of your weekly work in your repo: these are evidence!</description>
+        <description>The 18th is the Long Weekend. Take a break from your school work, if you can. Goals for this week 80% of digital work is transforming and cleaning materials so that they can become amenable to digital investigation. Your goals this week are to learn
+ the utility of regular expressions for cleaning and organizing an OCR&amp;rsquo;d document ways of further tidying text with Open Refine exploratory visualization with network analysis  Listen Read   James Baker, 2017.</description>
       </item>
       
       <item>
@@ -146,7 +148,11 @@ Introduction Wget is a program for downloading materials from the web. It is ext
         <pubDate>Tue, 28 Jan 2020 00:10:37 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/4/antconc/</guid>
-        <description>antconc</description>
+        <description>abreviations
+antconc
+/an example of antconc being used on 1990s juvenile literature in ways that would be completely comparable for eg scottish chapbooks database https://datasittersclub.github.io/site/dsc4/
+Lang, Anouk. “DSC #4: AntConc Saves the Day.” The Data-Sitters Club. April 10, 2020. https://datasittersclub.github.io/site/dsc4/.
+also this https://htmlpreview.github.io/?https://github.com/bea-alex/DH-MSc-POStagging-lesson/blob/master/POStagging.html which does it in a notebook, and uses national library of scotland stuff</description>
       </item>
       
       <item>

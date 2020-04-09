@@ -228,4 +228,4 @@ will show you every line with more than 2 commas, because it finds any line that
 
 That was a lot of work. Save your file with a new name: `correspondence.csv`. You now have a document that can be visualized as a network and analyzed as such.
 
-But it's still pretty messy - it was, after all, OCR'd in the first place. We'll fix that in the [open refine](week/3/open-refine/) exercise. 
+But it's still pretty messy - it was, after all, OCR'd in the first place. We'll fix that in the [open refine](week/3/open-refine/) exercise.
