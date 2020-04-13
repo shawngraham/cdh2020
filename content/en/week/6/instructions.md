@@ -14,6 +14,8 @@ weight: -3
 
 ### Read
 
++ Nothing formal from me to read this week.
+
 ### Do
 
 Remember back in week one, how I had you explore that twitter thread by Amalia Skarlatou Levi? This week, you'll be selecting one of those resources she shared (or, if none strike your fancy, something from the resources gathered [here](https://diaryindex.com/digitized-diaries/)) to do some exploratory digital history.

@@ -34,7 +34,7 @@ Try to work through as many of these exercises as you can. Don't worry too much 
 + Retrieve materials from the [Chronicling America](https://chroniclingamerica.loc.gov/) API
 + Use OCR (Object Character Recognition) to turn images of text _into_ text
 
-Bonus:
+Bonus (for when you have time, energy, and inclination):
 + Download videos with youtube-dl
 + Transcribe audio from videos and other sources automatically
 

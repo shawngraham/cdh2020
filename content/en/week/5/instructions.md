@@ -12,6 +12,17 @@ weight: -5
 
 ### Read
 
+I asked on twitter, (as you do),
+
+{{< twitter_simple 1249782467978035200 >}}
+
+Explore some of the suggestions. Or, take a look at this piece by former Carleton U public history MA student, Cristina Woods:
+
++ [Songs of the Ottawa](http://songsoftheottawa.ca/)
++ 'The Ottawa River's History Re-told in Musical Notes' [https://ottawacitizen.com/news/local-news/the-ottawa-rivers-history-re-told-in-musical-notes/](https://ottawacitizen.com/news/local-news/the-ottawa-rivers-history-re-told-in-musical-notes/)
+
+Or explore [The Digital Panopticon](https://www.digitalpanopticon.org/).
+
 ### Do
 
 - When/if you run into trouble, take screenshots (google how to do that for your particular machine) and these can be uploaded into your repository as well. Indeed, you should also keep track of any files you create as part of your weekly work in your repo: these are evidence!

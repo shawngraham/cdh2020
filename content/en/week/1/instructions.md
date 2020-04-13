@@ -25,22 +25,15 @@ author: "Shawn Graham"
 
 ### Read
 
-These readings have two aims. One, to ground the fact of the digital in the physicality of the world; Two, to give you a sense of the potentials. Most are fairly short.
-
-+ Lorna Richardson, 2020 ['Digital tech & the environment'](https://twitter.com/lornarichardson/status/1245686976164122626) [#DHGoesVIRAL](https://twitter.com/hashtag/DHGoesVIRAL). Right-Click on the date in the tweet below to open the thread:
-{{< twitter_simple 1245686976164122626 >}}
-
-+ Kate Crawford and Vladan Joler, 2018. ['Anatomy of an AI System'](https://anatomyof.ai) anatomyof.ai
-
-+ Brian Croxall, Quinn Warnick, 2020. ['Failure'](https://digitalpedagogy.hcommons.org/keyword/Failure) _MLA Digital Pedagogy in the Humanities_. Just read the curatorial statement.
-
-+ My entry in the same volume on ['History'](https://digitalpedagogy.hcommons.org/keyword/History/) _MLA Digital Pedagogy in the Humanities_. Just read the curatorial statement.
-
 + Sharon Leon, 2016.['Returning Women to the History of Digital History'](http://www.6floors.org/bracket/2016/03/07/returning-women-to-the-history-of-digital-history/) _[bracket]_
+
++ 'History _Can_ Be Open Source: Democratic Dreams and the Rise of Digital History' [AHR Open Review](https://ahropenreview.com/HistoryCanBeOpenSource/manuscript/) (You can see comments on each paragraph by the peer reviewers by clicking on the 'comments' pane on the right hand side of the interface)
 
 {{< twitter_simple 1245544256212807680 >}}
 
 + Read [the full thread](https://twitter.com/amaliasl/status/1245544256212807680) by Amalia Skarlatou Levi and explore links of interest; annotate anything interesting you find with Hypothes.is in our group keeping in mind what you've already heard/read. Share anything interesting you've found in our social space. A handy getting-started approach to annotation is to think of the three W's: the weird, the wonderful, the worrying. Also add anything you read or anything interesting you find to your Zotero library.
+
+_Extra, if you have time and energy_:
 
 + Tim Hitchcock, 2013 ['Big Data for Dead People'](https://historyonics.blogspot.ca/2013/12/big-data-for-dead-people-digital.html) _Historyonics_
 
