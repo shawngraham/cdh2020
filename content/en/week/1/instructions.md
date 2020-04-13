@@ -33,11 +33,6 @@ author: "Shawn Graham"
 
 + Read [the full thread](https://twitter.com/amaliasl/status/1245544256212807680) by Amalia Skarlatou Levi and explore links of interest; annotate anything interesting you find with Hypothes.is in our group keeping in mind what you've already heard/read. Share anything interesting you've found in our social space. A handy getting-started approach to annotation is to think of the three W's: the weird, the wonderful, the worrying. Also add anything you read or anything interesting you find to your Zotero library.
 
-_Extra, if you have time and energy_:
-
-+ Tim Hitchcock, 2013 ['Big Data for Dead People'](https://historyonics.blogspot.ca/2013/12/big-data-for-dead-people-digital.html) _Historyonics_
-
-+ Matthew Lincoln, 2015 ['Confabulation in the humanities'](https://matthewlincoln.net/2015/03/21/confabulation-in-the-humanities.html) _blog_
 
 ### Do
 

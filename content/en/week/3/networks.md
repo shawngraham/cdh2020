@@ -111,6 +111,10 @@ At this point, the network is processed enough to visualize in the Preview pane,
 
 Phew. Save your work. Gephi saves as `.gephi` file, but you can also export to other common formats like `.gexf`
 
+### Network Analysis in Python
+
+You could try [this tutorial from the Programming Historian out](https://programminghistorian.org/en/lessons/exploring-and-analyzing-network-data-with-python). 
+
 ### So what?
 So what have we got?
 

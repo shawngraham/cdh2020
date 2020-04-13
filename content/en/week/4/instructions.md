@@ -12,6 +12,10 @@ weight: -5
 
 ### Read
 
++ Tim Hitchcock, 2013 ['Big Data for Dead People'](https://historyonics.blogspot.ca/2013/12/big-data-for-dead-people-digital.html) _Historyonics_
+
++ Matthew Lincoln, 2015 ['Confabulation in the humanities'](https://matthewlincoln.net/2015/03/21/confabulation-in-the-humanities.html) _blog_
+
 ### Do
 
 - When/if you run into trouble, take screenshots (google how to do that for your particular machine) and these can be uploaded into your repository as well. Indeed, you should also keep track of any files you create as part of your weekly work in your repo: these are evidence!
