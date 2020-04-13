@@ -9,7 +9,9 @@ draft: false
 
 Non Carleton University folks are welcome to follow along, and to participate. Just follow the instructions under the relevant week header.
 
-Below I have also created two [padlets](http://padlet.com) for OA participants. The first is just a socializing chat space. The second is a place for you to post queries, ask for help, etc, of your fellow participants. For the time being, both are unmoderated, and we'll see how that goes. To get access, [please fill out this form](https://docs.google.com/forms/d/e/1FAIpQLSd8y9jWAaI2YPiCMdCRZ3TrsrsndWuPK_hWScgHFeGTy7amcw/viewform?usp=sf_link)
+Please don't submit work via the google form though - instead, share your progress via the [padlets](http://padlet.com) I've created for you below, just for OA participants. I will be dipping in and out of these spaces (and I'm always around on twitter as [@electricarchaeo](https://twitter.com/electricarchaeo).)
+
+The first is just a socializing chat space. The second is a place for you to post queries, ask for help, etc, of your fellow participants. For the time being, both are unmoderated, and we'll see how that goes. To get access, [please fill out this form](https://docs.google.com/forms/d/e/1FAIpQLSd8y9jWAaI2YPiCMdCRZ3TrsrsndWuPK_hWScgHFeGTy7amcw/viewform?usp=sf_link)
 
 {{< alert theme="warning" >}}
 If the blocks below are greyed-out, try loading this page in Chrome instead, or go to these direct links [social chat](https://padlet.com/shawngraham1/asei0w4bqvdo) and [help chat](https://padlet.com/shawngraham1/ed6otl24nq3s).

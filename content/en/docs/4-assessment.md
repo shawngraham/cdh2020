@@ -32,7 +32,7 @@ This feedback will also be mapped against the learning outcomes, so that you kno
 
 ### The Exit Ticket
 
-You will produce an '[exit ticket](week/2020-end)' for me at the end of the course (open format) reflecting on where you started and where you've gotten to, and you will indicate how you feel you've done against the [learning outcomes](docs/2-learning-outcomes). The exit ticket is a summary assessment exercise that will pull all the different strings together into a strong cord. **Everyone's journey is different**. Digital methods are more a matter of practice and time than they are of aptitude.
+You will produce an '[exit ticket](week/6-5/instructions/)' for me at the end of the course (open format) reflecting on where you started and where you've gotten to, and you will indicate how you feel you've done against the [learning outcomes](docs/2-learning-outcomes). The exit ticket is a summary assessment exercise that will pull all the different strings together into a strong cord. **Everyone's journey is different**. Digital methods are more a matter of practice and time than they are of aptitude.
 
 {{< notice success "Important" >}} Your final grade isn't based on getting something 'correct'. It's based on your own assessment of your own journey.
 {{< /notice >}}
