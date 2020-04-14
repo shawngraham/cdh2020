@@ -22,7 +22,7 @@
         <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/1/instructions/</guid>
-        <description>Goals for this week  getting our Github accounts set up and making our first log entries getting Hypothes.is set up getting Zotero installed   learn how to describe what&amp;rsquo;s gone wrong, and to figure out how to fix it   explore our ignorance: what is dighist?  Listen Feed for the podcast here.
+        <description>A Brief Introduction to Digital History Goals for this week  getting our Github accounts set up and making our first log entries getting Hypothes.is set up getting Zotero installed   learn how to describe what&amp;rsquo;s gone wrong, and to figure out how to fix it   explore our ignorance: what is dighist?  Listen Feed for the podcast here.
   Read   Sharon Leon, 2016.&amp;lsquo;Returning Women to the History of Digital History&amp;rsquo; [bracket]</description>
       </item>
       
@@ -32,7 +32,7 @@
         <pubDate>Tue, 28 Jan 2020 00:10:48 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/2/instructions/</guid>
-        <description>Goals for this week  learn some of the ways historical information is made available digitally, paying attention to disparities of labour, and of tech  Listen Read Something given. That&amp;rsquo;s a nice way of thinking about it. Of course, much of the data that we are &amp;lsquo;given&amp;rsquo; wasn&amp;rsquo;t really given willingly. When we topic model Martha Ballard&amp;rsquo;s diary, did she give this to us? Of course, she couldn&amp;rsquo;t have imagined what we might try to do to it.</description>
+        <description>Basic Tools Goals for this week  learn some of the ways historical information is made available digitally, paying attention to disparities of labour, and of tech  Listen Read Something given. That&amp;rsquo;s a nice way of thinking about it. Of course, much of the data that we are &amp;lsquo;given&amp;rsquo; wasn&amp;rsquo;t really given willingly. When we topic model Martha Ballard&amp;rsquo;s diary, did she give this to us? Of course, she couldn&amp;rsquo;t have imagined what we might try to do to it.</description>
       </item>
       
       <item>
@@ -41,7 +41,7 @@
         <pubDate>Tue, 28 Jan 2020 00:10:42 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/3/instructions/</guid>
-        <description>The 18th is the Long Weekend. Take a break from your school work, if you can. Goals for this week 80% of digital work is transforming and cleaning materials so that they can become amenable to digital investigation. Your goals this week are to learn
+        <description>The 18th is the Long Weekend. Take a break from your school work, if you can. Basic Tools Encore Goals for this week 80% of digital work is transforming and cleaning materials so that they can become amenable to digital investigation. Your goals this week are to learn
  the utility of regular expressions for cleaning and organizing an OCR&amp;rsquo;d document ways of further tidying text with Open Refine exploratory visualization with network analysis  Listen Read   James Baker, 2017.</description>
       </item>
       
@@ -51,7 +51,7 @@
         <pubDate>Tue, 28 Jan 2020 00:10:37 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/4/instructions/</guid>
-        <description>Goals for this week Listen Read   Tim Hitchcock, 2013 &amp;lsquo;Big Data for Dead People&amp;rsquo; Historyonics
+        <description>Of Macroscopes and Microscopes Goals for this week Listen Read   Tim Hitchcock, 2013 &amp;lsquo;Big Data for Dead People&amp;rsquo; Historyonics
   Matthew Lincoln, 2015 &amp;lsquo;Confabulation in the humanities&amp;rsquo; blog
   Do  When/if you run into trouble, take screenshots (google how to do that for your particular machine) and these can be uploaded into your repository as well. Indeed, you should also keep track of any files you create as part of your weekly work in your repo: these are evidence!</description>
       </item>
@@ -62,7 +62,7 @@
         <pubDate>Tue, 28 Jan 2020 00:10:09 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/5/instructions/</guid>
-        <description>Goals for this week Listen Read I asked on twitter, (as you do),
+        <description>Telling the Compelling Story Goals for this week Listen Read I asked on twitter, (as you do),
 .twitter-tweet { font: 14px/1.45 -apple-system,BlinkMacSystemFont,&#34;Segoe UI&#34;,Roboto,Oxygen-Sans,Ubuntu,Cantarell,&#34;Helvetica Neue&#34;,sans-serif; border-left: 4px solid #2b7bb9; padding-left: 1.5em; color: #555; } .twitter-tweet a { color: #2b7bb9; text-decoration: none; } blockquote.twitter-tweet a:hover, blockquote.twitter-tweet a:focus { text-decoration: underline; }  most compelling works of digital history? go!
 &amp;mdash; Shawn Graham (@electricarchaeo) April 13, 2020 Explore some of the suggestions. Or, take a look at this piece by former Carleton U public history MA student, Cristina Woods:</description>
       </item>
@@ -102,7 +102,7 @@ When we do work in python, we sometimes need to add more lego-pieces to what we&
         <pubDate>Tue, 28 Jan 2020 00:10:37 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/4/voyant/</guid>
-        <description>voyant</description>
+        <description>An Introduction to Voyant   &amp;ldquo;The gateway drug to the digital humanities.&amp;rdquo; That&amp;rsquo;s quite a statement - but it&amp;rsquo;s true! What makes Voyant Tools so compelling, in my view, is that it encourages us to play. To take a step back, and turn the knobs and dials and to see what happens next. Voyant encourages us to zoom in and out, looking at the very broad macroscopic and then jump into the micro, and back again.</description>
       </item>
       
       <item>
@@ -165,7 +165,7 @@ also this https://htmlpreview.github.io/?https://github.com/bea-alex/DH-MSc-POSt
         <pubDate>Tue, 28 Jan 2020 00:10:09 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/6/instructions/</guid>
-        <description>Goals for this week  experience something of the cycle of digital history by trying some exploratory analysis with the tools/approaches you&amp;rsquo;ve learned  Listen Read  Nothing formal from me to read this week.  Do Remember back in week one, how I had you explore that twitter thread by Amalia Skarlatou Levi? This week, you&amp;rsquo;ll be selecting one of those resources she shared (or, if none strike your fancy, something from the resources gathered here) to do some exploratory digital history.</description>
+        <description>Bringing It All Together Goals for this week  experience something of the cycle of digital history by trying some exploratory analysis with the tools/approaches you&amp;rsquo;ve learned  Listen Read  Nothing formal from me to read this week.  Do Remember back in week one, how I had you explore that twitter thread by Amalia Skarlatou Levi? This week, you&amp;rsquo;ll be selecting one of those resources she shared (or, if none strike your fancy, something from the resources gathered here) to do some exploratory digital history.</description>
       </item>
       
       <item>

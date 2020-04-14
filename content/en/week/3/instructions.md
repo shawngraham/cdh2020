@@ -8,6 +8,8 @@ weight: -5
 {{< notice success "Important" >}} The 18th is the Long Weekend. Take a break from your school work, if you can.
 {{< /notice >}}
 
+## Basic Tools Encore
+
 ### Goals for this week
 
 80% of digital work is transforming and cleaning materials so that they can become amenable to digital investigation. Your goals this week are to learn

@@ -5,6 +5,7 @@ date: 2020-01-28T00:10:48+09:00
 draft: false
 weight: -5
 ---
+## Basic Tools
 
 ### Goals for this week
 + learn some of the ways historical information is made available digitally, paying attention to disparities of labour, and of tech

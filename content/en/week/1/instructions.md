@@ -6,6 +6,7 @@ draft: false
 weight: -5
 author: "Shawn Graham"
 ---
+## A Brief Introduction to Digital History
 
 ### Goals for this week
 

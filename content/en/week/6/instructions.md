@@ -5,6 +5,7 @@ date: 2020-01-28T00:10:09+09:00
 draft: false
 weight: -3
 ---
+## Bringing It All Together
 
 ### Goals for this week
 

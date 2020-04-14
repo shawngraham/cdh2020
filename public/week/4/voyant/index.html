@@ -2299,7 +2299,109 @@
   
 
   <article class="single__contents" data-dir="ltr">
-    <p>voyant</p>
+    <h3 id="an-introduction-to-voyant">An Introduction to Voyant</h3>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/3u-zDUvW3dQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>&ldquo;The gateway drug to the digital humanities.&rdquo; That&rsquo;s quite a statement - but it&rsquo;s true! What makes <a href="/">Voyant Tools</a> so compelling, in my view, is that it encourages us to <em>play</em>. To take a step back, and turn the knobs and dials and to see what happens next. Voyant encourages us to zoom in and out, looking at the very broad macroscopic and then jump into the micro, and back again. Each tool panel in Voyant can be embedded into a new document, so that you can share what you find, or so that you can write an argument <em>and your readers can explore your data at the same time</em>.</p>
+<p>So let&rsquo;s do that. <a href="https://www.lboro.ac.uk/subjects/politics-international-studies/staff/melodee-beals/" target="_blank">Dr. Melodee Beels</a> of Loughborough University in the UK has been studying the ways early newspapers reprinted articles from their competitors (<a href="https://ihrdighist.blogs.sas.ac.uk/2015/09/big-data-reintegrating-close-and-distant-reading-of-19th-century-newspapers/" target="_blank">Here is a presentation she gave on her research from a few years ago</a>). In the course of this work, she has put together a database of these articles. One ancillary question that Dr. Beels is interested in are the ways British newspapers framed Britain&rsquo;s relationship with its colonies.</p>
+<p>A subset of her data is available <a href="https://raw.githubusercontent.com/shawngraham/exercise/gh-pages/CND.csv" target="_blank">here</a> where each row is a unique article, and each column is field describing some of the metadata for that article. Can you determine anything about what broad patterns are in them? Not really, eh? Not without reading and making notes on every single row. So let&rsquo;s take a distant read instead.</p>
+<ol>
+<li>Now, Voyant can read one row at a time in a table, and consider it a unique document - <em>if</em> the table is in Microsoft Excel format. I converted that csv to xlsx and I&rsquo;ve made it available for you <a href="/images/voyant/cnd.xlsx">here</a>. Right-click on that link, and &lsquo;copy link location&rsquo;. At <a href="https://voyant-tools.org" target="_blank">Voyant Tools</a> paste that link in the &lsquo;Add Texts&rsquo; box <strong>but don&rsquo;t hit &lsquo;Reveal&rsquo; yet.</strong></li>
+</ol>
+<p><p class="md__image">
+  <img src="/images/voyant/upload-box.png" alt="upload box"  />
+</p></p>
+<ol start="2">
+<li>Click on the options button at the top right. We have to tell Voyant how to parse our table. We are going to tell it that we are uploading a table by making changes under the &lsquo;tables&rsquo; option. The newspaper articles themselves are in the 10th column of our spreadsheet, while the author metadata is in the 2nd column (the name of the newspaper) and the &lsquo;title&rsquo; we&rsquo;ll create by combining the date columns. Thus, enter <code>10</code> in content, <code>2</code> in author, and <code>6+7+8</code> for title.</li>
+</ol>
+<p><p class="md__image">
+  <img src="/images/voyant/import-settings.png" alt="import settings"  />
+</p></p>
+<ol start="3">
+<li>Hit &lsquo;ok&rsquo; and then hit &lsquo;reveal&rsquo;. You should see something rather like this:</li>
+</ol>
+<p><p class="md__image">
+  <img src="/images/voyant/success.png" alt="success"  />
+</p></p>
+<ol start="4">
+<li>Make a note of your corpus id; you&rsquo;ll find it in the URL, after the <code>?corpus=</code>. Here&rsquo;s the URL for the version I made: <code>https://voyant-tools.org/?corpus=ea1868d7f1fbece8f0f5538c23a3128e</code>. You can return to your corpus or share your corpus with someone else by giving them that URL. As you explore Voyant, note how the URL changes to reflect the name of the tool, and the settings you applied.</li>
+</ol>
+<h3 id="explore-the-newspaper-corpus">Explore the Newspaper Corpus</h3>
+<p>Before you explore, make a note of some of the questions you might like to ask, knowing what you know about how this corpus was put together, and what you think you might know about how Britain regarded its colonies in the 18th and 19th centuries.</p>
+<p>Normally, you would frame your questions and your hypotheses about the data <em>before</em> you started to collect it, because these hypotheses help you understand what evidence you&rsquo;d need to gather, and would help you understand when to <em>stop</em> gathering the data. Obviously, we are constrained here because we are using someone else&rsquo;s corpus: but maybe you can still see some questions worth asking? <strong>Reusing</strong> primary research is not something that we are comfortable doing, in History; we much prefer to redo the original research each time because we are all Heroic Lone Scholars. But that&rsquo;s not really a good use of everyone&rsquo;s time and energy. There are times when reusing someone&rsquo;s corpus or data or workflow can be used to generate new insights, or confirm existing ones; this is something historians have to get used to doing.</p>
+<p>Rockwell and Sinclair recommend &lsquo;entering into a dialogue with a text&rsquo;. They write,</p>
+<blockquote>
+<p>One way to think about how you can study a text is to think about entering into a conversation<br />
+with the text through Voyant. Think about questions you might ask about the text like:</p>
+<ul>
+<li>What is this about? What words would I expect to see as describing the text?</li>
+<li>What does this text say about something that matters to me like “friendship”?</li>
+<li>What words in the Cirrus word cloud make sense, and what words are anomalous?</li>
+<li>How does the language of the text change over the span of the text? Are some words more important in the beginning and some at the end? Could there be framing words?<br />
+Text analysis tools like Voyant grew out a tradition of developing concordances for important texts like the bible or Shakespeare’s plays. Concordances were printed tools like indexes that allowed a preacher or scholar look up a word like “friendship” and see all the instances across the bible in one place. She could then think through friendship and prepare a sermon or paper discussing the theme. With Voyant you can now study any electronic text in a similar fashion. Try it!</li>
+</ul>
+</blockquote>
+<p>Try identifying themes in the materials you&rsquo;re looking at. Beside the word &lsquo;cirrus&rsquo; (eg, Voyant&rsquo;s wordcloud tool) there is the word &lsquo;Terms&rsquo;. If you click that, you&rsquo;ll see the same information but this time represented as a table with counts of the number of times the word appears in the corpus, and a small &lsquo;spark line&rsquo; graph showing roughly where the term is most prominent (since our corpus is organize in chronological order, the left side of the spark line is the oldest material, and the right side is the newest).</p>
+<p><p class="md__image">
+  <img src="/images/voyant/terms.png" alt="terms"  />
+</p></p>
+<p>Does anything jump out at you? Click on the term. What changes in Voyant?</p>
+<p>In the &lsquo;trends&rsquo; box, click on one of the high points; the &lsquo;Contexts&rsquo; panel will change to show you &lsquo;key words in context&rsquo; for that term, or five words to the left, and five words to the right, which enable you to start doing a <em>close reading</em> of the particular document.</p>
+<p>Thus Voyant Tools enables you to cycle from distant to close reading and back again! Play with some of the customizations or other tools, and see if you can find any interesting patterns. <strong>Export</strong> anything interesting you find by hitting the button I labelled &lsquo;embed&rsquo; in the image below (&lsquo;export&rsquo;), and then selecting &lsquo;HTML Snippet&rsquo;. This snippet can be saved in your <code>notes.md</code> file and uploaded to Github; Github will render your widget as html!</p>
+<p><p class="md__image">
+  <img src="/images/voyant/customize.png" alt="options"  />
+</p></p>
+<p>A dialog box will appear, and give you some html like this to save into your file:<br />
+<code>&lt;iframe style='width: 530px; height: 315px;' src='https://voyant-tools.org/tool/CorpusTerms/?corpus=ea1868d7f1fbece8f0f5538c23a3128e'&gt;&lt;/iframe&gt;</code></p>
+<p>Note how the URL contains the name of the tool, and the path to your corpus. When this is displayed as html, it will look like this, a fully interactive widget!</p>
+<iframe style='width: 530px; height: 315px;' src='https://voyant-tools.org/tool/CorpusTerms/?corpus=ea1868d7f1fbece8f0f5538c23a3128e'></iframe>
+<p>If you double-click on anything in that widget, a new window will open bringing you to the full version of my corpus.</p>
+<p>Voyant is an excellent tool because it enfolds the reader in the process of making meaning from the data.</p>
+<p><strong>Add words to the stop list</strong></p>
+<p>You can add words to the &lsquo;stoplist&rsquo; tp tell Voyant to filter those words out - typically, you&rsquo;ll see in the wordcloud some words that shouldn&rsquo;t be considered, given the context of your materials - &lsquo;newspaper&rsquo; maybe, in this example. To add words to the stoplist,</p>
+<ol>
+<li>Select the &lsquo;options&rsquo; button in the word cloud panel.</li>
+<li>Select &lsquo;English&rsquo;, and then &lsquo;Edit List&rsquo;. You can add words, one line per word, and then &lsquo;confirm&rsquo;.<br />
+<p class="md__image">
+  <img src="/images/voyant/stopwords1.png" alt="stoplist"  />
+</p><br />
+<p class="md__image">
+  <img src="/images/voyant/stoplist2.png" alt="stoplist2"  />
+</p></li>
+</ol>
+<h3 id="build-your-own-corpus">Build Your Own Corpus</h3>
+<ol>
+<li>Search the Chronicling America database for articles of interest; say you&rsquo;re interested in how Canada has been represented to the everyday reader of newspapers in the US. Use what you learned in week 2 to assemble the data.</li>
+<li>Arrange each article in a spreasheet (use Microsoft Excel or Google Sheets), such that you have the following:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>date</th>
+<th>headline</th>
+<th>article-text</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1964</td>
+<td>Man Bites Dog</td>
+<td>Anytown, USA. A man bit a dog yesterday&hellip;</td>
+</tr>
+<tr>
+<td>more</td>
+<td>rows</td>
+<td>of data</td>
+</tr>
+</tbody>
+</table>
+<p>Save it as <code>.xlsx</code>. Import it into Voyant. Share your corpus with your classmates. Do some initial explorations - does anything jump out at you?</p>
+<h3 id="going-further">Going Further</h3>
+<p>Voyant Tools lives on a server in Montreal. When we use its web interface, we are transmitting data back and forth from our machine to the machine in Montreal. There&rsquo;s no necessary guarantee that anything we share couldn&rsquo;t be intercepted somehow. If you are working with sensitive materials - oral history transcripts, say - you ought not to be using a web-based tool to analyze them. There is also the issue of storage. Materials that are uploaded to Voyant Tools can and do get deleted eventually if they are not regularly accessed.</p>
+<p>The solution is to download and run Voyant Tools yourself! Just as you did with Open Refine, you can have Voyant run in a virtual server on your own machine, and you can then interact with it through your browser <em>as if</em> you were using the main Voyant Tools. The instructions for downloading and installing Voyant Tools on your own machine are <a href="https://digihum.mcgill.ca/voyant/resources/run-your-own/voyant-server/" target="_blank">here</a>. Give it a shot! With Voyant Tools on your own machine, you do not need to worry about sensative materials finding their way onto the web.</p>
 
   </article>
 </div>
@@ -2336,7 +2438,18 @@
         <div class="toc">
   <h6 class="toc__label">What&#39;s on this Page</h6>
   <div class="toc__body">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#an-introduction-to-voyant">An Introduction to Voyant</a></li>
+        <li><a href="#explore-the-newspaper-corpus">Explore the Newspaper Corpus</a></li>
+        <li><a href="#build-your-own-corpus">Build Your Own Corpus</a></li>
+        <li><a href="#going-further">Going Further</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
   </div>
 </div>
       
