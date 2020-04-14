@@ -6,11 +6,11 @@ draft: false
 weight: -3
 ---
 
-Follow this tutorial by Heather Froelich to install and use [AntConc](https://programminghistorian.org/en/lessons/corpus-analysis-with-antconc), but give it a try on [this corpus of historical documents I have prepared for you](/data/nls-text-chapbooks.zip). This corpus comes from the National Library of Scotland [collection of chapbooks printed in Scotland](https://data.nls.uk/data/digitised-collections/chapbooks-printed-in-scotland/). The data is the OCR'd text from more than 3000 chapbooks, mostly from the 18th and 19th centuries. A chapbook was a cheaply printed booklet, and dealt with popular subjects. Think of them as the checkout aisle magazines of their day.
+Follow this [tutorial by Heather Froelich to install and use AntConc](https://programminghistorian.org/en/lessons/corpus-analysis-with-antconc), but give it a try on [this corpus of historical documents I have prepared for you](/data/nls-text-chapbooks.zip). This corpus comes from the National Library of Scotland [collection of chapbooks printed in Scotland](https://data.nls.uk/data/digitised-collections/chapbooks-printed-in-scotland/). The data is the OCR'd text from more than 3000 chapbooks, mostly from the 18th and 19th centuries. A chapbook was a cheaply printed booklet, and dealt with popular subjects. Think of them as the checkout aisle magazines of their day.
 
-The data is zipped; unzip it and then you can load it into AntConc. This [file]() contains the metadata for the chapbooks. You could use this to identify the filenames of particular kinds of works you might be interested in, and then copy just those files into a new directory for exploration with AntConc.
+The data is zipped; unzip it and then you can load it into AntConc. This [file](/data/chapbooks-inventory.csv) contains the metadata for the chapbooks. You could use this to identify the filenames of particular kinds of works you might be interested in, and then copy just those files into a new directory for exploration with AntConc.
 
-To give you an idea of how rich an analysis with AntConc could be, check out this example concerning 1990s juvenile literature in ways that would be completely comparable for eg scottish chapbooks database https://datasittersclub.github.io/site/dsc4/)
+To give you an idea of how rich an analysis with AntConc could be, check out [this example concerning 1990s juvenile literature](https://datasittersclub.github.io/site/dsc4/) in ways that would be completely comparable for eg scottish chapbooks database. 
 
 Lang, Anouk. "DSC #4: AntConc Saves the Day."" The Data-Sitters Club. April 10, 2020. https://datasittersclub.github.io/site/dsc4/.
 
