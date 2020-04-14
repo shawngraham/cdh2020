@@ -3,11 +3,15 @@ title: "Instructions: May 25"
 description: "Of Macroscopes and Microscopes"
 date: 2020-01-28T00:10:37+09:00
 draft: false
-weight: -5
+weight: -6
 ---
 ## Of Macroscopes and Microscopes
 
 ### Goals for this week
+
+This week, I want you to begin to have a 'dialogue with your texts', wherein you learn to use three tools of varying levels of complexity to get distant and close reads on a body of information. Iterating through this cycle, will help you know your data better and see the patterns that would otherwise be lost in all the noise.
+
+When you do this kind of work, it is super important that you make a note of what you expect to find _before_ you do the analysis; as Matthew Lincoln reminds us, we have to do this so that we don't post-facto rationalize what we find as something we already knew...
 
 ### Listen  
 
@@ -18,6 +22,12 @@ weight: -5
 + Matthew Lincoln, 2015 ['Confabulation in the humanities'](https://matthewlincoln.net/2015/03/21/confabulation-in-the-humanities.html) _blog_
 
 ### Do
+
+- Begin with some Excel basics
+- Load some data into Voyant-Tools and explore it
+- Consider the power of collocation with AntConc
+- See if a topic model might usefully surface some patterns.
+- And if you're really ambitious, try your hand at some data publishing with Datasette and Heroku.
 
 - When/if you run into trouble, take screenshots (google how to do that for your particular machine) and these can be uploaded into your repository as well. Indeed, you should also keep track of any files you create as part of your weekly work in your repo: these are evidence!
 

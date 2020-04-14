@@ -22,9 +22,20 @@
         <pubDate>Tue, 28 Jan 2020 00:10:37 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/4/instructions/</guid>
-        <description>Of Macroscopes and Microscopes Goals for this week Listen Read   Tim Hitchcock, 2013 &amp;lsquo;Big Data for Dead People&amp;rsquo; Historyonics
-  Matthew Lincoln, 2015 &amp;lsquo;Confabulation in the humanities&amp;rsquo; blog
-  Do  When/if you run into trouble, take screenshots (google how to do that for your particular machine) and these can be uploaded into your repository as well. Indeed, you should also keep track of any files you create as part of your weekly work in your repo: these are evidence!</description>
+        <description>Of Macroscopes and Microscopes Goals for this week This week, I want you to begin to have a &amp;lsquo;dialogue with your texts&amp;rsquo;, wherein you learn to use three tools of varying levels of complexity to get distant and close reads on a body of information. Iterating through this cycle, will help you know your data better and see the patterns that would otherwise be lost in all the noise.
+When you do this kind of work, it is super important that you make a note of what you expect to find before you do the analysis; as Matthew Lincoln reminds us, we have to do this so that we don&amp;rsquo;t post-facto rationalize what we find as something we already knew&amp;hellip;</description>
+      </item>
+      
+      <item>
+        <title>Excel &amp; R</title>
+        <link>https://craftingdh.netlify.com/week/4/excel/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:37 +0900</pubDate>
+        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
+        <guid>https://craftingdh.netlify.com/week/4/excel/</guid>
+        <description>Get some quantitative stuff, a census or something. Show some basics (nb not teaching stats)
+basic counting in R. Basic plots
+Some Basic Counting and Plotting in R Start up your RStudio, and make a new R script. The first thing we&amp;rsquo;re going to do is get set up so that we can import some data directly from the web. We use the RCurl package to do that:
+1 2  install.</description>
       </item>
       
       <item>
@@ -33,7 +44,8 @@
         <pubDate>Tue, 28 Jan 2020 00:10:37 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/4/voyant/</guid>
-        <description>An Introduction to Voyant   &amp;ldquo;The gateway drug to the digital humanities.&amp;rdquo; That&amp;rsquo;s quite a statement - but it&amp;rsquo;s true! What makes Voyant Tools so compelling, in my view, is that it encourages us to play. To take a step back, and turn the knobs and dials and to see what happens next. Voyant encourages us to zoom in and out, looking at the very broad macroscopic and then jump into the micro, and back again.</description>
+        <description>Text Analysis in a Nutshell   &amp;hellip;so let&amp;rsquo;s take a look at Voyant Tools:
+An Introduction to Voyant   &amp;ldquo;The gateway drug to the digital humanities.&amp;rdquo; That&amp;rsquo;s quite a statement - but it&amp;rsquo;s true! What makes Voyant Tools so compelling, in my view, is that it encourages us to play. To take a step back, and turn the knobs and dials and to see what happens next. Voyant encourages us to zoom in and out, looking at the very broad macroscopic and then jump into the micro, and back again.</description>
       </item>
       
       <item>
@@ -42,11 +54,7 @@
         <pubDate>Tue, 28 Jan 2020 00:10:37 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/4/antconc/</guid>
-        <description>abreviations
-antconc
-/an example of antconc being used on 1990s juvenile literature in ways that would be completely comparable for eg scottish chapbooks database https://datasittersclub.github.io/site/dsc4/
-Lang, Anouk. “DSC #4: AntConc Saves the Day.” The Data-Sitters Club. April 10, 2020. https://datasittersclub.github.io/site/dsc4/.
-also this https://htmlpreview.github.io/?https://github.com/bea-alex/DH-MSc-POStagging-lesson/blob/master/POStagging.html which does it in a notebook, and uses national library of scotland stuff</description>
+        <description>Follow this tutorial by Heather Froelich to install and use AntConc, but give it a try on this corpus of historical documents I have prepared for you. This corpus comes from the National Library of Scotland collection of chapbooks printed in Scotland. The data is the OCR&amp;rsquo;d text from more than 3000 chapbooks, mostly from the 18th and 19th centuries. A chapbook was a cheaply printed booklet, and dealt with popular subjects.</description>
       </item>
       
       <item>
@@ -55,7 +63,9 @@ also this https://htmlpreview.github.io/?https://github.com/bea-alex/DH-MSc-POSt
         <pubDate>Tue, 28 Jan 2020 00:10:37 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/4/topic-models/</guid>
-        <description>use the new stuff? throw some tf-idf in here</description>
+        <description>An Introduction to Topic Models   that link at the end, if you&amp;rsquo;re interested: http://bit.ly/sw-tm-tour
+Topic Modeling with the TMTool There are many tools that can fit a topic model to your text. The easiest one to use is a graphical user interface overlaid on the MALLET Toolkit called &amp;lsquo;The Topic Modeling Tool&amp;rsquo; by Jonathan Enderle.
+ Follow Enderle&amp;rsquo;s instructions for downloading and installing the tool here Make a new directory on your machine called tmt.</description>
       </item>
       
       <item>

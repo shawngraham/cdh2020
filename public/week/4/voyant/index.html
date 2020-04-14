@@ -1315,6 +1315,14 @@
         
         
         <li>
+          <a href="https://craftingdh.netlify.com/week/4/excel/" class="menu__title " data-depth="0">Excel &amp; R</a>
+        </li>
+      
+    
+      
+        
+        
+        <li>
           <a href="https://craftingdh.netlify.com/week/4/voyant/" class="menu__title active" data-depth="0">Voyant</a>
         </li>
       
@@ -2094,6 +2102,14 @@
         
         
         <li>
+          <a href="https://craftingdh.netlify.com/week/4/excel/" class="menu__title " data-depth="0">Excel &amp; R</a>
+        </li>
+      
+    
+      
+        
+        
+        <li>
           <a href="https://craftingdh.netlify.com/week/4/voyant/" class="menu__title active" data-depth="0">Voyant</a>
         </li>
       
@@ -2299,7 +2315,14 @@
   
 
   <article class="single__contents" data-dir="ltr">
-    <h3 id="an-introduction-to-voyant">An Introduction to Voyant</h3>
+    <h3 id="text-analysis-in-a-nutshell">Text Analysis in a Nutshell</h3>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/8MLV19M1WIM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>&hellip;so let&rsquo;s take a look at Voyant Tools:</p>
+<h3 id="an-introduction-to-voyant">An Introduction to Voyant</h3>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/3u-zDUvW3dQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
@@ -2309,7 +2332,7 @@
 <p>So let&rsquo;s do that. <a href="https://www.lboro.ac.uk/subjects/politics-international-studies/staff/melodee-beals/" target="_blank">Dr. Melodee Beels</a> of Loughborough University in the UK has been studying the ways early newspapers reprinted articles from their competitors (<a href="https://ihrdighist.blogs.sas.ac.uk/2015/09/big-data-reintegrating-close-and-distant-reading-of-19th-century-newspapers/" target="_blank">Here is a presentation she gave on her research from a few years ago</a>). In the course of this work, she has put together a database of these articles. One ancillary question that Dr. Beels is interested in are the ways British newspapers framed Britain&rsquo;s relationship with its colonies.</p>
 <p>A subset of her data is available <a href="https://raw.githubusercontent.com/shawngraham/exercise/gh-pages/CND.csv" target="_blank">here</a> where each row is a unique article, and each column is field describing some of the metadata for that article. Can you determine anything about what broad patterns are in them? Not really, eh? Not without reading and making notes on every single row. So let&rsquo;s take a distant read instead.</p>
 <ol>
-<li>Now, Voyant can read one row at a time in a table, and consider it a unique document - <em>if</em> the table is in Microsoft Excel format. I converted that csv to xlsx and I&rsquo;ve made it available for you <a href="/images/voyant/cnd.xlsx">here</a>. Right-click on that link, and &lsquo;copy link location&rsquo;. At <a href="https://voyant-tools.org" target="_blank">Voyant Tools</a> paste that link in the &lsquo;Add Texts&rsquo; box <strong>but don&rsquo;t hit &lsquo;Reveal&rsquo; yet.</strong></li>
+<li>Now, Voyant can read one row at a time in a table, and consider it a unique document - <em>if</em> the table is in Microsoft Excel format. I converted that csv to xlsx and I&rsquo;ve made it available for you <a href="/data/cnd.xlsx">here</a>. Right-click on that link, and &lsquo;copy link location&rsquo;. At <a href="https://voyant-tools.org" target="_blank">Voyant Tools</a> paste that link in the &lsquo;Add Texts&rsquo; box <strong>but don&rsquo;t hit &lsquo;Reveal&rsquo; yet.</strong></li>
 </ol>
 <p><p class="md__image">
   <img src="/images/voyant/upload-box.png" alt="upload box"  />
@@ -2334,8 +2357,7 @@
 <p>Normally, you would frame your questions and your hypotheses about the data <em>before</em> you started to collect it, because these hypotheses help you understand what evidence you&rsquo;d need to gather, and would help you understand when to <em>stop</em> gathering the data. Obviously, we are constrained here because we are using someone else&rsquo;s corpus: but maybe you can still see some questions worth asking? <strong>Reusing</strong> primary research is not something that we are comfortable doing, in History; we much prefer to redo the original research each time because we are all Heroic Lone Scholars. But that&rsquo;s not really a good use of everyone&rsquo;s time and energy. There are times when reusing someone&rsquo;s corpus or data or workflow can be used to generate new insights, or confirm existing ones; this is something historians have to get used to doing.</p>
 <p>Rockwell and Sinclair recommend &lsquo;entering into a dialogue with a text&rsquo;. They write,</p>
 <blockquote>
-<p>One way to think about how you can study a text is to think about entering into a conversation<br />
-with the text through Voyant. Think about questions you might ask about the text like:</p>
+<p>One way to think about how you can study a text is to think about entering into a conversation with the text through Voyant. Think about questions you might ask about the text like:</p>
 <ul>
 <li>What is this about? What words would I expect to see as describing the text?</li>
 <li>What does this text say about something that matters to me like “friendship”?</li>
@@ -2410,11 +2432,11 @@ Text analysis tools like Voyant grew out a tradition of developing concordances 
 <nav class="pagination-single">
   
     
-      <a href="https://craftingdh.netlify.com/week/4/instructions/" title="Instructions: May 25" class="pagination-single__left">
+      <a href="https://craftingdh.netlify.com/week/4/excel/" title="Excel &amp; R" class="pagination-single__left">
         <div class="pagination-single__icon">
           <svg xmlns="https://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
         </div>
-        <div class="pagination-single__right-title">Instructions: May 25</div>
+        <div class="pagination-single__right-title">Excel &amp; R</div>
       </a>
     
     <div class="grow"></div>
@@ -2442,6 +2464,7 @@ Text analysis tools like Voyant grew out a tradition of developing concordances 
   <ul>
     <li>
       <ul>
+        <li><a href="#text-analysis-in-a-nutshell">Text Analysis in a Nutshell</a></li>
         <li><a href="#an-introduction-to-voyant">An Introduction to Voyant</a></li>
         <li><a href="#explore-the-newspaper-corpus">Explore the Newspaper Corpus</a></li>
         <li><a href="#build-your-own-corpus">Build Your Own Corpus</a></li>

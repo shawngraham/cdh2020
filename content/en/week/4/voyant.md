@@ -6,6 +6,12 @@ draft: false
 weight: -4
 ---
 
+### Text Analysis in a Nutshell
+
+{{<youtube 8MLV19M1WIM >}}
+
+...so let's take a look at Voyant Tools:
+
 ### An Introduction to Voyant
 
 {{<youtube 3u-zDUvW3dQ >}}
@@ -16,7 +22,7 @@ So let's do that. [Dr. Melodee Beels](https://www.lboro.ac.uk/subjects/politics-
 
 A subset of her data is available [here](https://raw.githubusercontent.com/shawngraham/exercise/gh-pages/CND.csv) where each row is a unique article, and each column is field describing some of the metadata for that article. Can you determine anything about what broad patterns are in them? Not really, eh? Not without reading and making notes on every single row. So let's take a distant read instead.
 
-1. Now, Voyant can read one row at a time in a table, and consider it a unique document - _if_ the table is in Microsoft Excel format. I converted that csv to xlsx and I've made it available for you [here](/images/voyant/cnd.xlsx). Right-click on that link, and 'copy link location'. At [Voyant Tools](https://voyant-tools.org) paste that link in the 'Add Texts' box **but don't hit 'Reveal' yet.**
+1. Now, Voyant can read one row at a time in a table, and consider it a unique document - _if_ the table is in Microsoft Excel format. I converted that csv to xlsx and I've made it available for you [here](/data/cnd.xlsx). Right-click on that link, and 'copy link location'. At [Voyant Tools](https://voyant-tools.org) paste that link in the 'Add Texts' box **but don't hit 'Reveal' yet.**
 
 ![upload box](/images/voyant/upload-box.png)
 
@@ -38,8 +44,7 @@ Normally, you would frame your questions and your hypotheses about the data _bef
 
 Rockwell and Sinclair recommend 'entering into a dialogue with a text'. They write,
 
-> One way to think about how you can study a text is to think about entering into a conversation
-with the text through Voyant. Think about questions you might ask about the text like:
+> One way to think about how you can study a text is to think about entering into a conversation with the text through Voyant. Think about questions you might ask about the text like:
 > + What is this about? What words would I expect to see as describing the text?
 > + What does this text say about something that matters to me like “friendship”?
 > + What words in the Cirrus word cloud make sense, and what words are anomalous?

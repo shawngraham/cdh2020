@@ -1315,6 +1315,14 @@
         
         
         <li>
+          <a href="https://craftingdh.netlify.com/week/4/excel/" class="menu__title " data-depth="0">Excel &amp; R</a>
+        </li>
+      
+    
+      
+        
+        
+        <li>
           <a href="https://craftingdh.netlify.com/week/4/voyant/" class="menu__title " data-depth="0">Voyant</a>
         </li>
       
@@ -2094,6 +2102,14 @@
         
         
         <li>
+          <a href="https://craftingdh.netlify.com/week/4/excel/" class="menu__title " data-depth="0">Excel &amp; R</a>
+        </li>
+      
+    
+      
+        
+        
+        <li>
           <a href="https://craftingdh.netlify.com/week/4/voyant/" class="menu__title " data-depth="0">Voyant</a>
         </li>
       
@@ -2299,7 +2315,42 @@
   
 
   <article class="single__contents" data-dir="ltr">
-    <p>use the new stuff? throw some tf-idf in here</p>
+    <h3 id="an-introduction-to-topic-models">An Introduction to Topic Models</h3>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/gN2x_KjJI1o" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p><em>that link at the end, if you&rsquo;re interested: <a href="http://bit.ly/sw-tm-tour" target="_blank">http://bit.ly/sw-tm-tour</a></em></p>
+<h3 id="topic-modeling-with-the-tmtool">Topic Modeling with the TMTool</h3>
+<p>There are many tools that can fit a topic model to your text. The easiest one to use is a graphical user interface overlaid on the <a href="http://mallet.cs.umass.edu/" target="_blank">MALLET Toolkit</a> called <a href="https://senderle.github.io/topic-modeling-tool/documentation/2017/01/06/quickstart.html" target="_blank">&lsquo;The Topic Modeling Tool&rsquo;</a> by Jonathan Enderle.</p>
+<ol>
+<li>Follow Enderle&rsquo;s instructions for downloading and installing the tool <a href="https://senderle.github.io/topic-modeling-tool/documentation/2017/01/06/quickstart.html" target="_blank">here</a></li>
+<li>Make a new directory on your machine called <code>tmt</code>. Make a subdirectory in <code>tmt</code> called <code>input</code>.</li>
+<li>Make a new subdirectory in <code>tmt</code> and call it <code>output</code>.</li>
+<li>Download, unzip, and then copy the text files from the <a href="/data/nls-text-chapbooks.zip">Scottish Chapbooks dataset</a> into your <code>input</code> directory.</li>
+<li>Start up the Topic Modeling Tool; you&rsquo;ll see this interface:<br />
+<p class="md__image">
+  <img src="https://senderle.github.io/topic-modeling-tool/images/main-tool-window.png" alt="interface"  />
+</p></li>
+<li>Click on <p class="md__image">
+  <img src="https://senderle.github.io/topic-modeling-tool/images/input-dir-button.png" alt=""  />
+</p> and select your <code>input</code> folder <strong>but only click once.</strong> If you double click, you go <em>into</em> the folder, and that&rsquo;s not what you want.</li>
+<li>Select where you want the output from the process to go. Click on the output button, and select your <code>output</code> directory.</li>
+<li>Decide on how many topics you want to look for, and then click &lsquo;learn topics&rsquo;<br />
+<p class="md__image">
+  <img src="https://senderle.github.io/topic-modeling-tool/images/number-of-topics.png" alt="learn topic"  />
+</p></li>
+</ol>
+<p>And soon the console will load up with results. If you watch carefully, you&rsquo;ll see the console build up the original command that it feeds to MALLET (and which, if you were working with MALLET at the command line, you&rsquo;d have to put together yourself). It will run through several iterations (which you can tweak on the &lsquo;optional settings&rsquo; button) to try to find the best fit of your number of topics to the data.</p>
+<h3 id="but-what-does-it-mean">But what does it mean?</h3>
+<p>Ah, well&hellip; for that, please read <a href="http://miriamposner.com/blog/very-basic-strategies-for-interpreting-results-from-the-topic-modeling-tool/" target="_blank">&lsquo;Very Basic Strategies for Interpreting Results from the Topic Modeling Tool&rsquo;</a> by Andy Wallace; follow that up Enderle&rsquo;s section on <a href="https://senderle.github.io/topic-modeling-tool/documentation/2017/01/06/quickstart.html" target="_blank">analyzing the output</a> from his quickstart guide (scroll down).</p>
+<p>Click on your <code>output</code> folder, and then the <code>output_html</code> folder you&rsquo;ll find inside. Click on the <code>index.html</code>; this will open in your browser, and it will show you the topics it found as lists of each topic&rsquo;s keywords; click on a topic, and it&rsquo;ll show you the relevant documents; click on a document and it&rsquo;ll give you a text snippet for that document, plus clickable links to the <em>other</em> documents present in that document. It&rsquo;s a bit of a topic browser, and lets you cycle from distant to close and back again as you explore your results.</p>
+<p>A bit of visualization is always useful though. Try making a pivot table, as Enderle describes. Make some charts, as Wallace describes. What decisions do you have to make, to make sense of the materials? What <em>other</em> data might you need in order to figure out what these patterns might mean?</p>
+<h3 id="topic-model-in-r">Topic Model in R</h3>
+<p>The Topic Model Tool is an excellent tool for building and exploring topic models. But you might want to try building a topic model in R. R is a powerful language for statistical exploring, visualizing, and manipulating all kinds of data, including textual. While R can be worked with from the command line, RStudio is what we need to preserve our sanity. RStudio can be started up from your Anaconda Navigator - you met RStudio back in week 2 remember.</p>
+<p>R allows us to do scripted analyses. We write out the sequence of transformations or analyses to be done, making a kind of program that we can then feed our data into. Once we have a workflow that does what we need it to do, it becomes trivial to re-use the code on other datasets. What&rsquo;s more, when we do an analysis, we can publish the scripts and the data. We don&rsquo;t have to taken an author&rsquo;s word for it: we can re-run the analysis ourselves or build upon it.</p>
+<p>This course only touches in the lightest manner on the potential for R for doing digital history. Please see <a href="http://dh-r.lincolnmullen.com/" target="_blank">Lincoln Mullen&rsquo;s Computational Historical Thinking with Applications in R</a> for more instruction if you&rsquo;re interested.</p>
 
   </article>
 </div>
@@ -2336,7 +2387,18 @@
         <div class="toc">
   <h6 class="toc__label">What&#39;s on this Page</h6>
   <div class="toc__body">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#an-introduction-to-topic-models">An Introduction to Topic Models</a></li>
+        <li><a href="#topic-modeling-with-the-tmtool">Topic Modeling with the TMTool</a></li>
+        <li><a href="#but-what-does-it-mean">But what does it mean?</a></li>
+        <li><a href="#topic-model-in-r">Topic Model in R</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
   </div>
 </div>
       
