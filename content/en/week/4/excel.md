@@ -5,16 +5,63 @@ date: 2020-01-28T00:10:37+09:00
 draft: false
 weight: -5
 ---
+{{< notice warning "An Assumption" >}}
+I might be making a terrible assumption, but I'm assuming that many if not most of you have played around with Excel before. What follows is a very basic introduction, just in case.
+{{< /notice >}}
 
+Library and Archives Canada provides [links to historical census data](https://www.bac-lac.gc.ca/eng/census/Pages/census.aspx), along with quite comprehensive discussion about how the material was digitized, how it was collected in the first place, and the limitations of the data.
 
+Unfortunately, none of it is available as a simple table that we could download. Indeed, if you go through that link and look, you'll see _just how much work_ would be involved in trying to digitize these things so that we could do quantitative work on it!
 
-Get some quantitative stuff, a census or something. Show some basics (nb not teaching stats)
+So for the purposes of becoming acquainted with Excel, let's download some data from the [Canadian 2016 Census](https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/dt-td/Rp-eng.cfm?TABID=2&LANG=E&A=R&APATH=3&DETAIL=0&DIM=0&FL=A&FREE=0&GC=01&GL=-1&GID=1235625&GK=1&GRP=1&O=D&PID=109523&PRID=10&PTYPE=109445&S=0&SHOWALL=0&SUB=0&Temporal=2016&THEME=115&VID=0&VNAMEE=&VNAMEF=&D1=0&D2=0&D3=0&D4=0&D5=0&D6=0) - right-click and save-as: ['Age (in Single Years) and Average Age (127) and Sex (3) for the Population of Canada, Provinces and Territories, Census Metropolitan Areas and Census Agglomerations, 2016 adn 2011 Censuses - 100% Data](https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/dt-td/CompDataDownload.cfm?LANG=E&PID=109523&OFT=CSV)
 
-basic counting in R. Basic plots
+Unzip that file; inside you'll find the data files and files describing the data, which we call the 'metadata'.
+
+Now, Excel is a very powerful tool. It also comes in several different flavours with slightly different layouts, which makes _teaching_ excel extremely vexing. Most new PCs will have Excel on them; most new Macs will not. Do not worry if you don't have a copy of Excel; Google Sheets also works in a very similar vein.
+
+The key idea is that each **cell** in a spreadsheet as an **address**. Knowing the address for a **range** of cells, or just one cell in particular means that you can do calculations that update themselves as you change the data. For instance, if I had all of my student's scores in say column A from a test (not that I assign tests), I could have a cell at the bottom of that column that has this **formula**: `=average(a1:a23)`. Excel will tally up all of the cells from a1 to a23 (column a, row 1, to column a, row 23), and divide that sum by the count of cells, printing out an average. If I made a mistake on a student's score, I could change it (by re-entering the score in say cell a13) and Excel will automatically adjust the average.
+
+You can thus program pretty nearly any mathematical operation you want into a spreadsheet, remembering that cells don't just hold values, they can also hold formulae.
+
+1. Start Excel. Under 'open', find the csv that you downloaded. Excel should be able to import this csv without issue; older versions of Excel sometimes have an issue here, and so will need to turn on the Text Import Wizard, [details here](https://support.office.com/en-us/article/text-import-wizard-c5b02af6-fda1-4440-899f-f78bafe41857).
+
+2. What a lovely table of data. Let's filter it for just the results for the Ontario side of the Ottawa-Gatineau census metropolitan area.
+
+![filter button](/images/excel/filter-button.png)
+What the filter button looks like on my version of Excel
+
+Every column now has a little drop-down arrow on it. Find column D, 'GEO_NAME' and press it:
+![filter options](/images/excel/filter-options.png)
+Uncheck 'select all' and scroll down through that until you see 'Ottawa-Gatineau (Ontario Part)'
+
+Boom! Your spreadsheet is now displaying 254 of 44196 records.
+
+2. Now, each row in this spreadsheet is an age category. We're going to write a little formula to add up all of the female children 1 to 4 years of age. (This data starts in Row 15500!). Can you spot that data?
+
+![here it is](/images/excel/select-cells.png)
+
+When you highlight cells, Excel automatically does a few calculations like averaging, counting, and summing them, which you can spot at the bottom.
+
+In cell R15500, let's write a little formula. We want to get the sum of female children 1 to 4 years of age. Our formula is going to look like this `=sum()` and _between_ the parentheses will be the range. Put in the correct range, and hit enter. Did you get the right value? Have you selected the correct cells?
+
+3. Let's make a chart. Using your mouse, click and drag down the Age column so that you select 1,2,3,4. Then, holding down the command key (mac) or ctrl (pc) click and drag again on the counts. You end up with two columns highlighted:
+
+![two columns](/images/excel/two-columns.png)
+
+Then, click 'insert', then 'recommended charts' and pick one of the charts. Boom, instant chart. The first row we highlighted gives us our x value, the second our y; you can right-click on a chart to open up some interfaces for changing those assumptions, for adding labels, and so on.
+
+![chart](/images/excel/chart.png)  
+
+When you save your work in Excel, an Excel file can contain numerous sheets, charts, interlinkages, and other quite complex objects. If you 'save as' and select 'csv', you'll _only_ get the data in the spreadsheet sheet currently active - plus a whole bunch of end-of-the-world warnings from Excel.
+
+4. Pivot Tables
+Pivot tables are a very useful feature of Excel; they are a way of summarizing quite complex tables and visualizing the summaries. But I won't discuss them now. Instead, once you do the Topic Modeling Tool walk through, check out the final section in the official documentation on 'Build a pivot table' ([here](https://senderle.github.io/topic-modeling-tool/documentation/2017/01/06/quickstart.html)).
+
+I'm not going to invest much time in Excel; but here's some [more guidance from Microsoft itself.](https://support.office.com/en-us/article/Basic-tasks-in-Excel-dc775dd1-fa52-430f-9c3c-d998d1735fca)
 
 ### Some Basic Counting and Plotting in R  
 
-Start up your RStudio, and make a new R script. The first thing we're going to do is get set up so that we can import some data directly from the web. We use the `RCurl` package to do that:
+Start up your RStudio from Anaconda Navigator, and make a new R script. The first thing we're going to do is get set up so that we can import some data directly from the web. We use the `RCurl` package to do that:
 
 ```R
 install.packages("RCurl")

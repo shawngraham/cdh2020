@@ -61,10 +61,8 @@ When you do this kind of work, it is super important that you make a note of wha
         <pubDate>Tue, 28 Jan 2020 00:10:37 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/4/excel/</guid>
-        <description>Get some quantitative stuff, a census or something. Show some basics (nb not teaching stats)
-basic counting in R. Basic plots
-Some Basic Counting and Plotting in R Start up your RStudio, and make a new R script. The first thing we&amp;rsquo;re going to do is get set up so that we can import some data directly from the web. We use the RCurl package to do that:
-1 2  install.</description>
+        <description>I might be making a terrible assumption, but I&amp;rsquo;m assuming that many if not most of you have played around with Excel before. What follows is a very basic introduction, just in case. Library and Archives Canada provides links to historical census data, along with quite comprehensive discussion about how the material was digitized, how it was collected in the first place, and the limitations of the data.
+Unfortunately, none of it is available as a simple table that we could download.</description>
       </item>
       
       <item>

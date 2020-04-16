@@ -27,3 +27,5 @@ There's a lot you can do, and there are many different approaches. Here, we'll u
 7. Download your results, add them to your notes and repo for this week.
 
 ![a not useful visualization](/images/imj/barcode.png)
+
+![perhaps more useful](/images/imj/hue-brightness.png)
