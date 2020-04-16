@@ -2321,7 +2321,7 @@
   <iframe src="https://www.youtube.com/embed/gN2x_KjJI1o" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-<p><em>that link at the end, if you&rsquo;re interested: <a href="http://bit.ly/sw-tm-tour" target="_blank">http://bit.ly/sw-tm-tour</a></em></p>
+<p><em>that link at the end of the video, if you&rsquo;re interested: <a href="http://bit.ly/sw-tm-tour" target="_blank">http://bit.ly/sw-tm-tour</a></em></p>
 <h3 id="topic-modeling-with-the-tmtool">Topic Modeling with the TMTool</h3>
 <p>There are many tools that can fit a topic model to your text. The easiest one to use is a graphical user interface overlaid on the <a href="http://mallet.cs.umass.edu/" target="_blank">MALLET Toolkit</a> called <a href="https://senderle.github.io/topic-modeling-tool/documentation/2017/01/06/quickstart.html" target="_blank">&lsquo;The Topic Modeling Tool&rsquo;</a> by Jonathan Enderle.</p>
 <ol>
@@ -2351,6 +2351,341 @@
 <p>The Topic Model Tool is an excellent tool for building and exploring topic models. But you might want to try building a topic model in R. R is a powerful language for statistical exploring, visualizing, and manipulating all kinds of data, including textual. While R can be worked with from the command line, RStudio is what we need to preserve our sanity. RStudio can be started up from your Anaconda Navigator - you met RStudio back in week 2 remember.</p>
 <p>R allows us to do scripted analyses. We write out the sequence of transformations or analyses to be done, making a kind of program that we can then feed our data into. Once we have a workflow that does what we need it to do, it becomes trivial to re-use the code on other datasets. What&rsquo;s more, when we do an analysis, we can publish the scripts and the data. We don&rsquo;t have to taken an author&rsquo;s word for it: we can re-run the analysis ourselves or build upon it.</p>
 <p>This course only touches in the lightest manner on the potential for R for doing digital history. Please see <a href="http://dh-r.lincolnmullen.com/" target="_blank">Lincoln Mullen&rsquo;s Computational Historical Thinking with Applications in R</a> for more instruction if you&rsquo;re interested.</p>
+<h3 id="a-walkthrough">A Walkthrough</h3>
+<p>We&rsquo;re going to use the same data as we did before, but this time, it is organized as a table where each chapbook&rsquo;s text is one row. There are columns for &lsquo;title&rsquo;, &lsquo;text&rsquo;, &lsquo;date&rsquo;, each separated by a comma, so a bit of the metadata is included. You may download this comma separated, or csv, table <a href="/data/chapbooks-text.csv">from this link</a>.</p>
+<ol>
+<li>Make a new folder on your computer called <code>chapbooks-r</code>. Put the <code>chapbooks-text.csv</code> inside it.</li>
+<li>From Anaconda Navigator, open up R Studio. Under &lsquo;File&rsquo; select &lsquo;new project&rsquo; and then &lsquo;From existing directory.&rsquo; In the chooser, select your <code>chapbooks-r</code> folder. Having a &lsquo;project&rsquo; in R means that R knows where to look for data, and where to save your work or restore from.<br />
+<p class="md__image">
+  <img src="/images/tm/new-project.png" alt="new project"  />
+</p></li>
+<li>Let&rsquo;s start a new R script. Hit &lsquo;new file&rsquo; under &lsquo;file&rsquo; (or the button with the green-and-white plus side, top left) and select &lsquo;r script&rsquo;</li>
+<li>We need to install some pieces first. In the <strong>Console</strong> enter these two commands:</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-R" data-lang="R"><span class="nf">install.packages</span><span class="p">(</span><span class="s">&#39;tidyverse&#39;</span><span class="p">)</span>
+<span class="nf">install.packages</span><span class="p">(</span><span class="s">&#39;tidytext&#39;</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>You&rsquo;ll only have to do this once. <strong>If you get a yellow banner warning</strong> across the top of your script screen saying some extra packages weren&rsquo;t installed and would you like them to be installed, say &lsquo;yes&rsquo;.</p>
+<ol start="5">
+<li>Now, in our script, let&rsquo;s begin. We&rsquo;ll invoke those packages, and load our data up. In this step, we&rsquo;re also doing a bit of cleaning with a regular expression to remove digits from the text field of our data. You can copy and paste the code below into your R script; run it one line at a time.</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-R" data-lang="R"><span class="c1"># slightly modified version of</span>
+<span class="c1"># https://tm4ss.github.io/docs/Tutorial_6_Topic_Models.html</span>
+<span class="c1"># by Andreas Niekler, Gregor Wiedemann</span>
+
+<span class="c1"># libraries</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">tidytext</span><span class="p">)</span>
+
+<span class="c1"># load, clean, and get data into shape</span>
+
+<span class="c1"># cb = chapbooks</span>
+<span class="n">cb</span>  <span class="o">&lt;-</span> <span class="nf">read_csv</span><span class="p">(</span><span class="s">&#34;chapbooks-text.csv&#34;</span><span class="p">)</span>
+
+<span class="c1"># put the data into a tibble (data structure for tidytext)</span>
+<span class="c1"># we are also telling R what kind of data is in the &#39;text&#39;,</span>
+<span class="c1"># &#39;line&#39;, and &#39;data&#39; columns in our original csv.</span>
+<span class="c1"># we are also stripping out all the digits from the text column</span>
+
+<span class="n">cb_df</span> <span class="o">&lt;-</span> <span class="nf">tibble</span><span class="p">(</span><span class="n">id</span> <span class="o">=</span> <span class="n">cb</span><span class="o">$</span><span class="n">line</span><span class="p">,</span> <span class="n">text</span> <span class="o">=</span> <span class="p">(</span><span class="nf">str_remove_all</span><span class="p">(</span><span class="n">cb</span><span class="o">$</span><span class="n">text</span><span class="p">,</span> <span class="s">&#34;[0-9]&#34;</span><span class="p">)),</span> <span class="n">date</span> <span class="o">=</span> <span class="n">cb</span><span class="o">$</span><span class="n">date</span><span class="p">)</span>
+
+<span class="c1">#turn cb_df into tidy format</span>
+<span class="c1"># use `View(cb_df)` to see the difference</span>
+<span class="c1"># from the previous table</span>
+
+<span class="n">tidy_cb</span> <span class="o">&lt;-</span> <span class="n">cb_df</span> <span class="o">%&gt;%</span>
+  <span class="nf">unnest_tokens</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+
+<span class="c1"># the only time filtering happens</span>
+<span class="c1"># load up the default list of stop_words that comes</span>
+<span class="c1"># with the tidyverse</span>
+
+<span class="nf">data</span><span class="p">(</span><span class="n">stop_words</span><span class="p">)</span>
+
+<span class="c1"># delete stopwords from our data</span>
+<span class="n">tidy_cb</span> <span class="o">&lt;-</span> <span class="n">tidy_cb</span> <span class="o">%&gt;%</span>
+  <span class="nf">anti_join</span><span class="p">(</span><span class="n">stop_words</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="6">
+<li>
+<p>In the console, take a look at how your data has been transformed. Type <code>cb</code> and hit enter - you&rsquo;ll see a table very much like how your data would look if you opened it in excel. Type <code>cb_df</code> and it&rsquo;s still table like, but columns and digits are removed. Type <code>tidy_cb</code> and you&rsquo;ll see it&rsquo;s a list of words, with metadata indicating which document the word is a part of, and which year the document was written! Transforming your data like this makes it more amenable to text analysis. Let&rsquo;s continue.</p>
+</li>
+<li>
+<p>We can now transform that list into a matrix, which will enable us to do the topic model. Add, and then run, the following lines to your script:</p>
+</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-R" data-lang="R"><span class="c1"># this line might take a few moments to run btw</span>
+<span class="n">cb_words</span> <span class="o">&lt;-</span> <span class="n">tidy_cb</span> <span class="o">%&gt;%</span>
+  <span class="nf">count</span><span class="p">(</span><span class="n">id</span><span class="p">,</span> <span class="n">word</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span>
+
+<span class="c1"># take a look at what you&#39;ve just done</span>
+<span class="c1"># by examining the first few lines of `cb_words`</span>
+
+<span class="nf">head</span><span class="p">(</span><span class="n">cb_words</span><span class="p">)</span>
+
+<span class="c1"># already, you start to get a sense of what&#39;s in this dataset...</span>
+
+<span class="c1"># turn that into a matrix</span>
+<span class="n">dtm</span> <span class="o">&lt;-</span> <span class="n">cb_words</span> <span class="o">%&gt;%</span>
+  <span class="nf">cast_dtm</span><span class="p">(</span><span class="n">id</span><span class="p">,</span> <span class="n">word</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="8">
+<li>Now we&rsquo;ll build the topic model!</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-R" data-lang="R"><span class="nf">require</span><span class="p">(</span><span class="n">topicmodels</span><span class="p">)</span>
+<span class="c1"># number of topics</span>
+<span class="n">K</span> <span class="o">&lt;-</span> <span class="m">15</span>
+<span class="c1"># set random number generator seed</span>
+<span class="c1"># for purposes of reproducibility</span>
+<span class="nf">set.seed</span><span class="p">(</span><span class="m">9161</span><span class="p">)</span>
+<span class="c1"># compute the LDA model, inference via 1000 iterations of Gibbs sampling</span>
+<span class="n">topicModel</span> <span class="o">&lt;-</span> <span class="nf">LDA</span><span class="p">(</span><span class="n">dtm</span><span class="p">,</span> <span class="n">K</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s">&#34;Gibbs&#34;</span><span class="p">,</span> <span class="n">control</span><span class="o">=</span><span class="nf">list</span><span class="p">(</span><span class="n">iter</span> <span class="o">=</span> <span class="m">500</span><span class="p">,</span> <span class="n">verbose</span> <span class="o">=</span> <span class="m">25</span><span class="p">))</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Computers sometimes need to use random numbers in their calculations. By using <code>set.seed</code>, we enable the machine to generate the same sequence of random numbers every time we do these calculations. The effect is that my results and your results will look the same. If you remove the seed, your results will differ from mine in slightly different, minor, ways.</p>
+<p>Here we&rsquo;re building a model with 15 topics; we run it for 500 iterations. You can tweak those variables if, after examining the results, you find that the model captures too much (or not enough) variability. The <code>topicModel</code> command takes a bit of time to run, even at just 500 iterations. The higher-end computer you have, the quicker this will run.</p>
+<ol start="9">
+<li>Now, remember that every document will be composed of all 15 topics, just in different proportions; similarly, every topic has every word, but again, in different proportions. So we&rsquo;ll rearrange things just so that we get the top say 5 terms per topic; these 5 words will give us a sense of what the topic is about. Do you spot where you might change that to say 10 terms?</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-R" data-lang="R"><span class="c1"># have a look a some of the results (posterior distributions)</span>
+<span class="n">tmResult</span> <span class="o">&lt;-</span> <span class="nf">posterior</span><span class="p">(</span><span class="n">topicModel</span><span class="p">)</span>
+
+<span class="c1"># format of the resulting object</span>
+<span class="nf">attributes</span><span class="p">(</span><span class="n">tmResult</span><span class="p">)</span>
+
+<span class="c1"># lengthOfVocab</span>
+<span class="nf">ncol</span><span class="p">(</span><span class="n">dtm</span><span class="p">)</span>
+
+<span class="c1"># topics are probability distributions over the entire vocabulary</span>
+<span class="n">beta</span> <span class="o">&lt;-</span> <span class="n">tmResult</span><span class="o">$</span><span class="n">terms</span>   <span class="c1"># get beta from results</span>
+<span class="nf">dim</span><span class="p">(</span><span class="n">beta</span><span class="p">)</span>
+
+<span class="c1"># for every document we have a probability distribution of its contained topics</span>
+<span class="n">theta</span> <span class="o">&lt;-</span> <span class="n">tmResult</span><span class="o">$</span><span class="n">topics</span>
+<span class="nf">dim</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span>        
+
+<span class="n">top5termsPerTopic</span> <span class="o">&lt;-</span> <span class="nf">terms</span><span class="p">(</span><span class="n">topicModel</span><span class="p">,</span> <span class="m">5</span><span class="p">)</span>
+<span class="n">topicNames</span> <span class="o">&lt;-</span> <span class="nf">apply</span><span class="p">(</span><span class="n">top5termsPerTopic</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="n">paste</span><span class="p">,</span> <span class="n">collapse</span><span class="o">=</span><span class="s">&#34; &#34;</span><span class="p">)</span>
+<span class="n">topicNames</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="10">
+<li>Now comes the fun part - visualization of the patterns!</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-R" data-lang="R"><span class="c1"># load libraries for visualization</span>
+<span class="nf">library</span><span class="p">(</span><span class="s">&#34;reshape2&#34;</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="s">&#34;ggplot2&#34;</span><span class="p">)</span>
+
+<span class="c1"># select some documents for the purposes of</span>
+<span class="c1"># sample visualizations</span>
+<span class="c1"># here, the 2nd, 100th, and 200th document</span>
+<span class="c1"># in our corpus</span>
+
+<span class="n">exampleIds</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="m">2</span><span class="p">,</span> <span class="m">100</span><span class="p">,</span> <span class="m">200</span><span class="p">)</span>
+
+<span class="n">N</span> <span class="o">&lt;-</span> <span class="nf">length</span><span class="p">(</span><span class="n">exampleIds</span><span class="p">)</span>
+<span class="c1"># get topic proportions form example documents</span>
+<span class="n">topicProportionExamples</span> <span class="o">&lt;-</span> <span class="n">theta[exampleIds</span><span class="p">,</span><span class="n">]</span>
+<span class="nf">colnames</span><span class="p">(</span><span class="n">topicProportionExamples</span><span class="p">)</span> <span class="o">&lt;-</span> <span class="n">topicNames</span>
+
+<span class="c1"># put the data into a dataframe just for our visualization</span>
+<span class="n">vizDataFrame</span> <span class="o">&lt;-</span> <span class="nf">melt</span><span class="p">(</span><span class="nf">cbind</span><span class="p">(</span><span class="nf">data.frame</span><span class="p">(</span><span class="n">topicProportionExamples</span><span class="p">),</span> <span class="n">document</span> <span class="o">=</span> <span class="nf">factor</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="n">N</span><span class="p">)),</span> <span class="n">variable.name</span> <span class="o">=</span> <span class="s">&#34;topic&#34;</span><span class="p">,</span> <span class="n">id.vars</span> <span class="o">=</span> <span class="s">&#34;document&#34;</span><span class="p">)</span>  
+
+<span class="c1"># specify the geometry, aesthetics, and data for a plot</span>
+<span class="nf">ggplot</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">vizDataFrame</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">topic</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="n">document</span><span class="p">),</span> <span class="n">ylab</span> <span class="o">=</span> <span class="s">&#34;proportion&#34;</span><span class="p">)</span> <span class="o">+</span>
+  <span class="nf">geom_bar</span><span class="p">(</span><span class="n">stat</span><span class="o">=</span><span class="s">&#34;identity&#34;</span><span class="p">)</span> <span class="o">+</span>
+  <span class="nf">theme</span><span class="p">(</span><span class="n">axis.text.x</span> <span class="o">=</span> <span class="nf">element_text</span><span class="p">(</span><span class="n">angle</span> <span class="o">=</span> <span class="m">90</span><span class="p">,</span> <span class="n">hjust</span> <span class="o">=</span> <span class="m">1</span><span class="p">))</span> <span class="o">+</span>  
+  <span class="nf">coord_flip</span><span class="p">()</span> <span class="o">+</span>
+  <span class="nf">facet_wrap</span><span class="p">(</span><span class="o">~</span> <span class="n">document</span><span class="p">,</span> <span class="n">ncol</span> <span class="o">=</span> <span class="n">N</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><p class="md__image">
+  <img src="/images/tm/sample3.png" alt=""  />
+</p></p>
+<ol start="11">
+<li>Finally, let&rsquo;s look at our topic model <em>over time</em>, which is why you&rsquo;re all here, right?</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-R" data-lang="R"><span class="c1">#topics over time</span>
+<span class="c1"># append decade information for aggregation</span>
+<span class="n">cb</span><span class="o">$</span><span class="n">decade</span> <span class="o">&lt;-</span> <span class="nf">paste0</span><span class="p">(</span><span class="nf">substr</span><span class="p">(</span><span class="n">cb</span><span class="o">$</span><span class="n">date</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">3</span><span class="p">),</span> <span class="s">&#34;0&#34;</span><span class="p">)</span>
+<span class="c1"># get mean topic proportions per decade</span>
+<span class="n">topic_proportion_per_decade</span> <span class="o">&lt;-</span> <span class="nf">aggregate</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span> <span class="n">by</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="n">decade</span> <span class="o">=</span> <span class="n">cb</span><span class="o">$</span><span class="n">decade</span><span class="p">),</span> <span class="n">mean</span><span class="p">)</span>
+<span class="c1"># set topic names to aggregated columns</span>
+<span class="nf">colnames</span><span class="p">(</span><span class="n">topic_proportion_per_decade</span><span class="p">)</span><span class="n">[2</span><span class="o">:</span><span class="p">(</span><span class="n">K</span><span class="m">+1</span><span class="p">)</span><span class="n">]</span> <span class="o">&lt;-</span> <span class="n">topicNames</span>
+
+<span class="c1"># reshape data frame, for when I get the topics over time thing sorted</span>
+<span class="n">vizDataFrame</span> <span class="o">&lt;-</span> <span class="nf">melt</span><span class="p">(</span><span class="n">topic_proportion_per_decade</span><span class="p">,</span> <span class="n">id.vars</span> <span class="o">=</span> <span class="s">&#34;decade&#34;</span><span class="p">)</span>
+
+<span class="c1"># plot topic proportions per deacde as bar plot</span>
+<span class="nf">require</span><span class="p">(</span><span class="n">pals</span><span class="p">)</span>
+<span class="nf">ggplot</span><span class="p">(</span><span class="n">vizDataFrame</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">decade</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">value</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">variable</span><span class="p">))</span> <span class="o">+</span>
+  <span class="nf">geom_bar</span><span class="p">(</span><span class="n">stat</span> <span class="o">=</span> <span class="s">&#34;identity&#34;</span><span class="p">)</span> <span class="o">+</span> <span class="nf">ylab</span><span class="p">(</span><span class="s">&#34;proportion&#34;</span><span class="p">)</span> <span class="o">+</span>
+  <span class="nf">scale_fill_manual</span><span class="p">(</span><span class="n">values</span> <span class="o">=</span> <span class="nf">paste0</span><span class="p">(</span><span class="nf">alphabet</span><span class="p">(</span><span class="m">20</span><span class="p">),</span> <span class="s">&#34;FF&#34;</span><span class="p">),</span> <span class="n">name</span> <span class="o">=</span> <span class="s">&#34;decade&#34;</span><span class="p">)</span> <span class="o">+</span>
+  <span class="nf">theme</span><span class="p">(</span><span class="n">axis.text.x</span> <span class="o">=</span> <span class="nf">element_text</span><span class="p">(</span><span class="n">angle</span> <span class="o">=</span> <span class="m">90</span><span class="p">,</span> <span class="n">hjust</span> <span class="o">=</span> <span class="m">1</span><span class="p">))</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><p class="md__image">
+  <img src="/images/tm/tm-over-time.png" alt="topic model over time"  />
+</p></p>
+<p>Interesting how stories about the army and the English seem to decrease over time in the 18th century&hellip; perhaps that&rsquo;s meaningful? Go back and re-run your script from the point where you selected 15 topic models. Try more topic models. Try fewer. Do you spot any interesting patterns?</p>
+<p>Save your script as <code>tm.R</code>. Put it in your repo for this week. Save screenshots of your findings, and make notes of your observations. These can be shared in your weekly work too - make sure the image file and your notes.md file are in the same repository, then you can insert an image like this:</p>
+<p><code>![description of image](filename.jpg)</code></p>
+<p>or filename.png etc.</p>
+<p>Now, there&rsquo;s a lot in this code that is impenetrable to you right now. But frankly, there was a lot going on with the Topic Modeling Tool that was impenetrable too, but it was hidden behind a user interface. At least here, you can <em>see</em> what it is that you do not yet understand. One of the attractions of doing this kind of work in R and R Studio is that these <em>scripts</em> are reusable, shareable, and citeable. A script like this might accompany a journal article, allowing the reviewers and the readers alike to experiment and see if the author&rsquo;s conclusions are warranted. Alternatively, you could replicate the study on a <em>different</em> body of evidence, provided that you arranged your data in the same way our original source tables were arranged.</p>
+<p>Communicating the process, the meat-grinding, of your research this way leads to better research. And it&rsquo;s a helluva lot easier to point to a script than say &lsquo;now click this&hellip; then this&hellip; then if you&rsquo;re using this version, there should be a drop down over here, otherwise it&rsquo;ll be&hellip; now click the thing that looks like&hellip;&rsquo;</p>
 
   </article>
 </div>
@@ -2395,6 +2730,7 @@
         <li><a href="#topic-modeling-with-the-tmtool">Topic Modeling with the TMTool</a></li>
         <li><a href="#but-what-does-it-mean">But what does it mean?</a></li>
         <li><a href="#topic-model-in-r">Topic Model in R</a></li>
+        <li><a href="#a-walkthrough">A Walkthrough</a></li>
       </ul>
     </li>
   </ul>

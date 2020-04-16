@@ -2315,7 +2315,28 @@
   
 
   <article class="single__contents" data-dir="ltr">
-    <p>Publish data with datasette to heroku</p>
+    <h3 id="image-analysis">Image Analysis</h3>
+<p>In recent years, historians have started to deal with photographs or videos / video stills as historical documents. Arnold and Tilton call this <a href="https://distantviewing.org/pdf/distant-viewing.pdf" target="_blank">&lsquo;distant viewing&rsquo;</a>. There are a variety of ways this might pan out; one might identify and analyze colour and composition of key frames in a recording of a historical event. One might track objects or people. In a recent piece of my own, we asked the computer to identify objects and contexts to describe &lsquo;scenes&rsquo; in images pulled from Instagram, in order to explore how people constructed their own &lsquo;cabinets of curiosities&rsquo; (<a href="https://www.mdpi.com/2571-9408/3/2/13" target="_blank">which you can read here</a>, connected to the trade in human remains.) Lev Manovich has done a number of pieces looking at amongst other things, selfies by city, or 4535 covers of Time magazine (<a href="http://manovich.net/index.php/exhibitions" target="_blank">more on his work here</a>). Ian Milligan extracted art work from the first era of the web, the 1990s, and used <a href="https://imagej.net/Welcome" target="_blank">ImageJ</a> to study patterns in how people presented them on Geocities.</p>
+<p>There&rsquo;s a lot you can do, and there are many different approaches. Here, we&rsquo;ll use a web toy by Zach Whalen called <a href="http://www.zachwhalen.net/pg/imj/" target="_blank">&lsquo;Imj&rsquo;</a>. Whalen writes,</p>
+<blockquote>
+<p>So-called <a href="http://moviebarcode.tumblr.com/" target="_blank">&ldquo;movie barcodes&rdquo;</a> are both elegant to look at and useful ways to explore how color schemes and designs shift throughout a film. <a href="https://www.flickr.com/photos/culturevis/4038907270/in/album-72157623414034532/" target="_blank">Image montages</a> can also demonstrate how a visual corpus changes over time, and plotting an image set into a graph based on values like hue and saturation could provide a stylistic fingerprint for particular set.</p>
+</blockquote>
+<blockquote>
+<p>Visual culture analytics or macroanalytics is a methodology for drawing interpretations of large sets of data with the aid of computers. Just like scholars may use computational tools to analyze n-gram frequencies in literary corpora, for example, others also like <a href="http://www.manovich.net/" target="_blank">Lev Manovich</a> use software to create similarly condensed or arrayed views that reveal patterns and trends within visual corpora.</p>
+</blockquote>
+<p><a href="http://www.zachwhalen.net/pg/imj/" target="_blank">Imj</a> is a tool for creating a rapid visualization of a corpus of images, so that you can determine whether or not you might like to look into more complex tools for deeper analysis. You can read <a href="http://www.zachwhalen.net/posts/imj-a-web-based-tool-for-visual-culture-macroanalytics/" target="_blank">Whalen&rsquo;s description of what the tool does here</a>.</p>
+<ol>
+<li>Download this corpus of materials: <a href="https://archive.org/details/0011919FebruaryPopularScience" target="_blank">https://archive.org/details/0011919FebruaryPopularScience</a>. These are covers from &lsquo;Popular Science Monthly&rsquo; held at the Internet Archive. Hit the down button beside where it says &lsquo;72 original&rsquo; to download it all as a zip file.</li>
+<li>Unzip it, have a look around inside; finder and explorer can show you thumbnails as you browse. Do you spot anything interesting?</li>
+<li>Look at the metadata. The metadata is actually there in the file name. If you sort the files alphabetically in your file explorer or finder you&rsquo;ll see that you have covers from 1912 to 1946, and thus perhaps some insight into the popular consumption of science over thirty years. There are some files with <code>.torrent</code> or <code>.xml</code> or <code>.sqlite</code>; you can delete these. Then there are two files with typos in the years which you can rename easily. Delete the file for the thumbnail image too (which has &lsquo;thumb&rsquo; in its filename.)</li>
+<li>Upload to Imj here: <a href="http://www.zachwhalen.net/pg/imj/" target="_blank">http://www.zachwhalen.net/pg/imj/</a></li>
+<li>Try the different visualization tools. There is no &lsquo;right&rsquo; answer to the question of visualization here. Instead, you are trying to &lsquo;deform&rsquo; your perspective, you&rsquo;re trying to get a large-scale overview, of interesting patterns that might be present. Some tools might give you more intuitively sensical results; but remember Matthew Lincoln&rsquo;s warnings against &lsquo;confabulation&rsquo;&hellip; You might find, when you plot hue against brightness, that some interesting clustering seems to happen. Having spotted a pattern, jump back into the corpus to see why that might be the case&hellip;</li>
+<li>Go back to the Internet Archive, see if you can find other interesting image corpora to explore. How ambitious are you? <a href="https://archive.org/details/audio-covers" target="_blank">Here are one million album covers!</a>. <a href="https://archive.org/search.php?query=magazine&#43;collections&amp;page=2" target="_blank">Here are more magazines!</a>. With a bit of creativity, you could also grab all of <a href="https://archive.macleans.ca/issues" target="_blank">Maclean&rsquo;s Magazine</a> for some CanCon.</li>
+<li>Download your results, add them to your notes and repo for this week.</li>
+</ol>
+<p><p class="md__image">
+  <img src="/images/imj/barcode.png" alt="a not useful visualization"  />
+</p></p>
 
   </article>
 </div>
@@ -2345,7 +2366,15 @@
         <div class="toc">
   <h6 class="toc__label">What&#39;s on this Page</h6>
   <div class="toc__body">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#image-analysis">Image Analysis</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
   </div>
 </div>
       

@@ -27,7 +27,7 @@ When you do this kind of work, it is super important that you make a note of wha
 - Load some data into Voyant-Tools and explore it
 - Consider the power of collocation with AntConc
 - See if a topic model might usefully surface some patterns.
-- And if you're really ambitious, try your hand at some data publishing with Datasette and Heroku.
+- In this week's extra, there's a web toy called 'Imj' for exploring patterns in _visual_ data.
 
 - When/if you run into trouble, take screenshots (google how to do that for your particular machine) and these can be uploaded into your repository as well. Indeed, you should also keep track of any files you create as part of your weekly work in your repo: these are evidence!
 

@@ -136,4 +136,4 @@ Save your work.
 
 Handwriting is a much more complicated problem, but in recent years machine learning has made enormous strides in this regard. I will point you to some documents I prepared for another class of mine if you want to explore this problem.
 
-['Detecting and Transcribing Handwriting with Microsoft Azure'](https://shawngraham.github.io/dhmuse/detecting-handwriting/)
+['Detecting and Transcribing Handwriting with Microsoft Azure and then Importing into Tropy'](https://github.com/shawngraham/handwriting-to-tropy/blob/master/index.md)

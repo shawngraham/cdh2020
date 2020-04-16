@@ -219,7 +219,7 @@ An API is just a way of opening up a program so that another program can interac
         <pubDate>Tue, 28 Jan 2020 00:10:37 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/4/topic-models/</guid>
-        <description>An Introduction to Topic Models   that link at the end, if you&amp;rsquo;re interested: http://bit.ly/sw-tm-tour
+        <description>An Introduction to Topic Models   that link at the end of the video, if you&amp;rsquo;re interested: http://bit.ly/sw-tm-tour
 Topic Modeling with the TMTool There are many tools that can fit a topic model to your text. The easiest one to use is a graphical user interface overlaid on the MALLET Toolkit called &amp;lsquo;The Topic Modeling Tool&amp;rsquo; by Jonathan Enderle.
  Follow Enderle&amp;rsquo;s instructions for downloading and installing the tool here Make a new directory on your machine called tmt.</description>
       </item>
@@ -271,7 +271,7 @@ List of links (this downloads a CSV file)</description>
         <pubDate>Tue, 28 Jan 2020 00:10:37 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/4/bonus/</guid>
-        <description>Publish data with datasette to heroku</description>
+        <description>Image Analysis In recent years, historians have started to deal with photographs or videos / video stills as historical documents. Arnold and Tilton call this &amp;lsquo;distant viewing&amp;rsquo;. There are a variety of ways this might pan out; one might identify and analyze colour and composition of key frames in a recording of a historical event. One might track objects or people. In a recent piece of my own, we asked the computer to identify objects and contexts to describe &amp;lsquo;scenes&amp;rsquo; in images pulled from Instagram, in order to explore how people constructed their own &amp;lsquo;cabinets of curiosities&amp;rsquo; (which you can read here, connected to the trade in human remains.</description>
       </item>
       
       <item>
