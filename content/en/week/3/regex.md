@@ -1,6 +1,6 @@
 ---
 title: "REGEX"
-description: "Basic Tools"
+description: "Learning how to pattern match"
 date: 2020-01-28T00:10:48+09:00
 draft: false
 weight: -4

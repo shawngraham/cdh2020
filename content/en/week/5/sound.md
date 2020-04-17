@@ -1,6 +1,6 @@
 ---
 title: "Sound"
-description: "Telling the Compelling Story"
+description: "Audio and Sonification"
 date: 2020-01-28T00:10:09+09:00
 draft: false
 weight: -4
@@ -11,4 +11,3 @@ weight: -4
 - sonification
   - my tutorial
   - also the twotone app
-  

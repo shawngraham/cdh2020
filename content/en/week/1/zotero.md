@@ -1,6 +1,6 @@
 ---
 title: "Setting up your Zotero"
-description: "instructions"
+description: "Make life easier when you write"
 date: 2020-01-28T00:10:51+09:00
 draft: false
 weight: -2

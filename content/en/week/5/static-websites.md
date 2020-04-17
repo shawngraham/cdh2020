@@ -1,6 +1,6 @@
 ---
 title: "Static Websites"
-description: "Telling the Compelling Story"
+description: "Building a fast and secure site"
 date: 2020-01-28T00:10:09+09:00
 draft: false
 weight: -1

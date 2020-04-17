@@ -1,6 +1,6 @@
 ---
 title: "Networks"
-description: "Basic Tools"
+description: "Databasic and Gephi"
 date: 2020-01-28T00:10:48+09:00
 draft: false
 weight: -2
@@ -113,7 +113,7 @@ Phew. Save your work. Gephi saves as `.gephi` file, but you can also export to o
 
 ### Network Analysis in Python
 
-You could try [this tutorial from the Programming Historian out](https://programminghistorian.org/en/lessons/exploring-and-analyzing-network-data-with-python). 
+You could try [this tutorial from the Programming Historian out](https://programminghistorian.org/en/lessons/exploring-and-analyzing-network-data-with-python).
 
 ### So what?
 So what have we got?

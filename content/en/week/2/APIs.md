@@ -1,6 +1,6 @@
 ---
 title: "APIs"
-description: "instructions"
+description: "Querying Chronicling America"
 date: 2020-01-28T00:10:51+09:00
 draft: false
 weight: -2

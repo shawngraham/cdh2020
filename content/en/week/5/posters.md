@@ -6,11 +6,11 @@ draft: false
 weight: -2
 ---
 
-![](http://uploads.neatorama.com/images/posts/587/74/74587/1407463055-0.jpg)
+![](https://uploads.neatorama.com/images/posts/587/74/74587/1407463055-0.jpg)
 
 'Accidental Renaissance: the photos that look like Italian paintings'.
 
-Here we're going to explore some of the principles of design that are useful for you in the design of academic posters. These same principles are useful for the design of infographics. If an academic poster is the distillation of the same ideas that might turn up in an academic poster, then an infographic is a distillation of an academic poster. 
+Here we're going to explore some of the principles of design that are useful for you in the design of academic posters. These same principles are useful for the design of infographics. If an academic poster is the distillation of the same ideas that might turn up in an academic poster, then an infographic is a distillation of an academic poster.
 
 + Start by reading this short [excerpt from the original draft of 'The Historian's Macroscope'](http://www.themacroscope.org/?page_id=875) on _kinds_ of visualizations.
 

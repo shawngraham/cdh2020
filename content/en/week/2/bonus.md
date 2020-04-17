@@ -1,6 +1,6 @@
 ---
 title: "This week's bonus"
-description: "instructions"
+description: "Automatic transcribing of audio from video"
 date: 2020-01-28T00:10:51+09:00
 draft: false
 weight: 0

@@ -1,6 +1,6 @@
 ---
 title: "Setting up your Hypothesis"
-description: "instructions"
+description: "a tool for annotating what you read online"
 date: 2020-01-28T00:10:51+09:00
 draft: false
 weight: -3

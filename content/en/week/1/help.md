@@ -1,6 +1,6 @@
 ---
 title: "Asking for help"
-description: "instructions"
+description: "Good questions make life easier"
 date: 2020-01-28T00:10:51+09:00
 draft: false
 weight: 0
