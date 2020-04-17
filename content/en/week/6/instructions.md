@@ -15,7 +15,7 @@ weight: -3
 
 ### Read
 
-+ Nothing formal from me to read this week.
++ Michelle Moravec, Visualizing Schneemannn American Art History and Digital Scholarship: New Avenues of Exploration, November 15, 2013 http://historyinthecity.blogspot.com/2013/11/before-i-start-i-want-to-thank-people.html ; Her presentation (about ten minutes) is on youtube [here](https://youtu.be/KhPSc9yca6I?t=396); watch it (but feel free to watch the other presentations too).
 
 ### Do
 
@@ -27,11 +27,11 @@ You will share your results using an appropriate technique you encountered in we
 
 - When/if you run into trouble, take screenshots (google how to do that for your particular machine) and these can be uploaded into your repository as well. **Indeed, you should also keep track of any files you create as part of your weekly work in your repo: these are evidence!**
 
-{{< notice success "Important" >}} With tech work, if it doesn't come together in about 30 minutes, it won't come in an hour. So take a break. Close the laptop. Call somebody up for help. Find another pair of eyes to look at the problem. I don't want to hear that you labored heroically for 2 hours to do something. Jump into our social space and ask for advice. Remember: it's not **how many** you do, it's **that you pushed yourself** that matters.
+{{< notice success "Important" >}} With tech work, if it doesn't come together in about 30 minutes, it won't come in an hour. So take a break. Close the laptop. Call somebody up for help. Find another pair of eyes to look at the problem. I don't want to hear that you labored heroically for 2 hours to do something. Jump into our social space and ask for advice.
 {{< /notice >}}
 
 ### Record and Reflect
-1. As you have been doing, make another notes.md entry and put it in your repo for week 6.
+1. As you have been doing, make another notes.md entry and put it in your repo for week 6. Deposit anything else you created this week; flag anything you want me to pay particular attention to with an entry in your notes.
 
 2. In your journal.md for this week, share the results of your explorations. Also, think about this: Digital history is a process of encountering a body of information that suggests a question or two to you and then cycling back to that body of information to better understand _the question_ (we haven't even got to an _answer_ yet!). In so doing, you'll discover that the information is messy, or in the not-quite-right format. 80% of our time, as digital historians, is just getting things into shape for us to begin our exploration!
 
