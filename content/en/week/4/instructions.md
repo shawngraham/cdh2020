@@ -17,7 +17,7 @@ When you do this kind of work, it is super important that you make a note of wha
 
 ### Read
 
-+ Arguing  with  Digital  History  working  group,  "Digital  History and Argument,"" white paper, Roy Rosenzweig Center for History and New Media(November 13, 2017): [https://rrchnm.org/argument-white-paper/](https://rrchnm.org/argument-white-paper/).
++ Arguing  with  Digital  History  working  group,  "Digital  History and Argument," white paper, Roy Rosenzweig Center for History and New Media(November 13, 2017): [https://rrchnm.org/argument-white-paper/](https://rrchnm.org/argument-white-paper/).
 
 + Tim Hitchcock, 2013 ['Big Data for Dead People'](https://historyonics.blogspot.ca/2013/12/big-data-for-dead-people-digital.html) _Historyonics_
 
