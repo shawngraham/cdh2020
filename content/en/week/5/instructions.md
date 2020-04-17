@@ -23,10 +23,7 @@ This week, you'll learn of a few different ways of communicating the telling sto
 
 ### Goals for this week
 
-- an introduction to academic posters, layout and colour with Inkscape
-- webmapping
-- sonification
-- websites via github pages
+I want you to learn something about how typography, design, and colour combine to make for a compelling poster or website; I also want you to try your hand at something completely outside the box for most of you: data sonification or audio work more generally.
 
 ### Listen  
 
@@ -42,6 +39,18 @@ Explore some of the suggestions. Or, take a look at this piece by former Carleto
 Or explore [The Digital Panopticon](https://www.digitalpanopticon.org/).
 
 ### Do
+
+As always, try to work through as many of these as you can.
+
++ Using Inkscape to make academic posters
++ Building a webmap with various open tools
++ Building a static website with Github pages (and various generators)
++ Turning historical information into a sonification
+
+Bonus (for when or if you have time, energy, and inclination)
+
++ a historical twitterbot
++ exhibit building with Wax or Omeka
 
 - When/if you run into trouble, take screenshots (google how to do that for your particular machine) and these can be uploaded into your repository as well. Indeed, you should also keep track of any files you create as part of your weekly work in your repo: these are evidence!
 
