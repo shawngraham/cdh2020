@@ -22,9 +22,7 @@
         <pubDate>Tue, 28 Jan 2020 00:10:09 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/5/instructions/</guid>
-        <description>Telling the Compelling Story Goals for this week Listen Read I asked on twitter, (as you do),
-.twitter-tweet { font: 14px/1.45 -apple-system,BlinkMacSystemFont,&#34;Segoe UI&#34;,Roboto,Oxygen-Sans,Ubuntu,Cantarell,&#34;Helvetica Neue&#34;,sans-serif; border-left: 4px solid #2b7bb9; padding-left: 1.5em; color: #555; } .twitter-tweet a { color: #2b7bb9; text-decoration: none; } blockquote.twitter-tweet a:hover, blockquote.twitter-tweet a:focus { text-decoration: underline; }  most compelling works of digital history? go!
-&amp;mdash; Shawn Graham (@electricarchaeo) April 13, 2020 Explore some of the suggestions. Or, take a look at this piece by former Carleton U public history MA student, Cristina Woods:</description>
+        <description>Telling the Compelling Story Eventually, after many cycles of cleaning data, making exploratory visualizations, and rerunning your analyzes, you will arrive at a point where you have this thing that you want to communicate. Perhaps it&amp;rsquo;s part of a larger story, and illuminates some aspect that was hitherto hidden. Perhaps it&amp;rsquo;s the entire story. Perhaps it only sets up the questions for a deeper investigation. There will come a moment when you want to communicate and tell this compelling story.</description>
       </item>
       
       <item>
@@ -33,7 +31,9 @@
         <pubDate>Tue, 28 Jan 2020 00:10:09 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/5/sound/</guid>
-        <description> audacity sonification  </description>
+        <description>  audacity
+  sonification
+ my tutorial also the twotone app    </description>
       </item>
       
       <item>
@@ -46,12 +46,13 @@
       </item>
       
       <item>
-        <title>Infographics</title>
-        <link>https://craftingdh.netlify.com/week/5/infographics/</link>
+        <title>Posters</title>
+        <link>https://craftingdh.netlify.com/week/5/posters/</link>
         <pubDate>Tue, 28 Jan 2020 00:10:09 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>https://craftingdh.netlify.com/week/5/infographics/</guid>
-        <description>academic posters infographics  colour theory, layout, stuff from macroscope re scott chapter</description>
+        <guid>https://craftingdh.netlify.com/week/5/posters/</guid>
+        <description>&amp;lsquo;Accidental Renaissance: the photos that look like Italian paintings&amp;rsquo;.
+Here we&amp;rsquo;re going to explore some of the principles of design that are useful for you in the design of academic posters. These same principles are useful for the design of infographics. If an academic poster is the distillation of the same ideas that might turn up in an academic poster, then an infographic is a distillation of an academic poster.</description>
       </item>
       
       <item>
