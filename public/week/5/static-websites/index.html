@@ -1419,14 +1419,6 @@
         </li>
       
     
-      
-        
-        
-        <li>
-          <a href="https://craftingdh.netlify.com/week/5/bonus/" class="menu__title " data-depth="0">This Week&#39;s Bonus</a>
-        </li>
-      
-    
   </ul>
   
 
@@ -2206,14 +2198,6 @@
         </li>
       
     
-      
-        
-        
-        <li>
-          <a href="https://craftingdh.netlify.com/week/5/bonus/" class="menu__title " data-depth="0">This Week&#39;s Bonus</a>
-        </li>
-      
-    
   </ul>
   
 
@@ -2315,12 +2299,21 @@
   
 
   <article class="single__contents" data-dir="ltr">
-    <ul>
-<li>static website with gh-pages</li>
-<li>static website with jekyll-now</li>
-<li>static website with expose</li>
-<li>link back to academic-kickstarter thing</li>
-</ul>
+    <p>Building a website from scratch can be onerous. Using a system like Wordpress or Squarespace etc can leave you locked in to someone else&rsquo;s platform (and any security issues that might entail).</p>
+<p>Here, we&rsquo;re going to build a simple website that uses nothing but text files as its source; these text files will always be readable into the future, and you can also copy them to your own machine so that they&rsquo;re always handy, ready to be transformed into something else.</p>
+<p>I&rsquo;m talking about <em>static site building</em>; there are many different generators out there that will take your text files, pump them through some templates, and spit out flat html on the other side. At The Programming Historian, there is a lesson by Amanda Visconti on using <a href="https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages" target="_blank">Jekyll and Github Pages</a> to make a site; we&rsquo;re going to do something much easier.</p>
+<p>In essence, you are going to create a new repository in your Github account called <code>your-username.github.io</code>; you&rsquo;re going to make a file in there called <code>index.md</code> and youj&rsquo;re going to write something in that file, eg,</p>
+<pre><code>## My Quick Static Site
+
+This is a site I build with gh-pages. **Wow**
+
+It reads [markdown](https://www.markdownguide.org/) and turns it into html.
+
+![gif ftw](https://media.giphy.com/media/nXxOjZrbnbRxS/200w_d.gif)
+</code></pre><p>Commit that file. Then, hit the gear wheel icon and scroll down to the Github Pages section. Github will run your text files through the Jekyll site builder for you; here you can select from some of their templates.</p>
+<p>Boom! <a href="https://media.giphy.com/media/nXxOjZrbnbRxS/200w_d.gif" target="_blank">The full process is on this site with screenshots</a>.</p>
+<p>Now, there&rsquo;s a lot more to static websites than this. This course site is generated with <a href="https://gohugo.io" target="_blank">Hugo</a>; a site generator for building exhibitions, called &lsquo;Wax&rsquo;, is available <a href="https://minicomp.github.io/wax/" target="_blank">here</a>. (Speaking of exhibits, here&rsquo;s information about building them with <a href="https://programminghistorian.org/en/lessons/up-and-running-with-omeka" target="_blank">Omeka.net</a>.)</p>
+<p>Customize your new site to be a &lsquo;front page&rsquo; to all of your journal entries from these last few weeks.</p>
 
   </article>
 </div>
@@ -2337,13 +2330,6 @@
       </a>
     
     <div class="grow"></div>
-    
-      <a href="https://craftingdh.netlify.com/week/5/bonus/" title="This Week&#39;s Bonus" class="pagination-single__right">
-        <div class="pagination-single__left-title">This Week&#39;s Bonus</div>
-        <div class="pagination-single__icon">
-          <svg xmlns="https://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
-        </div>
-      </a>
     
   
 </nav>

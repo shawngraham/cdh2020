@@ -278,7 +278,8 @@ List of links (this downloads a CSV file)</description>
         <pubDate>Tue, 28 Jan 2020 00:10:09 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/5/static-websites/</guid>
-        <description> static website with gh-pages static website with jekyll-now static website with expose link back to academic-kickstarter thing  </description>
+        <description>Building a website from scratch can be onerous. Using a system like Wordpress or Squarespace etc can leave you locked in to someone else&amp;rsquo;s platform (and any security issues that might entail).
+Here, we&amp;rsquo;re going to build a simple website that uses nothing but text files as its source; these text files will always be readable into the future, and you can also copy them to your own machine so that they&amp;rsquo;re always handy, ready to be transformed into something else.</description>
       </item>
       
       <item>
@@ -398,15 +399,6 @@ But we&amp;rsquo;re good with text. In this bonus exercise, you&amp;rsquo;ll dow
         <description>The Last Bit The last bit of the course is the Exit Ticket.
 Do The format of the exit ticket is up to you. You craft a statement reflecting on where you started and where you’ve gotten to, and you will indicate how you feel you’ve done against the learning outcomes. You may, if you wish, indicate what you think your letter grade ought to be, and why.
 Think about your journey, and where you started.</description>
-      </item>
-      
-      <item>
-        <title>This Week&#39;s Bonus</title>
-        <link>https://craftingdh.netlify.com/week/5/bonus/</link>
-        <pubDate>Tue, 28 Jan 2020 00:10:09 +0900</pubDate>
-        <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
-        <guid>https://craftingdh.netlify.com/week/5/bonus/</guid>
-        <description> exhibit with Wax Omeka - reclaimhosting, links to tutorials Neatline - links to tutorials  </description>
       </item>
       
       <item>
