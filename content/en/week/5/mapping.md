@@ -94,7 +94,9 @@ Data layers are typically added on top of the base layer. Data layers can be poi
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="leaflet.css">
-    <script src="leaflet.js"
+    <script src="https://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript"></script>
     </script>
 
 </head>
@@ -106,14 +108,12 @@ This is telling the browser the name of this page, and it's telling the browser 
 ```
 <body>
 <div id="mapid" style="width: 600px; height: 400px;"></div>
-<script>
-var mymap = L.map('mapid', {
-    center: [47.5668, -52.7120],
-    zoom: 13,
-    layers:[
-      L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png')
-    ]
-}).addTo(mymap);
+<script type="text/javascript">
+var myMap = L.map('mapid').setView([47.5668, -52.7120],13);
+L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
+	{maxZoom: 19
+}).addTo(myMap);
+
 ```
 
 We're creating a box on the page called 'mapid' and setting it's width and height in pixels. Then our script creates a thing called 'mymap' and defines some particulars about it: the center of the map (here, St. John's, Newfoundland), the zoom level, and the basemap layer. The final bit, `addTo(mymap);` does the work of putting all of that information on the map (using leaflet.js).
@@ -128,7 +128,7 @@ We're creating a box on the page called 'mapid' and setting it's width and heigh
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 47.5668, -52.7120 ]
+       "coordinates":  [-52.7120, 47.5668]
     },
     "properties": {
     "Label":"Centre of our map!"
@@ -138,7 +138,7 @@ We're creating a box on the page called 'mapid' and setting it's width and heigh
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 47.5675, -52.720 ]
+       "coordinates":  [ -52.720, 47.5675 ]
     },
     "properties": {
     "Label":"Not the centre of the map "
@@ -146,32 +146,28 @@ We're creating a box on the page called 'mapid' and setting it's width and heigh
   }
 ]
 }
+
 ```
 
 Copy that into a new file and save in your web-map folder as `point-data.geojson`
 
-7. Now add the following to the `index.html`, which will tell leaflet where the data is and how to add it to our map:
+7. Now append the following to the `index.html`, which will tell leaflet where the data is and how to add it to our map:
 
 ```
-// load GeoJSON and save it as a thing called `data`
+// load a GeoJSON from external file
 $.getJSON("point-data.geojson", function(data) {
-    // adds GeoJSON objects to layer
-    data = L.geoJson(data  ,{
-
-    // converts point feature into a map layer
-    pointToLayer: function(feature,latlng){
-    var marker = L.marker(latlng);
-// binds a popup to marker, assigns properties to display
-        marker.bindPopup(feature.properties.Label + '<br/>');
-        return marker;
-      }
-    }).addTo(map);
+  // add GeoJSON layer to the map once the file is loaded
+  var datalayer = L.geoJson(data ,{
+  onEachFeature: function(feature, featureLayer) {
+  featureLayer.bindPopup(feature.properties.Label);
+  }
+}).addTo(myMap);
 });
 
 </script>
 
 </body>
-</hmtl>
+</html>
 ```
 
 Save!

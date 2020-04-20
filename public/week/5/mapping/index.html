@@ -2373,7 +2373,9 @@
 	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
 
     &lt;link rel=&quot;stylesheet&quot; href=&quot;leaflet.css&quot;&gt;
-    &lt;script src=&quot;leaflet.js&quot;
+    &lt;script src=&quot;https://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
     &lt;/script&gt;
 
 &lt;/head&gt;
@@ -2383,14 +2385,12 @@
 </ol>
 <pre><code>&lt;body&gt;
 &lt;div id=&quot;mapid&quot; style=&quot;width: 600px; height: 400px;&quot;&gt;&lt;/div&gt;
-&lt;script&gt;
-var mymap = L.map('mapid', {
-    center: [47.5668, -52.7120],
-    zoom: 13,
-    layers:[
-      L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png')
-    ]
-}).addTo(mymap);
+&lt;script type=&quot;text/javascript&quot;&gt;
+var myMap = L.map('mapid').setView([47.5668, -52.7120],13);
+L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
+	{maxZoom: 19
+}).addTo(myMap);
+
 </code></pre><p>We&rsquo;re creating a box on the page called &lsquo;mapid&rsquo; and setting it&rsquo;s width and height in pixels. Then our script creates a thing called &lsquo;mymap&rsquo; and defines some particulars about it: the center of the map (here, St. John&rsquo;s, Newfoundland), the zoom level, and the basemap layer. The final bit, <code>addTo(mymap);</code> does the work of putting all of that information on the map (using leaflet.js).</p>
 <ol start="6">
 <li>Now we&rsquo;re going to need some data for our map. Our point data will be encoded in a format called &lsquo;geojson&rsquo;, which is a kind of list. If you have geographic data in a csv table, with latitude and longitude columns, you could use <a href="http://www.convertcsv.com/csv-to-geojson.htm" target="_blank">this tool</a> to convert it to geojson. For now, our geojson has two points in it:</li>
@@ -2402,7 +2402,7 @@ var mymap = L.map('mapid', {
     &quot;type&quot;: &quot;Feature&quot;,
     &quot;geometry&quot;: {
        &quot;type&quot;: &quot;Point&quot;,
-       &quot;coordinates&quot;:  [ 47.5668, -52.7120 ]
+       &quot;coordinates&quot;:  [-52.7120, 47.5668]
     },
     &quot;properties&quot;: {
     &quot;Label&quot;:&quot;Centre of our map!&quot;
@@ -2412,7 +2412,7 @@ var mymap = L.map('mapid', {
     &quot;type&quot;: &quot;Feature&quot;,
     &quot;geometry&quot;: {
        &quot;type&quot;: &quot;Point&quot;,
-       &quot;coordinates&quot;:  [ 47.5675, -52.720 ]
+       &quot;coordinates&quot;:  [ -52.720, 47.5675 ]
     },
     &quot;properties&quot;: {
     &quot;Label&quot;:&quot;Not the centre of the map &quot;
@@ -2420,29 +2420,25 @@ var mymap = L.map('mapid', {
   }
 ]
 }
+
 </code></pre><p>Copy that into a new file and save in your web-map folder as <code>point-data.geojson</code></p>
 <ol start="7">
-<li>Now add the following to the <code>index.html</code>, which will tell leaflet where the data is and how to add it to our map:</li>
+<li>Now append the following to the <code>index.html</code>, which will tell leaflet where the data is and how to add it to our map:</li>
 </ol>
-<pre><code>// load GeoJSON and save it as a thing called `data`
+<pre><code>// load a GeoJSON from external file
 $.getJSON(&quot;point-data.geojson&quot;, function(data) {
-    // adds GeoJSON objects to layer
-    data = L.geoJson(data  ,{
-
-    // converts point feature into a map layer
-    pointToLayer: function(feature,latlng){
-    var marker = L.marker(latlng);
-// binds a popup to marker, assigns properties to display
-        marker.bindPopup(feature.properties.Label + '&lt;br/&gt;');
-        return marker;
-      }
-    }).addTo(map);
+  // add GeoJSON layer to the map once the file is loaded
+  var datalayer = L.geoJson(data ,{
+  onEachFeature: function(feature, featureLayer) {
+  featureLayer.bindPopup(feature.properties.Label);
+  }
+}).addTo(myMap);
 });
 
 &lt;/script&gt;
 
 &lt;/body&gt;
-&lt;/hmtl&gt;
+&lt;/html&gt;
 </code></pre><p>Save!</p>
 <ol start="8">
 <li>At the command prompt, you&rsquo;ll use python to start a webserver; the webserver acts like a regular server and makes these two files understandable by your web-browser: <code>$ python -m http.server</code></li>
