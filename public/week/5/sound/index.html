@@ -2315,18 +2315,34 @@
   
 
   <article class="single__contents" data-dir="ltr">
-    <ul>
-<li>
-<p>audacity</p>
-</li>
-<li>
-<p>sonification</p>
-<ul>
-<li>my tutorial</li>
-<li>also the twotone app</li>
-</ul>
-</li>
-</ul>
+    <h3 id="podcasting">Podcasting</h3>
+<p>As you may be thinking to yourself, &lsquo;how can he teach us anything about podcasting, he&rsquo;s not terribly good at it&rsquo;.</p>
+<p>Fair enough. I first encountered podcasting back in about 2005 - <a href="https://en.wikipedia.org/wiki/IPod" target="_blank">ipod</a>, hence podcasting - as part of my previous life in the edtech world. It was difficult to do, and most &lsquo;shows&rsquo; weren&rsquo;t terribly good. I never really got into it, as a producer. But in recent years, professional broadcasters have entered the scene, raising production values across the board. The tools for making podcasts have made it possible for the likes of you and me to up our game quite a lot too.</p>
+<p>For this course, I&rsquo;ve been using an ipad app from <a href="https://anchor.fm" target="_blank">anchor.fm</a> which allows me to record and rearrange snippets, add incidental sound that is license free, and push the podcast to the major discovery platforms. Other folks I know use <a href="https://www.spreaker.com/" target="_blank">Spreaker</a> and no doubt there are other platforms out there for building and promoting polished work.</p>
+<p>But even if you used those platforms for their distribution reach, or for their access to free-to-use music and sound effects, you might want to consider <em>recording</em> your work with the free and open source sound tool <a href="https://www.audacityteam.org/" target="_blank">Audacity</a>. Dany Guay-Bélanger, a former public history student here at Carleton, used Audacity and Wordpress to create a podcast series on the problems of archiving video games in a museum context called <a href="http://deadplay.net/" target="_blank"><em>DeadPlay</em></a>.</p>
+<p>I may not have made many podcasts, but ultimately, they all come down to good storytelling. <a href="https://www.cbc.ca/radio/podcasts/arts-culture/under-the-influence/" target="_blank">Terry O&rsquo;Reilly&rsquo;s <em>Under the Influence</em> </a> is an excellent example of good storytelling married to a strong structure. Listen to an Under the Influence episode. Every one has the same basic structure. There&rsquo;s an opening <em>hook</em> that is itself a little gem of story telling with its own internal structure (setup, rising conflict, climax, resolution) that sets the overall <em>theme</em> for the episode. There&rsquo;s an opening sound/music clip reminding us that we&rsquo;re listening to &lsquo;Under the Influence.&rsquo; The theme is explained in a bit more detail. Then there are three or four more stories more directly germane to that overall theme, and then a final summary that reminds us how the different stories illustrate the theme, with a clever twist tying it all back to the opening hook.</p>
+<ol>
+<li>Why not collaborate with someone on this? Download and install <a href="https://www.audacityteam.org/" target="_blank">Audacity</a>.</li>
+<li>Follow this <a href="https://programminghistorian.org/en/lessons/editing-audio-with-audacity" target="_blank">lesson by Brandon Walsh at The Programming Historian</a> to become familiar with how Audacity works.</li>
+<li>Record five minutes around the theme of &lsquo;things that have driven me nuts about learning digital history&rsquo;.</li>
+<li>Have one person collate those snippets into a single file with interstitial music.</li>
+<li>Have one person write and record an opening hook - it doesn&rsquo;t have to be very long or complex.</li>
+<li>Pull it all together into a single sound file.</li>
+</ol>
+<p>Now, is this all feasible given <em>everything else</em> going on right now? <strong>Probably not.</strong> So: let me be the person who pulls it all together and writes the hook. You just record and tidy up your own snippet, and put that in your repository. I&rsquo;ll try to get something put together before the course ends to share with all of you in our Discord space.</p>
+<h3 id="sonification">Sonification</h3>
+<p>You&rsquo;re familiar with graphs and charts. In a graph you take the values for one variable and mark them along the x axis. You take the values for a second variable and mark them along the y axis. Where those values intersect, you make a mark: and a simple xy plot is born. <em>Sonification</em> on the other hand maps those values to sonic tones, rather than visual markers. Thus there is also an implicit <em>time</em> variable as you listen; we understand the first tones as being temporally earlier than what we hear at the end. Sonification might be an appropriate technique for understanding <em>historical</em> data.</p>
+<p>I have written a <a href="https://programminghistorian.org/en/lessons/sonification" target="_blank">longer tutorial on Sonification at the Programming Historian</a> that you might want to engage with more fully; I&rsquo;ll just quote the opening two paragraphs here:</p>
+<blockquote>
+<p>Sonification is the practice of mapping aspects of the data to produce sound signals. In general, a technique can be called ‘sonification’ if it meets certain conditions. These include reproducibility (the same data can be transformed the same ways by other researchers and produce the same results) and what might be called intelligibility - that the ‘objective’ elements of the original data are reflected systematically in the resulting sound <a href="https://www.icad.org/Proceedings/2008/Hermann2008.pdf" target="_blank">(see Hermann 2008 for a taxonomy of sonification)</a>. <a href="https://www.researchgate.net/publication/282504359_Listen_to_the_Sound_of_Data" target="_blank">Last and Usyskin (2015)</a> designed a series of experiments to determine what kinds of data-analytic tasks could be performed when the data were sonified. Their experimental results (Last and Usyskin 2015) have shown that even untrained listeners (listeners with no formal training in music) can make useful distinctions in the data. They found listeners could discriminate in the sonified data common data exploration tasks such as classification and clustering. (Their sonified outputs mapped the underlying data to the Western musical scale.)</p>
+</blockquote>
+<blockquote>
+<p>Last and Usyskin focused on time-series data. They argue that time-series data are particularly well suited to sonification because there are natural parallels with musical sound. Music is sequential, it has duration, and it evolves over time; so too with time-series data (Last and Usyskin 2015: 424). It becomes a problem of matching the data to the appropriate sonic outputs. In many applications of sonification, a technique called ‘parameter mapping’ is used to marry aspects of the data along various auditory dimensions such as pitch, variation, brilliance, and onset&hellip;</p>
+</blockquote>
+<p>For this exercise I want you to map the data from a historical source (your choice, but if you&rsquo;re stuck, try <a href="https://programminghistorian.org/assets/sonification-roman-data.csv" target="_blank">some archaeological data</a>) into the <a href="https://app.twotone.io/" target="_blank">&lsquo;Two Tone&rsquo;</a> app; click the <code>?</code> to see how to use its interface. What tones, sounds, settings make sense given your data? How do different choices affect the <em>meaning</em> of what you&rsquo;ve created? <em>Is</em> there anything meaningful? Save your music <strong>and</strong> your notes/thoughts on making it, to your repository.</p>
+<p><p class="md__image">
+  <img src="/images/two-tone.png" alt="two tone"  />
+</p></p>
 
   </article>
 </div>
@@ -2363,7 +2379,16 @@
         <div class="toc">
   <h6 class="toc__label">What&#39;s on this Page</h6>
   <div class="toc__body">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#podcasting">Podcasting</a></li>
+        <li><a href="#sonification">Sonification</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
   </div>
 </div>
       

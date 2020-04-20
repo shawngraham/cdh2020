@@ -31,7 +31,7 @@ You will share your results using an appropriate technique you encountered in we
 {{< /notice >}}
 
 ### Record and Reflect
-1. As you have been doing, make another notes.md entry and put it in your repo for week 6. Deposit anything else you created this week; flag anything you want me to pay particular attention to with an entry in your notes.
+1. As you have been doing, make another notes.md entry and put it in your repo for week 6. Deposit anything else you created this week; flag anything you want me to pay particular attention to with an entry in your journal.md.
 
 2. In your journal.md for this week, share the results of your explorations. Also, think about this: Digital history is a process of encountering a body of information that suggests a question or two to you and then cycling back to that body of information to better understand _the question_ (we haven't even got to an _answer_ yet!). In so doing, you'll discover that the information is messy, or in the not-quite-right format. 80% of our time, as digital historians, is just getting things into shape for us to begin our exploration! Reflect on Michelle Moravec's own cycle of exploration and what that might imply for yours.
 

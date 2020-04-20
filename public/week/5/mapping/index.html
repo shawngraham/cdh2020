@@ -2315,11 +2315,156 @@
   
 
   <article class="single__contents" data-dir="ltr">
-    <ul>
-<li>storymap</li>
-<li>leaflet</li>
-<li>webmapping != GIS, pointers to QGIS</li>
+    <h3 id="telling-stories-with-storymaps">Telling Stories with StoryMaps</h3>
+<p>The historical stories we want to tell take place within and across space. The <a href="https://storymap.knightlab.com/" target="_blank">Storymapjs</a> platform from the Knight Lab at Northwestern University was developed to make this easier to accomplish. Below is an example the Knight Lab put together concerning Arya Stark&rsquo;s journeys. Note how each point in the map can be annotated with videos, images, or other kinds of rich content. Each point on the map is annotated with text and media; the &lsquo;next arrow&rsquo; moves us to the next point, implying a historical or temporal connection. Embedding this map into a text file required a single line of html,</p>
+<pre><code>&lt;iframe src=&quot;https://storymap.knightlab.com/examples/aryas-journey/&quot; width = 100% height = &quot;400&quot;&gt;&lt;/iframe&gt;
+</code></pre><iframe src="https://storymap.knightlab.com/examples/aryas-journey/" width = 100% height = "400"></iframe>
+<p>Making a storymap requires using a Google account to log in. It uses the metaphor of &lsquo;slides&rsquo; to describe each point on your map, and the interface itself is rather similar to what you might be familiar with for Powerpoint or Keynote.</p>
+<p>Knightlab makes the following suggestions:</p>
+<ul>
+<li>Keep it short. We recommend not having more than 20 slides for a reader to click through.</li>
+<li>Pick stories that have a strong location narrative. It does not work well for stories that need to jump around in the map.</li>
+<li>Write each event as a part of a larger narrative.</li>
+<li>Include events that build up to major occurrences — not just the major events.</li>
 </ul>
+<ol>
+<li>Login into <a href="https://storymap.knightlab.com/select/" target="_blank">Storymap</a></li>
+<li>The editor will look roughly like this</li>
+</ol>
+<p><p class="md__image">
+  <img src="/images/storymap/newstorymap.png" alt="new storymap"  />
+</p></p>
+<ol start="3">
+<li>Set your base map by clicking on options; there is a list of common base maps under &lsquo;options - Map Type&rsquo;</li>
+</ol>
+<p><p class="md__image">
+  <img src="/images/storymap/storymap2.png" alt="map types"  />
+</p></p>
+<ol start="4">
+<li>Add some basic info to your home slide (it&rsquo;ll be the red one, at the left, and you don&rsquo;t have any other slides yet). Each subsequent slide uses the same interface.</li>
+</ol>
+<p><p class="md__image">
+  <img src="/images/storymap/storymap1.png" alt="basic"  />
+</p></p>
+<ol start="5">
+<li>Once you&rsquo;ve got some slides - 5 would be fine - save the map, and then hit the &lsquo;share&rsquo; button at right.</li>
+</ol>
+<p><p class="md__image">
+  <img src="/images/storymap/storymap3.png" alt="share"  />
+</p></p>
+<p>This will give you a link to share with folks; or if you scroll a bit further down, some html code which you can save in your notes.md or in a blog post or some other online document.</p>
+<p>If you make changes subsequent to sharing, a new button appears beside &lsquo;save&rsquo; called &lsquo;publish changes&rsquo;.</p>
+<h3 id="webmapping-with-leaflet">Webmapping with Leaflet</h3>
+<p>For this next section, I am going to copy and modify an exercise from the <a href="https://o-date.github.io/draft/book/what-is-web-mapping.html" target="_blank">Open Digital Archaeology Textbook Environment</a> by Graham et al 2019; this particular section was contributed by <a href="https://dngupta.github.io/" target="_blank">Neha Gupta of UBC</a>.</p>
+<p>First of all, a webmap is not a Geographic Information System or GIS. A webmap may be <em>derived</em> from a GIS, but the key difference is that a GIS allows analytical questions to be asked of, and derived from, different <em>layers</em> of spatial or spatialized data. Webmaps are used more for conveying the results of such analyses.</p>
+<p>Tiled map service and <a href="http://www.opengeospatial.org/standards/wms" target="_blank">Web Map Service</a> are two forms of Web-based mapping. A WMS is an interface that enables us (the clients) to request specific maps i.e. visual representations of geographic information from a geospatial database. The WMS server is called via a Universal Resource Link (URL) on an Internet-enabled desktop GIS. A request typically consists of the geographic layer (e.g. theme) and geographic area of interest. The response to a request results in geo-registered map images that are displayed and queried within a browser. Because the map is dynamically drawn upon request, and because the server typically uses the most current information from several layers in the geospatial database, WMS maps tend to load slowly.</p>
+<p>Tile map services such as <a href="https://tilemill-project.github.io/tilemill/docs/crashcourse/introduction/" target="_blank">TileMill Project</a>, <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a>, and <a href="http://maps.stamen.com/" target="_blank">Stamen</a> all use one or more vector layers that have been rasterized into an image. This rasterized image is divided into 256 x 256 adjacent pixel images or ‘tiles’. This is usually the base layer in a web map.</p>
+<p>Each tile is an image on the Web, which means that you can link to it. For example, the following URL points to a specific tile on the Web:</p>
+<pre><code>https://tile.openstreetmap.org/7/63/42.png
+</code></pre><p>The three elements in the URL are:</p>
+<ol>
+<li>tile.openstreetmap.org, the tile server name;</li>
+<li>7, the zoom level or z value of the tile; and finally</li>
+<li>63/42, the x and y values in the grid where the tile lives</li>
+</ol>
+<p>The z value has a range between 0 and 21, where 21 returns a tile with greatest detail (and smallest sized tile).</p>
+<p><p class="md__image">
+  <img src="https://o-date.github.io/draft/book/images/tile-pyramid.jpg" alt=""  />
+</p></p>
+<p>&lsquo;Image Tile Pyramid, <a href="https://www.azavea.com/blog/2018/08/06/generating-pyramided-tiles-from-a-geotiff-using-geotrellis/tilepyramid/" target="_blank">https://www.azavea.com/blog/2018/08/06/generating-pyramided-tiles-from-a-geotiff-using-geotrellis/tilepyramid/</a>’</p>
+<p>Once generated, the set of tiles are stored on disk, ready to be distributed rapidly to large numbers of simultaneous requests. Tiled maps load quickly precisely because they are pre-generated. They shift attention to map aesthetics and smooth map navigation, trading in functionality such as layer order, map scale and projection. <a href="http://alexurquhart.github.io/free-tiles/" target="_blank">Alex Urquhart</a> maintains a list of tile services.</p>
+<p>Data layers are typically added on top of the base layer. Data layers can be points, lines and polygons. These data layers are saved as <a href="https://geojson.org/" target="_blank">GeoJSON</a>, a format designed for representing on the Web, geographic features with their non-spatial attributes.</p>
+<p><a href="http://leafletjs.com/" target="_blank">Leaflet</a> is a JavaScript library developed by <a href="https://vimeo.com/106112939" target="_blank">Vladimir Agafonkin</a> for use with tiled maps. Launched in 2008, Leaflet has become widely used in tile web mapping because the library’s low-barrier customization and interactivity with map elements, and because of its simplified setup when compared to a WMS served map. Moreover, Leaflet’s compatibility with other Web 2.0 technologies and code-sharing platforms such as GitHub has encouraged an active community of ‘makers’.</p>
+<ol>
+<li>Create a new directory on your machine and call it &lsquo;web-map&rsquo;</li>
+<li>Open a terminal or command prompt in that directory.</li>
+<li>We&rsquo;re going to build a map now; in sublime text make a new file and save it as <code>index.html</code> in the <code>web-map</code> folder.</li>
+<li>We&rsquo;ll begin by putting some important information about the building blocks we&rsquo;ll use in the &lsquo;header&rsquo; of our file, between the <code>&lt;head&gt;</code> and <code>&lt;\head&gt;</code> tags. Copy and paste the following into your index.html:</li>
+</ol>
+<pre><code>&lt;head&gt;
+
+	&lt;title&gt;A Demo WebMap&lt;/title&gt;
+
+	&lt;meta charset=&quot;utf-8&quot; /&gt;
+	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;leaflet.css&quot;&gt;
+    &lt;script src=&quot;leaflet.js&quot;
+    &lt;/script&gt;
+
+&lt;/head&gt;
+</code></pre><p>This is telling the browser the name of this page, and it&rsquo;s telling the browser where to get the stylesheet and the code for making the map work. You don&rsquo;t have the <code>leaflet.css</code> or the <code>leaflet.js</code> files yet. Right-click, and &lsquo;save as&rsquo; copies of these two files into your web-map folder from here: <a href="/data/leaflet.css">leaflet.css</a> and <a href="/data/leaflet.js">leaflet.js</a></p>
+<ol start="5">
+<li>The next bit of code defines the base map:</li>
+</ol>
+<pre><code>&lt;body&gt;
+&lt;div id=&quot;mapid&quot; style=&quot;width: 600px; height: 400px;&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+var mymap = L.map('mapid', {
+    center: [47.5668, -52.7120],
+    zoom: 13,
+    layers:[
+      L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png')
+    ]
+}).addTo(mymap);
+</code></pre><p>We&rsquo;re creating a box on the page called &lsquo;mapid&rsquo; and setting it&rsquo;s width and height in pixels. Then our script creates a thing called &lsquo;mymap&rsquo; and defines some particulars about it: the center of the map (here, St. John&rsquo;s, Newfoundland), the zoom level, and the basemap layer. The final bit, <code>addTo(mymap);</code> does the work of putting all of that information on the map (using leaflet.js).</p>
+<ol start="6">
+<li>Now we&rsquo;re going to need some data for our map. Our point data will be encoded in a format called &lsquo;geojson&rsquo;, which is a kind of list. If you have geographic data in a csv table, with latitude and longitude columns, you could use <a href="http://www.convertcsv.com/csv-to-geojson.htm" target="_blank">this tool</a> to convert it to geojson. For now, our geojson has two points in it:</li>
+</ol>
+<pre><code>{
+   &quot;type&quot;: &quot;FeatureCollection&quot;,
+   &quot;features&quot;: [
+  {
+    &quot;type&quot;: &quot;Feature&quot;,
+    &quot;geometry&quot;: {
+       &quot;type&quot;: &quot;Point&quot;,
+       &quot;coordinates&quot;:  [ 47.5668, -52.7120 ]
+    },
+    &quot;properties&quot;: {
+    &quot;Label&quot;:&quot;Centre of our map!&quot;
+    }
+  },
+  {
+    &quot;type&quot;: &quot;Feature&quot;,
+    &quot;geometry&quot;: {
+       &quot;type&quot;: &quot;Point&quot;,
+       &quot;coordinates&quot;:  [ 47.5675, -52.720 ]
+    },
+    &quot;properties&quot;: {
+    &quot;Label&quot;:&quot;Not the centre of the map &quot;
+    }
+  }
+]
+}
+</code></pre><p>Copy that into a new file and save in your web-map folder as <code>point-data.geojson</code></p>
+<ol start="7">
+<li>Now add the following to the <code>index.html</code>, which will tell leaflet where the data is and how to add it to our map:</li>
+</ol>
+<pre><code>// load GeoJSON and save it as a thing called `data`
+$.getJSON(&quot;point-data.geojson&quot;, function(data) {
+    // adds GeoJSON objects to layer
+    data = L.geoJson(data  ,{
+
+    // converts point feature into a map layer
+    pointToLayer: function(feature,latlng){
+    var marker = L.marker(latlng);
+// binds a popup to marker, assigns properties to display
+        marker.bindPopup(feature.properties.Label + '&lt;br/&gt;');
+        return marker;
+      }
+    }).addTo(map);
+});
+
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/hmtl&gt;
+</code></pre><p>Save!</p>
+<ol start="8">
+<li>At the command prompt, you&rsquo;ll use python to start a webserver; the webserver acts like a regular server and makes these two files understandable by your web-browser: <code>$ python -m http.server</code></li>
+<li>The terminal will tell you now that your server is running at an address that will look something like this: <code>(http://0.0.0.0:8000/)</code>. Copy that full address and paste it into your browser&rsquo;s address bar.</li>
+</ol>
+<p>Congratulations! You have made a webmap! Do you see how you could recenter the map on Ottawa? Add some more data? Change the base map to another style?</p>
 
   </article>
 </div>
@@ -2356,7 +2501,16 @@
         <div class="toc">
   <h6 class="toc__label">What&#39;s on this Page</h6>
   <div class="toc__body">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#telling-stories-with-storymaps">Telling Stories with StoryMaps</a></li>
+        <li><a href="#webmapping-with-leaflet">Webmapping with Leaflet</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
   </div>
 </div>
       

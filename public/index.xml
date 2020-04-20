@@ -119,9 +119,8 @@ An Introduction to Voyant   &amp;ldquo;The gateway drug to the digital humanitie
         <pubDate>Tue, 28 Jan 2020 00:10:09 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/5/sound/</guid>
-        <description>  audacity
-  sonification
- my tutorial also the twotone app    </description>
+        <description>Podcasting As you may be thinking to yourself, &amp;lsquo;how can he teach us anything about podcasting, he&amp;rsquo;s not terribly good at it&amp;rsquo;.
+Fair enough. I first encountered podcasting back in about 2005 - ipod, hence podcasting - as part of my previous life in the edtech world. It was difficult to do, and most &amp;lsquo;shows&amp;rsquo; weren&amp;rsquo;t terribly good. I never really got into it, as a producer. But in recent years, professional broadcasters have entered the scene, raising production values across the board.</description>
       </item>
       
       <item>
@@ -180,7 +179,7 @@ Introduction Wget is a program for downloading materials from the web. It is ext
         <pubDate>Tue, 28 Jan 2020 00:10:09 +0900</pubDate>
         <author>shawn.graham@carleton.ca (Dr. Shawn Graham)</author>
         <guid>https://craftingdh.netlify.com/week/5/mapping/</guid>
-        <description> storymap leaflet webmapping != GIS, pointers to QGIS  </description>
+        <description>Telling Stories with StoryMaps The historical stories we want to tell take place within and across space. The Storymapjs platform from the Knight Lab at Northwestern University was developed to make this easier to accomplish. Below is an example the Knight Lab put together concerning Arya Stark&amp;rsquo;s journeys. Note how each point in the map can be annotated with videos, images, or other kinds of rich content. Each point on the map is annotated with text and media; the &amp;lsquo;next arrow&amp;rsquo; moves us to the next point, implying a historical or temporal connection.</description>
       </item>
       
       <item>
