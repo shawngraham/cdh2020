@@ -1,0 +1,25 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [-52.7120, 47.5668]
+    },
+    "properties": {
+    "Label":"Centre of our map!"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -52.720, 47.5675 ]
+    },
+    "properties": {
+    "Label":"Not the centre of the map "
+    }
+  }
+]
+}

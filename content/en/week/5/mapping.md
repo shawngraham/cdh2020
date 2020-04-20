@@ -180,3 +180,5 @@ Save!
 9. The terminal will tell you now that your server is running at an address that will look something like this: `(http://0.0.0.0:8000/)`. Copy that full address and paste it into your browser's address bar.
 
 Congratulations! You have made a webmap! Do you see how you could recenter the map on Ottawa? Add some more data? Change the base map to another style?
+
+(You can upload your web-map folder to Github by dragging the folder onto a repository.)
