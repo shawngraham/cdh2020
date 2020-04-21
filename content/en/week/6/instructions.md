@@ -13,6 +13,8 @@ weight: -3
 
 ### Listen  
 
+<iframe src="https://anchor.fm/hist3814o/embed/episodes/Week-Six-Bringing-it-all-together-ed312i" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+
 ### Read
 
 + Michelle Moravec, Visualizing Schneemannn American Art History and Digital Scholarship: New Avenues of Exploration, November 15, 2013 http://historyinthecity.blogspot.com/2013/11/before-i-start-i-want-to-thank-people.html ; Her presentation (about ten minutes) is on youtube [here](https://youtu.be/KhPSc9yca6I?t=396); watch it (but feel free to watch the other presentations too).

@@ -10,6 +10,10 @@ weight: 0
 
 The last bit of the course is the **Exit Ticket**.
 
+## Listen
+
+<iframe src="https://anchor.fm/hist3814o/embed/episodes/The-Exit-Ticket-ed31cm" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+
 ### Do
 
 The format of the exit ticket is up to you. You craft a statement reflecting on where you started and where you’ve gotten to, and you will indicate how you feel you’ve done against the [learning outcomes](https://craftingdh.netlify.com/docs/2-learning-outcomes). You may, if you wish, indicate what you think your letter grade ought to be, and why.
