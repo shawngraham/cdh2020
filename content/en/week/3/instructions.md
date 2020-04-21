@@ -19,6 +19,10 @@ weight: -5
 
 ### Listen  
 
+[Feed for the podcast here.](https://anchor.fm/s/1c3d3bfc/podcast/rss)
+
+<iframe src="https://anchor.fm/hist3814o/embed/episodes/Week-Three-Basic-Tools-Encore-ed2vd0" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+
 ### Read
 
 + James Baker, 2017. 'The Soft Digital History That Underpins My Book' https://cradledincaricature.com/2017/05/24/the-soft-digital-history-that-underpins-my-book/

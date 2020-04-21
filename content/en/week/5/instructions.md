@@ -27,6 +27,8 @@ I want you to learn something about how typography, design, and colour combine t
 
 ### Listen  
 
+<iframe src="https://anchor.fm/hist3814o/embed/episodes/Week-Five-Telling-the-Compelling-Story-ed30jn" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+
 ### Read
 
 Explore two or three of the entries from last year's [DH Awards](http://dhawards.org/dhawards2019/results/), under the 'Best DH Data Visualization', and the 'Best DH Public Engagement' winners, runners up, and nominees.
@@ -62,7 +64,7 @@ Extra (for when or if you have time, energy, and inclination)
 
 1. As you did for the previous weeks, make another notes.md entry and put it in your repo for week 5.
 
-2. In your journal.md for this week, think about what you found intriguing, compelling, and effective about the various sites and projects you explored this week. Tie what you find/observe to your own work. With regard to your own work, reflect on your design choices and the story you're trying to tell, or the interesting thing you've found. Critically evaluate the thing(s) you've made; perhaps show them to someone outside of this course and ask for their feedback. Did they understand the point you were trying to make? What was effective, for them, and what was confusing? 
+2. In your journal.md for this week, think about what you found intriguing, compelling, and effective about the various sites and projects you explored this week. Tie what you find/observe to your own work. With regard to your own work, reflect on your design choices and the story you're trying to tell, or the interesting thing you've found. Critically evaluate the thing(s) you've made; perhaps show them to someone outside of this course and ask for their feedback. Did they understand the point you were trying to make? What was effective, for them, and what was confusing?
 
 What had an impact _on you_ and how you think of your own historian's craft?
 

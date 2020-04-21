@@ -24,6 +24,8 @@ author: "Shawn Graham"
 
 <iframe src="https://anchor.fm/hist3814o/embed/episodes/Week-One-ecje9d" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
 
+_Hey, I wanted to learn how to podcast, so it seemed like a good idea to do a quick episode setting the scene each week. It was either this or another #$%# zoom meeting, right?_
+
 ### Read
 
 + Sharon Leon, 2016.['Returning Women to the History of Digital History'](http://www.6floors.org/bracket/2016/03/07/returning-women-to-the-history-of-digital-history/) _[bracket]_

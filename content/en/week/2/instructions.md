@@ -11,6 +11,9 @@ weight: -5
 + learn some of the ways historical information is made available digitally, paying attention to disparities of labour, and of tech
 
 ### Listen  
+[Feed for the podcast here.](https://anchor.fm/s/1c3d3bfc/podcast/rss)
+
+<iframe src="https://anchor.fm/hist3814o/embed/episodes/Week-Two-Basic-Tools-ed2u14" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
 
 ### Read
 

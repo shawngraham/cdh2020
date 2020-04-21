@@ -15,6 +15,10 @@ When you do this kind of work, it is super important that you make a note of wha
 
 ### Listen  
 
+<iframe src="https://anchor.fm/hist3814o/embed/episodes/Week-Four-Macroscopes-and-Microscopes-ed2vsm" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+
+[Mining The Dispatch](http://dsl.richmond.edu/dispatch/)
+
 ### Read
 
 + Arguing  with  Digital  History  working  group,  "Digital  History and Argument," white paper, Roy Rosenzweig Center for History and New Media(November 13, 2017): [https://rrchnm.org/argument-white-paper/](https://rrchnm.org/argument-white-paper/).
