@@ -27,9 +27,10 @@ weight: -5
 
 ### Do
 
-+ Transform a text file using Regular Expressions
-+ Clean it further with Open Refine
-+ Visualize the results through networks
++ [Transform a text file using Regular Expressions](/week/3/regex)
++ [Clean it further with Open Refine](/week/3/open-refine)
++ [Visualize the results through networks](/week/3/networks)
++ [Extra: networks in R](/week/3/bonus)
 
 - When/if you run into trouble, take screenshots (google how to do that for your particular machine) and these can be uploaded into your repository as well. Indeed, you should also keep track of any files you create as part of your weekly work in your repo: these are evidence!
 

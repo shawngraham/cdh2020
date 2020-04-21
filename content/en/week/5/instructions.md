@@ -42,15 +42,16 @@ Or explore [The Digital Panopticon](https://www.digitalpanopticon.org/).
 
 As always, try to work through as many of these as you can.
 
-+ Using Inkscape to make academic posters
-+ Building a webmap with various open tools
-+ Building a static website with Github pages (and various generators)
-+ Turning historical information into a sonification
++ Use [Inkscape to make academic posters](/week/5/posters)
++ Build [a static website with Github pages](/week/5/static-websites) (and various generators)
++ Build a [webmap with various open tools](/week/5/mapping)
++ Make a podcast or turn historical information into a [sonification](/week/5/sound)
 
-Bonus (for when or if you have time, energy, and inclination)
+Extra (for when or if you have time, energy, and inclination)
 
-+ a historical twitterbot
-+ exhibit building with Wax or Omeka
++ a historical twitterbot with this tutorial from [The Programming Historian](https://programminghistorian.org/en/lessons/intro-to-twitterbots)
++ more complex webmapping with [this lesson from The Programming Historian](https://programminghistorian.org/en/lessons/mapping-with-python-leaflet)
++ a personal academic website using Hugo, Github, and Netlify. This comes from another class I teach; I expect you'll be able to adapt accordingly. [Part One](https://shawngraham.github.io/dhmuse/building-your-online-presence/), [Part Two](https://shawngraham.github.io/dhmuse/customizing-your-site/), [Part Three](https://shawngraham.github.io/dhmuse/updating-your-devlogs/).
 
 - When/if you run into trouble, take screenshots (google how to do that for your particular machine) and these can be uploaded into your repository as well. Indeed, you should also keep track of any files you create as part of your weekly work in your repo: these are evidence!
 
@@ -61,7 +62,7 @@ Bonus (for when or if you have time, energy, and inclination)
 
 1. As you did for the previous weeks, make another notes.md entry and put it in your repo for week 5.
 
-2. In your journal.md for this week, think about what you found intriguing, compelling, and effective about the various sites and projects you explored this week. With regard to your own work, reflect on your design choices and the story you're trying to tell, or the interesting thing you've found. Critically evaluate the thing(s) you've made; perhaps show them to someone outside of this course and ask for their feedback. Did they understand the point you were trying to make? What was effective, for them, and what was confusing?
+2. In your journal.md for this week, think about what you found intriguing, compelling, and effective about the various sites and projects you explored this week. Tie what you find/observe to your own work. With regard to your own work, reflect on your design choices and the story you're trying to tell, or the interesting thing you've found. Critically evaluate the thing(s) you've made; perhaps show them to someone outside of this course and ask for their feedback. Did they understand the point you were trying to make? What was effective, for them, and what was confusing? 
 
 What had an impact _on you_ and how you think of your own historian's craft?
 

@@ -27,15 +27,15 @@ This week, we're thinking about some of the ways historical materials find their
 
 ### Do
 
-Try to work through as many of these exercises as you can. Don't worry too much if you get stuck: the point is to push yourself beyond your _current_ level of ability. You are not grade on _how many_ of these you do, but rather on how you push your development as a digital historian: and that journey looks different for each of you.
+Try to work through as many of these exercises as you can. Don't worry too much if you get stuck: the point is to push yourself beyond your _current_ level of ability. You are not grade on _how many_ of these you do, but rather on **how you push your development as a digital historian**: and that journey looks different for each of you.
 
 + Download and install the [Sublime Text Editor](https://www.sublimetext.com/)
-+ Install Conda
-+ Download web materials with wget
-+ Retrieve materials from the [Chronicling America](https://chroniclingamerica.loc.gov/) API
-+ Use OCR (Object Character Recognition) to turn images of text _into_ text
++ [Install Conda](/week/2/installing-anaconda)
++ Download [web materials with wget](/week/2/wget)
++ [Retrieve materials](/week/2/apis) from the [Chronicling America](https://chroniclingamerica.loc.gov/) API
++ Use [OCR (Object Character Recognition)](/week/2/ocr) to turn images of text _into_ text
 
-Bonus (for when you have time, energy, and inclination):
+[Extra (for when you have time, energy, and inclination)](/week/2/bonus):
 + Download videos with youtube-dl
 + Transcribe audio from videos and other sources automatically
 

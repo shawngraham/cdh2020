@@ -25,11 +25,13 @@ When you do this kind of work, it is super important that you make a note of wha
 
 ### Do
 
-- Begin with some Excel basics
-- Load some data into Voyant-Tools and explore it
-- Consider the power of collocation with AntConc
-- See if a topic model might usefully surface some patterns.
-- In this week's bonus, there's a web toy called 'Imj' for exploring patterns in _visual_ data.
+Start simple, and push yourself into the more complex materials.
+
+- Begin with [some Excel basics](/week/4/excel)
+- Load some data into [Voyant-Tools and explore the patterns](/week/4/voyant)
+- Consider the power of collocation with [AntConc](/week/4/antconc/)
+- See if a [topic model might usefully surface some patterns](/week4/topic-models).
+- In this week's [extra, there's a web toy called 'Imj'](/week/4/bonus) for exploring patterns in _visual_ data.
 
 - When/if you run into trouble, take screenshots (google how to do that for your particular machine) and these can be uploaded into your repository as well. Indeed, you should also keep track of any files you create as part of your weekly work in your repo: these are evidence!
 
@@ -39,7 +41,7 @@ When you do this kind of work, it is super important that you make a note of wha
 ### Record and Reflect
 1. As you did in previous weeks, make another notes.md entry and put it in your repo for week 4.
 
-2. In your journal.md for this week, think about
+2. In your journal.md for this week, think about how the various authors in the readings make the case for how digital history arguments are advanced. Think about the cycle of jumping from close to distant 'reads' or 'views' of your material, and the ways the stories emerge - or not. What is missing from historical argumentation in digital history? What is different about this process from what you have come to experience as historians in other classes? How do the particular affordances of digital work change what you might know - and how you might argue it? How much (or what) _a priori_ knowledge is a requirement for digital history arguments to make sense to a reader/viewer/user?
 
 ### Submit work
 
