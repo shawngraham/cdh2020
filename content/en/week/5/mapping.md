@@ -254,6 +254,10 @@ This one in particular [shows Parliament Hill](http://central.bac-lac.gc.ca/.ite
 
 You can see that with leaflet it is pretty easy to add more layers and more data to your map. But soon things get a little bit unwieldy. We're going to re-organize our map so that we can turn layers on and off.
 
+The end result will look like this:
+
+![layer-control-button.png](/images/webmap/layer-control-button.png)
+
 We're going to create some variables to hold our different layers and maps. Make a copy of your `index.html` file and call it `index2.html`. Open `index2.html` in Sublime Text and work on that file.
 
 1. Delete the code from the `var myMap =` line to the `// load a GeoJSON from external file`. Your code should look like this now:
