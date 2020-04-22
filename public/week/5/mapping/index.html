@@ -2550,7 +2550,7 @@ var overlayMaps = {
 });
 </code></pre><p>and finally, we add a control box so that we can switch the different layers on and off, and that our layers are grouped appropriately:</p>
 <pre><code>L.control.layers(baseMaps, overlayMaps).addTo(myMap);
-</code></pre><p>Save that as <code>index2</code>, and with your server still running, you can view it in your browser at <code>http://localhost:8000/index2.html</code>.  (NB: the part after the colon might be different on your machine - this number is the &lsquo;port&rsquo; and the precise port number will have printed out in your terminal when you first ran the <code>python -m http.server</code> command.)</p>
+</code></pre><p>Save that as <code>index2.html</code>, and with your server still running, you can view it in your browser at <code>http://localhost:8000/index2.html</code>.  (NB: the part after the colon might be different on your machine - this number is the &lsquo;port&rsquo; and the precise port number will have printed out in your terminal when you first ran the <code>python -m http.server</code> command.)</p>
 <p>For more on layers with leaflet, see <a href="https://leafletjs.com/examples/layers-control/" target="_blank">Layer Groups and Layers Control</a>.</p>
 <h3 id="adding-animation">Adding animation</h3>
 <p>Animating points in your map, so that they move along a path, is relatively easy to accomplish. We&rsquo;ll use the <a href="https://github.com/openplans/Leaflet.AnimatedMarker" target="_blank">Animated Marker plugin</a>.</p>

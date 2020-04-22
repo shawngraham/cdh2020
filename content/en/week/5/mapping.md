@@ -307,7 +307,7 @@ and finally, we add a control box so that we can switch the different layers on 
 L.control.layers(baseMaps, overlayMaps).addTo(myMap);
 ```
 
-Save that as `index2`, and with your server still running, you can view it in your browser at `http://localhost:8000/index2.html`.  (NB: the part after the colon might be different on your machine - this number is the 'port' and the precise port number will have printed out in your terminal when you first ran the `python -m http.server` command.)
+Save that as `index2.html`, and with your server still running, you can view it in your browser at `http://localhost:8000/index2.html`.  (NB: the part after the colon might be different on your machine - this number is the 'port' and the precise port number will have printed out in your terminal when you first ran the `python -m http.server` command.)
 
 For more on layers with leaflet, see [Layer Groups and Layers Control](https://leafletjs.com/examples/layers-control/).
 
