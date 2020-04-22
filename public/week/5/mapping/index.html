@@ -2339,6 +2339,11 @@
 <p>This will give you a link to share with folks; or if you scroll a bit further down, some html code which you can save in your notes.md or in a blog post or some other online document.</p>
 <p>If you make changes subsequent to sharing, a new button appears beside &lsquo;save&rsquo; called &lsquo;publish changes&rsquo;.</p>
 <h3 id="webmapping-with-leaflet">Webmapping with Leaflet</h3>
+<p>One of my favourite web maps is by Professor Vincent Brown of Harvard, on the <a href="http://revolt.axismaps.com/" target="_blank">Slave Revolt in Jamaica, 1760 - 1761</a>. He writes, &lsquo;the map suggests an argument about the strategies of the rebels and the tactics of counterinsurgency, about the importance of the landscape to the course of the uprising, and about the difficulty of representing such events cartographically with available sources.&rsquo; Spend a few minutes allowing the map to play (<a href="http://revolt.axismaps.com/map/" target="_blank">link here</a>) and think about the aesthetic and design choices used to communicate this powerful story.</p>
+<p><p class="md__image">
+  <img src="/images/webmap/jamaica-map.png" alt="jamaica map"  />
+</p></p>
+<p>This map is made using the <a href="https://leafletjs.com/" target="_blank">Leaflet.js</a> open-source JavaScript library. Let&rsquo;s start building.</p>
 <p>For this next section, I am going to copy and modify an exercise from the <a href="https://o-date.github.io/draft/book/what-is-web-mapping.html" target="_blank">Open Digital Archaeology Textbook Environment</a> by Graham et al 2019; this particular section was contributed by <a href="https://dngupta.github.io/" target="_blank">Neha Gupta of UBC</a>.</p>
 <p>First of all, a webmap is not a Geographic Information System or GIS. A webmap may be <em>derived</em> from a GIS, but the key difference is that a GIS allows analytical questions to be asked of, and derived from, different <em>layers</em> of spatial or spatialized data. Webmaps are used more for conveying the results of such analyses.</p>
 <p>Tiled map service and <a href="http://www.opengeospatial.org/standards/wms" target="_blank">Web Map Service</a> are two forms of Web-based mapping. A WMS is an interface that enables us (the clients) to request specific maps i.e. visual representations of geographic information from a geospatial database. The WMS server is called via a Universal Resource Link (URL) on an Internet-enabled desktop GIS. A request typically consists of the geographic layer (e.g. theme) and geographic area of interest. The response to a request results in geo-registered map images that are displayed and queried within a browser. Because the map is dynamically drawn upon request, and because the server typically uses the most current information from several layers in the geospatial database, WMS maps tend to load slowly.</p>
@@ -2372,8 +2377,8 @@
 	&lt;meta charset=&quot;utf-8&quot; /&gt;
 	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
 
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;leaflet.css&quot;&gt;
-    &lt;script src=&quot;https://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js&quot;&gt;&lt;/script&gt;
+	&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@1.6.0/dist/leaflet.css&quot; /&gt;
+	&lt;script src=&quot;https://unpkg.com/leaflet@1.6.0/dist/leaflet.js&quot;&gt;&lt;/script&gt;
     &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js&quot;&gt;&lt;/script&gt;
     &lt;script type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
     &lt;/script&gt;
@@ -2386,12 +2391,12 @@
 <pre><code>&lt;body&gt;
 &lt;div id=&quot;mapid&quot; style=&quot;width: 600px; height: 400px;&quot;&gt;&lt;/div&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
-var myMap = L.map('mapid').setView([47.5668, -52.7120],13);
+var myMap = L.map('mapid').setView([45.4192857, -75.6973237],13);
 L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
 	{maxZoom: 19
 }).addTo(myMap);
 
-</code></pre><p>We&rsquo;re creating a box on the page called &lsquo;mapid&rsquo; and setting it&rsquo;s width and height in pixels. Then our script creates a thing called &lsquo;mymap&rsquo; and defines some particulars about it: the center of the map (here, St. John&rsquo;s, Newfoundland), the zoom level, and the basemap layer. The final bit, <code>addTo(mymap);</code> does the work of putting all of that information on the map (using leaflet.js).</p>
+</code></pre><p>We&rsquo;re creating a box on the page called &lsquo;mapid&rsquo; and setting it&rsquo;s width and height in pixels. Then our script creates a thing called &lsquo;mymap&rsquo; and defines some particulars about it: the center of the map (here, Ottawa, Ontario), the zoom level, and the basemap layer. The final bit, <code>addTo(mymap);</code> does the work of putting all of that information on the map (using leaflet.js).</p>
 <ol start="6">
 <li>Now we&rsquo;re going to need some data for our map. Our point data will be encoded in a format called &lsquo;geojson&rsquo;, which is a kind of list. If you have geographic data in a csv table, with latitude and longitude columns, you could use <a href="http://www.convertcsv.com/csv-to-geojson.htm" target="_blank">this tool</a> to convert it to geojson. For now, our geojson has two points in it:</li>
 </ol>
@@ -2402,7 +2407,7 @@ L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
     &quot;type&quot;: &quot;Feature&quot;,
     &quot;geometry&quot;: {
        &quot;type&quot;: &quot;Point&quot;,
-       &quot;coordinates&quot;:  [-52.7120, 47.5668]
+       &quot;coordinates&quot;:  [-75.6973237, 45.4192857]
     },
     &quot;properties&quot;: {
     &quot;Label&quot;:&quot;Centre of our map!&quot;
@@ -2412,7 +2417,7 @@ L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
     &quot;type&quot;: &quot;Feature&quot;,
     &quot;geometry&quot;: {
        &quot;type&quot;: &quot;Point&quot;,
-       &quot;coordinates&quot;:  [ -52.720, 47.5675 ]
+       &quot;coordinates&quot;:  [ -75.699222, 45.4275 ]
     },
     &quot;properties&quot;: {
     &quot;Label&quot;:&quot;Not the centre of the map &quot;
@@ -2446,6 +2451,129 @@ $.getJSON(&quot;point-data.geojson&quot;, function(data) {
 </ol>
 <p>Congratulations! You have made a webmap! Do you see how you could recenter the map on Ottawa? Add some more data? Change the base map to another style?</p>
 <p>(You can upload your web-map folder to Github by dragging the folder onto a repository.)</p>
+<h3 id="adding-a-new-layer-to-our-map">Adding a new layer to our map</h3>
+<p><a href="https://mapwarper.net" target="_blank">Map Warper</a> is a service that allows us to upload images of maps, and then tie &lsquo;control points&rsquo; to real-world geography such that we stretch and warp the image to overlay the physical world. It then provides us with a tile-server so that the image can be imported into our map as its own layer. Take a look at this map of Ottawa:</p>
+<p><p class="md__image">
+  <img src="https://legacy.lib.utexas.edu/maps/historical/ottawa_1894.jpg" alt="Ottawa 1894"  />
+</p></p>
+<p>This was uploaded to Mapwarper and georectified by a former MA student at Carleton. You can see it on Mapwarper <a href="https://mapwarper.net/maps/29435" target="_blank">at this location</a>.</p>
+<p>If you click on the &lsquo;Export&rsquo; tab, you&rsquo;ll find that there&rsquo;s a URL for the map as tiles: <a href="http://mapwarper.net/maps/tile/29435/%7Bz%7D/%7Bx%7D/%7By%7D.png">http://mapwarper.net/maps/tile/29435/{z}/{x}/{y}.png</a>.</p>
+<p>That&rsquo;s the line we want to add to our map.</p>
+<ol>
+<li>Open your <code>index.html</code> file.</li>
+<li>We&rsquo;re going to add another layer, just after where you first specified your basemap, which to remind you, was at:</li>
+</ol>
+<pre><code>L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
+	{maxZoom: 19
+}).addTo(myMap);
+</code></pre><p>Hit &lsquo;enter&rsquo; a few times after that final semicolon, and then paste in this:</p>
+<pre><code>L.tileLayer('http://mapwarper.net/maps/tile/29435/{z}/{x}/{y}.png',
+  {maxZoom: 19}
+).addTo(myMap);
+</code></pre><p>Save the file, and then in your browser reload the page (I&rsquo;m assuming you still have the server running as per step 8 in the previous section). Boom!</p>
+<p><p class="md__image">
+  <img src="/images/webmap/result.png" alt="result"  />
+</p></p>
+<p>But that map is a bit wonky, compared to our base map. Let&rsquo;s find a new map from Library and Archives Canada, georectify it, and then swap it in.</p>
+<h3 id="georectifying-a-base-map">Georectifying a base map</h3>
+<p>But as historians, we are often interested to show some process taking place in the past, so historical maps can be rhetorically extremely useful as base maps. But, to get such a map into a digital format that we can use, we need to georectify it.</p>
+<p>Georectifying is the process of taking an image (whether it is of a historical map, chart, airphoto, or whatever) and manipulating its geometry so that it matches a geographic projection. Think of it like this: you take your handdrawn map, and use pushpins to pin down known locations on your map to a globe. As you pin, your image stretches and warps. Traditionally, this has not been an easy thing to do, if you are new to GIS. In recent years, the curve has flattened significantly. In this exercise, we&rsquo;ll grab an image, upload it to the Map Warper website, and then export it as a tileset which can be used in other mapping programs.</p>
+<p>At <a href="http://collectionscanada.gc.ca/pam_archives/index.php?fuseaction=genitem.displayEcopies&amp;lang=eng&amp;rec_nbr=98246&amp;title=Laura%20A.%20Gamble%20fonds%20%5btextual%20record,%20graphic%20material%5d.&amp;ecopy=e002743396" target="_blank">Library and Archives Canada</a> I found an &ldquo;Insurance Plan of Ottawa, June 1878&rdquo; <a href="http://collectionscanada.gc.ca/lac-bac/results/images?module=images&amp;SortSpec=score&#43;desc&amp;Language=eng&amp;ShowForm=hide&amp;SearchIn_1=mikanNumber&amp;SearchInText_1=3824226&amp;Operator_1=AND&amp;SearchIn_2=&amp;SearchInText_2=&amp;Operator_2=AND&amp;SearchIn_3=&amp;SearchInText_3=&amp;Level=&amp;MaterialDateOperator=after&amp;MaterialDate=&amp;DigitalImages=1&amp;Source=&amp;ResultCount=10" target="_blank">MIKAN 3824226</a>.</p>
+<p>This one in particular <a href="http://central.bac-lac.gc.ca/.item?app=fondsandcol&amp;op=img&amp;id=e010695477-v8" target="_blank">shows Parliament Hill</a>. I will save this one to my machine and georectify it. You grab one that interests you!</p>
+<ol>
+<li>
+<p>Go to <a href="http://mapwarper.net/" target="_blank">Map Warper</a> and sign up for an account. Then login.</p>
+</li>
+<li>
+<p>Go to the upload screen:<br />
+<p class="md__image">
+  <img src="https://i.imgur.com/bmNCzg6.png" alt=""  />
+</p></p>
+</li>
+<li>
+<p>Fill in as much of the metadata as you can - it&rsquo;s important to credit the material correctly! Then select your map from your computer, and upload it.</p>
+</li>
+<li>
+<p>On the next page, click &lsquo;Rectify&rsquo;.<br />
+<p class="md__image">
+  <img src="https://i.imgur.com/yULDRQR.jpg" alt=""  />
+</p></p>
+</li>
+<li>
+<p>Pan and zoom both maps until you&rsquo;re sure you&rsquo;re looking at the same area in both. Double click in a map, select the location icon, and click on a point (location) you are sure you can match in the other window.</p>
+</li>
+<li>
+<p>Click on the other map window, select the location icon, and then click on the same point.</p>
+</li>
+<li>
+<p>Note the &lsquo;Add control point&rsquo; button below and between both maps will light up. Click on this to confirm that this is a control point you want. Do this at least three times; the more times you can do it, the better the map warp.</p>
+</li>
+<li>
+<p>Having selected your control points, click on &lsquo;Warp image&rsquo;.</p>
+</li>
+<li>
+<p>You can now click on the &lsquo;Export&rsquo; panel, and get the URL for your georectified image in a few different formats. If you clicked on the KML option, a new Google Map window will open. For many web mapping applications, the Tiles (Google/OSM scheme): Tiles Based URL is what you want. Put that URL into your <code>index.html</code> file as you did in the previous section.</p>
+</li>
+</ol>
+<h3 id="adding-a-layer-control-button">Adding a layer control button</h3>
+<p>You can see that with leaflet it is pretty easy to add more layers and more data to your map. But soon things get a little bit unwieldy. We&rsquo;re going to re-organize our map so that we can turn layers on and off.</p>
+<p>We&rsquo;re going to create some variables to hold our different layers and maps. Make a copy of your <code>index.html</code> file and call it <code>index2.html</code>.</p>
+<ol>
+<li>Delete the code from the <code>var myMap =</code> line to the <code>// load a GeoJSON from external file</code>. Your code should look like this now:</li>
+</ol>
+<pre><code>&lt;body&gt;
+&lt;div id=&quot;mapid&quot; style=&quot;width: 600px; height: 400px;&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+
+  // load a GeoJSON from external file
+</code></pre><p>We are going to create four variables that contain the different layers we want to show. Two are going to be base maps from Stamen (the &lsquo;toner&rsquo; map and the &lsquo;watercolor&rsquo; map), and two are going to be georectified maps we found on MapWarper showing downtown Ottawa. Insert after the <script> tag:</p>
+<pre><code>var toner = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png'),
+  watercolor = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.png'),
+  historical1897 = L.tileLayer('https://mapwarper.net/maps/tile/29435/{z}/{x}/{y}.png'),
+  lumberdistrict = L.tileLayer('https://mapwarper.net/maps/tile/27671/{z}/{x}/{y}.png')
+</code></pre><p>The <code>L.tileLayer</code> tells leaflet the sources for our layers.</p>
+<p>Now we&rsquo;re going to create two more variables to <em>group</em> our layers into base maps and overlay maps:</p>
+<pre><code>var baseMaps = {
+  &quot;Toner&quot;: toner,
+  &quot;Watercolor&quot;: watercolor
+};
+
+var overlayMaps = {
+  &quot;1897&quot;: historical1897,
+  &quot;Lumber District&quot;: lumberdistrict
+}
+</code></pre><p>Next, we create a variable called <code>myMap</code> to tell Leaflet the centre of our map, the zoom layer, and the default base map; we pass this information to the html container &lsquo;mapid&rsquo; so that our creation can be displayed:</p>
+<pre><code>var myMap = L.map('mapid', {
+  center: [45.4192857, -75.6973237],
+  zoom: 13,
+  layers:[toner]
+});
+</code></pre><p>and finally, we add a control box so that we can switch the different layers on and off, and that our layers are grouped appropriately:</p>
+<pre><code>L.control.layers(baseMaps, overlayMaps).addTo(myMap);
+</code></pre><p>Save that as <code>index2</code>, and with your server still running, you can view it in your browser at <code>http://localhost:8000/index2.html</code>.  (NB: the part after the colon might be different on your machine - this number is the &lsquo;port&rsquo; and the precise port number will have printed out in your terminal when you first ran the <code>python -m http.server</code> command.)</p>
+<p>For more on layers with leaflet, see <a href="https://leafletjs.com/examples/layers-control/" target="_blank">Layer Groups and Layers Control</a>.</p>
+<h3 id="adding-animation">Adding animation</h3>
+<p>Animating points in your map, so that they move along a path, is relatively easy to accomplish. We&rsquo;ll use the <a href="https://github.com/openplans/Leaflet.AnimatedMarker" target="_blank">Animated Marker plugin</a>.</p>
+<ol>
+<li>
+<p>Go to that repository, and click on the <code>src</code> folder, then the <code>AnimatedMaker.js</code> file. This is the code that actually does the animation. We need to make this code available to our map. If you click on the <code>raw</code> button, you&rsquo;ll get a page with just the code that you can copy and paste into a new document in Sublime Text. Save this file as <code>Leaflet.AnimatedMarker.js</code> in your <code>web-map</code> folder.</p>
+</li>
+<li>
+<p>Now, make a copy of your <code>index2.html</code> and change its name to <code>index3.html</code>. Open <code>index3.html</code> in Sublime Text.</p>
+</li>
+<li>
+<p>We&rsquo;re now going to define a path for our marker to move along, and we&rsquo;ll give it three points to move along:</p>
+</li>
+</ol>
+<pre><code>var line = L.polyline([[45.4245941,-75.6953823],[45.423299,-75.6927912],[45.4174419,-75.6907598]]),
+    animatedMarker = L.animatedMarker(line.getLatLngs());
+</code></pre><p>You could add more points by adding latitude and longitude pairs in <a href="https://en.wikipedia.org/wiki/Decimal_degrees" target="_blank">decimal degrees</a>, where each pair is wrapped in [ ] and set off from the other pairs with commas. Insert that code after the <code>L.control.layers</code> line.</p>
+<ol start="4">
+<li>And then, add that animated path as a layer to your map with this line:</li>
+</ol>
+<pre><code>myMap.addLayer(animatedMarker);
+</code></pre><p>Save that file, and open it in your browser. Watch that third marker move!</p>
+<p>To extend Leaflet with more capabilities, consult <a href="https://leafletjs.com/plugins.html" target="_blank">this list of plugins and associated documentation</a>.</p>
 
   </article>
 </div>
@@ -2488,6 +2616,10 @@ $.getJSON(&quot;point-data.geojson&quot;, function(data) {
       <ul>
         <li><a href="#telling-stories-with-storymaps">Telling Stories with StoryMaps</a></li>
         <li><a href="#webmapping-with-leaflet">Webmapping with Leaflet</a></li>
+        <li><a href="#adding-a-new-layer-to-our-map">Adding a new layer to our map</a></li>
+        <li><a href="#georectifying-a-base-map">Georectifying a base map</a></li>
+        <li><a href="#adding-a-layer-control-button">Adding a layer control button</a></li>
+        <li><a href="#adding-animation">Adding animation</a></li>
       </ul>
     </li>
   </ul>
