@@ -193,7 +193,7 @@ Congratulations! You have made a webmap! Do you see how you could recenter the m
 
 This was uploaded to Mapwarper and georectified by a former MA student at Carleton. You can see it on Mapwarper [at this location](https://mapwarper.net/maps/29435).
 
-If you click on the 'Export' tab, you'll find that there's a URL for the map as tiles: http://mapwarper.net/maps/tile/29435/{z}/{x}/{y}.png.
+If you click on the 'Export' tab, you'll find that there's a URL for the map as tiles: [http://mapwarper.net/maps/tile/29435/{z}/{x}/{y}.png](#).
 
 That's the line we want to add to our map.
 
@@ -254,7 +254,7 @@ This one in particular [shows Parliament Hill](http://central.bac-lac.gc.ca/.ite
 
 You can see that with leaflet it is pretty easy to add more layers and more data to your map. But soon things get a little bit unwieldy. We're going to re-organize our map so that we can turn layers on and off.
 
-We're going to create some variables to hold our different layers and maps. Make a copy of your `index.html` file and call it `index2.html`.
+We're going to create some variables to hold our different layers and maps. Make a copy of your `index.html` file and call it `index2.html`. Open `index2.html` in Sublime Text and work on that file.
 
 1. Delete the code from the `var myMap =` line to the `// load a GeoJSON from external file`. Your code should look like this now:
 
@@ -266,7 +266,7 @@ We're going to create some variables to hold our different layers and maps. Make
   // load a GeoJSON from external file
 ```
 
-We are going to create four variables that contain the different layers we want to show. Two are going to be base maps from Stamen (the 'toner' map and the 'watercolor' map), and two are going to be georectified maps we found on MapWarper showing downtown Ottawa. Insert after the <script> tag:
+We are going to create four variables that contain the different layers we want to show. Two are going to be base maps from Stamen (the 'toner' map and the 'watercolor' map), and two are going to be georectified maps we found on MapWarper showing downtown Ottawa. Insert after the `<script>` tag:
 
 ```
 var toner = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png'),
