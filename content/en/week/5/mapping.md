@@ -122,7 +122,7 @@ L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
 
 ```
 
-We're creating a box on the page called 'mapid' and setting it's width and height in pixels. Then our script creates a thing called 'mymap' and defines some particulars about it: the center of the map (here, Ottawa, Ontario), the zoom level, and the basemap layer. The final bit, `addTo(mymap);` does the work of putting all of that information on the map (using leaflet.js).
+We're creating a box on the page called 'mapid' and setting its width and height in pixels. Then our script creates a thing called 'mymap' and defines some particulars about it: the center of the map (here, Ottawa, Ontario), the zoom level, and the basemap layer. The final bit, `addTo(mymap);` does the work of putting all of that information on the map (using leaflet.js).
 
 6. Now we're going to need some data for our map. Our point data will be encoded in a format called 'geojson', which is a kind of list. If you have geographic data in a csv table, with latitude and longitude columns, you could use [this tool](http://www.convertcsv.com/csv-to-geojson.htm) to convert it to geojson. For now, our geojson has two points in it:
 
@@ -183,7 +183,7 @@ Save!
 
 Congratulations! You have made a webmap! Do you see how you could recenter the map on Ottawa? Add some more data? Change the base map to another style?
 
-(You can upload your web-map folder to Github by dragging the folder onto a repository.)
+(You can upload your web-map folder to Github by dragging the folder onto a repository; to make Github _serve_ your website, you create a new branch called `gh-pages`. So if I loaded it into github.com/shawngraham/demo/webmap in the gh-pages branch, my map will be available at shawngraham.github.io/demo/webmap/index.html. Cool, eh?)
 
 ### Adding a new layer to our map
 
@@ -193,7 +193,7 @@ Congratulations! You have made a webmap! Do you see how you could recenter the m
 
 This was uploaded to Mapwarper and georectified by a former MA student at Carleton. You can see it on Mapwarper [at this location](https://mapwarper.net/maps/29435).
 
-If you click on the 'Export' tab, you'll find that there's a URL for the map as tiles: [http://mapwarper.net/maps/tile/29435/{z}/{x}/{y}.png](#).
+If you click on the 'Export' tab, you'll find that there's a URL for the map as tiles: `http://mapwarper.net/maps/tile/29435/{z}/{x}/{y}.png`.
 
 That's the line we want to add to our map.
 
@@ -248,7 +248,7 @@ This one in particular [shows Parliament Hill](http://central.bac-lac.gc.ca/.ite
 
 8. Having selected your control points, click on 'Warp image'.
 
-9. You can now click on the 'Export' panel, and get the URL for your georectified image in a few different formats. If you clicked on the KML option, a new Google Map window will open. For many web mapping applications, the Tiles (Google/OSM scheme): Tiles Based URL is what you want. Put that URL into your `index.html` file as you did in the previous section.
+9. You can now click on the 'Export' panel, and get the URL for your georectified image in a few different formats. Copy the tiles based URL  and put that URL into your `index.html` file as you did in the previous section.
 
 ### Adding a layer control button
 
@@ -323,7 +323,24 @@ Animating points in your map, so that they move along a path, is relatively easy
 
 2. Now, make a copy of your `index2.html` and change its name to `index3.html`. Open `index3.html` in Sublime Text.
 
-3. We're now going to define a path for our marker to move along, and we'll give it three points to move along:
+3. In the code between `<head>` and `</head>` in our index3.html file we specified the location of the javascript we're using to make our maps. We have to add the animated marker javascript file here as well. Add:
+
+```
+<script src="Leaflet.AnimatedMarker.js"></script>
+```
+
+so that that part of your code looks like this:
+
+```
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="Leaflet.AnimatedMarker.js"></script>
+<script type="text/javascript"></script>
+```
+
+You can add scripts located elsewhere on the web, or from within the same folder as your index.html.
+
+4. We're now going to define a path for our marker to move along, and we'll give it three points to move along:
 
 ```
 var line = L.polyline([[45.4245941,-75.6953823],[45.423299,-75.6927912],[45.4174419,-75.6907598]]),
@@ -332,7 +349,7 @@ var line = L.polyline([[45.4245941,-75.6953823],[45.423299,-75.6927912],[45.4174
 
 You could add more points by adding latitude and longitude pairs in [decimal degrees](https://en.wikipedia.org/wiki/Decimal_degrees), where each pair is wrapped in [ ] and set off from the other pairs with commas. Insert that code after the `L.control.layers` line.
 
-4. And then, add that animated path as a layer to your map with this line:
+5. And then, add that animated path as a layer to your map with this line:
 
 ```
 myMap.addLayer(animatedMarker);
