@@ -26,7 +26,7 @@ It reads [markdown](https://www.markdownguide.org/) and turns it into html.
 
 Commit that file. Then, hit the gear wheel icon and scroll down to the Github Pages section. Github will run your text files through the Jekyll site builder for you; here you can select from some of their templates.
 
-Boom! [The full process is on this site with screenshots](https://media.giphy.com/media/nXxOjZrbnbRxS/200w_d.gif).
+Boom! [The full process is on this site with screenshots](https://help.github.com/en/github/working-with-github-pages/creating-a-github-pages-site).
 
 Now, there's a lot more to static websites than this. This course site is generated with [Hugo](https://gohugo.io); a site generator for building exhibitions, called 'Wax', is available [here](https://minicomp.github.io/wax/). (Speaking of exhibits, here's information about building them with [Omeka.net](https://programminghistorian.org/en/lessons/up-and-running-with-omeka).)
 

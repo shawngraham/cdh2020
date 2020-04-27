@@ -2396,7 +2396,7 @@ L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
 	{maxZoom: 19
 }).addTo(myMap);
 
-</code></pre><p>We&rsquo;re creating a box on the page called &lsquo;mapid&rsquo; and setting it&rsquo;s width and height in pixels. Then our script creates a thing called &lsquo;mymap&rsquo; and defines some particulars about it: the center of the map (here, Ottawa, Ontario), the zoom level, and the basemap layer. The final bit, <code>addTo(mymap);</code> does the work of putting all of that information on the map (using leaflet.js).</p>
+</code></pre><p>We&rsquo;re creating a box on the page called &lsquo;mapid&rsquo; and setting its width and height in pixels. Then our script creates a thing called &lsquo;mymap&rsquo; and defines some particulars about it: the center of the map (here, Ottawa, Ontario), the zoom level, and the basemap layer. The final bit, <code>addTo(mymap);</code> does the work of putting all of that information on the map (using leaflet.js).</p>
 <ol start="6">
 <li>Now we&rsquo;re going to need some data for our map. Our point data will be encoded in a format called &lsquo;geojson&rsquo;, which is a kind of list. If you have geographic data in a csv table, with latitude and longitude columns, you could use <a href="http://www.convertcsv.com/csv-to-geojson.htm" target="_blank">this tool</a> to convert it to geojson. For now, our geojson has two points in it:</li>
 </ol>
@@ -2450,14 +2450,14 @@ $.getJSON(&quot;point-data.geojson&quot;, function(data) {
 <li>The terminal will tell you now that your server is running at an address that will look something like this: <code>(http://0.0.0.0:8000/)</code>. Copy that full address and paste it into your browser&rsquo;s address bar.</li>
 </ol>
 <p>Congratulations! You have made a webmap! Do you see how you could recenter the map on Ottawa? Add some more data? Change the base map to another style?</p>
-<p>(You can upload your web-map folder to Github by dragging the folder onto a repository.)</p>
+<p>(You can upload your web-map folder to Github by dragging the folder onto a repository; to make Github <em>serve</em> your website, you create a new branch called <code>gh-pages</code>. So if I loaded it into github.com/shawngraham/demo/webmap in the gh-pages branch, my map will be available at shawngraham.github.io/demo/webmap/index.html. Cool, eh?)</p>
 <h3 id="adding-a-new-layer-to-our-map">Adding a new layer to our map</h3>
 <p><a href="https://mapwarper.net" target="_blank">Map Warper</a> is a service that allows us to upload images of maps, and then tie &lsquo;control points&rsquo; to real-world geography such that we stretch and warp the image to overlay the physical world. It then provides us with a tile-server so that the image can be imported into our map as its own layer. Take a look at this map of Ottawa:</p>
 <p><p class="md__image">
   <img src="https://legacy.lib.utexas.edu/maps/historical/ottawa_1894.jpg" alt="Ottawa 1894"  />
 </p></p>
 <p>This was uploaded to Mapwarper and georectified by a former MA student at Carleton. You can see it on Mapwarper <a href="https://mapwarper.net/maps/29435" target="_blank">at this location</a>.</p>
-<p>If you click on the &lsquo;Export&rsquo; tab, you&rsquo;ll find that there&rsquo;s a URL for the map as tiles: <a href="/#">http://mapwarper.net/maps/tile/29435/{z}/{x}/{y}.png</a>.</p>
+<p>If you click on the &lsquo;Export&rsquo; tab, you&rsquo;ll find that there&rsquo;s a URL for the map as tiles: <code>http://mapwarper.net/maps/tile/29435/{z}/{x}/{y}.png</code>.</p>
 <p>That&rsquo;s the line we want to add to our map.</p>
 <ol>
 <li>Open your <code>index.html</code> file.</li>
@@ -2512,7 +2512,7 @@ $.getJSON(&quot;point-data.geojson&quot;, function(data) {
 <p>Having selected your control points, click on &lsquo;Warp image&rsquo;.</p>
 </li>
 <li>
-<p>You can now click on the &lsquo;Export&rsquo; panel, and get the URL for your georectified image in a few different formats. If you clicked on the KML option, a new Google Map window will open. For many web mapping applications, the Tiles (Google/OSM scheme): Tiles Based URL is what you want. Put that URL into your <code>index.html</code> file as you did in the previous section.</p>
+<p>You can now click on the &lsquo;Export&rsquo; panel, and get the URL for your georectified image in a few different formats. Copy the tiles based URL  and put that URL into your <code>index.html</code> file as you did in the previous section.</p>
 </li>
 </ol>
 <h3 id="adding-a-layer-control-button">Adding a layer control button</h3>
@@ -2566,13 +2566,23 @@ var overlayMaps = {
 <p>Now, make a copy of your <code>index2.html</code> and change its name to <code>index3.html</code>. Open <code>index3.html</code> in Sublime Text.</p>
 </li>
 <li>
-<p>We&rsquo;re now going to define a path for our marker to move along, and we&rsquo;ll give it three points to move along:</p>
+<p>In the code between <code>&lt;head&gt;</code> and <code>&lt;/head&gt;</code> in our index3.html file we specified the location of the javascript we&rsquo;re using to make our maps. We have to add the animated marker javascript file here as well. Add:</p>
 </li>
+</ol>
+<pre><code>&lt;script src=&quot;Leaflet.AnimatedMarker.js&quot;&gt;&lt;/script&gt;
+</code></pre><p>so that that part of your code looks like this:</p>
+<pre><code>&lt;script src=&quot;https://unpkg.com/leaflet@1.6.0/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;Leaflet.AnimatedMarker.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+</code></pre><p>You can add scripts located elsewhere on the web, or from within the same folder as your index.html.</p>
+<ol start="4">
+<li>We&rsquo;re now going to define a path for our marker to move along, and we&rsquo;ll give it three points to move along:</li>
 </ol>
 <pre><code>var line = L.polyline([[45.4245941,-75.6953823],[45.423299,-75.6927912],[45.4174419,-75.6907598]]),
     animatedMarker = L.animatedMarker(line.getLatLngs());
 </code></pre><p>You could add more points by adding latitude and longitude pairs in <a href="https://en.wikipedia.org/wiki/Decimal_degrees" target="_blank">decimal degrees</a>, where each pair is wrapped in [ ] and set off from the other pairs with commas. Insert that code after the <code>L.control.layers</code> line.</p>
-<ol start="4">
+<ol start="5">
 <li>And then, add that animated path as a layer to your map with this line:</li>
 </ol>
 <pre><code>myMap.addLayer(animatedMarker);

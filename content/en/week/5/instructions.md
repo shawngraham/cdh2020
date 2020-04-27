@@ -33,7 +33,7 @@ I want you to learn something about how typography, design, and colour combine t
 
 Explore two or three of the entries from last year's [DH Awards](http://dhawards.org/dhawards2019/results/), under the 'Best DH Data Visualization', and the 'Best DH Public Engagement' winners, runners up, and nominees.
 
-Explore some of the suggestions. Or, take a look at this piece by former Carleton U public history MA student, Cristina Woods:
+Explore some of the suggestions. Or, take a look at this piece by former Carleton U public history MA student, Cristina Wood:
 
 + [Songs of the Ottawa](http://songsoftheottawa.ca/)
 + 'The Ottawa River's History Re-told in Musical Notes' [https://ottawacitizen.com/news/local-news/the-ottawa-rivers-history-re-told-in-musical-notes/](https://ottawacitizen.com/news/local-news/the-ottawa-rivers-history-re-told-in-musical-notes/)
