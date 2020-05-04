@@ -158,6 +158,16 @@
   </url>
   
   <url>
+    <loc>https://craftingdh.netlify.com/blog/update1/</loc>
+    <lastmod>2020-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://craftingdh.netlify.com/blog/</loc>
+    <lastmod>2020-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://craftingdh.netlify.com/docs/5-commonregs/</loc>
     <lastmod>2020-01-28T00:39:06+09:00</lastmod>
   </url>
@@ -245,11 +255,6 @@
   <url>
     <loc>https://craftingdh.netlify.com/docs/</loc>
     <lastmod>2020-01-11T14:09:21+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://craftingdh.netlify.com/blog/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
