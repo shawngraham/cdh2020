@@ -51,7 +51,9 @@ Right-click on any folder on your computer **except the one(s) you created in th
 
 Do that.
 
-What happened? Write a 'help request', using the guidelines above, and post it in the appropriate channel in our Discord, introducing it with an appropriate title (eg, 'Demo Help Request'). Feel free to respond to a request with eg 'Demo Help Response'.
+What happened? Write a 'help request', using the guidelines above (and also include the page URL of any tutorial or thing you were trying to follow), with an indication of what you were trying to do, what you expected to happen, and what actually happened, and add it to your repo for this week in its own file. You may also post it in this week's channel in Discord, introducing it with an appropriate title (eg, 'Demo Help Request'). Feel free to respond to a request with eg 'Demo Help Response'.
+
+When you have an *actual* help request, you can collect all of the information together, put it in a file in your repo, and share the link in discord or post the whole thing in the relevant channel.
 
 ### Answering questions
 
