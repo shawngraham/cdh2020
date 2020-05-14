@@ -27,7 +27,7 @@ First of all, go to the Cronicling America site and [search in the text box for 
 
 There's a lot of stuff in there - amongst other things, we can see a setting for `state`, for `date1` and `date2`, our search term appears as the value for a setting called `proxtext`. This is the API in action.
 
-Let's build.
+Let's build (the script we're writing is adapted from one created by Tim Sherratt).
 
 1. Open a new file in Sublime Text. We'll first put a bit of metadata in our file, for the programme we're going to write:
 
