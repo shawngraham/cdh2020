@@ -2396,6 +2396,7 @@
 </span><span class="lnt">11
 </span><span class="lnt">12
 </span><span class="lnt">13
+</span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-R" data-lang="R"><span class="c1"># now let&#39;s create a variable called &#39;text&#39;</span>
@@ -2411,6 +2412,7 @@
   <span class="nf">image_convert</span><span class="p">(</span><span class="n">colorspace</span> <span class="o">=</span> <span class="s">&#39;gray&#39;</span><span class="p">)</span> <span class="o">%&gt;%</span>
   <span class="nf">image_trim</span><span class="p">()</span> <span class="o">%&gt;%</span>
   <span class="nf">image_ocr</span><span class="p">()</span>
+
 </code></pre></td></tr></table>
 </div>
 </div><p>If you put your cursor at the &lsquo;t&rsquo; in &lsquo;text&rsquo;, and hit &lsquo;run&rsquo;, R Studio knows that all of these lines are joined by the <code>%&gt;%</code> function, or pipe, and so will run everything in order to the final command, <code>image_ocr()</code>.</p>
@@ -2486,6 +2488,7 @@ You know it ran, because it passed the commands to the console, and you got the 
 </span><span class="lnt"> 8
 </span><span class="lnt"> 9
 </span><span class="lnt">10
+</span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-R" data-lang="R"><span class="nf">lapply</span><span class="p">(</span><span class="n">myfiles</span><span class="p">,</span> <span class="nf">function</span><span class="p">(</span><span class="n">i</span><span class="p">){</span>
@@ -2498,6 +2501,7 @@ You know it ran, because it passed the commands to the console, and you got the 
 
   <span class="n">outfile</span> <span class="o">&lt;-</span> <span class="nf">paste</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="s">&#34;-ocr.txt&#34;</span><span class="p">,</span><span class="n">sep</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p">)</span>
   <span class="nf">cat</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">outfile</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s">&#34;\n&#34;</span><span class="p">)</span>
+<span class="p">})</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>Techically, this isn&rsquo;t actually a loop. We&rsquo;re just applying all of this image fixing and text extraction to each file in our myfiles variable, and then creating a unique text file appending -ocr.txt to the original filename. Put the cursor at the l in lapply, and then hit run; the machine will take some time to do its thing, but then&hellip;</p>

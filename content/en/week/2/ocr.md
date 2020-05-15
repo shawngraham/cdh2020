@@ -68,6 +68,7 @@ text <- image_read("e001518030.jpg") %>%
   image_convert(colorspace = 'gray') %>%
   image_trim() %>%
   image_ocr()
+
 ```
 If you put your cursor at the 't' in 'text', and hit 'run', R Studio knows that all of these lines are joined by the `%>%` function, or pipe, and so will run everything in order to the final command, `image_ocr()`.
 
@@ -122,6 +123,7 @@ lapply(myfiles, function(i){
 
   outfile <- paste(i,"-ocr.txt",sep="")
   cat(text, file=outfile, sep="\n")
+})
 ```
 
 Techically, this isn't actually a loop. We're just applying all of this image fixing and text extraction to each file in our myfiles variable, and then creating a unique text file appending -ocr.txt to the original filename. Put the cursor at the l in lapply, and then hit run; the machine will take some time to do its thing, but then...
