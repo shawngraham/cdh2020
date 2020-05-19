@@ -159,15 +159,15 @@ search for: `(.+\<to\>)`
 
 replace with: `~\1`
 
-6. After running the find-and-replace, you should note your document now has most of the lines with tildes in front of it, and a few which do not. The next step is to remove all the lines that do not include a tilde. The search string to find all lines which don't begin with tildes is `\n[^~].+`
+6. After running the find-and-replace, you should note your document now has most of the lines with tildes in front of it, and a few which do not. The next step is to remove all the lines that do not include a tilde. The search string to find all lines which don't begin with tildes is `\n[^~.+]`
 
 Within a set of square brackets `[]` the carrot `^` means search for anything that **isn't** within these brackets (in this case, the tilde ~). The `.+` as before means search for every remaining character in the line as well. All together, the query returns any full line which does not begin with a tilde; that is, the lines we did not mark as looking like letters. We search for the pattern, and leave the replace blank; this will delete the lines that do not begin with a tilde.
 
 **Do this**
 
-search for: `\n[^~].+`
+search for: `\n[^~.+]`
 
-replace with:
+replace with: `\n`
 
 7. To turn this text file into a csv suitable for network analysis, we'll want to separate it out into one column for Sender, one for Recipient, and one for Date, each separated by a single comma. Notice that most lines have extraneous page numbers attached to them; we can get rid of those with regular expressions. There's also usually a comma separating the month-date and the year, which we'll get rid of as well. In the end, the first line should go from looking like the following:
 
