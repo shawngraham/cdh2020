@@ -23,11 +23,13 @@ When deciding whether to use networks to explore a historiographical question, t
 
 At [Databasic.io](http://databasic.io) there are simple web-tools to help you see some large-scale patterns in your information. Let's use [Connect the Dots](https://databasic.io/en/connectthedots/#upload) which is a simple network visualizer and analyzer - it will find communities of _nodes_ (dots; people, in our data) and it will give us two network metrics for each node - the degree (number of connections it has) and the centrality (here, imagined as being a person who is on lots of paths connecting all other pairs).
 
-1. Go to [Connect the Dots](https://databasic.io/en/connectthedots/#upload and upload your Texas Correspondence file. Make sure it has a first row with `source,target` and that there are no spaces on either side of that comma, eg:
+1. Go to [Connect the Dots](https://databasic.io/en/connectthedots/#upload) and upload your Texas Correspondence file. Make sure it has a first row with `source,target` and that there are no spaces on either side of that comma, eg:
 
-  `source,target
+  ```
+  source,target
   Sam Houston,J. Pinckney Henderson
-  James Webb,Alc6e La Branche`
+  James Webb,Alc6e La Branche
+  ```
 
 2. Boom! A network visualization! What do you observe? (Scroll down to the '[so what?](/week/3/networks/#so-what)').
 
