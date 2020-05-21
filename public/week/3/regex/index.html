@@ -2394,9 +2394,9 @@ search for: <code>(.+\&lt;to\&gt;)</code></p>
 <ol start="6">
 <li>After running the find-and-replace, you should note your document now has most of the lines with tildes in front of it, and a few which do not. The next step is to remove all the lines that do not include a tilde. The search string to find all lines which don&rsquo;t begin with tildes is <code>\n[^~.+]</code></li>
 </ol>
-<p>Within a set of square brackets <code>[]</code> the carrot <code>^</code> means search for anything that <strong>isn&rsquo;t</strong> within these brackets (in this case, the tilde ~). The <code>.+</code> as before means search for every remaining character in the line as well. All together, the query returns any full line which does not begin with a tilde; that is, the lines we did not mark as looking like letters. We search for the pattern, and leave the replace blank; this will delete the lines that do not begin with a tilde.</p>
+<p>Within a set of square brackets <code>[]</code> the carrot <code>^</code> means search for anything that <strong>isn&rsquo;t</strong> within these brackets (in this case, the tilde ~). The <code>+</code> as before means search for every remaining character in the line as well. All together, the query returns any full line which does not begin with a tilde; that is, the lines we did not mark as looking like letters. We search for the pattern, and leave the replace blank; this will delete the lines that do not begin with a tilde.</p>
 <p><strong>Do this</strong></p>
-<p>search for: <code>\n[^~.+]</code></p>
+<p>search for: <code>\n[^~]+</code></p>
 <p>replace with: <code>\n</code></p>
 <ol start="7">
 <li>To turn this text file into a csv suitable for network analysis, we&rsquo;ll want to separate it out into one column for Sender, one for Recipient, and one for Date, each separated by a single comma. Notice that most lines have extraneous page numbers attached to them; we can get rid of those with regular expressions. There&rsquo;s also usually a comma separating the month-date and the year, which we&rsquo;ll get rid of as well. In the end, the first line should go from looking like the following:</li>

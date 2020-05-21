@@ -161,11 +161,11 @@ replace with: `~\1`
 
 6. After running the find-and-replace, you should note your document now has most of the lines with tildes in front of it, and a few which do not. The next step is to remove all the lines that do not include a tilde. The search string to find all lines which don't begin with tildes is `\n[^~.+]`
 
-Within a set of square brackets `[]` the carrot `^` means search for anything that **isn't** within these brackets (in this case, the tilde ~). The `.+` as before means search for every remaining character in the line as well. All together, the query returns any full line which does not begin with a tilde; that is, the lines we did not mark as looking like letters. We search for the pattern, and leave the replace blank; this will delete the lines that do not begin with a tilde.
+Within a set of square brackets `[]` the carrot `^` means search for anything that **isn't** within these brackets (in this case, the tilde ~). The `+` as before means search for every remaining character in the line as well. All together, the query returns any full line which does not begin with a tilde; that is, the lines we did not mark as looking like letters. We search for the pattern, and leave the replace blank; this will delete the lines that do not begin with a tilde.
 
 **Do this**
 
-search for: `\n[^~.+]`
+search for: `\n[^~]+`
 
 replace with: `\n`
 
