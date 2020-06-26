@@ -11,7 +11,13 @@ There is no midterm. There is no final exam.
 ### Weekly Exercises
 Each week, there are set exercises for you to attempt.
 
-Weekly work should be completed by the end of the relevant week.
+Weekly work must be completed by the end of the relevant week. Late work can be accepted only through arrangement with Dr. Graham; otherwise it will not be accepted nor graded.
+
+**If you miss a week, or something comes up** let Dr. Graham know as soon as possible so that arrangements can be made. I want you to be successful; if something comes up we can adapt accordingly. If you do not let me know, then I cannot help you.
+
+{{< notice warning "Warning!" >}}
+Do not attempt to 'speedrun' this course (ie leaving all of the coursework for one massive push) at the last moment; the cycle of feedback and growth is a critical learning element. You cannot grow if you try this. If you submit all of your work at the very last moment, you cannot meet at least two of the learning objectives of the course.
+{{< /notice >}}
 
 I am **not** looking for 'correct' completion, or that you powered through x amount of them. I am, rather, looking for your evidence of thinking through the meaning of the **process**: what worked, what didn't, why, and what that might mean for you as a historian. I am looking for you to tie your process explicitly to the readings. I am looking to see if the conversations you have with me or your peers (or indeed elsewhere on the web or in other courses) are causing you to reflect on the what/why/how/ of what you do.
 
@@ -21,7 +27,7 @@ Therefore, I am looking for the following kinds of evidence (each [week](/week) 
 
 + logs that keep track of what you actually _tried_
 + reflection on that _process_
-+ engagement with the materials and your classmates (which might be demonstrated many different ways)
++ engagement with the readings and materials and your classmates (which might be demonstrated many different ways)
 + evidence for your growth as a historian over this course
 
 At the end of each week, you will provide to me through a form that can be found on each weekly page the links to your evidence for me to consider, by Sunday evening.

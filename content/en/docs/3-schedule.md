@@ -6,7 +6,9 @@ draft: false
 weight: 3
 ---
 
-Each week involves completing to the best of your ability a series of exercises; you will document your progress in a weekly log that you will keep online. Log entries are required to be completed by the Sunday evening at the end of the relevant work. A final reflection piece is due at the end of the course. See the [assessment page for further details](docs/4-assessment)
+Each week involves completing to the best of your ability a series of exercises; you will document your progress in a weekly log that you will keep online. **Log entries are required to be completed by the Sunday evening at the end of the relevant work.** Late work can be accepted *only* in consultation with Dr. Graham. Otherwise, late work will not be graded nor accepted.
+
+A final reflection piece is due at the end of the course. See the [assessment page for further details](docs/4-assessment)
 
 [Week 1, May 4](/week/1/instructions) *An overview of digital history*
 

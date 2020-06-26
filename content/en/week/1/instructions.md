@@ -34,7 +34,11 @@ _Hey, I wanted to learn how to podcast, so it seemed like a good idea to do a qu
 
 {{< twitter_simple 1245544256212807680 >}}
 
-+ Read [the full thread](https://twitter.com/amaliasl/status/1245544256212807680) by Amalia Skarlatou Levi and explore links of interest; annotate anything interesting you find with Hypothes.is in our group keeping in mind what you've already heard/read. Share anything interesting you've found in our social space. A handy getting-started approach to annotation is to think of the three W's: the weird, the wonderful, the worrying. Also add anything you read or anything interesting you find to your Zotero library.
++ Read [the full thread](https://twitter.com/amaliasl/status/1245544256212807680) by Amalia Skarlatou Levi and explore links of interest; annotate anything interesting you find with Hypothes.is in our group keeping in mind what you've already heard/read. Pair that thread with [this one](https://twitter.com/amaliasl/status/1270183394526154753). Share anything interesting you've found in our social space. A handy getting-started approach to annotation is to think of the three W's: the weird, the wonderful, the worrying. Also add anything you read or anything interesting you find to your Zotero library.
+
+**Extra**
+
+Caswell, M. 'Seeing Yourself in History: Community Archives and the Fight Against Symbolic Annihilation'. _The Public Historian_ 2014, 36, 26–37, [doi:10.1525/tph.2014.36.4.26](http://digitalrhetoricandnetworkedcomposition.web.unc.edu/files/2016/01/caswell-seeing-yourself-in-history.pdf).
 
 
 ### Do
