@@ -13,6 +13,8 @@ or on Twitter at [@electricarchae](http://twitter.com/electricarchaeo).
 
 He will be present in our Crafting Digital History discord server every day.
 
+He will keep 'student hours' in Discord on Wednesday afternoons, 1 - 3 ish. Drop by; his audio is on; he's happy to chat with you!
+
 Also, keep an eye on the ['news' tab](https://craftingdh.netlify.com/blog/) for quick updates, when necessary.
 
 If we ever get out of quarantine, and you're in Ottawa, he often haunts the Library coffeeshop.

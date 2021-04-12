@@ -22,6 +22,10 @@ The University Senate defines plagiarism as “presenting, whether intentionally
 
 Plagiarism is a serious offence which cannot be resolved directly with the course’s instructor. The Associate Dean of the Faculty conducts a rigorous investigation, including an interview with the student, when an instructor suspects a piece of work has been plagiarized. Penalties are not trivial. They can include a final grade of "F" for the course.
 
+{{< notice success "Important" >}}
+A note from Dr. Graham: I am **completely** ok with you collaborating with a peer in this class or elsewhere on any of the work you do in this class **provided** that you fully acknowledge who you worked with and that you indicate how you worked together, who did what, and so on. Digital history isn't done in a vacuum. Unacknowledge help however is not cool.
+{{< /notice >}}
+
 ### COURSE SHARING WEBSITES and COPYRIGHT
 To the degree that I am able, all original content on this course website is released under creative commons licensed. That means you may copy and share and reuse it, but you must attribute [under the following terms - click through.](https://creativecommons.org/licenses/by-nc/4.0/).
 
@@ -53,10 +57,11 @@ The following additional final course grades may be assigned by instructors:
 Standing in a course is determined by the course instructor subject to the approval of the Faculty Dean. This means that grades submitted by the instructor may be subject to revision. No grades are final until they have been approved by the Dean.
 
 ### WITHDRAWAL WITHOUT ACADEMIC PENALTY
-**May 22, 2020**: Last day for a full fee adjustment when withdrawing from early summer and full summer courses (financial withdrawal). Withdrawals after this date will result in a permanent notation of WDN on the official transcript.
-**June 16, 2020**: Last day for academic withdrawal from early summer courses.
-**July 17, 2020**: Last day for a full fee adjustment when withdrawing from late summer courses (financial withdrawal).
-**August 14, 2020**: Last day for academic withdrawal from late summer and full summer courses and any other courses that end this term.
+
+**May 13, 2021** Last day for registration and course changes
+
+**May 21, 2021**: Last day for a full fee adjustment when withdrawing from early summer and full summer courses (financial withdrawal). Withdrawals after this date will result in a permanent notation of WDN on the official transcript.
+
 
 ### REQUESTS FOR ACADEMIC ACCOMMODATIONS
 You may need special arrangements to meet your academic obligations during the term. For an accommodation request the processes are as follows:
