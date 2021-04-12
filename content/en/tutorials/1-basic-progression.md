@@ -18,13 +18,13 @@ You are allowed to collaborate (I strongly encourage it!). If/when you do (or yo
 
 There are three different **sequences** of tutorials that you may attempt. There is a **minimum** sequence for those individuals who feel some trepidation or hesitation about doing digital work. There is a **standard** sequence for folks who feel ok about the work but are open to pushing themselves. There is a **going further** sequence for those who are looking for more of a challenge. The sequence you choose does not affect your grade relative to someone else (there is no curve).
 
-The logic of the sequences: Part 1 is about setting up your own personal digital history ecosystem. Part 2 is about finding data. Part 3 demonstrates a variety of ways of exploring/analysing/visualizing/communicating that data. Part 4 is an opportunity for you to plot out an engagement with digital history using what you've learned.
+The logic of the sequences: Part 1 is about setting up your own personal digital history ecosystem. Part 2 is about finding data. Part 3 demonstrates a variety of ways of exploring/analysing/visualizing/communicating that data; for my money, there are three main strands of digital history - there are the macroscopic perspectives; there are the approaches that are more like public history in that they are focussed on communicating beyond the discipline; and there are map based approaches. Of course all of these smear into and across each other, but it might help you choose which ones to do given your own interests. Part 4 is an opportunity for you to plot out an engagement with digital history using what you've learned.
 
 **It's not about completing exercises; I am interested in your PROCESS, which is why I want your logs, not the outputs of any tutorial in itself.**
 
 You may switch tracks **after** part 2 is over if you wish. You don't need to inform me nor ask for permission. Just make a note of it in the relevant log.
 
-## Logs Due Dates
+## Log & Reflection Due Dates
 
 You will submit your logs at by the end of the day on
 
@@ -64,7 +64,7 @@ Part 3 (to be completed by June 6th):
     - [Maps from Spreadsheets](tutorials/google-sheets-maps) (Mapping)
 
 Part 4 (to be completed by June 16):
-  - Use what you've learned to do the 'DH Exploration Exercise'
+  - Use what you've learned to do the ['DH Exploration Exercise'](week/instructions-part4/#dh-exploration-exercise)
 
 ---
 
@@ -92,7 +92,7 @@ Part 3 (to be completed by June 6th):
     - [Webmapping with Leaflet](/tutorials/mapping) (Mapping)
 
 Part 4 (to be completed by June 16):
-  - Use what you've learned to do the 'DH Exploration Exercise'
+  - Use what you've learned to do the ['DH Exploration Exercise'](week/instructions-part4/#dh-exploration-exercise)
 
 ---
 
@@ -123,7 +123,7 @@ Part 3 (to be completed by June 6th):
     - [Twine](tutorials/twine) (Digital Storytelling)
     - [Static Websites](tutorials/static-websites) (Digital Storytelling)
     - [Webmapping with Leaflet](/tutorials/mapping) (Mapping)
-    - [Webmapping with Python](/tutorials/folium)
+    - [Webmapping with Python](/tutorials/folium) (Mapping)
 
 Part 4 (to completed by June 16):
-  - Use what you've learned to do the 'DH Exploration Exercise'
+  - Use what you've learned to do the ['DH Exploration Exercise'](week/instructions-part4/#dh-exploration-exercise)
