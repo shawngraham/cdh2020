@@ -20,24 +20,28 @@ There are three different **sequences** of tutorials that you may attempt. There
 
 The logic of the sequences: Part 1 is about setting up your own personal digital history ecosystem. Part 2 is about finding data. Part 3 demonstrates a variety of ways of exploring/analysing/visualizing/communicating that data; for my money, there are three main strands of digital history - there are the macroscopic perspectives; there are the approaches that are more like public history in that they are focussed on communicating beyond the discipline; and there are map based approaches. Of course all of these smear into and across each other, but it might help you choose which ones to do given your own interests. Part 4 is an opportunity for you to plot out an engagement with digital history using what you've learned.
 
-**It's not about completing exercises; I am interested in your PROCESS, which is why I want your logs, not the outputs of any tutorial in itself.**
+**It's not about completing exercises; I am interested in your PROCESS, which is why I want your logs.**
 
 You may switch tracks **after** part 2 is over if you wish. You don't need to inform me nor ask for permission. Just make a note of it in the relevant log.
 
 ## Log & Reflection Due Dates
 
-You will submit your logs at by the end of the day on
+You will submit your logs by the end of the day on
 
 + May 10
 + May 23
 + June 6th
 + June 16th
 
+Reflections that tie your response to the readings to the work you have completed are due at the same time, remember. You are welcome to submit at any time before those dates, of course.
+
+## Log Requirements
+
 Logs must be _complete_ and _truthful_. By 'complete', I mean: there is sufficient detail and information that a reasonable onlooker could replicate what you have done, what you are trying to do, and why. By 'truthful' I mean that I expect to see evidence of your actual process - screenshots, error messages, etc.
 
 **You can ask anyone, at anytime, from anywhere, for technical help**. Acknowledge the help (eg, you're being 'truthful', right?)
 
-{{< notice success "Important" >}} With tech work, if it doesn't come together in about 30 minutes, it won't come in an hour. So take a break. Close the laptop. Call somebody up for help. Find another pair of eyes to look at the problem. I don't want to hear that you labored heroically for 2 hours to do something. Jump into our social space and ask for advice.
+{{< notice success "Important" >}} With tech work, if it doesn't come together in about 30 minutes, it won't come in an hour. So take a break. Close the laptop. Call somebody up for help. Find another pair of eyes to look at the problem. I don't want to hear that you laboured heroically for 2 hours to do something. Jump into our social space and ask for advice.
 {{< /notice >}}
 
 ---
