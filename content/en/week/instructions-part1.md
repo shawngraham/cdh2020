@@ -9,6 +9,8 @@ author: "Shawn Graham"
 
 ## To be completed by May 10th
 
+_If you joined the course late and it is now after May 10th, [contact Dr. Graham immediately](docs/6-contact/)_. 
+
 ### Read
 
 + Martin, K. 2020. ['Clio, Rewired: Propositions for the Future of Digital History Pedagogy in Canada'](/data/martin_project_muse_777494.pdf) _Canadian Historical Review 101.4 pp 620-640.
