@@ -16,7 +16,7 @@ Everyone comes to digital work with differing levels of prior familiarity with c
 
 You are allowed to collaborate (I strongly encourage it!). If/when you do (or you find 'outside' help) I merely require that you acknowledge it and reflect on how knowledge is crafted.
 
-There are three different **sequences** of tutorials that you may attempt. There is a **minimum** sequence for those individuals who feel some trepidation or hesitation about doing digital work. There is a **standard** sequence for folks who feel ok about the work but are open to pushing themselves. There is a **going further** sequence for those who are looking for more of a challenge. The sequence you choose does not affect your grade relative to someone else (there is no curve).
+There are three different **sequences** of tutorials that you may attempt. There is a **newcomer** sequence for those individuals who feel some trepidation or hesitation about doing digital work. There is a **standard** sequence for folks who feel ok about the work but are open to pushing themselves. There is a **going further** sequence for those who are looking for more of a challenge. The sequence you choose does not affect your grade relative to someone else (there is no curve).
 
 The logic of the sequences: Part 1 is about setting up your own personal digital history ecosystem. Part 2 is about finding data. Part 3 demonstrates a variety of ways of exploring/analysing/visualizing/communicating that data; for my money, there are three main strands of digital history - there are the macroscopic perspectives; there are the approaches that are more like public history in that they are focussed on communicating beyond the discipline; and there are map based approaches. Of course all of these smear into and across each other, but it might help you choose which ones to do given your own interests. Part 4 is an opportunity for you to plot out an engagement with digital history using what you've learned.
 
@@ -42,7 +42,7 @@ Logs must be _complete_ and _truthful_. By 'complete', I mean: there is sufficie
 
 ---
 
-## Minimum Sequence
+## Newcomer Sequence
 
 Part 1 (to be completed by May 10th):
   - Complete:
