@@ -8,6 +8,7 @@ weight: 4
 {{< notice success "Important" >}}
 There is no midterm. There is no final exam.
 {{< /notice >}}
+
 ### Repositories, logs, and reflections
 
 In each part of this course, there are things to read and reflect on, and things to do, depending on which **sequence** you choose to follow. **Everyone's journey is different**. Digital methods are more a matter of practice and time than they are of aptitude.

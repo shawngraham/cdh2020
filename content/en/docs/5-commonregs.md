@@ -44,7 +44,7 @@ Letter grades assigned in this course will have the following percentage equival
 Grade
 |-----|-----|----|----|
 |A+ = 90-100 (12) | B = 73-76 (8) | C - = 60-62 (4) | F= 0-49 (0) – Failure: no academic credit |
-|A = 85-89 (11) |	B - = 70-72 | (7)	D+ = 57-59 (3) | | 	
+|A = 85-89 (11) |	B - = 70-72 (7) | D+ = 57-59 (3) | | 	
 | A - = 80-84 (10) |	C+ = 67-69 (6) |	D = 53-56 (2) | |
 | B+ = 77-79 (9) | 	C = 63-66 (5) | 	D - = 50-52 (1) | | 	
 
