@@ -1,7 +1,7 @@
 logo = true
 logoText = "HIST3814o"
 logoType = "long" # long, short
-description = "Summer 2020 Edition @Carleton U."
+description = "Summer 2021 Edition @Carleton U."
 
 themeOptions = ["light", "dark"]
 
