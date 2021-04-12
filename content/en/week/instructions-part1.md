@@ -13,17 +13,18 @@ author: "Shawn Graham"
 
 + Martin, K. 2020. ['Clio, Rewired: Propositions for the Future of Digital History Pedagogy in Canada'](/data/martin_project_muse_777494.pdf) _Canadian Historical Review 101.4 pp 620-640.
 
++ Leon, S. 2016.['Returning Women to the History of Digital History'](http://www.6floors.org/bracket/2016/03/07/returning-women-to-the-history-of-digital-history/)
+
 + 'History _Can_ Be Open Source: Democratic Dreams and the Rise of Digital History' [AHR Open Review](https://ahropenreview.com/HistoryCanBeOpenSource/manuscript/) (You can see comments on each paragraph by the peer reviewers by clicking on the 'comments' pane on the right hand side of the interface)
 
 {{< twitter_simple 1245544256212807680 >}}
 
-+ Read [the full thread](https://twitter.com/amaliasl/status/1245544256212807680) by Amalia Skarlatou Levi and explore links of interest; annotate anything interesting you find with Hypothes.is in our group keeping in mind what you've already heard/read. Pair that thread with [this one](https://twitter.com/amaliasl/status/1270183394526154753). Share anything interesting you've found in our social space. A handy getting-started approach to annotation is to think of the three W's: the weird, the wonderful, the worrying. Also add anything you read or anything interesting you find to your Zotero library.
++ Read [the full thread](https://twitter.com/amaliasl/status/1245544256212807680) by Amalia Skarlatou Levi and explore links of interest; make a note of anything interesting keeping in mind what you've already heard/read (you can use [hypothes.is](/tutorials/hypothesis) if you're so-inclined). Pair that thread with [this one](https://twitter.com/amaliasl/status/1270183394526154753). Share anything interesting you've found in our social space. A handy getting-started approach to making notes on things you find online is to think of the three W's: the weird, the wonderful, the worrying. Also keep track of anything you read or anything interesting you find; a useful tool for that is [Zotero](/tutorials/zotero).
 
 **Optional Extra**
 
 Caswell, M. 'Seeing Yourself in History: Community Archives and the Fight Against Symbolic Annihilation'. _The Public Historian_ 2014, 36, 26–37, [doi:10.1525/tph.2014.36.4.26](http://digitalrhetoricandnetworkedcomposition.web.unc.edu/files/2016/01/caswell-seeing-yourself-in-history.pdf).
 
-Leon, S. 2016.['Returning Women to the History of Digital History'](http://www.6floors.org/bracket/2016/03/07/returning-women-to-the-history-of-digital-history/)
 
 ### Reflect
 
