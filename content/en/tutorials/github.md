@@ -1,6 +1,6 @@
 ---
 title: "Github"
-description: "instructions"
+description: "Keeping your work under version control"
 date: 2020-01-28T00:10:51+09:00
 draft: false
 author: "Shawn Graham"

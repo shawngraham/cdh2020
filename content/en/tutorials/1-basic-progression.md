@@ -87,7 +87,7 @@ Part 2 (to be completed by May 23th):
     - [An Introduction to APIs](/tutorials/APIS)
 
 Part 3 (to be completed by June 6th):
-  - Select **three** from:
+  - Select **four** from:
     - [Topic Modeling Tool](/tutorials/tmt) (Macroscopic perspectives)
     - [Open Refine](/tutorials/open-refine) (Macroscopic perspectives)
     - [Networks with Databasic or Gephi](/tutorials/networks) (Macroscopic perspectives)

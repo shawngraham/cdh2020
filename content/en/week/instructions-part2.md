@@ -36,7 +36,7 @@ What is the value of/for historians (regular historians) showing their work, as 
 
 ### Do
 
-Continue on with the sequence of tutorials you began with - the [minimum sequence](tutorials/1-basic-progression/#minimum-sequence), the [standard sequence](tutorials/1-basic-progression/#standard-sequence), or the [going-further sequence](tutorials/1-basic-progression/#going-further-sequence). Make sure to complete your logs and upload them to your Github repository.
+Continue on with the sequence of tutorials you began with - the [newcomer sequence](tutorials/1-basic-progression/#newcomer-sequence), the [standard sequence](tutorials/1-basic-progression/#standard-sequence), or the [going-further sequence](tutorials/1-basic-progression/#going-further-sequence). Make sure to complete your logs and upload them to your Github repository.
 
 **When you get stuck** make a post in the help channel in Discord indicating what tutorial you're working on, the error message that you are receiving, share a screenshot, explain what you were trying to do. **There is no shame in asking for help**; I do not want to learn that you have been suffering in silence trying to figure things out on your own. People who ask for help learn faster and have a better experience in this class and generally do better. You may ask me privately for help in Discord; we can screenshare and voice-chat as needed.
 
@@ -44,4 +44,4 @@ I will be in Discord nearly every day, and always on Wednesday afternoons.
 
 ### Submit work
 
-You can submit the link to your work on [this form](https://docs.google.com/forms/d/e/1FAIpQLSc3iURU-J6usI6994Hm9MkBsIViOEbnoIyqtxhmhXbFW8raAw/viewform?usp=sf_link)
+You can submit the link to your work on [this form](https://forms.gle/mEqh72LLR5vCqknW6).

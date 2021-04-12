@@ -1,6 +1,6 @@
 ---
 title: "TMT Gui"
-description: "Scripted in R"
+description: "MALLET with a GUI"
 date: 2020-01-28T00:10:37+09:00
 draft: false
 ---

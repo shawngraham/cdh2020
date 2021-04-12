@@ -1,6 +1,6 @@
 ---
 title: "Storymaps"
-description: "Webmaps, not GIS"
+description: "A bit like Powerpoint, but with maps"
 date: 2020-01-28T00:10:09+09:00
 draft: false
 ---

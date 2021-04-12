@@ -1,6 +1,6 @@
 ---
 title: "Hypothesis"
-description: "a tool for annotating what you read online"
+description: "A tool for annotating what you read online"
 date: 2020-01-28T00:10:51+09:00
 draft: false
 author: "Shawn Graham"

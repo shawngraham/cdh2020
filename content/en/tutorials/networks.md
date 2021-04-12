@@ -1,6 +1,6 @@
 ---
 title: "Networks with Databasic and Gephi"
-description: "Databasic and Gephi"
+description: "GUIs for Graphs"
 date: 2020-01-28T00:10:48+09:00
 draft: false
 ---

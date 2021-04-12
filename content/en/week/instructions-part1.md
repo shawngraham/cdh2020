@@ -9,7 +9,7 @@ author: "Shawn Graham"
 
 ## To be completed by May 10th
 
-_If you joined the course late and it is now after May 10th, [contact Dr. Graham immediately](docs/6-contact/)_. 
+_If you joined the course late and it is now after May 10th, [contact Dr. Graham immediately](docs/6-contact/)_.
 
 ### Read
 
@@ -38,7 +38,7 @@ Drawing on what you’ve read (and/or your notes from what you’ve listened to)
 
 2. Get yourself a proper text editor; [Sublime Text](https://www.sublimetext.com/) or [Atom](https://atom.io) are good and free (though Sublime will periodically ask you to register). A text editor lets you edit any file on your machine, and create text files like .csv or .md or .txt or write python or R code. (The `file extension` on a file - .doc or .xls or .txt etc - tells your computer what program to use to open or run the file.)
 
-3. Take a look at the suggested sequences of technical work; decide whether you will do the [minimum sequence](tutorials/1-basic-progression/#minimum-sequence), the [standard sequence](tutorials/1-basic-progression/#standard-sequence), or the [going-further sequence](tutorials/1-basic-progression/#going-further-sequence). Read and make sure you're clear on [the basic idea behind these tutorials](tutorials/1-basic-progression/#introduction).
+3. Take a look at the suggested sequences of technical work; decide whether you will do the [newcomer sequence](tutorials/1-basic-progression/#newcomer-sequence), the [standard sequence](tutorials/1-basic-progression/#standard-sequence), or the [going-further sequence](tutorials/1-basic-progression/#going-further-sequence). Read and make sure you're clear on [the basic idea behind these tutorials](tutorials/1-basic-progression/#introduction).
 
 4. Then complete the appropriate tutorials by the due date to the best of your ability.
 
@@ -48,4 +48,4 @@ I will be in Discord nearly every day, and always on Wednesday afternoons.
 
 ### Submit
 
-You can submit the link to your work on [this form](https://docs.google.com/forms/d/e/1FAIpQLSc3iURU-J6usI6994Hm9MkBsIViOEbnoIyqtxhmhXbFW8raAw/viewform?usp=sf_link)
+You can submit the link to your work on [this form](https://forms.gle/mEqh72LLR5vCqknW6)
