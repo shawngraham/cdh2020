@@ -1,5 +1,5 @@
 ---
-title: "Twine & Other Simple Tools for Games/IF"
+title: "Twine & Interactive Historical (non) Fiction"
 description: "Start designing the perfect history game"
 date: 2020-01-28T00:10:51+09:00
 draft: false
