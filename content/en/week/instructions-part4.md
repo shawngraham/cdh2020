@@ -7,7 +7,7 @@ weight: -5
 author: "Shawn Graham"
 ---
 
-**To Be Completed by June 16th**
+**To Be Completed by June 18th**
 
 ## DH Exploration Exercise
 

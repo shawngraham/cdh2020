@@ -11,4 +11,4 @@ The six weeks of the course are divided into four parts. Each part involves comp
 + Part 1, Contextualizing Digital History; work is due by the end of day, May 10
 + Part 2, Wrangling Digital Data; work is due by the end of day, May 23
 + Part 3, Arguing/Exploring/Visualizing Data; work is due by the end of day, June 6th
-+ Part 4, Communicating Digital History; work is due by the end of day, June 16th
++ Part 4, Communicating Digital History; work is due by the end of day, June 18th

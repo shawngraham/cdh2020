@@ -62,6 +62,7 @@ Standing in a course is determined by the course instructor subject to the appro
 
 **May 21, 2021**: Last day for a full fee adjustment when withdrawing from early summer and full summer courses (financial withdrawal). Withdrawals after this date will result in a permanent notation of WDN on the official transcript.
 
+**June 18, 2021**: Last day for academic withdrawal.
 
 ### REQUESTS FOR ACADEMIC ACCOMMODATIONS
 You may need special arrangements to meet your academic obligations during the term. For an accommodation request the processes are as follows:

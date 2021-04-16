@@ -63,7 +63,7 @@ Part 3 (to be completed by June 6th):
   - Select three from:
     - [Voyant](/tutorials/voyant) (Macroscopic perspectives)
     - [AntConc](/tutorials/antconc) (Macroscopic perspectives)
-    - [Twine](/tutorials/twine) (Digital Storytelling)
+    - [Twine & Games](/tutorials/twine) (Digital Storytelling)
     - [Storymaps.js](/tutorials/storymaps) (Digital Storytelling)
     - [Maps from Spreadsheets](tutorials/google-sheets-maps) (Mapping)
 
@@ -91,7 +91,7 @@ Part 3 (to be completed by June 6th):
     - [Topic Modeling Tool](/tutorials/tmt) (Macroscopic perspectives)
     - [Open Refine](/tutorials/open-refine) (Macroscopic perspectives)
     - [Networks with Databasic or Gephi](/tutorials/networks) (Macroscopic perspectives)
-    - [Twine](/tutorials/twine) (Digital Storytelling)
+    - [Twine & Games](/tutorials/twine) (Digital Storytelling)
     - [Static Websites](/tutorials/static-websites) (Digital Storytelling)
     - [Webmapping with Leaflet](/tutorials/mapping) (Mapping)
 
@@ -124,7 +124,7 @@ Part 3 (to be completed by June 6th):
     - [Network Analysis in R](/tutorials/neworks-r) (Macroscopic perspectives)
     - [Network Analysis in Python](/tutorials/networks-python) (Macroscopic perspectives)
     - [Sound and Sonification](/tutorials/sound) (Macroscopic perspectives / Digital Storytelling)
-    - [Twine](tutorials/twine) (Digital Storytelling)
+    - [Twine & Games](tutorials/twine) (Digital Storytelling)
     - [Static Websites](tutorials/static-websites) (Digital Storytelling)
     - [Webmapping with Leaflet](/tutorials/mapping) (Mapping)
     - [Webmapping with Python](/tutorials/folium) (Mapping)
