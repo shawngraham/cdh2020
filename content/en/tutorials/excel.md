@@ -61,26 +61,38 @@ I'm not going to invest much time in Excel; but here's some [more guidance from 
 
 ### Some Basic Counting and Plotting in R  
 
-Start up your RStudio from Anaconda Navigator, and make a new R script. The first thing we're going to do is get set up so that we can import some data directly from the web. We use the `RCurl` package to do that:
+Start up your RStudio from Anaconda Navigator, and make a new R script. The first thing we're going to do is get set up so that we can import some data directly from the web. We use the `RCurl` package to do that (packages are like little bits of simpler code put together to do particular tasks; you can think of them as like specialized lego bricks):
 
 ```R
 install.packages("RCurl")
 library("RCurl")
 ```
-(Remember to hit the `run` button for each line.)
 
-We're going to reach out and grab a table of data (the colonial newspapers database you encountered earlier) and import it into R. We do that like this:
+Put your cursor on the line you want to run, and then hit the `run` button for each line in turn. The first line, `install.packages` will go to the central R repository, find that package, and download it to your computer. You'll see a lot of status messages file by in the **console**. Then, once that's finished (the little 'stop' sign will disappear in your console window and the `>` prompt will reappear), do the next line. It will seem like nothing much has happened - the words `library("RCurl")` will appear in the console, and then the `>` prompt again. That's how you know it worked. If it didn't, you'd get an error message (and if you do get an error message, you can take a screenshot to show us in Discord and ask for help.)
+
+Now, we're going to reach out onto the web and grab a table of historical data (a subsection of the colonial newspapers database created by [Melodee Breals](https://www.lboro.ac.uk/research/crcc/about/people/melodee-beals/)) and import it into R. We do that like this:
 
 ```R
 x <- getURL("https://raw.githubusercontent.com/shawngraham/exercise/gh-pages/CND.csv", .opts = list(ssl.verifypeer = FALSE))
 ```
-Notice you now have a variable in your 'Global Environment' pane. We need to extract the data from that, which we do with this:
+
+See what happened there? We created a variable called `X` (could've called it `newspapers` or whatever you like) and told R to load the page url and deposit its results _into_ that variable.
+
+Anytime there is data on the web that ends with `.csv`, you can load it into your work like this. (For instance, the Canadian Science and Technology museum makes a lot of its collections data available that way; a slightly edited copy of that is at the website for another course I teach, at [https://dhmuse.netlify.app/data/cstmc-CSV-en.csv](dhmuse.netlify.app/data/cstmc-CSV-en.csv). You could try loading _that_ data in if you're ambitious. )
+
+Notice you now have a variable in your 'Global Environment' pane called 'X'. If you just type `X` in the console, after a few moments, it will print out everything that is inside that variable. If you scroll back to the top of that, you'll see:
+
+```
+
+[1] "Article ID,Newspaper Title,Newspaper City,Newspaper Province,Newspaper Country,Year,Month,Day,Article Type,Text,Keywords\n ID1,Caledonian Mercury,Edinburgh,Scotland,United Kingdom,1811,08,26,inform,Commerce of Canada.Extract of a letter. The population of Canada in 1760 was reckoned at 62000 souls ...
+```
+Those first items are the headers for each of the columns. So we want to create a new table where each row is a unique document from `X` and each column has the proper headers. That will look like this:
 
 ```R
 documents <- read.csv(text = x, col.names=c("Article_ID", "Newspaper Title", "Newspaper City", "Newspaper Province", "Newspaper Country", "Year", "Month", "Day", "Article Type", "Text", "Keywords"), colClasses=rep("character", 3), sep=",", quote="")
 ```
 
-We read the csv file from x, and create the columns into which the data is poured; all of this is now in `documents`. When we only want information from a particular column, we modify the variable slightly (eg. `head(documents$Keywords)` would return the first few rows of the information in the keywords column).
+We read the csv file from x, and create the columns into which the data is poured; all of this is now in `documents`. If you now typed `View(documents)` into the console you'll see a nicely formatted table. When we only want to examine information from a particular column, we modify the variable slightly (eg. `head(documents$Keywords)` would return the first few rows - the head -  of the information in the keywords column).
 
 Now we can do some things. Let's count the number of documents by the city in which they were published:
 
@@ -88,9 +100,9 @@ Now we can do some things. Let's count the number of documents by the city in wh
 counts <- table(documents$Newspaper.City)
 counts
 ```
-The first `counts` creates the variable; the second `counts` on its own reveals what's inside the variable.
+The first `counts` creates the variable and looks at the column `Newspaper.City` _inside_ the table `documents`; the second `counts` on its own reveals what's inside the variable (and prints it to the console; you could also `View(counts)`). If you wanted to save this variable, this result, to file, you can use the `write.csv` command: `write.csv(counts, "counts.csv")`. And if you don't know where exactly you're saving, `getwd()` will tell you the exact location you're working in.
 
-Now let's plot that:
+Now let's plot these `counts`:
 
 ```R
 barplot(counts, main="Cities", xlab="Number of Articles")
@@ -105,8 +117,10 @@ years <- table(documents$Year)
 barplot(years, main="Publication Year", xlab="Year", ylab="Number of Articles")
 ```
 
-There’s a lot of material in 1789, another peak around 1819, againg in the late 1830s. We can ask ourselves now: is this an artefact of the data, or of our collection methods? This would be a question a reviewer would want answers to. Let’s assume for now that these two plots are ‘true’ — that, for whatever reasons, only Edinburgh and Glasgow were concerned with these colonial reports, and that they were particulary interested during those three periods. This is already an interesting question that we as historians would want to explore.
+There’s a lot of material in 1789, another peak around 1819, againg in the late 1830s. We can ask ourselves now: is this an artefact of the data, or of our collection methods? This would be a question a reviewer would want answers to. Let’s assume for now that these two plots are ‘true’ — that, for whatever reasons, only Edinburgh and Glasgow were concerned with these colonial reports, and that they were particularly interested during those three periods. This is already an interesting question that we as historians would want to explore.
 
 Try making some more visualizations like this of other aspects of the data. What other patterns do you see that are worth investigating?
 
-This [page](https://rstudio-pubs-static.s3.amazonaws.com/7953_4e3efd5b9415444ca065b1167862c349.html) shows you the code for some other basic visualizations. See if you can make some more visualizations. I've created a [tarsus.txt](/data/tarsus.txt) file and a [unicorn.txt](/data/unicorn.txt) file so that you can see how his code works (although you might wish to open both files in your sublime text editor and add more rows of data; careful: columns are separated by tabs.)
+This [page](https://rstudio-pubs-static.s3.amazonaws.com/7953_4e3efd5b9415444ca065b1167862c349.html) shows you the code for some other basic visualizations. See if you can make some more visualizations. I've created a [tarsus.txt](/data/tarsus.txt) file and a [unicorn.txt](/data/unicorn.txt) file so that you can see how his code works (although you might wish to open both files in your sublime text editor and add more rows of data; careful: columns are separated by tabs.) Or you could try working with the CSTM data at the top of this page.
+
+Now, where things get _really_ interesting, for us as historians, is when we start working with statistical patterns in the words themselves. See for instance the tutorial [on topic models](/tutorials/topic-models).

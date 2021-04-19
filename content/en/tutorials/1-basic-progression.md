@@ -46,12 +46,22 @@ Logs must be _complete_ and _truthful_. By 'complete', I mean: there is sufficie
 
 ---
 
+## NB: For all Sequences
+
+I talk at various times and in various tutorials about using the command line or the terminal. If this confuses you or I am not clear, a former student (Chantal Brousseau) made two excellent walkthroughs **for when you need them** that I encourage you to take a look at, depending on your machine:
+
+[Using the terminal/command line on a Mac](/tutorials/command-line-mac)
+
+[Using the terminal/command line on a PC](/tutorials/command-line-win)
+
+---
+
 ## Newcomer Sequence
 
 Part 1 (to be completed by May 10th):
   - Complete:
     - [Markdown](/tutorials/markdown)
-    - [Github](/tutorials/github/)
+    - [Github](/tutorials/github/) (if you want to try Git at the command line, there's [this guidance](/tutorials/more-github))
     - [Anaconda](/tutorials/anaconda)
 
 Part 2 (to be completed by May 23th):
@@ -77,7 +87,7 @@ Part 4 (to be completed by June 16):
 Part 1 (to be completed by May 10th):
   - Complete:
     - [Markdown](/tutorials/markdown)
-    - [Github](/tutorials/github/)
+    - [Github](/tutorials/github/) (if you want to try Git at the command line, there's [this guidance](/tutorials/more-github))
     - [Anaconda](/tutorials/anaconda)
 
 Part 2 (to be completed by May 23th):
@@ -105,7 +115,7 @@ Part 4 (to be completed by June 16):
 Part 1 (to be completed by May 10th):
   - Complete:
     - [Markdown](/tutorials/markdown)
-    - [Github](/tutorials/github/)
+    - [Github](/tutorials/github/) (if you want to try Git at the command line, there's [this guidance](/tutorials/more-github))
     - [Anaconda](/tutorials/anaconda)
 
 Part 2 (to be completed by May 23th):
