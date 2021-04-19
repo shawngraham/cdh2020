@@ -98,8 +98,9 @@ Part 2 (to be completed by May 23th):
 
 Part 3 (to be completed by June 6th):
   - Select **four** from:
-    - [Topic Modeling Tool](/tutorials/tmt) (Macroscopic perspectives)
     - [Open Refine](/tutorials/open-refine) (Macroscopic perspectives)
+    - [Clean text data with R](/tutorials/clean-data-r) (Macroscopic perspectives)
+    - [Topic Modeling Tool](/tutorials/tmt) (Macroscopic perspectives)
     - [Networks with Databasic or Gephi](/tutorials/networks) (Macroscopic perspectives)
     - [Twine & Games](/tutorials/twine) (Digital Storytelling)
     - [Static Websites](/tutorials/static-websites) (Digital Storytelling)
@@ -128,9 +129,10 @@ Part 2 (to be completed by May 23th):
 
 Part 3 (to be completed by June 6th):
   - Select **five** from:
+    - [Open Refine](/tutorials/open-refine) (Macroscopic perspectives)
+    - [Clean text data with R](/tutorials/clean-data-r) (Macroscopic perspectives)
     - [Topic Modeling in R](/tutorials/topic-models) (Macroscopic perspectives)
     - [TF-IDF, Sentiment Analysis](/tutorials/tf-idf) (Macroscopic perspectives)
-    - [Open Refine](/tutorials/open-refine) (Macroscopic perspectives)
     - [Network Analysis in R](/tutorials/neworks-r) (Macroscopic perspectives)
     - [Network Analysis in Python](/tutorials/networks-python) (Macroscopic perspectives)
     - [Sound and Sonification](/tutorials/sound) (Macroscopic perspectives / Digital Storytelling)
