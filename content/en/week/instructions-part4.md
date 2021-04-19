@@ -19,6 +19,10 @@ Put the results of this exercise (any digital ephemera you might create) into a 
 
 **When you get stuck** make a post in the help channel in Discord indicating what tutorial you're working on, the error message that you are receiving, share a screenshot, explain what you were trying to do. **There is no shame in asking for help**; I do not want to learn that you have been suffering in silence trying to figure things out on your own. People who ask for help learn faster and have a better experience in this class and generally do better. You may ask me privately for help in Discord; we can screenshare and voice-chat as needed.
 
+{{< alert theme="info" >}}
+You will still need to create a `log.md` file; remember to create some kind of document or thing (as appropriate) that explains what you've done & tie it into your previous work & readings.
+{{< /alert >}}
+
 I will be in Discord nearly every day, and always on Wednesday afternoons.
 
 ### Optional Extra: The Exit Ticket

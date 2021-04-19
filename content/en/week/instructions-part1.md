@@ -38,6 +38,8 @@ Caswell, M. 'Seeing Yourself in History: Community Archives and the Fight Agains
 
 Drawing on what you’ve read (and/or your notes from what you’ve listened to), discuss your idea of what ‘digital history’ might be prior to starting this course, and think through whether any of the materials we’ve seen this week confirm or upset those notions. What kinds of ‘digital silences’ did you encounter? What has excited you? Finally, where do you want to go, with digital history?
 
+_Put this in a text file; use the conventions of markdown for headers, bullets, etc; 'save as' `reflection.md` (remember to explicitly change the default .txt to `.md`); tie what you've done this week to what you've read; drop this into your part 1 repository_.
+
 ### Do
 
 1. Join the class [Discord](/tutorials/discord/) (click on that link for instructions on how to use Discord if you've never encountered it before); you will have been sent an invitation link to join via your Carleton email account.
@@ -47,6 +49,8 @@ Drawing on what you’ve read (and/or your notes from what you’ve listened to)
 3. Take a look at the suggested sequences of technical work; decide whether you will do the [newcomer sequence](tutorials/1-basic-progression/#newcomer-sequence), the [standard sequence](tutorials/1-basic-progression/#standard-sequence), or the [going-further sequence](tutorials/1-basic-progression/#going-further-sequence). Read and make sure you're clear on [the basic idea behind these tutorials](tutorials/1-basic-progression/#introduction).
 
 4. Then complete the appropriate tutorials by the due date to the best of your ability.
+
+5. Write your log; write your reflection; add them to your github repository.
 
 **When you get stuck** make a post in the help channel in Discord indicating what tutorial you're working on, the error message that you are receiving, share a screenshot, explain what you were trying to do. **There is no shame in asking for help**; I do not want to learn that you have been suffering in silence trying to figure things out on your own. People who ask for help learn faster and have a better experience in this class and generally do better. You may ask me privately for help in Discord; we can screenshare and voice-chat as needed.
 

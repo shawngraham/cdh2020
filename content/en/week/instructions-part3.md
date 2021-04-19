@@ -28,6 +28,8 @@ Think about how the various authors in the readings so far make the case for how
 
 Or, think about what you found intriguing, compelling, and effective about the various digital history sites and projects you have explored so far. Tie what you find/observe to your own work. With regard to your own work on the tutorials, reflect on your design choices and the story you're trying to tell, or the interesting thing you've found. Critically evaluate the thing(s) you've made; perhaps show them to someone outside of this course and ask for their feedback. Did they understand the point you were trying to make? What was effective, for them, and what was confusing?
 
+_Put this in a text file; use the conventions of markdown for headers, bullets, etc; 'save as' `reflection.md` (remember to explicitly change the default .txt to `.md`); tie what you've done this week to what you've read; drop this into your part 1 repository_.
+
 ### Do
 
 Continue on with the sequence of tutorials you began with - the [newcomer sequence](tutorials/1-basic-progression/#newcomer-sequence), the [standard sequence](tutorials/1-basic-progression/#standard-sequence), or the [going-further sequence](tutorials/1-basic-progression/#going-further-sequence). Alternatively, you may switch sequences at this point if you so desire; just make sure to make a note of it in a relevant log. Make sure to complete your logs and upload them to your Github repository.
