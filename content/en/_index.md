@@ -8,7 +8,7 @@ landing:
   Title:
   - Crafting Digital History
   Text:
-  - HIST3814a Carleton U, Summer 2021 with Prof. Shawn Graham
+  - HIST3814o|DIGH3814a Carleton U, Summer 2021 with Prof. Shawn Graham
   buttons:
     - link: docs/1-coursedescription
       text: Read this first

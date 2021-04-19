@@ -11,6 +11,10 @@ author: "Shawn Graham"
 
 _If you joined the course late and it is now after May 10th, [contact Dr. Graham immediately](docs/6-contact/)_.
 
+### Watch
+
+<div align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/QMnUxUNDaWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
 ### Read
 
 + Martin, K. 2020. ['Clio, Rewired: Propositions for the Future of Digital History Pedagogy in Canada'](/data/martin_project_muse_777494.pdf) _Canadian Historical Review 101.4 pp 620-640.
@@ -24,6 +28,8 @@ _If you joined the course late and it is now after May 10th, [contact Dr. Graham
 + Read [the full thread](https://twitter.com/amaliasl/status/1245544256212807680) by Amalia Skarlatou Levi and explore links of interest; make a note of anything interesting keeping in mind what you've already heard/read (you can use [hypothes.is](/tutorials/hypothesis) if you're so-inclined). Pair that thread with [this one](https://twitter.com/amaliasl/status/1270183394526154753). Share anything interesting you've found in our social space. A handy getting-started approach to making notes on things you find online is to think of the three W's: the weird, the wonderful, the worrying. Also keep track of anything you read or anything interesting you find; a useful tool for that is [Zotero](/tutorials/zotero).
 
 **Optional Extra**
+
+Gaffield, C. 'Clio and Computers in Canada and Beyond: Contested Past, Promising zpresent, Uncertain Future' _Canadian Historical Review_ 101.4 559-584 [pdf](/data/gaffield.pdf)
 
 Caswell, M. 'Seeing Yourself in History: Community Archives and the Fight Against Symbolic Annihilation'. _The Public Historian_ 2014, 36, 26–37, [doi:10.1525/tph.2014.36.4.26](http://digitalrhetoricandnetworkedcomposition.web.unc.edu/files/2016/01/caswell-seeing-yourself-in-history.pdf).
 
