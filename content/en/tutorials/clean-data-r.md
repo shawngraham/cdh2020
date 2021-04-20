@@ -1,4 +1,12 @@
-# Cleaning and Manipulating Data with R
+---
+title: "Cleaning & Manipulating Data with R"
+description: "Working with Messy Data"
+date: 2020-01-28T00:10:37+09:00
+draft: false
+weight: 4
+---
+
+## Cleaning and Manipulating Data with R
 
 We're going to use data from pulled from the [The Survey of Scottish Witchcraft Database](http://www.shca.ed.ac.uk/Research/witches/) for this tutorial; this tutorial was written by Chantal Brousseau.
 

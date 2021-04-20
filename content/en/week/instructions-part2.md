@@ -9,6 +9,12 @@ author: "Shawn Graham"
 
 ## To be completed by May 23rd
 
+### Watch
+
+<div align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/6UezZZ4ss9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+(My [speaking notes for the video](/data/part-two-text))
+
 ### Read
 
 ![datum](https://i.imgur.com/xvNbwKt.png)
