@@ -9,9 +9,13 @@ author: "Shawn Graham"
 
 ## To be completed by June 6th
 
+### Watch
+
+<div align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/92qYWZY4Xi0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
 ### Read
 
-+ Arguing  with  Digital  History  working  group,  "Digital  History and Argument," white paper, Roy Rosenzweig Center for History and New Media(November 13, 2017): [https://rrchnm.org/argument-white-paper/](https://rrchnm.org/argument-white-paper/).
++ Arguing  with  Digital  History  working  group,  "Digital  History and Argument," white paper, Roy Rosenzweig Center for History and New Media(November 13, 2017): [Description: https://rrchnm.org/argument-white-paper/](https://rrchnm.org/argument-white-paper/) [Paper itself](https://rrchnm.org/wordpress/wp-content/uploads/2017/11/digital-history-and-argument.RRCHNM.pdf).
 
 + Tim Hitchcock, 2013 ['Big Data for Dead People'](https://historyonics.blogspot.ca/2013/12/big-data-for-dead-people-digital.html) _Historyonics_
 

@@ -17,7 +17,7 @@ _If you joined the course late and it is now after May 10th, [contact Dr. Graham
 
 <div align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/QMnUxUNDaWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-(My [speaking notes for the video](/data/part-one-text))
+(My [speaking notes for the video](/data/part-one-text.md))
 
 ### Read
 
