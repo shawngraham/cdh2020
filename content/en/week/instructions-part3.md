@@ -15,7 +15,7 @@ author: "Shawn Graham"
 
 _Sometimes the embed seems to not load, at least for me. If that happens to you, just watch it on youtube_.
 
-(My [speaking notes for the video](/data/part-three-text.md)
+(My [speaking notes for the video](/data/part-three-text.md))
 
 ### Read
 

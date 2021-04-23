@@ -11,11 +11,11 @@ author: "Shawn Graham"
 
 ## Watch
 
-<div align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/-nsoifj4jmQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/AB4IN8m9Kbg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 _Sometimes the embed seems to not load, at least for me. If that happens to you, just watch it on youtube_.
 
-(My [speaking notes for the video](/data/part-four-text.md)
+(My [speaking notes for the video](/data/part-four-text.md))
 
 
 ## DH Exploration Exercise
