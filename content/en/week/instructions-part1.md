@@ -9,8 +9,8 @@ author: "Shawn Graham"
 
 ## To be completed by May 10th
 
-{{< notice warning "An Assumption" >}}
-_If you joined the course late and it is now after May 10th, [contact Dr. Graham immediately](docs/6-contact/)_.
+{{< notice warning "Is it after May 10th?" >}}
+_If you joined the course late and it is now after May 10th, [contact Dr. Graham immediately; click here for contact details](docs/6-contact/)_.
 {{< /notice >}}
 
 ### Watch
