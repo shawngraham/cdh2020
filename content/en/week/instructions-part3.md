@@ -13,6 +13,10 @@ author: "Shawn Graham"
 
 <div align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/92qYWZY4Xi0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
+_Sometimes the embed seems to not load, at least for me. If that happens to you, just watch it on youtube_.
+
+(My [speaking notes for the video](/data/part-three-text.md)
+
 ### Read
 
 + Arguing  with  Digital  History  working  group,  "Digital  History and Argument," white paper, Roy Rosenzweig Center for History and New Media(November 13, 2017): [Description: https://rrchnm.org/argument-white-paper/](https://rrchnm.org/argument-white-paper/) [Paper itself](https://rrchnm.org/wordpress/wp-content/uploads/2017/11/digital-history-and-argument.RRCHNM.pdf).
@@ -41,6 +45,8 @@ Continue on with the sequence of tutorials you began with - the [newcomer sequen
 **When you get stuck** make a post in the help channel in Discord indicating what tutorial you're working on, the error message that you are receiving, share a screenshot, explain what you were trying to do. **There is no shame in asking for help**; I do not want to learn that you have been suffering in silence trying to figure things out on your own. People who ask for help learn faster and have a better experience in this class and generally do better. You may ask me privately for help in Discord; we can screenshare and voice-chat as needed.
 
 I will be in Discord nearly every day, and always on Wednesday afternoons.
+
+Add materials to your repository; write your reflection; write your log.
 
 ### Submit
 
