@@ -1,5 +1,5 @@
 ---
-title: "Instructions: May 4"
+title: "Instructions: May 6"
 description: "An overview of DigHist"
 date: 2020-01-28T00:10:51+09:00
 draft: false

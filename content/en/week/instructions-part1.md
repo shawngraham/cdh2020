@@ -7,10 +7,10 @@ weight: -5
 author: "Shawn Graham"
 ---
 
-## To be completed by May 10th
+## To be completed by May 13th
 
-{{< notice warning "Is it after May 10th?" >}}
-_If you joined the course late and it is now after May 10th, [contact Dr. Graham immediately; click here for contact details](docs/6-contact/)_.
+{{< notice warning "Is it after May 13th?" >}}
+_If you joined the course late and it is now after May 13th, [contact Dr. Graham immediately; click here for contact details](docs/6-contact/)_.
 {{< /notice >}}
 
 ### Watch

@@ -7,8 +7,8 @@ draft: false
 
 For this iteration of the course, I have divided the course into 4 unequal parts.
 
-+ Part 1: May 4 - 10
-+ Part 2: May 11 - 23
++ Part 1: May 6 - 13
++ Part 2: May 12 - 23
 + Part 3: May 24 - June 6
 + Part 4: June 7 - June 18
 
