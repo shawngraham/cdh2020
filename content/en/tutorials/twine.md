@@ -53,3 +53,11 @@ You can put the html file (and any other supporting files you might create) into
 ## Going Further
 
 See what you can cook up using this online collaborative storytelling game generator, [Story Synth](https://storysynth.org/). This is a framework for building deckbuilder type games, drawing on prompts kept in a google spreadsheet, and meant to be played collaboratively online. Give it a whirl, share what you've built in our Discord space, let's play!
+
+_Update April 28th 2021_ If you're into Minecraft, I just saw a new article come out that details how to import a cultural heritage landscape into Minecraft to create simulations therein:
+
+Edwards, B., et al. "The Bryn Celli Ddu Minecraft Experience: A Workflow and Problem-Solving Case Study in the Creation of an Archaeological Reconstruction in Minecraft for Cultural Heritage Education." Journal on Computing and Cultural Heritage (JOCCH) 14.2 (2021): 1-16.
+
+If you're logged into Google, the [Google Scholar Page](https://scholar.google.com/scholar?hl=en&as_sdt=2005&sciodt=0%2C5&cites=11614953803418569855&scipsc=&q=The+Bryn+Celli+Ddu+Minecraft+Experience&oq=bryn+celli+) for this article has a download link for the pdf.
+
+It might be challenging, given the amount of time you have, but I'd be open to someone seeing if they can replicate their workflow. (Indeed, several iterations of Minecraft ago I used to teach a class on historical simulation where the major piece of work was to create a historical minecraft world. But the workflow then was much simpler, before microsoft got their hands on the game).
