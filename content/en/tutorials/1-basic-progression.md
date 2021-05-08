@@ -58,7 +58,7 @@ I talk at various times and in various tutorials about using the command line or
 
 ## Newcomer Sequence
 
-Part 1 (to be completed by May 10th):
+Part 1 (to be completed by May 13th):
   - Complete:
     - [Markdown](/tutorials/markdown)
     - [Github](/tutorials/github/) (if you want to try Git at the command line, there's [this guidance](/tutorials/more-github))
@@ -84,7 +84,7 @@ Part 4 (to be completed by June 16):
 
 ## Standard Sequence
 
-Part 1 (to be completed by May 10th):
+Part 1 (to be completed by May 13th):
   - Complete:
     - [Markdown](/tutorials/markdown)
     - [Github](/tutorials/github/) (if you want to try Git at the command line, there's [this guidance](/tutorials/more-github))
@@ -113,7 +113,7 @@ Part 4 (to be completed by June 16):
 
 ## Going Further Sequence
 
-Part 1 (to be completed by May 10th):
+Part 1 (to be completed by May 13th):
   - Complete:
     - [Markdown](/tutorials/markdown)
     - [Github](/tutorials/github/) (if you want to try Git at the command line, there's [this guidance](/tutorials/more-github))
