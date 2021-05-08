@@ -30,7 +30,7 @@ Now, following Kirilloff, for one of these experiences, can you identify:
   - the way the design of the experience contributes to that argument?
   - who is the intended audience?
 
-If you've played more conventional video games, have you ever seen these kinds of themes explored in a simulation or game environment? Probably not. So Twine gives us the possibility of exploring all sorts of experiences, to represent all sorts of people, in ways that can be designed to make an argument about the past: that what you are able to _do_ in a game (it's mechanics, or _procedural rhetorics_) are as important as the actual story your experience tells.
+If you've played more conventional video games, have you ever seen these kinds of themes explored in a simulation or game environment? Probably not. So Twine gives us the possibility of exploring all sorts of experiences, to represent all sorts of people, in ways that can be designed to make an argument about the past: that what you are able to _do_ in a game (its mechanics, or _procedural rhetorics_) are as important as the actual story your experience tells.
 
 ### Design your game
 
@@ -60,4 +60,4 @@ Edwards, B., et al. "The Bryn Celli Ddu Minecraft Experience: A Workflow and Pro
 
 If you're logged into Google, the [Google Scholar Page](https://scholar.google.com/scholar?hl=en&as_sdt=2005&sciodt=0%2C5&cites=11614953803418569855&scipsc=&q=The+Bryn+Celli+Ddu+Minecraft+Experience&oq=bryn+celli+) for this article has a download link for the pdf.
 
-It might be challenging, given the amount of time you have, but I'd be open to someone seeing if they can replicate their workflow. (Indeed, several iterations of Minecraft ago I used to teach a class on historical simulation where the major piece of work was to create a historical minecraft world. But the workflow then was much simpler, before microsoft got their hands on the game).
+It might be challenging, given the amount of time you have, but I'd be open to someone seeing if they can replicate Edwards et al.'s workflow. (Indeed, several iterations of Minecraft ago I used to teach a class on historical simulation where the major piece of work was to create a historical minecraft world. But the workflow then was much simpler, before microsoft got their hands on the game).
