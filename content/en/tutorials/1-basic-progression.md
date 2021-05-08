@@ -28,7 +28,7 @@ You may switch tracks **after** part 2 is over if you wish. You don't need to in
 
 You will submit your logs by the end of the day on
 
-+ May 10
++ May 13
 + May 23
 + June 6th
 + June 16th
