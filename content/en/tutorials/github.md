@@ -80,6 +80,17 @@ Once you've done that, you'll be at your Github user page:
 
 ---
 
+8. Add me as a collaborator to this and subsequent **private** repositories:
+
+![manage access](/images/github/add-user-to-private-repo-1.png)
+
+9. **Private Repo**: Then, once you've clicked on 'manage access', click on 'invite collaborator',
+![add collaborator](/images/github/add-collaborator-to-private-repo-2.png)
+
+10. **Private Repo**: Then find my username `shawngraham`, and add me:
+![add shawngraham](/images/github/add-username-private-repo.png)
+
+
 ### Setting up a 'repository' for your work
 
 A 'repository' is just a folder that you've shared on Github. There are two ways to do this; the easy way and the more complex way. Luck you, you have _already_ done the easy way - you selected the `initialize with a readme`, and it's already present in your browser!
