@@ -63,8 +63,7 @@ I'm not going to invest much time in Excel; but here's some [more guidance from 
 
 This is just a _first taste_ of using R; much will seem opaque to you, but it will become more comfortable with time.
 
-
-Start up your RStudio from Anaconda Navigator, and make a new R script.
+Start up your RStudio from Anaconda Navigator, and make a new R script. You might need to 'install RStudio' from the initial Anaconda Navigator interface first.
 
 ![](https://digiarch.netlify.app/images/rstudio/rstudio1.png)_
 
