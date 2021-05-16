@@ -61,7 +61,20 @@ I'm not going to invest much time in Excel; but here's some [more guidance from 
 
 ### Some Basic Counting and Plotting in R  
 
-Start up your RStudio from Anaconda Navigator, and make a new R script. The first thing we're going to do is get set up so that we can import some data directly from the web. We use the `RCurl` package to do that (packages are like little bits of simpler code put together to do particular tasks; you can think of them as like specialized lego bricks):
+This is just a _first taste_ of using R; much will seem opaque to you, but it will become more comfortable with time.
+
+
+Start up your RStudio from Anaconda Navigator, and make a new R script.
+
+![](https://digiarch.netlify.app/images/rstudio/rstudio1.png)_
+
+![](https://digiarch.netlify.app/images/rstudio/rstudio2.png)
+
+![](https://digiarch.netlify.app/images/rstudio/rstudio3.png)
+
+You will copy the code chunks below _into_ the script window; then, you run the script one line at a time. The _results_ will show up in the console window (the code will copy to the console; if everything runs correctly, the console will just show you anoterh `>` to indicate all is good. But if things *aren't* good, the error messages will print in the console.)
+
+The first thing we're going to do is get set up so that we can import some data directly from the web. We use the `RCurl` package to do that (packages are like little bits of simpler code put together to do particular tasks; you can think of them as like specialized lego bricks):
 
 ```R
 install.packages("RCurl")

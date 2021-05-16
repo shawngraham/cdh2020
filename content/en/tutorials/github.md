@@ -56,7 +56,7 @@ I might sometimes fork your work, pull it down onto my machine, make changes tha
 
 ---
 
-6. Give it a reasonable name; tick the 'initialize with a readme' box, and hit the green commit button:
+6. Give it a reasonable name; in the illustration I went with 'week one' but 'part one' or somethine else reasonable is fine; tick the 'initialize with a readme' box, and hit the green commit button:
 
 ![new repo settings](/images/github/github-new-repo-settings.png)
 
@@ -66,7 +66,7 @@ I might sometimes fork your work, pull it down onto my machine, make changes tha
 
 ![dismiss actions](/images/github/github-dismiss-actions.png)
 
-Ta Da! You now have a github account, and you've created your first repository. **Going Forward** create a new repository for each week's work/reflection. You can create a new repository from the plus sign in the top right corner:
+Ta Da! You now have a github account, and you've created your first repository. **Going Forward** create a new repository for each course part's work/reflection. You can create a new repository from the plus sign in the top right corner:
 
 ![another new repo](/images/github/new-repo.png)
 
