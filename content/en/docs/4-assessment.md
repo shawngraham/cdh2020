@@ -44,7 +44,7 @@ Therefore, I am looking for the following kinds of evidence (each [part](/week) 
 + engagement with the readings and materials and your classmates (which might be demonstrated many different ways)
 + evidence for your growth as a historian over this course
 
-At the end of each part, you will provide to me through a form that can be found on each relevant page the links to your evidence for me to consider, by Sunday evening.
+At the end of each part, you will provide to me through a form that can be found on each relevant page the links to your evidence for me to consider, by the date indicated.
 
 I will return feedback to you within two or three days. I will write you a note giving you my perspective on what you've done (using the lens of the learning outcomes), and offering advice.
 
