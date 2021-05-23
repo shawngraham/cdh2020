@@ -42,7 +42,7 @@ Who _pays_ for work to end up online? Who does the work? What are some of the et
 
 What is the value of/for historians (regular historians) showing their work, as opposed to, or in contrast to, what digital historians have to do? Where is the scholarly value in showing your work - and contrast this with how you've written history to date.
 
-_Put this in a text file; use the conventions of markdown for headers, bullets, etc; 'save as' `reflection.md` (remember to explicitly change the default .txt to `.md`); tie what you've done this week to what you've read; drop this into your part 1 repository_.
+_Put this in a text file; use the conventions of markdown for headers, bullets, etc; 'save as' `reflection.md` (remember to explicitly change the default .txt to `.md`); tie what you've done this week to what you've read; drop this into your part 2 repository_.
 
 ### Do
 
