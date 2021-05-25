@@ -80,7 +80,11 @@ install.packages("RCurl")
 library("RCurl")
 ```
 
-Put your cursor on the line you want to run, and then hit the `run` button for each line in turn. The first line, `install.packages` will go to the central R repository, find that package, and download it to your computer. You'll see a lot of status messages file by in the **console**. Then, once that's finished (the little 'stop' sign will disappear in your console window and the `>` prompt will reappear), do the next line. It will seem like nothing much has happened - the words `library("RCurl")` will appear in the console, and then the `>` prompt again. That's how you know it worked. If it didn't, you'd get an error message (and if you do get an error message, you can take a screenshot to show us in Discord and ask for help.)
+Put your cursor on the line you want to run, and then hit the `run` button for each line in turn. The first line, `install.packages` will go to the central R repository, find that package, and download it to your computer. You'll see a lot of status messages file by in the **console**. Then, once that's finished (the little 'stop' sign will disappear in your console window and the `>` prompt will reappear), do the next line. It will seem like nothing much has happened - the words `library("RCurl")` will appear in the console, and then the `>` prompt again. That's how you know it worked. If it didn't, you'd get an error message (and if you do get an error message, you can take a screenshot to show us in Discord and ask for help.).
+
+{{< notice warning "'Earlier Version' Warning'" >}}
+When you install RCurl, you _might_ see a 'warning' pop up in the console, saying that the package was built under an earlier version of R. That's ok; most of the time, that won't have an impact on us.
+{{< /notice >}}
 
 Now, we're going to reach out onto the web and grab a table of historical data (a subsection of the colonial newspapers database created by [Melodee Breals](https://www.lboro.ac.uk/research/crcc/about/people/melodee-beals/)) and import it into R. We do that like this:
 
@@ -90,9 +94,18 @@ x <- getURL("https://raw.githubusercontent.com/shawngraham/exercise/gh-pages/CND
 
 See what happened there? We created a variable called `X` (could've called it `newspapers` or whatever you like) and told R to load the page url and deposit its results _into_ that variable.
 
+{{< notice information "Error on 'getURL'" >}}
+Windows users _might_ get an error about the 'getURL' command. This command is part of the RCurl package, and plumbing the chain of dependencies to fix this is beyond us at the moment. Instead, since there is more than one way to achieve our goals, we'll use this workaround instead:
+
+```
+x <- "https://raw.githubusercontent.com/shawngraham/exercise/gh-pages/CND.csv"
+documents <- read.csv(x)  
+```
+{{< /notice >}}
+
 Anytime there is data on the web that ends with `.csv`, you can load it into your work like this. (For instance, the Canadian Science and Technology museum makes a lot of its collections data available that way; a slightly edited copy of that is at the website for another course I teach, at [https://dhmuse.netlify.app/data/cstmc-CSV-en.csv](dhmuse.netlify.app/data/cstmc-CSV-en.csv). You could try loading _that_ data in if you're ambitious. )
 
-Notice you now have a variable in your 'Global Environment' pane called 'X'. If you just type `X` in the console, after a few moments, it will print out everything that is inside that variable. If you scroll back to the top of that, you'll see:
+Notice you now have a variable in your 'Global Environment' pane called 'X'. If you just type `x` in the console, after a few moments, it will print out everything that is inside that variable. If you scroll back to the top of that, you'll see:
 
 ```
 

@@ -43,7 +43,7 @@ import json
 __author__ = "your-name"
 ```
 
-The first bit tells us this is a python file. The next bit tells us what the file is for. The `import` tells python that we'll need a module called `requests` which lets us grab materials from the web, and `json` which helps us deal with json formatted data. The final bit says who wrote the script.
+The first bit tells us this is a python file. The next bit tells us what the file is for. The `import` tells python that we'll need a module called `requests` which lets us grab materials from the web, and `json` which helps us deal with json formatted data. The final bit says who wrote the script. **Nb** The default python environment on your machine may or may not have the `requests` and `json` modules installed. If you get an error when you run this script to the effect that 'requests' not found etc, you can install these at the terminal prompt with `pip install requests` and `pip install json`. 
 
 2. Now we're going to define some variables to hold the bit of the search url up to where the `?` occurs - everything after the question mark are the parameters we want the API to search. We create the api_searh_url, define the parameter we want to search for, and define how we want the results returned to us. Add the following to your script:
 
