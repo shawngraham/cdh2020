@@ -97,10 +97,10 @@ See what happened there? We created a variable called `X` (could've called it `n
 {{< notice information "Error on 'getURL'" >}}
 Windows users _might_ get an error about the 'getURL' command. This command is part of the RCurl package, and plumbing the chain of dependencies to fix this is beyond us at the moment. Instead, since there is more than one way to achieve our goals, we'll use this workaround instead:
 
-```
 x <- "https://raw.githubusercontent.com/shawngraham/exercise/gh-pages/CND.csv"
+
 documents <- read.csv(x)  
-```
+
 {{< /notice >}}
 
 Anytime there is data on the web that ends with `.csv`, you can load it into your work like this. (For instance, the Canadian Science and Technology museum makes a lot of its collections data available that way; a slightly edited copy of that is at the website for another course I teach, at [https://dhmuse.netlify.app/data/cstmc-CSV-en.csv](dhmuse.netlify.app/data/cstmc-CSV-en.csv). You could try loading _that_ data in if you're ambitious. )
