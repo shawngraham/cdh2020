@@ -94,7 +94,7 @@ x <- getURL("https://raw.githubusercontent.com/shawngraham/exercise/gh-pages/CND
 
 See what happened there? We created a variable called `x` (could've called it `newspapers` or whatever you like) and told R to load the page url and deposit its results _into_ that variable.
 
-{{< notice information "Error on 'getURL'" >}}
+{{< notice warning "Error on 'getURL'" >}}
 Windows users _might_ get an error about the 'getURL' command. This command is part of the RCurl package, and plumbing the chain of dependencies to fix this is beyond us at the moment.
 {{< /notice >}}
 
@@ -105,7 +105,6 @@ x <- "https://raw.githubusercontent.com/shawngraham/exercise/gh-pages/CND.csv"
 
 documents <- read.csv(x)  
 ```
-
 
 Anytime there is data on the web that ends with `.csv`, you can load it into your work like this. (For instance, the Canadian Science and Technology museum makes a lot of its collections data available that way; a slightly edited copy of that is at the website for another course I teach, at [https://dhmuse.netlify.app/data/cstmc-CSV-en.csv](dhmuse.netlify.app/data/cstmc-CSV-en.csv). You could try loading _that_ data in if you're ambitious. )
 
