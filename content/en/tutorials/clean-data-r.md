@@ -45,7 +45,7 @@ If you know you only need to use one or two specific packages, it's best practic
 
 ## Loading your data
 
-Now that we have the tools we need, we can start cleaning our data by "reading" it in to the program. We're going to use [this data](/data/fairy-elements); right-click and save as to the folder where you're working with R OR copy the url and change the code below appropriately. (Later on, you'll want ['devilappearence.csv'](/data/devilappearence.csv) too.)
+Now that we have the tools we need, we can start cleaning our data by "reading" it in to the program. We're going to use [this data](/data/fairy-elements.csv); right-click and save as to the folder where you're working with R OR copy the url and change the code below appropriately. (Later on, you'll want ['devilappearence.csv'](/data/devilappearence.csv) too.)
 
 
 ```R
