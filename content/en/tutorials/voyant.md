@@ -83,7 +83,7 @@ You can add words to the 'stoplist' tp tell Voyant to filter those words out - t
 
 ### Build Your Own Corpus
 
-1. Search the Chronicling America database for articles of interest; say you're interested in how Canada has been represented to the everyday reader of newspapers in the US. Use what you learned in week 2 to assemble the data.
+1. Search the Chronicling America database for articles of interest; say you're interested in how Canada has been represented to the everyday reader of newspapers in the US. Use what you learned in part two to assemble the data.
 2. Arrange each article in a spreasheet (use Microsoft Excel or Google Sheets), such that you have the following:
 
 |date|headline|article-text|
