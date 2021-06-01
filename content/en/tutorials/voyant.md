@@ -81,9 +81,9 @@ You can add words to the 'stoplist' tp tell Voyant to filter those words out - t
 ![stoplist](/images/voyant/stopwords1.png)
 ![stoplist2](/images/voyant/stoplist2.png)
 
-### Build Your Own Corpus
+### Going a Bit Further: Build Your Own Corpus
 
-1. Search the Chronicling America database for articles of interest; say you're interested in how Canada has been represented to the everyday reader of newspapers in the US. Use what you learned in part two to assemble the data.
+1. Search the Chronicling America database for articles of interest; say you're interested in how Canada has been represented to the everyday reader of newspapers in the US. Use what you learned in part two to assemble the data (eg, you'll need to be familiar with the [APIs tutorial](/tutorials/apis)).
 2. Arrange each article in a spreasheet (use Microsoft Excel or Google Sheets), such that you have the following:
 
 |date|headline|article-text|
@@ -93,7 +93,7 @@ You can add words to the 'stoplist' tp tell Voyant to filter those words out - t
 
 Save it as `.xlsx`. Import it into Voyant. Share your corpus with your classmates. Do some initial explorations - does anything jump out at you?
 
-### Going Further
+### Going A Lot Further
 
 Voyant Tools lives on a server in Montreal. When we use its web interface, we are transmitting data back and forth from our machine to the machine in Montreal. There's no necessary guarantee that anything we share couldn't be intercepted somehow. If you are working with sensitive materials - oral history transcripts, say - you ought not to be using a web-based tool to analyze them. There is also the issue of storage. Materials that are uploaded to Voyant Tools can and do get deleted eventually if they are not regularly accessed.
 
