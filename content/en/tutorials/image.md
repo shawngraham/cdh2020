@@ -23,7 +23,7 @@ There's a lot you can do, and there are many different approaches. Here, we'll u
 4. Upload to Imj here: [http://www.zachwhalen.net/pg/imj/](http://www.zachwhalen.net/pg/imj/)
 5. Try the different visualization tools. There is no 'right' answer to the question of visualization here. Instead, you are trying to 'deform' your perspective, you're trying to get a large-scale overview, of interesting patterns that might be present. Some tools might give you more intuitively sensical results; but remember Matthew Lincoln's warnings against 'confabulation'... You might find, when you plot hue against brightness, that some interesting clustering seems to happen. Having spotted a pattern, jump back into the corpus to see why that might be the case...
 6. Go back to the Internet Archive, see if you can find other interesting image corpora to explore. How ambitious are you? [Here are one million album covers!](https://archive.org/details/audio-covers). [Here are more magazines!](https://archive.org/search.php?query=magazine+collections&page=2). With a bit of creativity, you could also grab all of [Maclean's Magazine](https://archive.macleans.ca/issues) for some CanCon.
-7. Download your results, add them to your notes and repo for this week.
+7. Download your results, add them to your notes and your current repo.
 
 ![a not useful visualization](/images/imj/barcode.png)
 
