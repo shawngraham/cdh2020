@@ -9,8 +9,8 @@ author: "Shawn Graham"
 
 ## To be completed by May 13th
 
-{{< notice warning "If you've just joined the course and it's now May 13th" >}}
-_If you joined the course late and it is now May 13th or later, [contact Dr. Graham immediately; click here for contact details](docs/6-contact/)_.
+{{< notice warning "Heads up:" >}}
+_If you joined the course late and it is now May 13th or later, [contact Dr. Graham immediately; click here for contact details](/docs/6-contact/)_.
 {{< /notice >}}
 
 ### Watch

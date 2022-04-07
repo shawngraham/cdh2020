@@ -56,7 +56,7 @@ I might sometimes fork your work, pull it down onto my machine, make changes tha
 
 ---
 
-6. Give it a reasonable name; in the illustration I went with 'week one' but 'part one' or somethine else reasonable is fine; tick the 'initialize with a readme' box, and hit the green commit button:
+6. Give it a reasonable name; in the illustration I went with 'week one' but 'demo' or 'test' or something else reasonable is fine; tick the 'initialize with a readme' box, and hit the green commit button:
 
 ![new repo settings](/images/github/github-new-repo-settings.png)
 
@@ -66,7 +66,7 @@ I might sometimes fork your work, pull it down onto my machine, make changes tha
 
 ![dismiss actions](/images/github/github-dismiss-actions.png)
 
-Ta Da! You now have a github account, and you've created your first repository. **Going Forward** create a new repository for each course part's work/reflection. You can create a new repository from the plus sign in the top right corner:
+Ta Da! You now have a github account, and you've created your first repository. **Going Forward** remember that you can create a new repository from the plus sign in the top right corner:
 
 ![another new repo](/images/github/new-repo.png)
 
@@ -90,6 +90,36 @@ Once you've done that, you'll be at your Github user page:
 10. **Private Repo**: Then find my username `shawngraham`, and add me:
 ![add shawngraham](/images/github/add-username-private-repo.png)
 
+### Fork - make a copy - of the HIST 3814a repo
+
+We're going to start with an act of collaboration. I have already made a repository for you called [`hist 3814a starter`](https://github.com/shawngraham/hist3814a-starter). If you open that link in a new tab - and you're logged into Github - you can click on the 'fork' button at the top right of the page to make a copy (the metaphor here is botanical - by forking the repository, you create a new branch).
+
+- change visibility
+- make private
+- add me as a collaborator
+
+
+### Making a new text file (and/or a folder) on Github
+
+You can make a new text file by clicking on the 'add file' button and then the 'create new file' option; The new file screen will open and the cursor will be blinking in the box where you write the filename. When you make a new markdown text file **remember to always use .md as the file extension** in the name.
+
+You can also create subfolders at this point; Github will understand that if you use a ``\`` in the filename box, you are indicating a folder: if you typed `subfolder-name-goes-here\my-new-file.md` it will automatically create `my-new-file.md` in the `subfolder-name-goes-here` subfolder.
+
+<video controls>
+  <source src="/data/subfolder.mp4" type="video /mpeg">
+</video >
+
+When you are making a new text file on Github, you can specify headers, links, images, bullets, blockquotes and so on by using [markdown conventions](https://guides.github.com/features/mastering-markdown/.)
+
+The two videos below might be a bit clearer on youtube itself.
+
+{{<youtube 2SeeKYWXbrE >}}
+
+### Uploading a file into Github
+
+You can add new files from your computer by dragging and dropping them into the main repository (ie, the screen on github that displays all of the files in the repository as a list). At the end of this video, I show you how to display the image in the text of the reflection.
+
+{{<youtube muKAh_j3Ogs >}}
 
 ### Setting up a 'repository' for your work
 
@@ -114,27 +144,6 @@ If this is you, do not despair.
 
 Ta da! You can now go to `github.com\<your-user-name>\your-repo` and you'll see it all there tickety boo.
 
-### Making a new text file (and/or a folder) on Github
-
-You can make a new text file by clicking on the 'add file' button and then the 'create new file' option; The new file screen will open and the cursor will be blinking in the box where you write the filename. When you make a new markdown text file **remember to always use .md as the file extension** in the name.
-
-You can also create subfolders at this point; Github will understand that if you use a ``\`` in the filename box, you are indicating a folder: if you typed `subfolder-name-goes-here\my-new-file.md` it will automatically create `my-new-file.md` in the `subfolder-name-goes-here` subfolder.
-
-<video controls>
-  <source src="/data/subfolder.mp4" type="video /mpeg">
-</video >
-
-When you are making a new text file on Github, you can specify headers, links, images, bullets, blockquotes and so on by using [markdown conventions](https://guides.github.com/features/mastering-markdown/.)
-
-The two videos below might be a bit clearer on youtube itself.
-
-{{<youtube 2SeeKYWXbrE >}}
-
-### Uploading a file into Github
-
-You can add new files from your computer by dragging and dropping them into the main repository (ie, the screen on github that displays all of the files in the repository as a list). At the end of this video, I show you how to display the image in the text of the reflection.
-
-{{<youtube muKAh_j3Ogs >}}
 
 ### Going further
 
