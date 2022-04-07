@@ -80,7 +80,7 @@ Once you've done that, you'll be at your Github user page:
 
 ---
 
-8. Add me as a collaborator to this and subsequent **private** repositories:
+8. Add me as a collaborator to this repository:
 
 ![manage access](/images/github/add-user-to-private-repo-1.png)
 
@@ -103,15 +103,11 @@ We're going to start with an act of collaboration. I have already made a reposit
 
 You can make a new text file by clicking on the 'add file' button and then the 'create new file' option; The new file screen will open and the cursor will be blinking in the box where you write the filename. When you make a new markdown text file **remember to always use .md as the file extension** in the name.
 
-You can also create subfolders at this point; Github will understand that if you use a ``\`` in the filename box, you are indicating a folder: if you typed `subfolder-name-goes-here\my-new-file.md` it will automatically create `my-new-file.md` in the `subfolder-name-goes-here` subfolder.
-
-<video controls>
-  <source src="/data/subfolder.mp4" type="video /mpeg">
-</video >
+You can also create subfolders at this point; Github will understand that if you use a ``\`` in the filename box, you are indicating a folder: if you typed `subfolder-name-goes-here\my-new-file.md` it will automatically create `my-new-file.md` in the `subfolder-name-goes-here` subfolder. [This video illustrates the process](/data/subfolder.mp4).
 
 When you are making a new text file on Github, you can specify headers, links, images, bullets, blockquotes and so on by using [markdown conventions](https://guides.github.com/features/mastering-markdown/.)
 
-The two videos below might be a bit clearer on youtube itself.
+The videos below might be a bit clearer on youtube itself.
 
 {{<youtube 2SeeKYWXbrE >}}
 
@@ -121,7 +117,7 @@ You can add new files from your computer by dragging and dropping them into the 
 
 {{<youtube muKAh_j3Ogs >}}
 
-### Setting up a 'repository' for your work
+### Setting up a 'repository' for a project
 
 A 'repository' is just a folder that you've shared on Github. There are two ways to do this; the easy way and the more complex way. Luck you, you have _already_ done the easy way - you selected the `initialize with a readme`, and it's already present in your browser!
 
