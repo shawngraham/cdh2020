@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>1. Course Description</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header>
+<h1 class="title">1. Course Description</h1>
+<p class="date">2020-01-28T00:39:09+09:00</p>
+</header>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-sAuoRQgBh0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<h3 id="hist3814odigh3814o-summer-2021-department-of-history-carleton-university">HIST3814O|DIGH3814O Summer 2022 Department of History, Carleton University</h3>
+<p>This is a methods course about learning to use the huge variety of digitized historical resources available in the world, including some perhaps unconventional sources such as social media. You will learn some of the habits of doing born-digital work, including the doing of digital history as an outward facing public history.</p>
+<p>{{&lt; alert theme=“info” &gt;}} <strong>You do not need to be ‘techy’ to be successful in this course! You just need to be diligent, honest, and open.</strong> {{&lt; /alert &gt;}}</p>
+<p>You will read, explore, and discuss the class materials via various online tools (speaking of which, there is a tool called <code>Hypothes.is</code> embedded into this website- highlight a word on this page and see what happens. If you’d like to use hypothesis for your own reading online, to annotate what you find and ultimately download it, <a href="/tutorials/hypothesis">here’s some guidance</a>). We do not use Carleton’s learning management system in this course. We work on the open web instead. Successful completion of this class involves doing a series of tutorials designed to push you out of your comfort zone, AND to be a collegial and generous scholar engaging with, and helping your peers to achieve success. What is challenging for one student will not necessarily be challenging for another, and I expect you to push yourself and pull others along as you go. Thus open and honest reporting of what works and what hasn’t worked, is a meaningful aspect of this course. <strong>You don’t need to be techy to succeed, but you do need to be willing to embrace when things go ‘wrong’.</strong></p>
+<p>{{&lt; alert theme=“warning” &gt;}} It’s super important that you are ok with tech things NOT working, and recording/reporting when you get stuck. You can ask for help in the public Discord, or you can send me private messages. **I WANT to hear from you when things break: <em>that’s where the learning happens!</em> {{&lt; /alert &gt;}}</p>
+<p>In my experience, trying to complete this course in a compressed time frame is extremely difficult. Stay on task, complete things by the due dates. I prioritize responding to recent work.</p>
+<p>This course aims to change how you think about, and think with, digitized resources and digital tools. I am not trying to turn you into a coder. Rather, I am trying to turn you into a historian who is thoughtful and reflective about the ways digital tools transform what it is we know about the past and how we come to know it.</p>
+<h3 id="outcomes">Outcomes</h3>
+<ol type="1">
+<li>This course will enable you to analyze and assess historical documents, artifacts, and other primary sources through the lens of digital history methods, critically applied, and you will develop awareness of the ways digital tools change what it is possible to know about the past.</li>
+<li>At the same time, this ability will enable you to analyze and assess critically digital tools and methods from a historical perspective.</li>
+<li>Given that this is an online course, another outcome will be your ability to conduct such research independently. However, no one operates in a vacuum; digital historians collaborate to troubleshoot or develop technologies, and through open practices to data sharing and reuse, learn to build upon each others’ work in a collaborative fashion.</li>
+<li>Another outcome will be the ability to translate the results of digital methods into historical argument.</li>
+<li>Digital work is often necessarily therefore a kind of public work, and a final outcome therefore will be a professionalized presence online.</li>
+</ol>
+<h3 id="texts">Texts</h3>
+<p>See the <a href="/week">weekly work</a> section. All readings are open access.</p>
+<h3 id="real-names-policy">Real Names Policy</h3>
+<p>You do not need to use your real name or identity on any public-facing work that you do in this course. Nor do you need to explain to me that you wish to use a pseudonym. It is sufficient that you send an email to me with the following message:</p>
+<p>‘I would like to use the following username in all public-facing work: xxxxxxxx’</p>
+<p>…where xxxxx is the name you have selected. For safety’s sake, if you decide to use a pseudonym, do not use one that you have used on any other website or social media platform.</p>
+<h3 id="when-life-intervenes">When Life Intervenes</h3>
+<p>There’s nothing we can’t roll with, in this class. That said, it is a compressed time frame: so if something comes up, just let me know:</p>
+<p>{{&lt; notice success “Important” &gt;}} You don’t have to share the details with me. It is enough for me to know that something has intervened. I trust you. {{&lt; /notice &gt;}}</p>
+<p>When something comes up and this course has to move to the backburner, contact me and we can <strong>figure out something else to do, or something else that will help you be successful here</strong>. It’s our course - we can change things up as we need to.</p>
+<p>The six weeks of the course are divided into four parts. Each part involves completing to the best of your ability a series of exercises; you will document your progress in a log that you will keep online. <strong>Log entries are required to be completed by the Sunday evening at the end of the relevant part.</strong> Late work can be accepted <em>only</em> in consultation with Dr. Graham. Otherwise, late work will not be graded nor accepted.</p>
+<ul>
+<li>Part 1, Contextualizing Digital History; work is due by the end of day, May 10</li>
+<li>Part 2, Wrangling Digital Data; work is due by the end of day, May 23</li>
+<li>Part 3, Arguing/Exploring/Visualizing Data; work is due by the end of day, June 6th</li>
+<li>Part 4, Communicating Digital History; work is due by the end of day, June 16th</li>
+</ul>
+<p>{{&lt; notice success “Important” &gt;}} There is no midterm. There is no final exam. {{&lt; /notice &gt;}} ### Repositories, logs, and reflections</p>
+<p>In each part of this course, there are things to read and reflect on, and things to do, depending on which <strong>sequence</strong> you choose to follow. <strong>Everyone’s journey is different</strong>. Digital methods are more a matter of practice and time than they are of aptitude.</p>
+<p>You will collect all of your work together and keep track of it in an account you will create on Github.com.</p>
+<p>For each ‘part’ of this course, you will create a ‘repository’. Into this repository you will deposit all of the digital ephemera you create, uploading it by the due date. You will then submit the link to your repository using the form at the bottom of the relevant page on this website. You may submit work at any time before the due date.</p>
+<p>{{&lt; notice success “Important” &gt;}} Each repository will also include at least two text files: <code>log.md</code> and <code>reflection.md</code>. These are just text files that use the .md file extension to signal that you will use ‘markdown’ to indicate things like bold text, bullet points, headers, links, images. {{&lt; /notice &gt;}}</p>
+<p>The log file is like a lab notebook - it should contain your notes-to-self that would enable you to <em>redo</em> any of the activities at some time in the future, or to resume where you left off.</p>
+<p>The reflection file is the joined-up thinking that connects what you’ve read with what you’ve done. I expect you will necessarily have citations in there to the things you’ve read, or links to websites etc. You can use author-date conventions, with a full reference at the end of the file.</p>
+<p>Because of the extremely compressed timeframe for this course, late work can be accepted only through arrangement with Dr. Graham; otherwise it will not be accepted nor graded.</p>
+<p><strong>If something comes up</strong> let Dr. Graham know as soon as possible so that arrangements can be made. I want you to be successful; if something comes up we can adapt accordingly. If you do not let me know, then I cannot help you.</p>
+<p>{{&lt; notice warning “Warning!” &gt;}} Do not attempt to ‘speedrun’ this course (ie leaving all of the coursework for one massive push) at the last moment; that work will be considered late and <strong>will not be graded</strong>. {{&lt; /notice &gt;}}</p>
+<p>In terms of technical work, I am <strong>not</strong> looking for ‘correct’ answers. I am, rather, looking for your evidence of thinking through the meaning of the <strong>process</strong>: what worked, what didn’t, why, and what that might mean for you as a historian. I am looking for you to tie your process explicitly to the readings. I am looking to see if the conversations you have with me or your peers (or indeed elsewhere on the web or in other courses) are causing you to reflect on the what/why/how/ of what you do.</p>
+<h3 id="evidence">Evidence</h3>
+<p>Therefore, I am looking for the following kinds of evidence (each <a href="/week">part</a> will specify what needs to be done):</p>
+<ul>
+<li>logs that keep track of what you actually <em>tried</em></li>
+<li>reflection on that <em>process</em></li>
+<li>engagement with the readings and materials and your classmates (which might be demonstrated many different ways)</li>
+<li>evidence for your growth as a historian over this course</li>
+</ul>
+<p>At the end of each part, you will provide to me through a form that can be found on each relevant page the links to your evidence for me to consider, by Sunday evening.</p>
+<p>I will return feedback to you within two or three days. I will write you a note giving you my perspective on what you’ve done (using the lens of the learning outcomes), and offering advice.</p>
+<p>This feedback will also be mapped against the learning outcomes, so that you know how you are progressing throughout the course.</p>
+<h3 id="the-exit-ticket-optional">The Exit Ticket (Optional)</h3>
+<p>The exit ticket can be a summary assessment exercise that pulls all the different strings of your work together into a strong cord.</p>
+<p>This is <strong>optional</strong>, and can be used to give me greater context for your work (open format). If you opt to do this, you will reflect on where you started and where you’ve gotten to, and you will indicate how you feel you’ve done against the <a href="docs/2-learning-outcomes">learning outcomes</a> (setting your own grade); if I agree with you, the grade for the Exit Ticket can be used to override the grade suggested by parts 1-4 .</p>
+<p>If you’ve never done digital work before, it might be that you never quite manage to get as many of the tech things working as you might’ve wanted: but you now know <em>what you didn’t know before</em>. That’s a win. You might be a computer science minor and the tech materials don’t present you with much challenge: but figuring out how to tell the compelling story was very difficult for you <em>but you’re better at it now</em>. Your ‘exit ticket’ can explain to me your particular context, and it will point to the evidence that demonstrates how you’ve moved along from where you were at the beginning to where you are now.</p>
+<p>If I agree with your assessment, then that is the grade you will receive. <strong>When I have disagreed in previous courses</strong> this has been, 9.5 times out of 10, to <em>raise</em> the grade: y’all are too hard on yourselves. If I have disagreed and felt that you’ve overstated things - if you were the 0.5 out of 10 - we would talk and come to an agreement.</p>
+<p>The Exit Ticket, if you choose to use it, should be submitted by the last day of the early summer term. If you should require more time, you need merely to let me know; no questions asked.</p>
+<h3 id="grading">Grading</h3>
+<p>Remembering the <a href="2-docs/learning-outcomes">learning outcomes</a>,</p>
+<table>
+<thead>
+<tr class="header">
+<th>Learning Outcome</th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
+<th>eg. Joe Q Student</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. analytical ability</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>2. methodology</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>3. collaboration</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>4. argumentation</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>X</td>
+</tr>
+<tr class="odd">
+<td>5. professionalization</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>…5/5 would be an A, 4/5 would be a B, 3/5 would be a C, 2/5 a D.</p>
+<p>{{&lt; alert theme=“info” &gt;}} In this example, based on my consideration of Joe Q Student’s evidence and the feedback I’d written him over the six weeks, it seemed to me that he did what he needed to do (satisfactorily) for 3 out of the 5 outcomes and so earned a C. However, his exit ticket might bring him up. {{&lt; /alert &gt;}}</p>
+<h3 id="percentage-breakdown">Percentage Breakdown</h3>
+<p>I am required by the University to provide a percentage breakdown.</p>
+<ul>
+<li>Part 1: 10%</li>
+<li>Part 2: 20%</li>
+<li>Part 3: 30%</li>
+<li>Part 4: 40%</li>
+</ul>
+<p>I reserve the right to adjust those percentages to take into account the particular circumstances of the student, or to override them completely in favour of a compelling Exit Ticket.</p>
+<p>{{&lt; notice success “Important” &gt;}}The following are the University regulations common to all History courses. {{&lt; /notice &gt;}}</p>
+<h3 id="copies-of-written-work-submitted">COPIES OF WRITTEN WORK SUBMITTED</h3>
+<p>Always retain for yourself a copy of all essays, term papers, written assignments or take-home tests submitted in your courses.</p>
+<h3 id="plagiarism">PLAGIARISM</h3>
+<p>The University Senate defines plagiarism as “presenting, whether intentionally or not, the ideas, expression of ideas or work of others as one’s own.” This can include: + reproducing or paraphrasing portions of someone else’s published or unpublished material, regardless of the source, and presenting these as one’s own without proper citation or reference to the original source; + submitting a take home examination, essay, laboratory report or other assignment written, in whole or in part, by someone else; + using ideas or direct, verbatim quotations, or paraphrased material, concepts, or ideas without appropriate acknowledgment in any academic assignment; + using another’s data or research findings; + failing to acknowledge sources through the use of proper citations when using another’s works and/or failing to use quotation marks; + handing in “substantially the same piece of work for academic credit more than once without prior written permission of the course instructor in which the submission occurs.”</p>
+<p>Plagiarism is a serious offence which cannot be resolved directly with the course’s instructor. The Associate Dean of the Faculty conducts a rigorous investigation, including an interview with the student, when an instructor suspects a piece of work has been plagiarized. Penalties are not trivial. They can include a final grade of “F” for the course.</p>
+<p>{{&lt; notice success “Important” &gt;}} A note from Dr. Graham: I am <strong>completely</strong> ok with you collaborating with a peer in this class or elsewhere on any of the work you do in this class <strong>provided</strong> that you fully acknowledge who you worked with and that you indicate how you worked together, who did what, and so on. Digital history isn’t done in a vacuum. Unacknowledge help however is not cool. {{&lt; /notice &gt;}}</p>
+<h3 id="course-sharing-websites-and-copyright">COURSE SHARING WEBSITES and COPYRIGHT</h3>
+<p>To the degree that I am able, all original content on this course website is released under creative commons licensed. That means you may copy and share and reuse it, but you must attribute <a href="https://creativecommons.org/licenses/by-nc/4.0/">under the following terms - click through.</a>.</p>
+<h3 id="statement-on-class-conduct">STATEMENT ON CLASS CONDUCT</h3>
+<p>The Carleton University Human Rights Policies and Procedures affirm that all members of the University community share a responsibility to: + promote equity and fairness, + respect and value diversity, + prevent discrimination and harassment, and + preserve the freedom of its members to carry out responsibly their scholarly work without threat of interference.</p>
+<p>Carleton University Equity Services states that ‘every member of the University community has a right to study, work and live in a safe environment free of discrimination or harassment’. [In May of 2001 Carleton University’s Senate and Board of Governors approved the Carleton University Human Rights Policies and Procedures. The establishment of these policies and procedures was the culmination of the efforts of the Presidential Advisory Committee on Human Rights and a Human Rights Implementation Committee.]</p>
+<h3 id="grading-system">GRADING SYSTEM</h3>
+<p>Letter grades assigned in this course will have the following percentage equivalents:</p>
+<p>Grade |—–|—–|—-|—-| |A+ = 90-100 (12) | B = 73-76 (8) | C - = 60-62 (4) | F= 0-49 (0) – Failure: no academic credit | |A = 85-89 (11) | B - = 70-72 | (7) D+ = 57-59 (3) | |<br />
+| A - = 80-84 (10) | C+ = 67-69 (6) | D = 53-56 (2) | | | B+ = 77-79 (9) | C = 63-66 (5) | D - = 50-52 (1) | |</p>
+<p>The following additional final course grades may be assigned by instructors: <em>DEF</em> Official deferral of final exam (see “Petitions to Defer”) <em>GNA</em> Grade not available. This is used when there is an allegation of an academic offence. The notation is replaced with the appropriate grade for the course as soon as it is available. <em>IP</em> In Progress – a notation (IP) assigned to a course by a faculty member when: At the undergraduate level, an undergraduate thesis or course has not been completed by the end of the period of registration. <em>WDN</em> Withdrawn. No academic credit, no impact on the CGPA. WDN is a permanent notation that appears on the official transcript for students who withdraw after the full fee adjustment date in each term (noted in the Academic Year section of the Calendar each term). Students may withdraw on or before the last day of classes.</p>
+<p>Standing in a course is determined by the course instructor subject to the approval of the Faculty Dean. This means that grades submitted by the instructor may be subject to revision. No grades are final until they have been approved by the Dean.</p>
+<h3 id="withdrawal-without-academic-penalty">WITHDRAWAL WITHOUT ACADEMIC PENALTY</h3>
+<p><strong>May 13, 2021</strong> Last day for registration and course changes</p>
+<p><strong>May 21, 2021</strong>: Last day for a full fee adjustment when withdrawing from early summer and full summer courses (financial withdrawal). Withdrawals after this date will result in a permanent notation of WDN on the official transcript.</p>
+<h3 id="requests-for-academic-accommodations">REQUESTS FOR ACADEMIC ACCOMMODATIONS</h3>
+<p>You may need special arrangements to meet your academic obligations during the term. For an accommodation request the processes are as follows:</p>
+<p><strong>Pregnancy obligation</strong>: write to the professor with any requests for academic accommodation during the first two weeks of class, or as soon as possible after the need for accommodation is known to exist. For more details see https://carleton.ca/equity/wp-content/uploads/Student-Guide-to-Academic-Accommodation.pdf</p>
+<p><strong>Religious obligation</strong>: write to the professor with any requests for academic accommodation during the first two weeks of class, or as soon as possible after the need for accommodation is known to exist. For more details see https://carleton.ca/equity/wp-content/uploads/Student-Guide-to-Academic-Accommodation.pdf</p>
+<p><strong>Accommodation for Student Activities</strong>: write to the professor with any requests for academic accommodation during the first two weeks of class, or as soon as possible after the need for accommodation is known to exist. For more details see https://carleton.ca/senate/wp-content/uploads/Accommodation-for-Student-Activities-1.pdf</p>
+<p><strong>Survivors of sexual violence</strong>: As a community, Carleton University is committed to maintaining a positive learning, working and living environment where sexual violence will not be tolerated, and is survivors are supported through academic accommodations as per Carleton’s Sexual Violence Policy. For more information about the services available at the university and to obtain information about sexual violence and/or support, visit: https://carleton.ca/sexual-violence-support/wp-content/uploads/Sexual-Violence-Policy-December-1-2016.pdf</p>
+<p><strong>Academic Accommodations for Students with Disabilities</strong>: The Paul Menton Centre for Students with Disabilities (PMC) provides services to students with Learning Disabilities (LD), psychiatric/mental health disabilities, Attention Deficit Hyperactivity Disorder (ADHD), Autism Spectrum Disorders (ASD), chronic medical conditions, and impairments in mobility, hearing, and vision. If you have a disability requiring academic accommodations in this course, please contact PMC at 613-520-6608 or pmc@carleton.ca for a formal evaluation. If you are already registered with the PMC, contact your PMC coordinator to send me your Letter of Accommodation at the beginning of the term, and no later than two weeks before the first in-class scheduled test or exam requiring accommodation (if applicable). After requesting accommodation from PMC, meet with me to ensure accommodation arrangements are made. Please consult the PMC website for the deadline to request accommodations for the formally-scheduled exam (if applicable).</p>
+<h3 id="petitions-to-defer">PETITIONS TO DEFER</h3>
+<p>Students unable to write a final examination because of illness or other circumstances beyond their control or whose performance on an examination has been impaired by such circumstances may apply within five working days to the Registrar’s Office for permission to write a deferred examination. The request must be fully and specifically supported by a medical certificate or other relevant documentation. Only deferral petitions submitted to the Registrar’s Office will be considered.</p>
+<h3 id="addresses-613-520-2600-phone-ext.">ADDRESSES (613-520-2600, phone ext.)</h3>
+<ul>
+<li>Department of History (2828) 400 PA</li>
+<li>Registrar’s Office (3500) 300 Tory</li>
+<li>Academic Advising Centre (7850) 302 Tory</li>
+<li>Paul Menton Centre (6608) 500 Unicentre</li>
+<li>Centre for Student Academic Support – Study Skills, Writing Tutorials, Bounce Back (3822) 4th fl Library</li>
+</ul>
+<p>Application for Graduation Deadlines + Spring Graduation (June): April 1 + Fall Graduation (November): September 1 + Winter Graduation (February): December 1</p>
+<p>Dr. Graham can be found online at</p>
+<p>shawn dot graham at carleton dot ca</p>
+<p>or on Twitter at <span class="citation" data-cites="electricarchae">[@electricarchae]</span>(http://twitter.com/electricarchaeo).</p>
+<p>He will be present in our Crafting Digital History discord server nearly every day.</p>
+<p>He will keep ‘student hours’ in Discord on Wednesday afternoons, 1 - 3 ish. Drop by; his audio is on; he’s happy to chat with you!</p>
+<p>If we ever get out of lockdown, and you’re in Ottawa, he often haunts the Library coffeeshop.</p>
+<p>This course originally was a face-to-face class, over 13 weeks. That let us get into the nitty-gritty of different approaches and platforms; it gave us the opportunity to have guest speakers; and most importantly, it gave us the time to really grapple with different kinds of historical ‘capta’ (see Drucker on <a href="http://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html">‘capta versus data’</a>). But, needs evolved and eventually the course moved fully online. Now only 6 weeks long, a lot of things have been cut, compressed, or rethought entirely. I do not aim for <em>coverage</em>. Rather, I am trying to help you learn the skills that you will need to <em>uncover</em> whatever aspect of digital history method and thought that will help you with your research goals. A big part of that is trying to teach <a href="https://thedigitalpress.org/failing-gloriously/">how to deal with what might feel like ‘failure’, on first blush</a>.</p>
+<h3 id="social-contact">Social Contact</h3>
+<p>Another problem with moving fully online was the <em>isolation</em>. Working with digital tools, especially when you’re not overly familiar with how they work - or even the underlying metaphors that would help you make sense of what’s going on - is frustrating. Bad enough when you have classmates you see twice a week and can at least complain with over coffee later; extremely awful when you’re on a bad internet connection and everyone thinks that you’re not really doing schoolwork.</p>
+<p>Initially, I used Slack as a way of trying to meet that need for human connection that makes learning <em>meaningful</em>. It worked, more or less, but if there was a conversation going on and you missed part of it, it could just feel overwhelming and impenetrable.</p>
+<p>And it was one more damned thing to install. One more damned thing to get a password for.</p>
+<p>I tried Zulipchat another year. Same problem again.</p>
+<p>This year, as I write this, I’m trying Discord, for its voice and screensharing integration. We’ll see how that goes.</p>
+<h3 id="the-workbook">The Workbook</h3>
+<p>I put all of the materials for the course into an online workbook, built from text files that used <a href="https://daringfireball.net/projects/markdown/">markdown</a> conventions to indicate headings, links, images and so on. The website for the workbook would then be generated using <a href="https://mkdocs.org">mkdocs</a>, a python library for generating static websites. It worked, but over the years I kept adding more and more to it, links would get broken or websites would go offline… it was a lot of work to prune it, keep it up to date.</p>
+<p>And then COVID-19 happened.</p>
+<p>I normally have a lot of time to rethink what needs taught, to prune what has become useless, to add newer resources, newer thinking. But this time around, not so much. I put the older version of the course away, and started trying to build what I thought were the most useful elements: given everything else that is going on, what are the key things I think you ought to do in order to plant the seeds of your eventual engagement with digital history?</p>
+<p>The result is this present website, which combines a number of features of the course that were previously spread across a number of locations. I have also pared down to a more limited number of skill-based exercises so that you have more time to think about the context (historiographical, theoretical) of their potential use. I offer more direction and less freedom-to-choose in terms of the work I think that needs to be done, but the trade off here is that you are more able to share what you are doing with your peers and to find help.</p>
+<p>Which reminds me:</p>
+<p>{{&lt; notice success “Important” &gt;}} Digital History is a team sport. You are <strong>never</strong> expected to power through all of this material on your own in heroic scholarly endeavor. If you need help, ask for help; if you can help, offer it. You are not alone. {{&lt; /notice &gt;}}</p>
+<p>This website is built using Hugo, a static site builder. Static sites are quicker, more secure, and <a href="https://programminghistorian.org/en/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown">separate content from container, thus making them more sustainable</a>. I write all of the content in individual text files, which I can then turn into whatever output - html, pdf, word doc - that I need. My writing is freed from subscription-based software that might lock it in. I push all of the text files onto github (you can see them <a href="https://github.com/shawngraham/cdh2020/tree/master/content/en">here</a>.) Then, I have <a href="http://netlify.com">netlify.com</a> watch those files for any changes. When it spots changes, it uses Hugo to turn them into html, and serves them up at craftingdh.netlify.com.</p>
+<p>Some of the work we do requires working with the command line or the terminal of your computer; I also provide a virtual computer that you can access through your browser so that you don’t have to worry about configuring your <em>particular</em> machine to do any one task. This also allows me to write instructions once, and know that everyone will be able to do it (there are always differences between Mac and PC that trip us up). The virtual computer is provided by a service called <a href="https://mybinder.org">Binder</a>; I set up a folder on Github with the required bits-and-pieces (think of them as lego blocks) that are necessary for a particular task. I then point Binder at that folder, and it spins up a virtual computer with those pieces properly installed. It then gives me a URL that I can share with you - link on it, and boom! a computer in the cloud ready to go.</p>
+<p>All of this is now under the <a href="https://craftingdh.netlify.com/week/">‘weekly work’</a> part of this site. Take your time, annotate the parts that are confusing or troublesome with <a href="https://hypothes.is">hypothes.is</a> and you’ll do well.</p>
+<h3 id="one-last-thing">One last thing</h3>
+<p>I asked Twitter for its thoughts, as you do:</p>
+<p>{{&lt; twitter_simple 1244018171234979840 &gt;}}</p>
+<p>…follow the thread!</p>
+<p><img src="https://licensebuttons.net/l/by-nc/4.0/88x31.png" /></p>
+<p>Original content by Shawn Graham, with subsequent additions and modifications by Rob Blades, is licensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
+<p>Please feel free to reuse exercises in your own course materials, with a link back to the original page.</p>
+<p>Corrections, modifications, additions are welcome; please fork, and then modify accordingly. Once you’re ready, <a href="https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request">make a pull request</a>. The original repository is at <a href="https://github.com/shawngraham/cdh2020" class="uri">https://github.com/shawngraham/cdh2020</a>.</p>
+<p>All contributions will be duly credited.</p>
+<p>HIST3814o, Dr. Shawn Graham</p>
+<p><a href="https://twitter.com/electricarchaeo">on twitter as ‘electricarchaeo’</a> shawn dot graham at carleton dot ca</p>
+<p>Our social space, for conversation, audio/video calls, chat, help, screenshares, and general human contact will be a Discord server. You will receive an invitation email. <strong>You are under no obligation to make use of this</strong>.</p>
+<p>Please read the following sections in turn.</p>
+</body>
+</html>

@@ -1,13 +1,13 @@
 baseURL = "https://craftingdh.netlify.com"
-title = "HIST3814o Crafting Digital History Summer 2020 Edition"
+title = "HIST3814o Crafting Digital History Summer 2022 Edition"
 theme = "zdoc"
-description = "HIST3814o Summer 2020 edition"
+description = "HIST3814o Summer 2022 edition"
 
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 hasCJKLanguage = false
 
-copyright = "Original content by Shawn Graham and Rob Blades licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-nc/4.0/'>Creative Commons Attribution-NonCommercial 4.0 International License</a><br><a rel='license' href='http://creativecommons.org/licenses/by-nc/4.0/'><img alt='Creative Commons License logo' style='border-width:0' src='https://i.creativecommons.org/l/by-nc/4.0/88x31.png' /></a>"
+copyright = "Original content by Shawn Graham and Rob Blades, with additions by Chantal Brousseau licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-nc/4.0/'>Creative Commons Attribution-NonCommercial 4.0 International License</a><br><a rel='license' href='http://creativecommons.org/licenses/by-nc/4.0/'><img alt='Creative Commons License logo' style='border-width:0' src='https://i.creativecommons.org/l/by-nc/4.0/88x31.png' /></a>"
 timeout = 10000
 enableEmoji = true
 paginate = 13

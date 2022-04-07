@@ -9,15 +9,9 @@
   name = "Weekly Work"
   url = "week"
   weight = 2
-
-[[main]]
-  identifier = "blog"
-  name = "News"
-  url = "blog"
-  weight = 3
-
+  
   [[main]]
     identifier = "oa"
-    name = "Open Access Participants"
-    url = "oa"
+    name = "Tutorials"
+    url = "tutorials"
     weight = 3

@@ -1,7 +1,7 @@
 logo = true
 logoText = "HIST3814o"
 logoType = "long" # long, short
-description = "Summer 2020 Edition @Carleton U."
+description = "Summer 2022 Edition @Carleton U."
 
 themeOptions = ["light", "dark"]
 
@@ -34,7 +34,7 @@ github = "https://github.com/shawngraham/cdh2020"
 enableWhoami = true
 myname = "Dr. Shawn Graham"
 email = "shawn.graham@carleton.ca"
-whoami = "Associate Professor"
+whoami = "Full Professor"
 biImageUrl = "https://carleton.ca/history/wp-content/uploads/Shawn-Graham-600x800-200x200.jpg"
 
 # comment
