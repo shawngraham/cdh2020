@@ -15,17 +15,17 @@ Things can get very complicated, but at its simplest, there are only four comman
 
 ### Get Git
 
-#### Windows: 
+#### Windows:
 
-If you have a PC, [click on this link to download and install git](https://git-scm.com/download/win). **Just use all of the suggested default settings when you run the installer**. 
+If you have a PC, [click on this link to download and install git](https://git-scm.com/download/win). **Just use all of the suggested default settings when you run the installer**.
 
-#### MacOS: 
+#### MacOS:
 
 The easiest way to install git in macOS is by simply opening the command line and entering the command `git --version`. You will then be prompted by a pop-up to install it, assuming you don't already have git installed:
 
 ![](images/github/git-prompt.png)
 
-**If that doesn't work** you can also install it via Homebrew. If you never installed Homebrew during the introduction to the command line, [check out Step 3 in the written tutorial](/building/command-line-mac/#step-3-homebrew).
+**If that doesn't work** you can also install it via Homebrew. If you never installed Homebrew during the introduction to the command line, [check out Step 3 in the written tutorial](/tutorials/command-line-mac/#step-3-homebrew).
 
 Once you have Homebrew, all you have to do to install git is run:
 
@@ -33,7 +33,7 @@ Once you have Homebrew, all you have to do to install git is run:
 brew install git
 ```
 
-#### Tutorial Setup 
+#### Tutorial Setup
 + Make a new directory on your computer. Make a few text files and save them in that directory. We'll run our demonstration here.
 + **On a PC**, find the folder in your file explorer; click on it so that's the folder displayed in the address bar at the top of the explorer. Then, click in the address bar and type `cmd` and hit enter. This will open a command prompt window for that folder, allowing you to type commands in directly. On a Mac, go to System Preferences, select Keyboard > Shortcuts > Services. Look for 'New Terminal at Folder' and tick the box. Open your finder; find the folder you created, right-click and select 'open Terminal here'.
 
@@ -77,7 +77,7 @@ Key commands for Mac:
 
 3. Back at the command line, type `git status`. This will tell you whether Git sees any new changes, and crucially, if you have changes that it know you haven't taken a snapshot of yet. Let's remedy that:
 
-4. You can update git's record by adding things: 
+4. You can update git's record by adding things:
     + Individually: `git add <filename>`
     + All at once: `git add -A`
 
@@ -89,19 +89,17 @@ We'll start with Github.
 
 6. Go to Github.com, log in, and hit the big '+' beside your avatar at top right and make a new repository. **Do NOT tick off the 'initialize this repository with a README'**.
 
-7. Let's say I made a new repo called 'demo5'. It's URL would be `https://github.com/shawngraham/demo5`. Take a note of the full URL for your repo. We need to now tell Git on your computer this location. So, in my case, back at the command line, the command would look like this: 
+7. Let's say I made a new repo called 'demo5'. It's URL would be `https://github.com/shawngraham/demo5`. Take a note of the full URL for your repo. We need to now tell Git on your computer this location. So, in my case, back at the command line, the command would look like this:
 ```
 git remote add origin https://github.com/shawngraham/demo5.git
 ```
- 
-**Note** the **.git** at the end of the url! You can actually find this url in your repository here:
 
-![](images/github/github-codedd.png)
+**Note** the **.git** at the end of the url!
 
 
-8. Now that Git knows where to stash a copy of your materials, you can tell it to do so by `push`ing the files from your machine to github: 
+8. Now that Git knows where to stash a copy of your materials, you can tell it to do so by `push`ing the files from your machine to github:
 ```
-git push -u origin master
+git push -u origin main
 ```
 
 ## Keeping your repo updated

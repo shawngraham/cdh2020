@@ -47,11 +47,13 @@ Caswell, M. 'Seeing Yourself in History: Community Archives and the Fight Agains
 
 3. Everybody has to do the [Github](/tutorials/github/) tutorial, to create an account there. Once you've done that, and while signed into Github, go to my [example hist3814a starter repo](https://github.com/shawngraham/hist3814a-starter) and click the 'fork' button to take a copy of it. This will create a new repo in your account called `hist3814a-starter`. It contains templates for how I want you to keep track of your work.
 
-4. Take a look at the suggested sequences of technical work; decide whether you will do the [newcomer sequence](tutorials/1-basic-progression/#newcomer-sequence), the [standard sequence](tutorials/1-basic-progression/#standard-sequence), or the [going-further sequence](tutorials/1-basic-progression/#going-further-sequence). Read and make sure you're clear on [the basic idea behind these tutorials](tutorials/1-basic-progression/#introduction).
+4. Read and make sure you're clear on [the basic idea behind these tutorials and what I am after](tutorials/1-basic-progression/#introduction).
 
-5. Then complete the appropriate tutorials by the due date to the best of your ability.
+5. Take a look at the suggested sequences of technical work; decide whether you will do the [newcomer sequence](tutorials/1-basic-progression/#newcomer-sequence), the [standard sequence](tutorials/1-basic-progression/#standard-sequence), or the [going-further sequence](tutorials/1-basic-progression/#going-further-sequence).
 
-6. Use the template provided in the repo you copied in step 3 to write your log and to write your reflection. [Use markdown conventions to indicate headings, emphasis, bullets, links, etc](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). The reflection prompt is below:
+6. Then complete the appropriate tutorials by the due date to the best of your ability.
+
+7. Use the template provided in the repo you copied in step 3 to write your log and to write your reflection. [Use markdown conventions to indicate headings, emphasis, bullets, links, etc](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). The reflection prompt is below:
 
 > Drawing on what you’ve read (and/or your notes from what you’ve listened to), discuss your idea of what ‘digital history’ might be prior to starting this course, and think through whether any of the materials we’ve seen this week confirm or upset those notions. What kinds of ‘digital silences’ did you encounter? What has excited you? Finally, where do you want to go, with digital history?
 

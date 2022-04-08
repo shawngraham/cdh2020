@@ -186,9 +186,9 @@ I used to include an awful lot of steps here. But **if you're brand new to worki
 
 This is because an 'uninitialized' git repo is one that is waiting for you to connect a folder on your personal machine to the space set aside for it on github, and to do that, you need to install Git and do a bunch of configuration operations. And for the purposes of this class, we do not need to do that.
 
-If however you want to explore using git and github from your command line or terminal, let me know and I can share some materials with you.
+If however you want to explore using git and github from your command line or terminal, [mac folks start here](/tutorials/command-line-mac) and [windows folks start here](/tutorials/command-line-win), then check out [some more github](/tutorials/more-github/).
 
-If you just can't wait, and you're ambitious and on a Mac, you can give [this walkthrough a try](https://phoenixnap.com/kb/install-git-on-mac); once you have git installed and configured on your machine, you would run the commands in the screenshot above from the terminal. Windows folks [can give this a try](https://phoenixnap.com/kb/how-to-install-git-windows) and again, once you get git configured on your machine, run the commands from the screenshot.
+If those don't cut it, you can give [this walkthrough a try](https://phoenixnap.com/kb/install-git-on-mac); once you have git installed and configured on your machine, you would run the commands in the screenshot above from the terminal. Windows folks [can give this a try](https://phoenixnap.com/kb/how-to-install-git-windows) and again, once you get git configured on your machine, run the commands from the screenshot.
 
 ### Going further
 
