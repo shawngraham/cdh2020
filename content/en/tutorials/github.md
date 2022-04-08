@@ -34,7 +34,7 @@ I might sometimes fork your work, pull it down onto my machine, make changes tha
 
 2. If you entered your email in the previous step, your email will appear at the pink arrow button in the screen below; hit enter. If you just hit the geen button or the 'sign up' link in the previous step, you'll see this image below. Enter your email, and hit enter.
 
-![github account verification](/images/github/github-signup2.png)
+![github account email](/images/github/2-enter-email.png)
 
 ---
 
@@ -52,7 +52,7 @@ I might sometimes fork your work, pull it down onto my machine, make changes tha
 
 5. Do the verification email thing. Open your email, and then enter the numbers one at a time into the boxes (you can't copy and paste).
 
-![new repo](/images/github/5-launch-code.png)
+![launch code](/images/github/5-launch-code.png)
 
 ---
 
@@ -78,15 +78,15 @@ The new repo page appears; fill in the information as in the image below. Give y
 
 ---
 
-Ta Da! You now have a github account, and you've created your first repository. **Going Forward** remember that you can create a new repository from the plus sign in the top right corner:
+Ta Da! You now have a github account, and you've created your first repository (**fyi, private repos don't appear on the overview page, but will appear on the repositories tab when you're logged in**).
+
+**Going Forward** remember that you can create a new repository from the plus sign in the top right corner:
 
 ![another new repo](/images/github/new-repo.png)
 
 {{< alert theme="info" >}}
 When creating a new repo you will almost always want to choose the 'initialize with a readme.md' file. The times when you don't are when you are _not_ working with Github's web interface. If you forget, this can be fixed; [go to "Setting up a 'repository' but you forgot to initialize"](#Setting-up-a-'repository'-but-you-forgot-to-initialize).
 {{< /alert >}}
-
-Remember, private repos do not appear on your user page 'overview' _which only displays public ones_ but if you click on 'repositories' while you are signed into github, you will see your private repos listed.
 
 ---
 
@@ -96,7 +96,7 @@ A private repo can only be seen by the people to whom you give access. A public 
 
 8. If you forgot to make a repo private, go to the repo's settings (the cogwheel icon)
 
-![settings](/images/github/settings.png)
+![settings](/images/github/repo-settings.png)
 
 ---
 
@@ -124,6 +124,8 @@ This sends me a notification. I will accept the invitation. Once I've done that,
 
 ### Making a new text file (and/or a folder) on Github
 
+![](/images/github/add-file.png)
+
 You can make a new text file by clicking on the 'add file' button and then the 'create new file' option; The new file screen will open and the cursor will be blinking in the box where you write the filename. When you make a new markdown text file **remember to always use .md as the file extension** in the name.
 
 ![](/images/github/new-file.png)
@@ -132,7 +134,13 @@ You can also create subfolders at this point; Github will understand that if you
 
 When you are making a new text file on Github, you can specify headers, links, images, bullets, blockquotes and so on by using [markdown conventions](https://guides.github.com/features/mastering-markdown/.)
 
-The videos below might be a bit clearer on youtube itself.
+**When you're finished editing, hit the green commit button.**
+
+If you want to edit an existing file, click on the pencil icon:
+
+![](/images/github/edit.png)
+
+The video below is a bit out of date, but gives you a sense of the whole sequence. It might be a bit clearer on youtube itself.
 
 {{<youtube 2SeeKYWXbrE >}}
 
@@ -144,17 +152,13 @@ Click on the 'add file' button for your repository, and select 'upload new file'
 
 ![](/images/github/upload.png)
 
-At the end of this video, I show you how to display the image in the text of the reflection.
-
-{{<youtube muKAh_j3Ogs >}}
-
 ### Setting Up Your Course Repo
 
 I have made a repo with subfolders and templates for you to use to keep your course materials organized. It is at [https://github.com/shawngraham/hist3814a-starter](https://github.com/shawngraham/hist3814a-starter). There are two ways that you can take a copy of this repo to use.
 
 Option one, while logged into Github, you click on the 'Fork' button at the top right of my repo's page. **If you do this** you will get a copy of my repo under your username, _but you cannot make it private_.
 
-Option two **which I recommend**, click on my repo page the green 'code' button, and select 'download zip'.
+Option two **which I recommend**: when you are logged in to github and are on my repo page, click the green 'code' button, and select 'download zip'.
 
 ![](/images/github/download.png)
 
@@ -166,25 +170,26 @@ Commit the changes.
 
 Now, you can upload anything that you create as part of part one to your online github repository. Do this for the remainder of the course.
 
+{{< alert theme="info" >}}
+**You are now done this introduction to Github**.
+{{< /alert >}}
+---
+
 ### Setting up a 'repository' but you forgot to initialize
 
-A 'repository' is just a folder that you've shared on Github. There are two ways to do this; the easy way and the more complex way. (Luck you, you have _already_ done the easy way - you selected the `initialize with a readme`, and it's already present in your browser!)
-
-But if you didn't tick the initialize box, you've embarked on the more complex way. In the screenshot below, I created a new repository but I forgot to initialize it, and now I'm looking at this page:
+In the screenshot below, I created a new repository but oops! I forgot to initialize it, and now I'm looking at this page in despair:
 
 ![non-initialized git](/images/github/github-complex.png)
 
-If this is you, do not despair.
+If you didn't tick the initialize box, you've embarked on a path for interacting with Github via the git program that you have to install on your computer.
 
-#### When you've forgotten to initialize a new repo:
+I used to include an awful lot of steps here. But **if you're brand new to working with github and digital history in general**, frankly you're better off just starting the whole process over again and remembering to tick off the 'initialize with a readme.md' box this time.
 
-1. If you have a PC, [click on this link to download and install git](https://git-scm.com/download/win).
-2. Make a new directory on your computer **with the same name as the repo you created above**. In my example, that would be `week-two`.
-3. On a PC, right-click on the folder and select 'open a command prompt here'. On a Mac, go to System Preferences, select Keyboard > Shortcuts > Services. Look for 'New Terminal at Folder' and tick the box. Open your finder; find the folder you created, right-click and select 'open Terminal here'.
-4. Do you see where, in your browser at github, it says `...or create a new repository on the command line`? Type in each line exactly as it is there (beginning with `echo`), hitting enter at the end of each line, in order. **If the command works, you'll just be presented with the next prompt.** The computer only ever responds when there is output to print - which often means only when there is an error message to report.
+This is because an 'uninitialized' git repo is one that is waiting for you to connect a folder on your personal machine to the space set aside for it on github, and to do that, you need to install Git and do a bunch of configuration operations. And for the purposes of this class, we do not need to do that.
 
-Ta da! You can now go to `github.com\<your-user-name>\your-repo` and you'll see it all there tickety boo.
+If however you want to explore using git and github from your command line or terminal, let me know and I can share some materials with you.
 
+If you just can't wait, and you're ambitious and on a Mac, you can give [this walkthrough a try](https://phoenixnap.com/kb/install-git-on-mac); once you have git installed and configured on your machine, you would run the commands in the screenshot above from the terminal. Windows folks [can give this a try](https://phoenixnap.com/kb/how-to-install-git-windows) and again, once you get git configured on your machine, run the commands from the screenshot.
 
 ### Going further
 
