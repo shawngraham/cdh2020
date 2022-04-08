@@ -30,6 +30,8 @@ This means that with the command line, instead of clicking to tell it what to do
 
 A good way to make all of that less confusing is to just start with showing you some basic commands, and we'll start with the simplest task: navigating directories!
 
+Note: your computer organizes all of your files and folders like a tree. There is a home location, `~`, and then every `/` indicates another branch. An alternative metaphor is that `~/mystuff` is like a filing cabinet, and every `/` indicates a folder. So: `~/mystuff/work` gives us a subfolder 'work' inside a folder called 'mystuff' in a filing cabinet that is your computer. The exact _sequence_ of folders-subfolders-subsubfolders etc is called a _path_. We mix metaphors freely.
+
 
 ## Step 2: Navigating Directories
 
@@ -44,7 +46,7 @@ This is basically the Ultimate Folder that has all of the user's aka your "defau
 
 For example, let's say I want to go to the folder I have on my desktop, `HIST3000`. First, I'm going to type `cd` which stands for **"change directory"**.
 
-The next part after `cd` is like you're thinking about where you want to go, then typing it out! So first I need to get to my desktop, and then I want to be in my folder for `HIST3000`. My entire command looks like this:
+The next part after `cd` is like you're thinking about where you want to go, then typing it out! So first I need to get to my desktop, and then I want to be in my folder for (say) my `HIST3000` class. My entire command looks like this:
 
 ```
 cd Desktop/HIST3000

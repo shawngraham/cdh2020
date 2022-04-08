@@ -13,19 +13,9 @@ If you're brand new to this, I strongly recommend you start with watching the vi
 
 ## Step 1: Accessing the Command Line
 
-So first thing we're going to want to do is actually open the command line so you can see what it is.
+You can access the basic command prompt aka command line by typing 'cmd' into your windows file explorer address bar; it will open the command prompt so that you are working inside that particular folder. For the anaconda prompt, you will find it in your list of programs under you start menu. You would start it up, and then _navigate_ using the `cd` command to the folder you wish to work in; see below.
 
-To navigate the command line in Windows, you have 2 options:
-
-1) You can use the pre-installed Windows Powershell that you can find by serching "powershell" OR
-
-2) You can download [the shiny new Windows Terminal from the Microsoft store](https://www.microsoft.com/en-ca/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab)-- it was release just last year and as you can see:
-
-![](images/command-line/cmdlnw1.png)
-
-They basically look the same by default. BUT Windows Terminal has nice features that you'd find on other modern operating systems like tabbing and the ability to customize the theme that can make working with it a smoother experience, SO I'll be using this for the tutorial.
-
-With all that being said, you're probably looking at your screen now like "okay but what IS *this*?" Well, it's in the name! The command line is a text interface for your computer, meaning its like your whole computer and everything it does, typed out!
+Note: your computer organizes all of your files and folders like a tree. There is a root location, `c:\`, and then every `\` indicates another branch. An alternative metaphor is that `c:\` is like a filing cabinet, and every `\` indicates a folder. So: `c:\mystuff\work` gives us a subfolder 'work' inside a folder called 'mystuff' in a filing cabinet called c:. The exact _sequence_ of folders-subfolders-subsubfolders etc is called a _path_. We mix metaphors freely.
 
 When using the command line, instead of clicking to tell your computer what to do, you type what you want to do as a command instead! In this class, we'll being mostly using the command line to navigate file directories and run code and software.
 
