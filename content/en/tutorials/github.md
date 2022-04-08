@@ -26,7 +26,7 @@ I might sometimes fork your work, pull it down onto my machine, make changes tha
 
 ### Get your account
 
-1. Got to [github.com](http://github.com) and sign up for an account. You don't have to use your real name. (Protip: You might want to set up an email just for signing up for things). Enter your email address in the white email address box and hit the green sign up button.
+1. Go to [github.com](http://github.com) and sign up for an account. You don't have to use your real name. (Protip: You might want to set up an email just for signing up for things). Enter your email address in the white email address box and hit the green sign up button.
 
 ![github login screen](/images/github/1-github-landing.png)
 
@@ -38,7 +38,7 @@ I might sometimes fork your work, pull it down onto my machine, make changes tha
 
 ---
 
-3. The wizard will ask you for a password and a username and whether or not you want spam from github. Fill in as suits you. **Your username doesn't have to reflect your real name**. If you use a pseudonymn, let me know in an email to shawn.graham@carleton.ca what username you're using, so that I don't get confused.
+3. The wizard will ask you for a password and a username and whether or not you want spam from github. Fill in as suits you. **Your username doesn't have to reflect your real name**. If you use a pseudonymn, let me know in an email to shawn dot graham at carleton dot ca what username you're using, so that I don't get confused.
 
 ![github tier selection](/images/github/3-create-username-avoid-spam.png)
 
@@ -85,7 +85,7 @@ Ta Da! You now have a github account, and you've created your first repository (
 ![another new repo](/images/github/new-repo.png)
 
 {{< alert theme="info" >}}
-When creating a new repo you will almost always want to choose the 'initialize with a readme.md' file. The times when you don't are when you are _not_ working with Github's web interface. If you forget, this can be fixed; [go to "Setting up a 'repository' but you forgot to initialize"](#Setting-up-a-'repository'-but-you-forgot-to-initialize).
+When creating a new repo you will almost always want to choose the 'initialize with a readme.md' file. The times when you don't are when you are _not_ working with Github's web interface. If you forget, this can be fixed; [go to "Setting up a 'repository' but you forgot to initialize"](#Setting-up-a-repository-but-you-forgot-to-initialize).
 {{< /alert >}}
 
 ---
@@ -173,7 +173,6 @@ Now, you can upload anything that you create as part of part one to your online 
 {{< alert theme="info" >}}
 **You are now done this introduction to Github**.
 {{< /alert >}}
----
 
 ### Setting up a 'repository' but you forgot to initialize
 
