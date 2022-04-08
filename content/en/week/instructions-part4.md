@@ -54,7 +54,7 @@ Think about your journey, and where you started. How have you grown? What succes
 
 Again, this is optional.
 
-This does not need to be much more than a single page (or the equivalent in other formats; how you measure that is up to you). If you choose to do this, put it into the part four folder in your copy of the github repo I provided. (the 'hist3814a-starter'). **Send me an email to alert me to the existence of your exit ticket**.
+This does not need to be much more than a single page (or the equivalent in other formats; how you measure that is up to you). If you choose to do this, put it into a part four folder in your copy of the github repo I provided (the 'hist3814a-starter') and upload to your github account. **Send me an email to alert me to the existence of your exit ticket**.
 
 ### Submit work
 

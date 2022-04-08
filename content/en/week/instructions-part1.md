@@ -23,6 +23,8 @@ _Sometimes the embed seems to not load, at least for me. If that happens to you,
 
 ### Read
 
+I would suggest that you [follow these instructions to get set up with a hypothesis account](/tutorials/hypothesis); hypothesis can let you annotate your online reading, and I find this helps with retention and understanding. You are not required to use hypothesis, though I encourage it.
+
 + Martin, K. 2020. ['Clio, Rewired: Propositions for the Future of Digital History Pedagogy in Canada'](/data/martin_project_muse_777494.pdf) _Canadian Historical Review 101.4 pp 620-640.
 
 + Leon, S. 2016.['Returning Women to the History of Digital History'](http://www.6floors.org/bracket/2016/03/07/returning-women-to-the-history-of-digital-history/)
@@ -45,13 +47,13 @@ Caswell, M. 'Seeing Yourself in History: Community Archives and the Fight Agains
 
 2. Get yourself a proper text editor; [Sublime Text](https://www.sublimetext.com/) or [Atom](https://atom.io) are good and free (though Sublime will periodically ask you to register). A text editor lets you edit any file on your machine, and create text files like .csv or .md or .txt or write python or R code. The `file extension` on a file - .doc or .xls or .txt etc - tells your computer what program to use to open or run the file. With a text editor, when you 'save as', you can specify the extension you want when you give the filename - you just keep on typing: `my-new-text-file.txt`.
 
-3. Everybody has to do the [Github](/tutorials/github/) tutorial, to create an account there. Once you've done that, and while signed into Github, go to my [example hist3814a starter repo](https://github.com/shawngraham/hist3814a-starter) and click the 'fork' button to take a copy of it. This will create a new repo in your account called `hist3814a-starter`. It contains templates for how I want you to keep track of your work.
+3. Everybody has to do the [Github](/tutorials/github/) tutorial, to create an account there. Once you've done that, and while signed into Github, go to my [example hist3814a starter repo](https://github.com/shawngraham/hist3814a-starter) and download a copy of it ([instructions](/tutorials/github/#setting-up-your-course-repo)). Unzip, and use that folder to organize your work. It contains templates for how I want you to keep track of your work.
 
 4. Read and make sure you're clear on [the basic idea behind these tutorials and what I am after](tutorials/1-basic-progression/#introduction).
 
 5. Take a look at the suggested sequences of technical work; decide whether you will do the [newcomer sequence](tutorials/1-basic-progression/#newcomer-sequence), the [standard sequence](tutorials/1-basic-progression/#standard-sequence), or the [going-further sequence](tutorials/1-basic-progression/#going-further-sequence).
 
-6. Then complete the appropriate tutorials by the due date to the best of your ability.
+6. Then complete the appropriate tutorials by the due date to the best of your ability. For part one, these should not take very long as they are mostly about getting your machine set up for doing digital history. **If you are trying to do this course with an iPad or a Chromebook, please get in touch with me before you begin**.
 
 7. Use the template provided in the repo you copied in step 3 to write your log and to write your reflection. [Use markdown conventions to indicate headings, emphasis, bullets, links, etc](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). The reflection prompt is below:
 
@@ -69,4 +71,4 @@ I will be in Discord nearly every day, and always on Wednesday afternoons.
 
 ### Submit Your Work
 
-Put any ephemera you create as you do the tutorials into the part one folder in your copy of the github repo I provided. (the 'hist3814a-starter'). Make sure your log and reflection are up to date. Submit the link to the part one folder in your version of the repo using [this form](https://forms.gle/mEqh72LLR5vCqknW6).
+Put any ephemera you create as you do the tutorials into the part one folder in your copy of the github repo I provided. Then, upload your materials to your online repo. Make sure your log and reflection are up to date. Submit the link to the part one folder in your version of the repo using [this form](https://forms.gle/mEqh72LLR5vCqknW6).

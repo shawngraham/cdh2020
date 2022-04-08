@@ -51,4 +51,4 @@ I will be in Discord nearly every day, and always on Wednesday afternoons.
 
 ### Submit Your Work
 
-Put any ephemera you create as you do the tutorials into the part three folder in your copy of the github repo I provided. (the 'hist3814a-starter'). Make sure your log and reflection are up to date. Submit the link to the part one folder in your version of the repo using [this form](https://forms.gle/mEqh72LLR5vCqknW6).
+Put any ephemera you create as you do the tutorials into the part one folder in your copy of the github repo I provided. Then, upload your materials to your online repo. Make sure your log and reflection are up to date. Submit the link to the part one folder in your version of the repo using [this form](https://forms.gle/mEqh72LLR5vCqknW6).
