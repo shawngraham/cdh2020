@@ -29,9 +29,9 @@ You may switch tracks **after** part 2 is over if you wish. You don't need to in
 You will submit your logs by the end of the day on
 
 + May 13
-+ May 23
++ May 24
 + June 6th
-+ June 16th
++ June 17th
 
 Reflections that tie your response to the readings to the work you have completed are due at the same time, remember. You are welcome to submit at any time before those dates, of course.
 

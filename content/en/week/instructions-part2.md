@@ -7,7 +7,7 @@ weight: -5
 author: "Shawn Graham"
 ---
 
-## To be completed by May 24rd
+## To be completed by May 24th
 
 ### Watch
 

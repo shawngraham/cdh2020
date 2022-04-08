@@ -7,10 +7,10 @@ draft: false
 
 For this iteration of the course, I have divided the course into 4 unequal parts.
 
-+ Part 1: May 6 - 12
-+ Part 2: May 13 - 23
-+ Part 3: May 24 - June 6
-+ Part 4: June 7 - June 18
++ Part 1: May 6 - 13
++ Part 2: May 14 - 24
++ Part 3: May 25 - June 6
++ Part 4: June 7 - June 17
 
 Each part has readings and reflection prompts meant to contextualize the various tutorials/hands-on work that you will do. Work is due by the end of the last day for each portion of the course.
 
