@@ -26,82 +26,107 @@ I might sometimes fork your work, pull it down onto my machine, make changes tha
 
 ### Get your account
 
-1. Got to [github.com](http://github.com) and sign up for an account. You don't have to use your real name. (Protip: You might want to set up an email just for signing up for things.)
+1. Got to [github.com](http://github.com) and sign up for an account. You don't have to use your real name. (Protip: You might want to set up an email just for signing up for things). Enter your email address in the white email address box and hit the green sign up button.
 
-![github login screen](/images/github/github-signup1.png)
+![github login screen](/images/github/1-github-landing.png)
 
 ---
 
-2. Verify your account.
+2. If you entered your email in the previous step, your email will appear at the pink arrow button in the screen below; hit enter. If you just hit the geen button or the 'sign up' link in the previous step, you'll see this image below. Enter your email, and hit enter.
 
 ![github account verification](/images/github/github-signup2.png)
 
 ---
 
-3. Select the free tier (nb: I will never require you to pay for any reading, or any software. If something wants you to pay, **stop** and ask for help).
+3. The wizard will ask you for a password and a username and whether or not you want spam from github. Fill in as suits you. **Your username doesn't have to reflect your real name**. If you use a pseudonymn, let me know in an email to shawn.graham@carleton.ca what username you're using, so that I don't get confused.
 
-![github tier selection](/images/github/github-signup3.png)
-
----
-
-4. Skip telling Github anything about yourself.
-
-![github survey](/images/github/github-signup4.png)
+![github tier selection](/images/github/3-create-username-avoid-spam.png)
 
 ---
 
-5. Do the verification email thing. Once you hit the verification link in your email, you'll be brought back to Github to make a new repository:
+4. Confirm to the github robots that you yourself are not a robot.
 
-![new repo](/images/github/github-new-repo.png)
-
----
-
-6. Give it a reasonable name; in the illustration I went with 'week one' but 'demo' or 'test' or something else reasonable is fine; tick the 'initialize with a readme' box, and hit the green commit button:
-
-![new repo settings](/images/github/github-new-repo-settings.png)
+![github survey](/images/github/4-complete-puzzle.png)
 
 ---
 
-7. And on the final page, hit the 'dismiss' button in the 'Github Actions box'
+5. Do the verification email thing. Open your email, and then enter the numbers one at a time into the boxes (you can't copy and paste).
 
-![dismiss actions](/images/github/github-dismiss-actions.png)
+![new repo](/images/github/5-launch-code.png)
+
+---
+
+6. Congratulations! Now you're in!
+
+![now you're in](/images/github/6-now-you-are-in.png)
+
+---
+
+7. Your username now has a URL on the web, in this pattern: `github.com/your-username`. Your user page will look like this:
+
+![user page](/images/github/7-user-page.png)
+
+---
+
+### Make your first repo
+
+If you are on the github.com page as depicted in step 6, click the 'create repository' button (or if you've clicked around a bit, and now github.com has a green button marked 'new' in the top left corner, click that). If you are on your user name page as depicted in step 7, click the `+` button and select 'new repo'.
+
+The new repo page appears; fill in the information as in the image below. Give your new repo a reasonable name; in the illustration I went with 'hist3814-materials'; tick the 'private' box; tick the 'initialize with a readme' box, and hit the green create button:
+
+![new repo settings](/images/github/creating-repo.png)
+
+---
 
 Ta Da! You now have a github account, and you've created your first repository. **Going Forward** remember that you can create a new repository from the plus sign in the top right corner:
 
 ![another new repo](/images/github/new-repo.png)
 
-**nb** Remember to tick off the 'initialize with a readme.md' file.
+{{< alert theme="info" >}}
+When creating a new repo you will almost always want to choose the 'initialize with a readme.md' file. The times when you don't are when you are _not_ working with Github's web interface. If you forget, this can be fixed; [go to "Setting up a 'repository' but you forgot to initialize"](#Setting-up-a-'repository'-but-you-forgot-to-initialize).
+{{< /alert >}}
+
+Remember, private repos do not appear on your user page 'overview' _which only displays public ones_ but if you click on 'repositories' while you are signed into github, you will see your private repos listed.
 
 ---
 
-Once you've done that, you'll be at your Github user page:
+### Private Repos versus Public
 
-![github user page](/images/github/github-signup5.png)
+A private repo can only be seen by the people to whom you give access. A public repo is visible to everyone on the internet and can be found in searches. **I strongly recommend that you make any of the work you do for this class private**.
+
+8. If you forgot to make a repo private, go to the repo's settings (the cogwheel icon)
+
+![settings](/images/github/settings.png)
 
 ---
 
-8. Add me as a collaborator to this repository:
+9. Scroll down to the 'danger zone' and hit the 'change visibility' button.
 
-![manage access](/images/github/add-user-to-private-repo-1.png)
+![danger](/images/github/danger-zone.png)
 
-9. **Private Repo**: Then, once you've clicked on 'manage access', click on 'invite collaborator',
-![add collaborator](/images/github/add-collaborator-to-private-repo-2.png)
+---
 
-10. **Private Repo**: Then find my username `shawngraham`, and add me:
-![add shawngraham](/images/github/add-username-private-repo.png)
+10. Github will open up a warning box, telling you that there are potentially destructive changes if you go ahead and do this. _Since you have nothing in the repo right now, and no collaborators, you are ok_. Go ahead and fill in the text box to complete the challenge.
 
-### Fork - make a copy - of the HIST 3814a repo
 
-We're going to start with an act of collaboration. I have already made a repository for you called [`hist 3814a starter`](https://github.com/shawngraham/hist3814a-starter). If you open that link in a new tab - and you're logged into Github - you can click on the 'fork' button at the top right of the page to make a copy (the metaphor here is botanical - by forking the repository, you create a new branch).
+### Add me as a collaborator on your private repo for this course
 
-- change visibility
-- make private
-- add me as a collaborator
+11. Add me as a collaborator to this repository by clicking on the repo settings, and then the collaborator menu:
 
+![manage access](/images/github/collaborators.png)
+
+Hit the 'Add people' button.
+
+12. Find my username `shawngraham` - I use a minion with a beard as my avatar, and add me:
+![add shawngraham](/images/github/add-me.png)
+
+This sends me a notification. I will accept the invitation. Once I've done that, my username will appear on your repository settings under 'collaborators'.
 
 ### Making a new text file (and/or a folder) on Github
 
 You can make a new text file by clicking on the 'add file' button and then the 'create new file' option; The new file screen will open and the cursor will be blinking in the box where you write the filename. When you make a new markdown text file **remember to always use .md as the file extension** in the name.
+
+![](/images/github/new-file.png)
 
 You can also create subfolders at this point; Github will understand that if you use a ``\`` in the filename box, you are indicating a folder: if you typed `subfolder-name-goes-here\my-new-file.md` it will automatically create `my-new-file.md` in the `subfolder-name-goes-here` subfolder. [This video illustrates the process](/data/subfolder.mp4).
 
@@ -113,17 +138,37 @@ The videos below might be a bit clearer on youtube itself.
 
 ### Uploading a file into Github
 
-You can add new files from your computer by dragging and dropping them into the main repository (ie, the screen on github that displays all of the files in the repository as a list). At the end of this video, I show you how to display the image in the text of the reflection.
+You can add new files from your computer by dragging and dropping them into the main repository (ie, the screen on github that displays all of the files in the repository as a list).
+
+Click on the 'add file' button for your repository, and select 'upload new file'. Drag and drop the file you want onto the upload pane. Wait for it to finish uploading. You can do multiple files, if you want. Once everything is uploaded **you must hit the green commit button** to complete the process.
+
+![](/images/github/upload.png)
+
+At the end of this video, I show you how to display the image in the text of the reflection.
 
 {{<youtube muKAh_j3Ogs >}}
 
-### Setting up a 'repository' for a project
+### Setting Up Your Course Repo
 
-A 'repository' is just a folder that you've shared on Github. There are two ways to do this; the easy way and the more complex way. Luck you, you have _already_ done the easy way - you selected the `initialize with a readme`, and it's already present in your browser!
+I have made a repo with subfolders and templates for you to use to keep your course materials organized. It is at [https://github.com/shawngraham/hist3814a-starter](https://github.com/shawngraham/hist3814a-starter). There are two ways that you can take a copy of this repo to use.
 
-{{< alert theme="info" >}}
-To create new repositories, just click on the `+` button on the top right of your Github page when you're logged in. You might want to go ahead now and create repositories for the four different parts of this course. Remember to tick off the `initialize with a readme` box. (Alternatively, you could create just one repository, but make subfolders for each part of the course.)
-{{< /alert >}}
+Option one, while logged into Github, you click on the 'Fork' button at the top right of my repo's page. **If you do this** you will get a copy of my repo under your username, _but you cannot make it private_.
+
+Option two **which I recommend**, click on my repo page the green 'code' button, and select 'download zip'.
+
+![](/images/github/download.png)
+
+You can unzip this folder onto your machine. Then, as you work through the course, any files you create as a result of doing the tutorials can be kept in the appropriate folder. There are also `log.md` and `reflection.md` text files that you can use as templates for the required log and reflection pieces. Open those with a proper text editor like [sublime text](https://www.sublimetext.com/) or atom (https://atom.io) or [notepad++](https://notepad-plus-plus.org/).
+
+Then, in the private repo you created on github earlier, make a new file and call it `part-one\readme.md`. Yes, the slash is part of the filename; github will understand that you want to make a folder and put a new file called readme.md into it. In the file editor window, put something like 'a folder for my part one files.'
+
+Commit the changes.
+
+Now, you can upload anything that you create as part of part one to your online github repository. Do this for the remainder of the course.
+
+### Setting up a 'repository' but you forgot to initialize
+
+A 'repository' is just a folder that you've shared on Github. There are two ways to do this; the easy way and the more complex way. (Luck you, you have _already_ done the easy way - you selected the `initialize with a readme`, and it's already present in your browser!)
 
 But if you didn't tick the initialize box, you've embarked on the more complex way. In the screenshot below, I created a new repository but I forgot to initialize it, and now I'm looking at this page:
 
@@ -143,7 +188,15 @@ Ta da! You can now go to `github.com\<your-user-name>\your-repo` and you'll see 
 
 ### Going further
 
-Github can also be used to run an entire website, generated from your text files. In fact, that's how I built this course website! The following three links are from my HIST4806a 2020 seminar on digital history and museums; they will walk you through how to use your Github account to serve up a professional scholarly website. You can use this scholarly website to host your reflections and course work, if you want (some of the minor details might have changed, but the general flow is still the same; this kind of thing always happens with digital work). Follow these three pages in order:
+Github can also be used to run an entire website, generated from your text files. In fact, that's how I built this course website!
+
+If you're new to all this, your best bet is to follow the [guidance here](https://pages.github.com/)
+
+{{<youtube 2MsN8gpT6jY >}}
+
+If you want to tinker, make a new **public** repo. Make a file, call it `index.md` and put whatever content you want in that. Go to the repo settings, and click on 'Pages' from the menu. Under 'source' click the drop down to select whatever default is there (probably will be 'main'). Select a theme. Github will publish your site to `your-user-name.github.io\name-of-your-repo`. Add more content to your repo, and github will (after some delay) rebuild and republish your site. Instant website!
+
+The following three links are from my HIST4806a 2020 seminar on digital history and museums. The particular details are a bit dated now, but they will walk you through the general workflow for how to use your Github account to serve up a professional scholarly website. You can use this scholarly website to host your reflections and course work, if you want (again, some of the minor details might have changed, but the general flow is still the same; this kind of thing always happens with digital work). Follow these three pages in order:
 
 1. [Building Your Own Scholarly Website](https://shawngraham.github.io/dhmuse/building-your-online-presence/)
 
