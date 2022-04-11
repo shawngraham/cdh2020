@@ -92,11 +92,11 @@ To install homebrew, all you have to do is paste this command into Terminal and 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-This may take a while to install-- to verify it's installed, just type `brew` and see if gives you a list of possbile commands like so:
+This may take a while to install-- to verify it's installed, just type `brew` and see if gives you a list of possible commands like so:
 
 ![](images/command-line/cmdlnm8.png)
 
-I WILL show you quickly how to install something using brew just so you know what a finshed install state looks like, and if you follow along with this part then you'll have a fun way to mess with your friends!
+I WILL show you quickly how to install something using brew just so you know what a finished install state looks like, and if you follow along with this part then you'll have a fun way to mess with your friends!
 
 To install via brew, the command will start with `brew`, summoning the package manager.
 
@@ -112,9 +112,9 @@ Hit enter and run that, then once it's installed you should see this:
 
 ![](images/command-line/cmdlnm9.png)
 
-This paticular program just lists all of the files of the folder you're in by scrambling the names and slowly unscrambling them to make it look like stereotypical hollywood hacking.
+This particular program just lists all of the files of the folder you're in by scrambling the names and slowly unscrambling them to make it look like stereotypical hollywood hacking.
 
-You need to run `ls | nms`, where ls means the same as what we learned before, and the line is a "pipe" indicating the specific thing you want to run `ls` through, which for us is `nms` aka no-more-secrets. Don't worry, you can uninstall this just as easily as installing by entering `brew uninstall no-more-secrets`.
+You need to run `ls | nms`, where ls means the same as what we learned before, and the vertical line is a "pipe" indicating the specific thing you want to run `ls` through, which for us is `nms` aka no-more-secrets. Don't worry, you can uninstall this just as easily as installing by entering `brew uninstall no-more-secrets`.
 
 ## Step 4: Manuals
 

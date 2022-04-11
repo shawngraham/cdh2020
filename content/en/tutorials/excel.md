@@ -13,11 +13,13 @@ Library and Archives Canada provides [links to historical census data](https://w
 
 Unfortunately, none of it is available as a simple table that we could download. Indeed, if you go through that link and look, you'll see _just how much work_ would be involved in trying to digitize these things so that we could do quantitative work on it!
 
-So for the purposes of becoming acquainted with Excel, let's download some data from the [Canadian 2016 Census](https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/dt-td/Rp-eng.cfm?TABID=2&LANG=E&A=R&APATH=3&DETAIL=0&DIM=0&FL=A&FREE=0&GC=01&GL=-1&GID=1235625&GK=1&GRP=1&O=D&PID=109523&PRID=10&PTYPE=109445&S=0&SHOWALL=0&SUB=0&Temporal=2016&THEME=115&VID=0&VNAMEE=&VNAMEF=&D1=0&D2=0&D3=0&D4=0&D5=0&D6=0) - right-click and save-as: ['Age (in Single Years) and Average Age (127) and Sex (3) for the Population of Canada, Provinces and Territories, Census Metropolitan Areas and Census Agglomerations, 2016 adn 2011 Censuses - 100% Data](https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/dt-td/CompDataDownload.cfm?LANG=E&PID=109523&OFT=CSV)
+So for the purposes of becoming acquainted with Excel, let's download some data from the [Canadian 2016 Census](https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/dt-td/Rp-eng.cfm?TABID=2&LANG=E&A=R&APATH=3&DETAIL=0&DIM=0&FL=A&FREE=0&GC=01&GL=-1&GID=1235625&GK=1&GRP=1&O=D&PID=109523&PRID=10&PTYPE=109445&S=0&SHOWALL=0&SUB=0&Temporal=2016&THEME=115&VID=0&VNAMEE=&VNAMEF=&D1=0&D2=0&D3=0&D4=0&D5=0&D6=0) - right-click and save-as the file behind this link:
+
+['Age (in Single Years) and Average Age (127) and Sex (3) for the Population of Canada, Provinces and Territories, Census Metropolitan Areas and Census Agglomerations, 2016 adn 2011 Censuses - 100% Data](https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/dt-td/CompDataDownload.cfm?LANG=E&PID=109523&OFT=CSV)
 
 Unzip that file; inside you'll find the data files and files describing the data, which we call the 'metadata'.
 
-Now, Excel is a very powerful tool. It also comes in several different flavours with slightly different layouts, which makes _teaching_ excel extremely vexing. Most new PCs will have Excel on them; most new Macs will not. Do not worry if you don't have a copy of Excel; Google Sheets also works in a very similar vein.
+Now, Excel is a very powerful tool. It also comes in several different flavours with slightly different layouts, which makes _teaching_ excel extremely vexing. Most new PCs will have Excel on them; most new Macs will not. Do not worry if you don't have a copy of Excel; Google Sheets also works in a very similar vein and you should be able to adapt the below without too much trouble.
 
 The key idea is that each **cell** in a spreadsheet as an **address**. Knowing the address for a **range** of cells, or just one cell in particular means that you can do calculations that update themselves as you change the data. For instance, if I had all of my student's scores in say column A from a test (not that I assign tests), I could have a cell at the bottom of that column that has this **formula**: `=average(a1:a23)`. Excel will tally up all of the cells from a1 to a23 (column a, row 1, to column a, row 23), and divide that sum by the count of cells, printing out an average. If I made a mistake on a student's score, I could change it (by re-entering the score in say cell a13) and Excel will automatically adjust the average.
 
@@ -36,11 +38,11 @@ Uncheck 'select all' and scroll down through that until you see 'Ottawa-Gatineau
 
 Boom! Your spreadsheet is now displaying 254 of 44196 records.
 
-2. Now, each row in this spreadsheet is an age category. We're going to write a little formula to add up all of the female children 1 to 4 years of age. (This data starts in Row 15500!). Can you spot that data?
+2. Now, each row in this spreadsheet is an age category. We're going to write a little formula to add up all of the female children 1 to 4 years of age. This data starts in Row 15500! Can you spot that data?
 
 ![here it is](/images/excel/select-cells.png)
 
-When you highlight cells, Excel automatically does a few calculations like averaging, counting, and summing them, which you can spot at the bottom.
+When you highlight cells (click and drag), Excel automatically does a few calculations like averaging, counting, and summing them, which you can spot at the bottom right bar of the excel window.
 
 In cell R15500, let's write a little formula. We want to get the sum of female children 1 to 4 years of age. Our formula is going to look like this `=sum()` and _between_ the parentheses will be the range. Put in the correct range, and hit enter. Did you get the right value? Have you selected the correct cells?
 
@@ -55,7 +57,7 @@ Then, click 'insert', then 'recommended charts' and pick one of the charts. Boom
 When you save your work in Excel, an Excel file can contain numerous sheets, charts, interlinkages, and other quite complex objects. If you 'save as' and select 'csv', you'll _only_ get the data in the spreadsheet sheet currently active - plus a whole bunch of end-of-the-world warnings from Excel.
 
 4. Pivot Tables
-Pivot tables are a very useful feature of Excel; they are a way of summarizing quite complex tables and visualizing the summaries. But I won't discuss them now. Instead, once you do the Topic Modeling Tool walk through, check out the final section in the official documentation on 'Build a pivot table' ([here](https://senderle.github.io/topic-modeling-tool/documentation/2017/01/06/quickstart.html)).
+Pivot tables are a very useful feature of Excel; they are a way of summarizing quite complex tables and visualizing the summaries. But I won't discuss them now. Instead, once you do the Topic Modeling Tool walk through later in the course, check out the final section in the official documentation on 'Build a pivot table' ([here](https://senderle.github.io/topic-modeling-tool/documentation/2017/01/06/quickstart.html)).
 
 I'm not going to invest much time in Excel; but here's some [more guidance from Microsoft itself.](https://support.office.com/en-us/article/Basic-tasks-in-Excel-dc775dd1-fa52-430f-9c3c-d998d1735fca)
 
@@ -63,7 +65,7 @@ I'm not going to invest much time in Excel; but here's some [more guidance from 
 
 This is just a _first taste_ of using R; much will seem opaque to you, but it will become more comfortable with time.
 
-Start up your RStudio from Anaconda Navigator, and make a new R script. You might need to 'install RStudio' from the initial Anaconda Navigator interface first.
+Start up your RStudio. and make a new R script.
 
 ![](https://digiarch.netlify.app/images/rstudio/rstudio1.png)_
 
@@ -71,7 +73,7 @@ Start up your RStudio from Anaconda Navigator, and make a new R script. You migh
 
 ![](https://digiarch.netlify.app/images/rstudio/rstudio3.png)
 
-You will copy the code chunks below _into_ the script window; then, you run the script one line at a time. The _results_ will show up in the console window (the code will copy to the console; if everything runs correctly, the console will just show you anoterh `>` to indicate all is good. But if things *aren't* good, the error messages will print in the console.)
+You will copy the code chunks below _into_ the script window; then, you run the script one line at a time. The _results_ will show up in the console window (the code will copy to the console; if everything runs correctly, the console will just show you another `>` to indicate all is good. But if things *aren't* good, the error messages will print in the console.)
 
 The first thing we're going to do is get set up so that we can import some data directly from the web. We use the `RCurl` package to do that (packages are like little bits of simpler code put together to do particular tasks; you can think of them as like specialized lego bricks):
 
@@ -86,13 +88,15 @@ Put your cursor on the line you want to run, and then hit the `run` button for e
 When you install RCurl, you _might_ see a 'warning' pop up in the console, saying that the package was built under an earlier version of R. That's ok; most of the time, that won't have an impact on us.
 {{< /notice >}}
 
-Now, we're going to reach out onto the web and grab a table of historical data (a subsection of the colonial newspapers database created by [Melodee Breals](https://www.lboro.ac.uk/research/crcc/about/people/melodee-beals/)) and import it into R. We do that like this:
+Now, we're going to reach out onto the web and grab a table of historical data. The data is a subsection of the colonial newspapers database created by [Melodee Beals](https://www.lboro.ac.uk/research/crcc/about/people/melodee-beals/) that I pulled together some time ago. We are going to import it into R. We do that like this:
 
 ```R
 x <- getURL("https://raw.githubusercontent.com/shawngraham/exercise/gh-pages/CND.csv", .opts = list(ssl.verifypeer = FALSE))
 ```
 
-See what happened there? We created a variable called `x` (could've called it `newspapers` or whatever you like) and told R to load the page url and deposit its results _into_ that variable.
+See what happened there? We created a variable called `x` (could've called it `newspapers` or whatever you like) and told R to load the page url using the `getURL` command that the `RCurl` made available to us, and deposit its results _into_ that variable.
+
+---
 
 {{< notice warning "Error on 'getURL'" >}}
 Windows users _might_ get an error about the 'getURL' command. This command is part of the RCurl package, and plumbing the chain of dependencies to fix this is beyond us at the moment.
@@ -106,9 +110,15 @@ x <- "https://raw.githubusercontent.com/shawngraham/exercise/gh-pages/CND.csv"
 documents <- read.csv(x)  
 ```
 
-Anytime there is data on the web that ends with `.csv`, you can load it into your work like this. (For instance, the Canadian Science and Technology museum makes a lot of its collections data available that way; a slightly edited copy of that is at the website for another course I teach, at [https://dhmuse.netlify.app/data/cstmc-CSV-en.csv](dhmuse.netlify.app/data/cstmc-CSV-en.csv). You could try loading _that_ data in if you're ambitious. )
+Here, the logic is a bit different: we created a variable called `x` and just put the web address of the data into it, instead of the actual data itself. In a second step, we used R's read.csv to grab the data from the location in X and to put that data into documents. (For those who are interested, there's a slightly different command called `read_csv` [and you can read more about how and why you might use that from this](https://medium.com/r-tutorials/r-functions-daily-read-csv-3c418c25cba4).)
 
-Notice you now have a variable in your 'Global Environment' pane called 'X'. If you just type `x` in the console, after a few moments, it will print out everything that is inside that variable. If you scroll back to the top of that, you'll see:
+---
+
+Anytime there is data on the web that ends with `.csv`, you can load it into your work like this.
+
+(For instance, the Canadian Science and Technology museum makes a lot of its collections data available that way; a slightly edited copy of that is at the website for another course I teach, at [https://dhmuse.netlify.app/data/cstmc-CSV-en.csv](dhmuse.netlify.app/data/cstmc-CSV-en.csv). You could try loading _that_ data in if you're ambitious. )
+
+Notice you now have a variable in your 'Global Environment' pane called 'X'. If you just type ` head(x)` in the console, after a few moments, it will print out the first few rows (the `head`) of that data frame of data:
 
 ```
 
@@ -145,10 +155,10 @@ years <- table(documents$Year)
 barplot(years, main="Publication Year", xlab="Year", ylab="Number of Articles")
 ```
 
-There’s a lot of material in 1789, another peak around 1819, againg in the late 1830s. We can ask ourselves now: is this an artefact of the data, or of our collection methods? This would be a question a reviewer would want answers to. Let’s assume for now that these two plots are ‘true’ — that, for whatever reasons, only Edinburgh and Glasgow were concerned with these colonial reports, and that they were particularly interested during those three periods. This is already an interesting question that we as historians would want to explore.
+There’s a lot of material in 1789, another peak around 1819, again in the late 1830s. We can ask ourselves now: is this an artefact of the data, or of our collection methods? This would be a question a reviewer would want answers to. Let’s assume for now that these two plots are ‘true’ — that, for whatever reasons, only Edinburgh and Glasgow were concerned with these colonial reports, and that they were particularly interested during those three periods. This is already an interesting question that we as historians would want to explore. How would you then go about investigating this question? What other kind of data would you need to collect, and how might you approach it?
 
 Try making some more visualizations like this of other aspects of the data. What other patterns do you see that are worth investigating?
 
-This [page](https://rstudio-pubs-static.s3.amazonaws.com/7953_4e3efd5b9415444ca065b1167862c349.html) shows you the code for some other basic visualizations. See if you can make some more visualizations. I've created a [tarsus.txt](/data/tarsus.txt) file and a [unicorn.txt](/data/unicorn.txt) file so that you can see how his code works (although you might wish to open both files in your sublime text editor and add more rows of data; careful: columns are separated by tabs.) Or you could try working with the CSTM data at the top of this page.
+This [page](https://rstudio-pubs-static.s3.amazonaws.com/7953_4e3efd5b9415444ca065b1167862c349.html) shows you the code for some other basic visualizations. See if you can make some more visualizations. I've provide a [tarsus.txt](/data/tarsus.txt) file and a [unicorn.txt](/data/unicorn.txt) file to work with his code, so that you can see how his code works (although you might wish to open both files in your sublime text editor and add more rows of data; careful: columns are separated by tabs.) Or you could try working with the CSTM data at the top of this page.
 
 Now, where things get _really_ interesting, for us as historians, is when we start working with statistical patterns in the words themselves. See for instance the tutorial [on topic models](/tutorials/topic-models).

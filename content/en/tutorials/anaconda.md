@@ -16,6 +16,8 @@ weight: 3
 
 ### Introduction
 
+_READ THROUGH BEFORE CLICKING/DOING ANYTHING!_
+
 Cost = $0.
 
 Anaconda is a platform for data science work. By installing the full Anaconda suite, you get access to a series of tools for working in both the Python and R programming languages, plus excellent visual interfaces that reduce (some of) the pain of programming.
@@ -29,7 +31,7 @@ Python is the basic language, while a package manager lets us retrieve bundles o
 
 ### Download Miniconda
 
-Go to [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html) and download the **Python 3.8** installer for your computer. Run the installer and accept the defaults
++ Go to [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html) and download the **Python 3.8** installer for your computer. Run the installer and accept the defaults
 
 ### Anaconda Prompt and Terminal
 
@@ -45,11 +47,11 @@ Going forward, when I want you to enter code at the **command prompt** or **term
 
 **You do not type the $.**
 
-Open a command prompt or terminal now and confirm that miniconda is installed:
++ Open a command prompt or terminal now and confirm that miniconda is installed:
 
 `$ conda --version`
 
-and that python is installed:
++ confirm that python is installed:
 
 `$ python --version`
 
@@ -61,15 +63,17 @@ When we type 'conda' or 'python' or indeed 'echo' or anything else at the prompt
 
 > JupyterLab is the latest web-based interactive development environment for notebooks, code, and data. Its flexible interface allows users to configure and arrange workflows in data science, scientific computing, computational journalism, and machine learning. A modular design invites extensions to expand and enrich functionality.
 
-We will use the Jupyter interface with 'computational notebooks' from time to time in this class. A computational notebook is a text document where you write your observations and workflow _integrated_ with snippets of code that can be run as you read the document. This allows you to create interactive documents that work with historical data. At your computer's prompt/terminal, install jupyter lab with:
+We will use the Jupyter interface with 'computational notebooks' from time to time in this class. A computational notebook is a text document where you write your observations and workflow _integrated_ with snippets of code that can be run as you read the document. This allows you to create interactive documents that work with historical data.
+
++ At your computer's prompt/terminal, install jupyter lab with:
 
 ```
 $ pip install notebook
 ```
 
-Say 'yes' to any prompts that might pop up.
++ Say 'yes' to any prompts that might pop up.
 
-Test to see that it installed properly:
++ Test to see that it installed properly:
 
 ```
 $ jupyter notebook
@@ -80,6 +84,8 @@ A new tab will open in your browser showing the jupyter file explorer interface 
 ![jupyter](/images/jupyter.png)
 
 _This is what the jupyter file explorer looks like on my machine when I invoke it in the folder where I'm writing all these course materials. Go ahead and click on the 'new' dropdown and create a new 'python notebook' if you want to play._
+
+Notice the first part of the address in the address bar of my browser: `localhost:8888`. This is an address not on the web, but on your own personal computer. The Jupyter notebook is running as a 'web server' from the directory/folder you make the jupyter notebook command at, and is making jupyter and any of the work you do visible through your web browser through 'port 8888'. In essence, instead of building a graphical user interface and running as a separate app, Jupyter is borrowing your browser to handle interaction (_and_ to enable you to easily access the wider resources of the web if you need 'em). We will encounter other software that similarly runs as a 'web server'.
 
 You can close the tab; in your command prompt or terminal, hit ctrl + c and say 'yes' to the 'shut down notebook server?' prompt.
 
@@ -94,9 +100,11 @@ You now have a new app on your machine called the 'R Console' - you can go ahead
 
 ![r console](/images/r-console.png)
 
-You _could_ use this to develop and run R code, but it isn't... easy. R Studio makes the process less painful.
+(If you see any text in read giving you some sort of error message in your R console, just copy that text and email me and I'll walk you through fixing it. This isn't likely to happen though).
 
-Go to the [R Studio website](https://www.rstudio.com/products/rstudio/download/#download) and download the installer version of R Studio appropriate for your computer (NOT the 'tarballs').
+You _could_ use the R console to develop and run R code, but it isn't... easy. R Studio makes the process less painful.
+
++ Go to the [R Studio website](https://www.rstudio.com/products/rstudio/download/#download) and download the installer version of R Studio appropriate for your computer (NOT the 'tarballs'). Once everything has installed, you can start R Studio up and it should look similarly to this:
 
 ![rstudio](/images/rstudio.png)
 _A very busy R Studio interface on my machine, with script (R code) and data files open, a panel showing variables I have created, a file explorer, and the actual code terminal that runs the script files through R. Yours will be a bit more empty than all of this... for now._
@@ -107,20 +115,24 @@ Look at you. You've installed a bunch of very cool, very powerful, tools for doi
 
 When you click on a file in your windows explorer or in mac's finder, you click through nested folders, right? The path you take through those folders will look something like this: `username\example-folder\a-subfolder\file.txt`, although finder or explorer by default don't show you that.
 
-When you open anaconda prompt or the terminal, how do you know where you are at? You print the working directory:
+When you open anaconda prompt or the terminal, how do you know where you are at? You print the working directory.
+
++ Try this out:
 
 `$ pwd`
 
-and that will give you the path to where you are working. To see what's inside the folder, you can:
+and that will give you the path to where you are working.
+
++ To see what's inside the folder, you can try:
 
 `$ ls` list files, on a Mac or
 `$ dir` directory, on a PC
 
-Files will have an extension (eg, .txt, .doc) while directories won't. To go into a directory, we change directories:
+Files will have an extension (eg, .txt, .doc) while directories won't. To go into a directory, we change directories.
 
++ Try this (where 'subfolder' is one of the folders you saw from running the previous command):
 
 `$ cd subfolder`
-
 
 and we can go back up a level:
 
