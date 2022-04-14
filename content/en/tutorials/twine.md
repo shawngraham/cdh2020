@@ -12,7 +12,7 @@ But sometimes, it can be achieved much more simply.
 
 ![infoccom graphic](https://i1.wp.com/www.keithpalmer.ca/images/BrainAd2.jpg)
 
-Before video games went all-in on powerful graphics, games (and playful engagements) could create deep simulations and immersive worlds simply through text. Ever get lost in a book? These were like that - but the book read you back, changing depending on what you did (or did not do). In recent years, there has been a renaissance in these kinds of experiences. For convenience, we call these 'interactive fiction' but they don't need to have fantastical settings. One of the key tools in this renaissance has been the tool [Twine](https://twinery.org) by Chris Klimas. Meant for generating choose-your-own-adventure type stories, the tool is sufficiently subtle that quite complex experiences can be created. There is a [lesson at the Programming Historian currently in development, by @gkirilloff](https://github.com/programminghistorian/ph-submissions/issues/348) that I am very excited to see come out, because I think scripting out, mocking up, and building compelling experiences around our scholarship is a necessary part of the digital historian's toolkit.
+Before video games went all-in on powerful graphics, games (and playful engagements) could create deep simulations and immersive worlds simply through text. Ever get lost in a book? These were like that - but the book read you back, changing depending on what you did (or did not do). In recent years, there has been a renaissance in these kinds of experiences. For convenience, we call these 'interactive fiction' but they don't need to have fantastical settings. One of the key tools in this renaissance has been the tool [Twine](https://twinery.org) by Chris Klimas. Meant for generating choose-your-own-adventure type stories, the tool is sufficiently subtle that quite complex experiences can be created. There is a [lesson at the Programming Historian](https://programminghistorian.org/en/lessons/interactive-text-games-using-twine); please check it out. I am very excited to see come out, because I think scripting out, mocking up, and building compelling experiences around our scholarship is a necessary part of the digital historian's toolkit.
 
 In Kirilloff's tutorial, they point to a few of the reasons why we might want to build these kinds of experiences - for one, it widens accessibility to our scholarship; for another, it allows us to deal with contingency and the idea that the past was not fore-ordained; and that the world is a complex system (goverened by non-linear interactions and feedback loops).
 
@@ -44,17 +44,20 @@ You're going to use Twine to make a _sketch_ of what a potential history game mi
 ### Start Sketching it out
 
 - Aim for five to ten minutes worth of play
-- I'm not going to reproduce here the ins-and-outs of the [Twine](https://twinery.org) interface, as there are many excellent tutorials in the world to show you that. You could go over to Krilloff's work-in-progress [at the Programming Historian; link to the lesson will be in the first comment at this thread](https://github.com/programminghistorian/ph-submissions/issues/348). Alternatively, there's [this tutorial](https://pinnguaq.com/learn/introduction-to-twine). And there's [this one, which has a lot of videos too](http://www.adamhammond.com/twineguide/).
+- I'm not going to reproduce here the ins-and-outs of the [Twine](https://twinery.org) interface, as there are many excellent tutorials in the world to show you that. You could go over to Krilloff's [tutorial](https://programminghistorian.org/en/lessons/interactive-text-games-using-twine). Alternatively, there's [this tutorial](https://pinnguaq.com/learn/introduction-to-twine). And there's [this one, which has a lot of videos too](http://www.adamhammond.com/twineguide/).
 
 When I work in Twine, I always use the online version; it saves your work automatically into your browser's cache. **If you clear the cache you lose your work**. So as a habit, I export a version to html every time I'm done a session. You can always re-import the html if you need to. At the bottom left of the interfact is an 'up' arrow button; click on that and hit 'publish to file'. This will let you save your work as .html.
 
 You can put the html file (and any other supporting files you might create) into a github repo.
 
+{{< notice success "If you like all this..." >}} I am teaching a course in the fall semester on 'creative engagements in history' that will involved making games and other immersive multimedia for history. Y'all should sign up.
+{{< /notice >}}
+
 ## Going Further
 
 See what you can cook up using this online collaborative storytelling game generator, [Story Synth](https://storysynth.org/). This is a framework for building deckbuilder type games, drawing on prompts kept in a google spreadsheet, and meant to be played collaboratively online. Give it a whirl, share what you've built in our Discord space, let's play!
 
-_Update April 28th 2021_ If you're into Minecraft, I just saw a new article come out that details how to import a cultural heritage landscape into Minecraft to create simulations therein:
+_On a different note:_ If you're into Minecraft, I just saw a newish article come out that details how to import a cultural heritage landscape into Minecraft to create simulations therein:
 
 Edwards, B., et al. "The Bryn Celli Ddu Minecraft Experience: A Workflow and Problem-Solving Case Study in the Creation of an Archaeological Reconstruction in Minecraft for Cultural Heritage Education." Journal on Computing and Cultural Heritage (JOCCH) 14.2 (2021): 1-16.
 

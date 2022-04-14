@@ -11,7 +11,7 @@ Here, we're going to build a simple website that uses nothing but text files as 
 
 I'm talking about _static site building_; there are many different generators out there that will take your text files, pump them through some templates, and spit out flat html on the other side. At The Programming Historian, there is a lesson by Amanda Visconti on using [Jekyll and Github Pages](https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages) to make a site; we're going to do something much easier.
 
-In essence, you are going to create a new repository in your Github account called `your-username.github.io`; you're going to make a file in there called `index.md` and youj're going to write something in that file, eg,
+In essence, you are going to create a new repository in your Github account called `your-username.github.io`; you're going to make a file in there called `index.md` and you're going to write something in that file, eg,
 
 ```
 ## My Quick Static Site
@@ -23,10 +23,10 @@ It reads [markdown](https://www.markdownguide.org/) and turns it into html.
 ![gif ftw](https://media.giphy.com/media/nXxOjZrbnbRxS/200w_d.gif)
 ```
 
-Commit that file. Then, hit the gear wheel icon and scroll down to the Github Pages section. Github will run your text files through the Jekyll site builder for you; here you can select from some of their templates.
+Commit that file. Then, hit the gear wheel icon for the repo settings and scroll down to the Github Pages section. Github will run your text files through the Jekyll site builder for you; here you can select from some of their templates.
 
 Boom! [The full process is on this site with screenshots](https://help.github.com/en/github/working-with-github-pages/creating-a-github-pages-site).
 
-Now, there's a lot more to static websites than this. This course site is generated with [Hugo](https://gohugo.io); a site generator for building exhibitions, called 'Wax', is available [here](https://minicomp.github.io/wax/). (Speaking of exhibits, here's information about building them with [Omeka.net](https://programminghistorian.org/en/lessons/up-and-running-with-omeka).)
-
 Customize your new site to be a 'front page' to all of your journal entries from these last few weeks.
+
+Now, there's a **lot** more to static websites than this. This course site is generated with [Hugo](https://gohugo.io); a site generator for building exhibitions, called 'Wax', is available [here](https://minicomp.github.io/wax/). (Speaking of exhibits, here's information about building them with [Omeka.net](https://programminghistorian.org/en/lessons/up-and-running-with-omeka).)

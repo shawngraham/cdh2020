@@ -13,7 +13,7 @@ There is a complete [jupyter notebook](/data/mapping.ipynb) you can save to your
 
 _This notebook file is adapted from Melanie Walsh 2021 'Introduction to Cultural Analytics: Mapping' [https://melaniewalsh.github.io/Intro-Cultural-Analytics/Mapping/Mapping.html](https://melaniewalsh.github.io/Intro-Cultural-Analytics/Mapping/Mapping.html). You are encouraged to follow the remainder of her tutorial to learn how to add a custom map background, and how to publish your resulting map to the web._
 
-The code below reproduces that jupyter notebook and of course assumes you are working in a jupyter notebook.
+**The code below reproduces that jupyter notebook and of course assumes you are working in a jupyter notebook.**
 
 ## Mapping with Python
 

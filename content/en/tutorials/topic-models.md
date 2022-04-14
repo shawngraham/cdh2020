@@ -24,7 +24,7 @@ This course only touches in the lightest manner on the potential for R for doing
 We're going to use the same data as we did before, but this time, it is organized as a table where each chapbook's text is one row. There are columns for 'title', 'text', 'date', each separated by a comma, so a bit of the metadata is included. You may download this comma separated, or csv, table [from this link](/data/chapbooks-text.csv).
 
 1. Make a new folder on your computer called `chapbooks-r`. Put the `chapbooks-text.csv` inside it.
-2. From Anaconda Navigator, open up R Studio. Under 'File' select 'new project' and then 'From existing directory.' In the chooser, select your `chapbooks-r` folder. Having a 'project' in R means that R knows where to look for data, and where to save your work or restore from.
+2. Open R Studio. Under 'File' select 'new project' and then 'From existing directory.' In the chooser, select your `chapbooks-r` folder. Having a 'project' in R means that R knows where to look for data, and where to save your work or restore from.
 ![new project](/images/tm/new-project.png)
 3. Let's start a new R script. Hit 'new file' under 'file' (or the button with the green-and-white plus side, top left) and select 'r script'
 4. We need to install some pieces first. In the **Console** enter these two commands:
@@ -192,7 +192,7 @@ ggplot(vizDataFrame, aes(x=decade, y=value, fill=variable)) +
 
 Interesting how stories about the army and the English seem to decrease over time in the 18th century... perhaps that's meaningful? Go back and re-run your script from the point where you selected 15 topic models. Try more topic models. Try fewer. Do you spot any interesting patterns?
 
-Save your script as `tm.R`. Put it in your repo for this week. Save screenshots of your findings, and make notes of your observations. These can be shared in your weekly work too - make sure the image file and your notes.md file are in the same repository, then you can insert an image like this:
+Save your script as `tm.R`. Put it in your repo for this part of the course. Save screenshots of your findings, and make notes of your observations. These can be shared in your weekly work too - make sure the image file and your notes.md file are in the same repository, then you can insert an image like this:
 
 `![description of image](filename.jpg)`
 

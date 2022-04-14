@@ -21,7 +21,7 @@ In this exercise, we are going to use the Open Refine tool that originated with 
 Start by doing the following:
 
 1. Visit the [Open Refine home page](http://openrefine.org/) and watch the three videos.
-2. Download [Open Refine 3.3](http://openrefine.org/download.html) to your machine.
+2. Download [Open Refine 3.5.2](http://openrefine.org/download.html) to your machine.
 3. Follow the installation instructions.
 4. Start Open Refine by double clicking on its icon. This will open a new browser window, pointing to [http://127.0.0.1:3333](http://127.0.0.1:3333). This location is your own computer, so even though it looks like it’s running on the internet, it isn’t. The 3333 is a ‘port’, meaning that Open Refine is running much like a server, serving up a webpage via that port to the browser. (If the browser window doesn't open automatically, open one and put [http://127.0.0.1:3333](http://127.0.0.1:3333) in the address bar.)
 
@@ -43,5 +43,6 @@ Click on ‘Export’ at the top right of the window to get your data back out a
 
 Ta da! A file ready for some network analysis.
 
+_Turn on the closed captions; the video is from an earlier iteration of this course and a slightly older version of Open Refine, but the steps remain more or less the same. The important bit is to get a sense of the process so you can roll with it._
+
 {{< youtube HWZbydm4iCc >}}
-_Turn on the closed captions; the video is from an earlier iteration of this course, but takes you through those steps._

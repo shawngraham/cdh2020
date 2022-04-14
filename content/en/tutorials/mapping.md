@@ -138,7 +138,7 @@ $.getJSON("point-data.geojson", function(data) {
 Save!
 
 8. At the command prompt, you'll use python to start a webserver; the webserver acts like a regular server and makes these two files understandable by your web-browser: `$ python -m http.server`
-9. The terminal will tell you now that your server is running at an address that will look something like this: `(http://0.0.0.0:8000/)`. Copy that full address and paste it into your browser's address bar.
+9. The terminal will tell you now that your server is running at an address that will look something like this: `http://0.0.0.0:8000/` or `http://127.0.0.1:8000`. Copy that full address and paste it into your browser's address bar.
 
 Congratulations! You have made a webmap! Do you see how you could recenter the map on Ottawa? Add some more data? Change the base map to another style?
 
@@ -185,9 +185,9 @@ But as historians, we are often interested to show some process taking place in 
 
 Georectifying is the process of taking an image (whether it is of a historical map, chart, airphoto, or whatever) and manipulating its geometry so that it matches a geographic projection. Think of it like this: you take your handdrawn map, and use pushpins to pin down known locations on your map to a globe. As you pin, your image stretches and warps. Traditionally, this has not been an easy thing to do, if you are new to GIS. In recent years, the curve has flattened significantly. In this exercise, we'll grab an image, upload it to the Map Warper website, and then export it as a tileset which can be used in other mapping programs.
 
-At [Library and Archives Canada](http://collectionscanada.gc.ca/pam_archives/index.php?fuseaction=genitem.displayEcopies&lang=eng&rec_nbr=98246&title=Laura%20A.%20Gamble%20fonds%20%5btextual%20record,%20graphic%20material%5d.&ecopy=e002743396) I found an "Insurance Plan of Ottawa, June 1878" [MIKAN 3824226](http://collectionscanada.gc.ca/lac-bac/results/images?module=images&SortSpec=score+desc&Language=eng&ShowForm=hide&SearchIn_1=mikanNumber&SearchInText_1=3824226&Operator_1=AND&SearchIn_2=&SearchInText_2=&Operator_2=AND&SearchIn_3=&SearchInText_3=&Level=&MaterialDateOperator=after&MaterialDate=&DigitalImages=1&Source=&ResultCount=10).
+At Library and Archives Canada there are a number of "Fire Insurance Plans" for Ottawa in the 19th century. [Here's a link to a search for these](https://recherche-collection-search.bac-lac.gc.ca/eng/Home/Search?q=insurance%20plan%20ottawa&DataSource=Images&).
 
-This one in particular [shows Parliament Hill](http://central.bac-lac.gc.ca/.item?app=fondsandcol&op=img&id=e010695477-v8). I will save this one to my machine and georectify it. You grab one that interests you!
+Grab one that interests you! When you find one you like, have it fill the screen then take a screenshot of it. You can use your screenshot for the rectification process.
 
 1. Go to [Map Warper](http://mapwarper.net/) and sign up for an account. Then login.
 

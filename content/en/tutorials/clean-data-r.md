@@ -8,7 +8,7 @@ weight: 4
 
 ## Cleaning and Manipulating Data with R
 
-We're going to use data from pulled from the [The Survey of Scottish Witchcraft Database](http://www.shca.ed.ac.uk/Research/witches/) for this tutorial; this tutorial was written by Chantal Brousseau.
+We're going to use data from pulled from the [The Survey of Scottish Witchcraft Database](http://www.shca.ed.ac.uk/Research/witches/) for this tutorial (the actual dataset is available below); this tutorial was written by Chantal Brousseau.
 
 So maybe you've created a dataset by scraping the web, or found some really cool open data but... it's messy! You try to make visuals with it, but there's so many nonsense characters and repeating words that your data seems meaningless!
 
@@ -59,7 +59,7 @@ fairyElements <- read_csv("fairy-elements.csv")
 
 The part before the arrow, `fairyElements`, is a **variable**. In programming, variables act like buckets, holding whatever you give them through assignment operators such as `<-` "inside". In this case, we are storing the contents of `fairy-elements.csv`, which is data pulled from the [The Survey of Scottish Witchcraft Database](http://www.shca.ed.ac.uk/Research/witches/) on elements associated with fairies found in trial records from the Scottish witch-hunts occuring during the period of 1563 to 1736.
 
-We put this in a variable arranged in a special kind of data table (a tibble) so we can easily manipulate it when cleaning its contents. To see your data, you can type:
+We put this in a variable arranged in a special kind of data table (a tibble) so we can easily manipulate it when cleaning its contents (`read.csv` puts the data into a _data frame_, while `read_csv` from the `readr` package puts it into a 'tibble'). To see your data, you can type:
 
 
 ```R
@@ -81,7 +81,10 @@ Spaces between words are good for readability, but can make working with the dat
 
 
 ```R
-# the $ indicates that you're pulling something that is stored within the variable that comes before it-- in this case, you're trying to pull a column from our 'fairyElements' table
+# the $ indicates that you're pulling something that is
+# stored within the variable that comes before it-- in
+# this case, you're trying to pull a column from our
+# 'fairyElements' table
 
 fairyElements$Motif Type
 ```
@@ -103,7 +106,7 @@ head(fairyElements)
 
 `colnames()` is saying that you want the column names from `fairyElements`
 `%<>%` is a **pipe** in R, and is like saying "update"-- this whole line is essentially read as:
-    - Update (`%<>%`) the column names in `fairyElements` after replacing all spaces (`\\s`) with underscores (`_`) and update again when the column names are made lowercase (`tolower()`)
+    - Update (`%<>%`) the column names in `fairyElements` after replacing via a regular expression all the spaces (`\\s`) with underscores (`_`) and update again when the column names are made lowercase (`tolower()`)
 
 Functions from the `stringr` package use regular expressions (the same mechanism behind "find and replace" in text editors like Sublime Text and Atom) to search for _patterns_ that you specify. Regular expressions can be tricky, but, luckily, Tidyverse created [a convinient cheatsheet on using `stringr`](https://evoldyn.gitlab.io/evomics-2018/ref-sheets/R_strings.pdf) that includes a guide to regular expressions on the 2nd page if you need to find something other than spaces (`\\s`).
 
@@ -131,7 +134,7 @@ head(fairyRemove)
 
 Choosing which method to use is entirely up to you. You may want to consider the number of "Unknown" factors when analyzing your data, in which case you should probably simply replace the missing valuess with a more meaningful word or statement. If you feel any missing data at all will hurt your analysis, you can go ahead and just remove the values, but remember to consider this when looking at your final results.
 
-I'm going to replace the `NA` values with "Unspecified" because I feel that the number of witch trials that have no notes attached to them could potentially be meaningful.
+I'm going to replace the `NA` values with "Unspecified" because I feel that the number of witch trials that have no notes attached to them could potentially be meaningful. This kind of information about the _process_ of doing the analysis is critically important to explain in one's write-up!
 
 ## Modifying Column Content
 

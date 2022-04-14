@@ -34,6 +34,8 @@ At [Databasic.io](http://databasic.io) there are simple web-tools to help you se
 
 ![](/images/databasic.png)
 
+**Sometimes there can be issues with the Databasic website.** Another web-toy that does much the same, as far as networks are concerned, is [Network Navigator](https://networknavigator.jrladd.com/); give that a whirl if you run into trouble with Databasic.
+
 ### More complex visualizatons and analysis
 
 Connect the dots is pretty basic. If you want to do more complex network visualizations and analysis, you can try [Gephi](http://gephi.org):
@@ -112,9 +114,11 @@ At this point, the network is processed enough to visualize in the Preview pane,
 
 Phew. Save your work. Gephi saves as `.gephi` file, but you can also export to other common formats like `.gexf`
 
-### Network Analysis in Python
+### Network Analysis in Python and R
 
-You could try [this tutorial from the Programming Historian out](https://programminghistorian.org/en/lessons/exploring-and-analyzing-network-data-with-python).
+If that whetted your appetite, here's guidance [on working with networks in R](/tutorials/networks-r) and here's guidance [for exploring networks in Python](/tutorials/networks-python).
+
+
 
 ### So what?
 So what have we got?
