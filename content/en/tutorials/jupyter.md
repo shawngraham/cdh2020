@@ -26,7 +26,7 @@ Under the hood, a jupyter notebook file - which has the file extension `.ipynb` 
    ]
   },
 ```
-To actually open an .ipynb file properly, you need to have jupyter running on your machine. When I had you set up your [anlaytical toolkit](/tutorials/anaconda), I had you install Jupyter Notebooks from your terminal or anaconda command prompt with the command `$ pip install notebook`.
+To actually open an .ipynb file properly, you need to have jupyter running on your machine. When I had you set up your [anlaytical toolkit](/tutorials/anaconda), I had you install Jupyter Notebooks from your terminal or anaconda command prompt with the command `$ pip install notebook`. Remember that video by Chantal Brousseau? If you jump to the 8.18 mark, [Chantal walks you through notebooks](https://youtu.be/10FPoTCcv4I?t=498).
 
 You can turn on a jupyter notebook _server_ (the environment for writing, running, and editing jupyter notebooks) at the command prompt with `$ jupyter notebook`.
 

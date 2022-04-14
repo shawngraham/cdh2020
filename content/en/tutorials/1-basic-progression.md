@@ -132,7 +132,7 @@ Part 3 (to be completed by June 6th):
     - [Open Refine](/tutorials/open-refine) (Macroscopic perspectives)
     - [Clean text data with R](/tutorials/clean-data-r) (Macroscopic perspectives)
     - [Topic Modeling in R](/tutorials/topic-models) (Macroscopic perspectives)
-    - [TF-IDF, Sentiment Analysis](/tutorials/tf-idf) (Macroscopic perspectives) UPDATE: This one has issues, no longer available.
+    - [TF-IDF, Sentiment Analysis](/tutorials/tf-idf) (Macroscopic perspectives) 
     - [Network Analysis in R](/tutorials/neworks-r) (Macroscopic perspectives)
     - [Network Analysis in Python](/tutorials/networks-python) (Macroscopic perspectives)
     - [Sound and Sonification](/tutorials/sound) (Macroscopic perspectives / Digital Storytelling)
