@@ -52,7 +52,7 @@ In this exercise, I want you to become familiar with Markdown syntax. (Feel free
 
 Have the [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) open in a new window.
 
-1. Make a new folder on your machine; you'll save your work into that folder. Open your text editor.
+1. Make a new subfolder in your hist3814 working folder, on your machine; you'll save your work into that folder. Open your text editor.
 
 2. Using markdown conventions, write a short paragraph on your favourite piece of academic work you've completed so far at Carleton. Save it in that new folder. The important thing here is to use a variety of markdown conventions so that you get used to the idea.
 
@@ -64,6 +64,6 @@ Have the [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Mark
 
 5. Make sure that when you save your document, you use the `.md` file extension.
 
-6. Push your folder to [github](/tutorials/github) (drag the entire folder onto your Part 1 repository) once you've got your repository set up; you'll need to complete the [github tutorial](/tutorials/github).
+6. Push your folder to [github](/tutorials/github) once you've got your repository set up; you'll need to complete the [github tutorial](/tutorials/github).
 
-Moving forward, this is how I want you to keep your log.md and your reflection.md files.
+Moving forward, I want you to keep your log.md and your reflection.md files using these markdown conventions.

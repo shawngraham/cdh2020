@@ -97,9 +97,8 @@ Library and Archives **does not** provide an 'application programming interface'
 Suffice to say, eventually you might discover that the pages are for the most part listed numerically, and you can construct a file path to just load those images like this: `http://data2.archives.ca/e/e001/e000000422.jpg`.
 
 {{< notice warning "Look, it's like this..." >}}
-When I first started teaching this class, the LAC website was a lot easier to work with, and being in Ottawa, it made a lot of sense to work with it. But with each iteration, it's gotten harder to harder and LAC _still_ does not provide an API. Eventually I'll come up with a different example. But you can accomplish a lot if you're willing to use the 'inspect' button when you right-click on a website.
+When I first started teaching this class, the LAC website was a lot easier to work with, and being in Ottawa, it made a lot of sense to show you this. With each iteration, it's gotten harder and harder and LAC _still_ does not provide an API. Eventually I'll come up with a different example. But you can accomplish a lot if you're willing to use the 'inspect' button when you right-click on a website - and wget is a super powerful tool.
 {{< /notice >}}
-
 
 Now, if Library and Archives Canada had an API for their collection, we could just figure out the urls for each image of the diary in that fonds and away we go. But they don't. Turns out, the urls we want run more or less from ...422 to ...425 (but try entering other numbers at the end of that URL: you will retrieve who-knows-what!):
 
@@ -121,11 +120,11 @@ Now, we know that we can pass an individual url to wget and wget will retrieve i
 (google for `wget options`)
 
 ### Using python to generate a list of urls
-Now, let's try something a bit more complex. It's one thing to manually copy and paste urls into a file, but what if we want a _lot_ of files? You could just set wget to crawl directories, but that can make you look like an attacker, it can clutter your own machine with files you don't want, and it can mess with your bandwidth and data caps. Sometimes though we can suss out the naming pattern for files, and so write a small program that will automatically write out all of the urls for us.
+Now, let's try something a bit more complex. It's one thing to manually copy and paste urls into a file, but what if we want a _lot_ of files? You could just set wget to crawl directories, but that can make you look like an attacker, it can clutter your own machine with files you don't want, and it can mess with your bandwidth and data caps. Sometimes though we can suss out the naming pattern for files, and that's a situation tailor-made for programming. We will write a small program that will automatically build a file with all of the urls for us, that we can then feed to wget.
 
-Consider the [14th Canadian General Hospital war diaries](https://recherche-collection-search.bac-lac.gc.ca/eng/home/record?app=fonandcol&IdNumber=2005110&new=-8585519162955167583). The URLs of this diary go from `http://data2.archives.ca/e/e061/e001518029.jpg` to `http://data2.archives.ca/e/e061/e001518109.jpg`. That's 80 pages.
+Consider the [14th Canadian General Hospital war diaries](https://recherche-collection-search.bac-lac.gc.ca/eng/home/record?app=fonandcol&IdNumber=2005110&new=-8585519162955167583). The URLs of this diary go from `http://data2.archives.ca/e/e061/e001518029.jpg` to `http://data2.archives.ca/e/e061/e001518109.jpg`. That's 80 pages; you _could_ type in 80 separate wget commands... or you could do this:
 
-1. make a new directory for our work - at the command prompt or terminal, `$ mkdir war-diaries`
+1. make a new directory for our work - at the command prompt or terminal, `$ mkdir war-diaries`, and then `cd` into it.
 2. Create a new file in Sublime Text. I'll give you the script to paste in there, and then I'll explain what it's doing.
 
 ```python
@@ -137,7 +136,7 @@ for x in range(8029, 8110):
 f.close
 ```
 
-First, we're creating an empty 'bin' or variable called 'urls'. Then, we create a variable called `f` for file, and tell it to open a new text file called 'urls'.
+First, we're creating an empty 'bin' or variable called 'urls'. Then, we create a variable called `f` for file, and tell it to open a new text file for writing, called 'urls'.
 
 Then we set up a _loop_ with the `for` command that will iterate over the 80 values from 8029 to 8110. The next line contains our pattern, the full url right up until `e0151`. The last little bit, the `%d` takes the number of the current iteration (x) and pastes that in. The `\n` means 'new line' so that when we iterate through this again, we've moved the cursor down one line. Then with `f.write(urls)` we put the pattern into the file. Once we've finished - we've gotten all the way to 8110 - the loop is done, we close the file, and the script stops.
 
@@ -145,9 +144,9 @@ Then we set up a _loop_ with the `for` command that will iterate over the 80 val
 
 4. At the command prompt / terminal make sure you are in your `war-diaries` directory with `pwd` to see where you are, and `cd` as appropriate to get to where you need to be.
 
-5. Make sure the file is there: type `ls` or `dir` as appropriate and make sure you see the file. Let's run this file: `$ python urls.py`. After a brief pause, you should just be presented with a new prompt, as if nothing has happened: but check your directory (`ls` or `dir`) and you'll see a new file: `urls.txt`. You can open this with Sublime Text to see what's inside.
+5. Make sure the file is there: type `ls` or `dir` as appropriate and make sure you see the file. Let's run this file: `$ python urls.py`. After a brief pause, you should just be presented with a new prompt, as if nothing has happened: but check your directory (`ls` or `dir`) and you'll see a new file, `urls.txt`. You can open this with Sublime Text to see what's inside.
 
-6. Now that you've got the urls, use wget as you did for Laura Gamble's diary (it's the exact same command). It might go rather slowly, but keep an eye on your file explorer or finder. What have you got in your directory now?
+6. Now that you've got the urls, use `wget` as you did for Laura Gamble's diary (it's the exact same command). It might go rather slowly, but keep an eye on your file explorer or finder. What have you got in your directory now?
 
 ### Be a good digital citizen
 

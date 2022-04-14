@@ -31,7 +31,11 @@ Python is the basic language, while a package manager lets us retrieve bundles o
 
 ### Download Miniconda
 
-+ Go to [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html) and download the **Python 3.8** installer for your computer. Run the installer and accept the defaults
++ Go to [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html) and download the **Python 3.8** installer for your computer. Run the installer and accept the defaults.
+
+This video by former student Chantal Brousseau might be helpful:
+
+<div align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/10FPoTCcv4I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 ### Anaconda Prompt and Terminal
 

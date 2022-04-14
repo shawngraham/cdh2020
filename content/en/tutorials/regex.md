@@ -9,13 +9,13 @@ draft: false
 
 A regular expression (also called regex) is a powerful tool for finding and manipulating text. At its simplest, a regular expression is just a way of looking through texts to locate _patterns_. When you search a website for instance (use ctrl+f in most applications to search, by the way), the search box finds exact matches; there's no room for fuzziness. A regular expression on the other hand can help you find every line that begins with a number, or every instance of an email address, or whenever a word is used even if there are slight variations in how it's spelled. As long as you can describe the pattern you're looking for, regular expressions can help you find it. Once you've found your patterns, they can then help you manipulate your text so that it fits just what you need.
 
-Regular expressions can look pretty complex, but once you know the basic syntax and vocabulary, simple ‘regexes’ will be easy. Regular expressions can often be used right inside the 'Find and Replace' box in many text and document editors, such as Sublime Text, Atom, or Notepad++. You cannot use Microsoft Word, however!
+Regular expressions can look pretty complex, but once you know the basic syntax and vocabulary, simple ‘regexes’ will be easy. Well, I lie. I still flub them, but they're getting more... legible. Regular expressions can often be used right inside the 'Find and Replace' box in many text editors, such as Sublime Text, Atom, or Notepad++. You cannot use them with Microsoft Word, however!
 
-NB In text editors, you have to indicate that you wish to do a regex search. In Sublime Text, you open the search panel from the 'Find' menu (or use the shortcut) and then you need to tick the box that has `.*` in the search panel to enable regular expression searches.
+NB In text editors, you have to indicate that you wish to do a regex search. In Sublime Text and Atom, you open the search panel from the 'Find' menu (or use the shortcut) and then you need to tick the box that has `.*` in the search panel to enable regular expression searches.
 
 ### Some basic principles
 
-**Protip**: there are libraries of regular expressions, online. For example, if you want to find all postal codes, you can search “regular expression Canadian postal code” and learn what ‘formula’ to search for to find them.
+**Protip**: there are libraries of regular expressions, online. For example, if you want to find all postal codes, you can search "regular expression Canadian postal code" and learn what 'formula' to search for to find them.
 
 Also, here is a cheatsheet for [regular expressions in Sublime Text](https://jdhao.github.io/2019/02/28/sublime_text_regex_cheat_sheet/).
 
@@ -111,7 +111,7 @@ The vocabulary of regular expressions is pretty large, but there are many cheat 
 
 ### Letters of the Republic of Texas
 
-The correspondence of the [Republic of Texas](https://en.wikipedia.org/wiki/Republic_of_Texas), and independent state from 1835 to 1846 was collated into a single volume and published with a helpful index in 1911. It was scanned and OCR'd by Google, and is now available as a text file from the Internet Archive. You can see the OCR'd text at [archive.org](http://archive.org/stream/diplomaticcorre33statgoog/diplomaticcorre33statgoog_djvu.txt). We are going to use it to practice our regex skills because it is an example of a historical network we might want to analyze later with network analysis. We are going to grab the index from that file, and transform it using regex.
+The correspondence of the [Republic of Texas](https://en.wikipedia.org/wiki/Republic_of_Texas), an independent state from 1835 to 1846 was collated into a single volume and published with a helpful index in 1911. It was scanned and OCR'd by Google, and is now available as a text file from the Internet Archive. You can see the OCR'd text at [archive.org](http://archive.org/stream/diplomaticcorre33statgoog/diplomaticcorre33statgoog_djvu.txt). We are going to use it to practice our regex skills because it is an example of a historical network we might want to analyze later with network analysis. We are going to grab the index from that file, and transform it using regex.
 
 Entries in the index look like this:
 
@@ -129,9 +129,9 @@ Sam Houston, A. B. Roman, September 12 1842
 Sam Houston, A. B. Roman, October 29 1842
 Isaac Van Zandt, Anson Jones, January 11 1843
 ```
-The change doesn't look like much, and you might think to yourself, 'hey, I could just do that by hand'. You could but it'd take you ages, and if you made a mistake somewhere, are you sure you could do this consistently, for a couple of hours at a time? Probably not. Your time is better spent figuring out the search and replace patterns, and then setting your machine loose to implement it.
+The change doesn't look like much, and you might think to yourself, 'hey, I could just do that by hand'. You could but it'd take you ages, are you sure you could do this consistently, for a couple of hours at a time? Probably not. If you made a mistake somewhere, you'd likely never notice... Your time is better spent figuring out the search and replace patterns, and then setting your machine loose to implement it.
 
-1. We will use the `curl` command at the command prompt to grab the file; this is a related command to wget whom you've already met. Mac users should already have this installed; Windows users can open up Anaconda PowerShell and type `conda install -c anaconda curl` to get it.
+1. We will use the `curl` command at the command prompt to grab the file; this is a related command to wget whom you've already met. Mac users should already have this installed; Windows users can open up Anaconda command prompt and type `conda install -c anaconda curl` to get it.
 
 2. At the command line, type the following curl command:
 
@@ -139,19 +139,19 @@ The change doesn't look like much, and you might think to yourself, 'hey, I coul
 
 The `curl` command downloads the txt file and the the `>` pushes the result of the command to a file called `texas.txt`.
 
-3. Open `texas.txt` in Sublime Text, and open the Find menu and hit the Replace option; this opens the find and replace panel at the bottom of your window. Make sure to press the `.*` button in that panel to turn on regular expression search.
+3. Open `texas.txt` in your text editor, and open the Find menu and hit the Replace option; this opens the find and replace panel at the bottom of your window. Make sure to press the `.*` button in that panel to turn on regular expression search.
 
-4. Delete everything in this file that **isn't** the table of letters. The table starts with ‘Sam Houston to J. Pinckney Henderson, December 31, 1836 51’ and ends with ‘Wm. Henry Daingerfield to Ebenezer Allen, February 2, 1846 1582’. Your file will now have approximately 2000 lines in it.
+4. Manually delete everything in this file that **isn't** the table of letters. The table starts with ‘Sam Houston to J. Pinckney Henderson, December 31, 1836 51’ and ends with ‘Wm. Henry Daingerfield to Ebenezer Allen, February 2, 1846 1582’. Your file will now have approximately 2000 lines in it.
 
-5. First thing we're going to do is identify any lines that indicate correspondence. We're going to look for the word 'to'. In fact, we don't just want to find "to", but the entire line that contains it. We assume that every line that contains the word "to" in full is a line that has relevant letter information, and every line that does not is one we do not need.
+5. First thing we're going to do is identify any lines that indicate correspondence. We're going to look for the word "to". In fact, we don't just want to find "to", but the entire line that contains it. We assume that every line that contains the word "to" in full is a line that has relevant correspondence information, and every line that does not is one we do not need.
 
-You learned earlier that the pattern `.+` returns any amount of text, no matter what it says, and that `\b` indicates a word boundary. Thus, the pattern we want looks like this `.+\bto\b.+`. **Don't search yet**.
+You learned earlier that the pattern `.+` returns any amount of text, no matter what it says, and that `\b` indicates a word boundary. Thus, the pattern we want will look like this `.+\bto\b.+`. **Don't search yet**.
 
-We want to mark these lines off as special, so let's add a tilde ~ before each of the lines that look like letters. This involves the find-and-replace function, and a query identical to the one before, but with parentheses around it, so it looks like the following
+We want to mark these lines off as special, so let's add a tilde `~` before each of the lines that look like letters. This involves the find-and-replace function, and a query identical to the one before, but with parentheses around it so it looks like the following
 
 (.+\<to\>)
 
-and the entire line is placed within a parenthetical group. Since this the first group in our search expression, we can replace that group with `\1` and put the tilde in front of it like so: `~\1`.
+and the entire line is placed within a parenthetical group. The ability to _group_ parts of the search pattern results is powerful, because it allows us to make transformations to different parts of our overall search. Since this the first group in our search expression, we can replace that group with `\1` and put the tilde in front of it like so: `~\1` **if you're using Sublime Text**. If you're using Atom, you'd replace it like this: `~$1`
 
 **Do this**
 search for: `(.+\<to\>)`
@@ -196,14 +196,14 @@ The next step is making the parenthetical groups which will be used to remove pa
 
 with the comma as the first group `\1`, the space and the year as the second `\2`, and the rest of the line as the third `\3`. Given that all we care about retaining is the second group (we want to keep the year, but not the comma or the page number), what will the replace look like? You only want to keep the **second** group.
 
-{{< expand "It'll look like this" >}}
+{{< expand "It'll look like this; click to see" >}}
 search: `(,)( [0-9]{4})(.+)`
 replace: `\2`
 
 Now go ahead and do that.
 {{< /expand >}}
 
-8. Find the tildes that we used to mark off our text of interest, and replace them with nothing to delete them.
+8. Find the tildes that we used to mark off our text of interest, and replace them with nothing, which will delete them.
 
 9. Finally, to separate the Sender and Receiver by a comma, we find all instances of the word "to" and replace it with a comma. Although we used `\b` and `\b` to denote the beginning and end of a word earlier in the lesson, we don't exactly do that here. We include the space preceding "to" in the regular expression, as well as the ` \b` to denote the word ending. Once we find instances of the word and the space preceding it,` to\b` we replace it with a comma `,`.
 
@@ -227,4 +227,4 @@ will show you every line with more than 2 commas, because it finds any line that
 
 That was a lot of work. Save your file with a new name: `correspondence.csv`. You now have a document that can be visualized as a network and analyzed as such.
 
-But it's still pretty messy - it was, after all, OCR'd in the first place. We'll fix that in the [open refine](week/3/open-refine/) exercise.
+But it's still pretty messy - it was, after all, OCR'd in the first place. We'll fix that in the [open refine](week/3/open-refine/) exercise. (But if you'd like to get a sneak preview of of what the eventual network will look like, feel free to copy the text of your file into [the Network Navigator](https://networknavigator.jrladd.com/) website.)

@@ -14,6 +14,8 @@ A good API will also have documentation explaining what or how to make calls to 
 
 ![apis](https://i.imgur.com/LtZWyle.png)
 
+_image courtesty Ian Milligan_
+
 {{< notice success "Important" >}} In what follows, **push** yourself until you get stuck. I'm not interested in how far you get, but rather in how you document what you are able to do, how you look for help, how you reach out to others - or how you help others over the bumps. I know also that you all have lots of other claims on your time. Reading through all of this and making notes on what you do/don't understand is fine too.{{< /notice >}}
 
 ### Getting material out of an API
@@ -24,11 +26,11 @@ First of all, go to the Cronicling America site and [search in the text box for 
 
 `https://chroniclingamerica.loc.gov/search/pages/results/?state=&date1=1789&date2=1963&proxtext=archeology&x=0&y=0&dateFilterType=yearRange&rows=20&searchType=basic`
 
-There's a lot of stuff in there - amongst other things, we can see a setting for `state`, for `date1` and `date2`, our search term appears as the value for a setting called `proxtext`. This is the API in action.
+There's a lot of stuff in there - amongst other things, we can see a setting for `state`, for `date1` and `date2`, and our search term appears as the value for a setting called `proxtext`. This is the API in action.
 
-Let's build (the script we're writing is adapted from one created by Tim Sherratt).
+Let's grab some data! (The script we're writing is adapted from one created by [Tim Sherratt](https://glam-workbench.net/)).
 
-1. Open a new file in Sublime Text. We'll first put a bit of metadata in our file, for the programme we're going to write:
+1. Open a new file in Sublime Text. We'll first put a bit of metadata in our file, for the programme we're going to write (we do this so that when we come back to this file later, we know what we were trying to do, etc):
 
 ```python
 #!/usr/bin/env python
@@ -43,9 +45,9 @@ import json
 __author__ = "your-name"
 ```
 
-The first bit tells us this is a python file. The next bit tells us what the file is for. The `import` tells python that we'll need a module called `requests` which lets us grab materials from the web, and `json` which helps us deal with json formatted data. The final bit says who wrote the script. **Nb** The default python environment on your machine may or may not have the `requests` and `json` modules installed. If you get an error when you run this script to the effect that 'requests' not found etc, you can install these at the terminal prompt with `pip install requests` and `pip install json`. 
+The first bit tells us this is a python file. The next bit tells us what the file is for. The `import` tells python that we'll need a module (pre-packaged python that does a particular job) called `requests` which lets us grab materials from the web, and `json` which helps us deal with json formatted data. The final bit says who wrote the script. **Nb** The default python environment on your machine may or may not have the `requests` and `json` modules installed. If you get an error when you run this script to the effect that 'requests' or 'json' not found, you can install these at the terminal prompt with `pip install requests` and `pip install json`.
 
-2. Now we're going to define some variables to hold the bit of the search url up to where the `?` occurs - everything after the question mark are the parameters we want the API to search. We create the api_searh_url, define the parameter we want to search for, and define how we want the results returned to us. Add the following to your script:
+2. Now we're going to define some variables to hold the bit of the search url up to where the `?` occurs - everything after the question mark are the parameters we want the API to search. We create the api_searh_url, define the parameter we want to search for, and define how we want the results returned to us. Anything with a `#` remember is a comment. Good commenting makes your code readable and reusable! Add the following to your script:
 
 ```python
 # Create a variable called 'api_search_url' and give it a value
@@ -60,16 +62,21 @@ params = {
 params['format'] = 'json'
 ```
 
-3. Now we'll send the request to the server, and we'll add a bit of error checking so that if something is wrong, we'll get some indication of why that is. Add this to your script:
+3. Now we'll send the request to the server, and we'll add a bit of error checking so that if something is wrong, we'll get some indication of why that is.
+
+By the way, in the block below you'll notice that some lines are indented. **Indentations matter** in Python, and you **cannot** mix spaces with tabs to effect the indentation. I would suggest you just use the TAB key on your keyboard to handle indentations. If you are using Sublime or Atom as your text editor, notice also how the text editor makes it easier to see the indentation level you are at.
+
+Add this to your script:
 
 ```python
-# This sends our request to the API and stores the result in a variable called 'response'
+# This sends our request to the API and stores the result in a variable called 'response'; it joins the api_search_url with the parameters of our search
 response = requests.get(api_search_url, params=params)
 
 # This shows us the url that's sent to the API
 print('Here\'s the formatted url that gets sent to the ChronAmerca API:\n{}\n'.format(response.url))
 
 # This checks the status code of the response to make sure there were no errors
+# Use your keyboard's TAB key to indent the print statements
 if response.status_code == requests.codes.ok:
     print('All ok')
 elif response.status_code == 403:
@@ -103,13 +110,13 @@ with open('data.json', 'w') as outfile:
     json.dump(data, outfile)
 ```
 
-Save your file as `ca.py`. Open a terminal/command prompt (remember Windows folks: anaconda powershell!) in the folder where you saved this file, and run it with:
+Save your file as `ca.py`. Open a terminal/command prompt (remember Windows folks: anaconda command prompt) in the folder where you saved this file, and run it with:
 
 `$ python ca.py`
 
 Your terminal will look like it's frozen for a few moments; that's because your computer is reaching out to the Chronicling America website, making its request, and pulling down the results. But in seconds, you'll have a `data.json` file with loads of data - 9021 articles in fact!
 
-Congratulations, you now have a program that you wrote that you can use to obtain all sorts of historical information.
+Congratulations, you now have a program that you wrote that you can use to obtain all sorts of historical information. Now... why not search for something that interests you?
 
 Your complete file will look like this:
 
@@ -130,7 +137,7 @@ api_search_url = 'https://chroniclingamerica.loc.gov/search/pages/results/'
 
 # This creates a dictionary called 'params' and sets values for the API's mandatory parameters
 params = {
-    'proxtext': 'archeology' # Search for this keyword
+    'proxtext': '' # Put the search keyword between the '' marks
 }
 
 # This adds a value for 'encoding' to our dictionary
@@ -173,11 +180,11 @@ with open('data.json', 'w') as outfile:
 ```
 ### Some other APIs
 
-You can modify this code to extract information from other APIs, but it takes a bit of tinkering. In essence, you need to study the website to see how they form the API, and then change up lines 13, 17 and 21 accordingly. You can see this in action for instance [here, with regard to the Metropolitan Museum of Art](https://github.com/o-date/working-with-apis/blob/master/notebooks/metropolitan%20museum%20of%20art%20API.ipynb) or [here, with regard to the Smithsonian](https://github.com/o-date/working-with-apis/blob/master/notebooks/retrieving%20data%20from%20the%20Smithsonian%20OA%20api.ipynb). My [Winter 2020 digital museums' class made APIs from collections at some of our national museums](https://shawngraham.github.io/dhmuse/the-end/); you can see a modified version of the code to access some of their work [here](https://github.com/o-date/working-with-apis/blob/master/notebooks/retrieving%20data%20from%20a%20datasette%20api.ipynb)  
+You can modify this code to extract information from other APIs, but it takes a bit of tinkering. In essence, you need to study the website you're interested in to see how they form the API, and then change up lines 13, 17 and 21 accordingly. You can see this in action for instance [here, with regard to the Metropolitan Museum of Art](https://github.com/o-date/working-with-apis/blob/master/notebooks/metropolitan%20museum%20of%20art%20API.ipynb) or [here, with regard to the Smithsonian](https://github.com/o-date/working-with-apis/blob/master/notebooks/retrieving%20data%20from%20the%20Smithsonian%20OA%20api.ipynb). My [Winter 2020 digital museums' class made APIs from collections at some of our national museums](https://shawngraham.github.io/dhmuse/the-end/); you can see a modified version of the code to access some of their work [here](https://github.com/o-date/working-with-apis/blob/master/notebooks/retrieving%20data%20from%20a%20datasette%20api.ipynb)  
 
 ### But... it's in json format?
 
-JSON is handy for lots of computational tasks, but for you as a beginning digital historian, you might want to have the data as a table. There are a couple of options here. The easiest right now - and there's no shame in doing this - is to use an online converter. This site: [json-csv.com](http://json-csv.com) lets you convert your json file to csv or Excel spreadsheet, and even transfer it over to a google doc. Give that a shot right now; the text of the articles by the way is in the field 'ocr_eng' which tells us that the text was originally transcribed from the images using object character recognition - so there will be errors and weird glitches in the text. Fortunately, there's also a URL with the direct link to the original document, so you can check things for yourself.
+JSON is handy for lots of computational tasks, but for you as a beginning digital historian, you might want to have the data as a table. There are a couple of options here. The easiest right now - and there's no shame in doing this - is to use an online converter. This site: [json-csv.com](http://json-csv.com) lets you convert your json file to csv or Excel spreadsheet, and even transfer it over to a google doc. Give that a shot right now; the text of the articles by the way is in the field 'ocr_eng' which tells us that the text was originally transcribed from the images using OCR or object character recognition - so there will be errors and weird glitches in the text. Fortunately, there's also a URL with the direct link to the original document, so you can check things for yourself.
 
 ### GLAM Workbench
 

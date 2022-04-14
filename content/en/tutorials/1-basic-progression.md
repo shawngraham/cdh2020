@@ -62,7 +62,7 @@ Part 1 (to be completed by May 13th):
   - Complete:
     - [Markdown](/tutorials/markdown)
     - [Github](/tutorials/github/) (if you want to try Git at the command line, there's [this guidance](/tutorials/more-github))
-    - [Anaconda](/tutorials/anaconda)
+    - [Install Python & R](/tutorials/anaconda)
 
 Part 2 (to be completed by May 23th):
   - Complete
@@ -88,7 +88,7 @@ Part 1 (to be completed by May 13th):
   - Complete:
     - [Markdown](/tutorials/markdown)
     - [Github](/tutorials/github/) (if you want to try Git at the command line, there's [this guidance](/tutorials/more-github))
-    - [Anaconda](/tutorials/anaconda)
+    - [Install Python & R](/tutorials/anaconda)
 
 Part 2 (to be completed by May 23th):
   - Complete:
@@ -117,7 +117,7 @@ Part 1 (to be completed by May 13th):
   - Complete:
     - [Markdown](/tutorials/markdown)
     - [Github](/tutorials/github/) (if you want to try Git at the command line, there's [this guidance](/tutorials/more-github))
-    - [Anaconda](/tutorials/anaconda)
+    - [Install Python & R](/tutorials/anaconda)
 
 Part 2 (to be completed by May 23th):
   - Complete:
