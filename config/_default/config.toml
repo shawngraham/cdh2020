@@ -1,4 +1,4 @@
-baseURL = "https://craftingdh.netlify.com/"
+baseURL = "https://craftingdh.netlify.app/"
 title = "HIST3814o Crafting Digital History Summer 2022 Edition"
 theme = "zdoc"
 description = "HIST3814o Summer 2022 edition"
