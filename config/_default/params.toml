@@ -11,6 +11,7 @@ enableTocSwitch = true
 enableLandingBackground = true
 enableSearch = true
 enableSearchHighlight = true
+enableAppbarSearchIcon = true
 enableLangChange = false
 enableDarkMode = true
 enableBreadcrumb = false

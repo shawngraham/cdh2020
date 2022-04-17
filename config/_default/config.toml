@@ -1,4 +1,4 @@
-baseURL = "https://craftingdh.netlify.com"
+baseURL = "https://craftingdh.netlify.com/"
 title = "HIST3814o Crafting Digital History Summer 2022 Edition"
 theme = "zdoc"
 description = "HIST3814o Summer 2022 edition"
@@ -39,6 +39,7 @@ disableKinds = ["taxonomyTerm"]
   section = ["HTML", "RSS", "SearchIndex"]
   taxonomyTerm = ["HTML", "RSS", "SearchIndex"]
   taxonomy = ["HTML", "RSS", "SearchIndex"]
+  tutorials = ["HTML", "RSS", "SearchIndex"]
 
 [outputFormats]
   [outputFormats.SearchIndex]
