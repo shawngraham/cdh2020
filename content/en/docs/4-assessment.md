@@ -81,7 +81,7 @@ Remembering the [learning outcomes](2-docs/learning-outcomes),
 ...5/5 would be an A, 4/5 would be a B, 3/5 would be a C, 2/5 a D.
 
 {{< alert theme="info" >}}
-In this example, based on my consideration of Jo Q Student's evidence and the feedback I'd written to her over the six weeks, it seemed to me that she did what she needed to do (satisfactorily) for 3 out of the 5 outcomes and so earned a C. However, her exit ticket might bring him up.
+In this example, based on my consideration of Jo Q Student's evidence and the feedback I'd written to her over the six weeks, it seemed to me that she did what she needed to do (satisfactorily) for 3 out of the 5 outcomes and so earned a C. However, her exit ticket might bring her up.
 {{< /alert >}}
 
 ### Percentage Breakdown

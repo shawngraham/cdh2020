@@ -58,11 +58,11 @@ Standing in a course is determined by the course instructor subject to the appro
 
 ### WITHDRAWAL WITHOUT ACADEMIC PENALTY
 
-**May 12, 2021** Last day for registration and course changes for early summer courses
+**May 12, 2022** Last day for registration and course changes for early summer courses
 
-**May 20, 2021**: Last day for a full fee adjustment when withdrawing from early summer and full summer courses (financial withdrawal). Withdrawals after this date will result in a permanent notation of WDN on the official transcript.
+**May 20, 2022**: Last day for a full fee adjustment when withdrawing from early summer and full summer courses (financial withdrawal). Withdrawals after this date will result in a permanent notation of WDN on the official transcript.
 
-**June 17, 2021**: Last day for academic withdrawal.
+**June 17, 2022**: Last day for academic withdrawal.
 
 ### REQUESTS FOR ACADEMIC ACCOMMODATIONS
 You may need special arrangements to meet your academic obligations during the term. For an accommodation request the processes are as follows:
