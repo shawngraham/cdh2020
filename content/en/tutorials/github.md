@@ -130,7 +130,7 @@ You can make a new text file by clicking on the 'add file' button and then the '
 
 ![](/images/github/new-file.png)
 
-You can also create subfolders at this point; Github will understand that if you use a ``\`` in the filename box, you are indicating a folder: if you typed `subfolder-name-goes-here\my-new-file.md` it will automatically create `my-new-file.md` in the `subfolder-name-goes-here` subfolder. [This video illustrates the process](/data/subfolder.mp4).
+You can also create subfolders at this point; Github will understand that if you use a ``/`` in the filename box, you are indicating a folder: if you typed `subfolder-name-goes-here/my-new-file.md` it will automatically create `my-new-file.md` in the `subfolder-name-goes-here` subfolder. [This video illustrates the process](/data/subfolder.mp4).
 
 When you are making a new text file on Github, you can specify headers, links, images, bullets, blockquotes and so on by using [markdown conventions](https://guides.github.com/features/mastering-markdown/.)
 
@@ -164,7 +164,7 @@ Option two **which I recommend**: when you are logged in to github and are on my
 
 You can unzip this folder onto your machine. Then, as you work through the course, any files you create as a result of doing the tutorials can be kept in the appropriate folder. There are also `log.md` and `reflection.md` text files that you can use as templates for the required log and reflection pieces. Open those with a proper text editor like [sublime text](https://www.sublimetext.com/) or atom (https://atom.io) or [notepad++](https://notepad-plus-plus.org/).
 
-Then, in the private repo you created on github earlier, make a new file and call it `part-one\readme.md`. Yes, the slash is part of the filename; github will understand that you want to make a folder and put a new file called readme.md into it. In the file editor window, put something like 'a folder for my part one files.'
+Then, in the private repo you created on github earlier, make a new file and call it `part-one/readme.md`. Yes, the slash is part of the filename; github will understand that you want to make a folder and put a new file called readme.md into it. In the file editor window, put something like 'a folder for my part one files.'
 
 Commit the changes.
 
@@ -198,7 +198,7 @@ If you're new to all this, your best bet is to follow the [guidance here](https:
 
 {{<youtube 2MsN8gpT6jY >}}
 
-If you want to tinker, make a new **public** repo. Make a file, call it `index.md` and put whatever content you want in that. Go to the repo settings, and click on 'Pages' from the menu. Under 'source' click the drop down to select whatever default is there (probably will be 'main'). Select a theme. Github will publish your site to `your-user-name.github.io\name-of-your-repo`. Add more content to your repo, and github will (after some delay) rebuild and republish your site. Instant website!
+If you want to tinker, make a new **public** repo. Make a file, call it `index.md` and put whatever content you want in that. Go to the repo settings, and click on 'Pages' from the menu. Under 'source' click the drop down to select whatever default is there (probably will be 'main'). Select a theme. Github will publish your site to `your-user-name.github.io/name-of-your-repo`. Add more content to your repo, and github will (after some delay) rebuild and republish your site. Instant website!
 
 The following three links are from my HIST4806a 2020 seminar on digital history and museums. The particular details are a bit dated now, but they will walk you through the general workflow for how to use your Github account to serve up a professional scholarly website. You can use this scholarly website to host your reflections and course work, if you want (again, some of the minor details might have changed, but the general flow is still the same; this kind of thing always happens with digital work). Follow these three pages in order:
 
