@@ -71,7 +71,7 @@ Start up your RStudio. and make a new R script.
 
 ![](https://digiarch.netlify.app/images/rstudio/rstudio2.png)
 
-![](https://digiarch.netlify.app/images/rstudio/rstudio3.png)
+![](/images/rstudio3.png)
 
 You will copy the code chunks below _into_ the script window; then, you run the script one line at a time. The _results_ will show up in the console window (the code will copy to the console; if everything runs correctly, the console will just show you another `>` to indicate all is good. But if things *aren't* good, the error messages will print in the console.)
 
